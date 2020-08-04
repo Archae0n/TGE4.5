@@ -1,0 +1,18 @@
+# No scope!
+on_monthly_pulse = {
+	events = {
+		hgk.200   # Reinforcements only for marauder satrapies
+		hgk.300   # Reinforcements for the Great Khan
+		hgk.400   # Order the colonization of planets (ship marks planet)
+		hgk.403   # Do the current colonization of the planet
+	}
+}
+
+# No scope!
+on_yearly_pulse = {
+	events = {
+		hgk.1     # One dormant marauder empire decide if to join the Khan horde
+		hgk.2     # Remember all the satrapies to be friendly between themselves
+		hgk.500   # Deal with the Great Khan death
+	}
+}

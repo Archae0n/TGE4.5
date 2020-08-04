@@ -1,0 +1,523 @@
+objectTypes = {
+	
+	# Color variant #06
+	
+	
+	pdxmesh = {
+		name = "terran_pirate_01_titan_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_titan.mesh"
+		scale = 1.0
+		
+        meshsettings = {
+            name = "Object023"
+            index = 0
+            texture_diffuse = "hyperion_junk_diff.dds"
+            texture_normal = "hyperion_junk_nrm.dds"
+            texture_specular = "hyperion_junk_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Object023"
+            index = 1
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Object023"
+            index = 2
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Object023"
+            index = 3
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_battleship_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_battleship.mesh"
+		scale = 1.0
+
+        meshsettings = {
+            name = "Mesh.001"
+            index = 0
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh.001"
+            index = 1
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh.001"
+            index = 2
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_colony_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_transport.mesh"
+		scale = 1.0
+
+        meshsettings = {
+            name = "Mesh"
+            index = 0
+            texture_diffuse = "colonistship_junk_body_diffuse.dds"
+            texture_normal = "colonistship_junk_body_normal.dds"
+            texture_specular = "colonistship_junk_parts_specular.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh"
+            index = 1
+            texture_diffuse = "colonistship_junk_parts_diffuse.dds"
+            texture_normal = "colonistship_junk_parts_normal.dds"
+            texture_specular = "colonistship_junk_parts_specular.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh"
+            index = 2
+            texture_diffuse = "colonistship_junk_parts_diffuse.dds"
+            texture_normal = "colonistship_junk_parts_normal.dds"
+            texture_specular = "colonistship_junk_parts_specular.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh"
+            index = 3
+            texture_diffuse = "colonistship_junk_parts_diffuse.dds"
+            texture_normal = "colonistship_junk_parts_normal.dds"
+            texture_specular = "colonistship_junk_parts_specular.dds"
+            shader = "PdxMeshShip"
+        }
+    }
+
+	pdxmesh = {
+		name = "terran_pirate_01_transportship_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_transport.mesh"
+		scale = 1.0
+		
+        meshsettings = {
+            name = "Mesh"
+            index = 0
+            texture_diffuse = "colonistship_junk_body_diffuse.dds"
+            texture_normal = "colonistship_junk_body_normal.dds"
+            texture_specular = "colonistship_junk_parts_specular.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh"
+            index = 1
+            texture_diffuse = "colonistship_junk_parts_diffuse.dds"
+            texture_normal = "colonistship_junk_parts_normal.dds"
+            texture_specular = "colonistship_junk_parts_specular.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh"
+            index = 2
+            texture_diffuse = "colonistship_junk_parts_diffuse.dds"
+            texture_normal = "colonistship_junk_parts_normal.dds"
+            texture_specular = "colonistship_junk_parts_specular.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh"
+            index = 3
+            texture_diffuse = "colonistship_junk_parts_diffuse.dds"
+            texture_normal = "colonistship_junk_parts_normal.dds"
+            texture_specular = "colonistship_junk_parts_specular.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_turrets_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_turrets.mesh"
+		scale = 1.0
+
+		meshsettings = {
+		
+			texture_diffuse = "pointdefensedrone_junk_col.dds"
+			texture_normal = "pointdefensedrone_junk_nrm.dds"
+			texture_specular = "pointdefensedrone_junk_spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_citadel_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_citadel.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "spacestationsmercenary_junk_diffuse.dds"
+			texture_normal = "spacestationsmercenary_junk_normal.dds"
+			texture_specular = "spacestationsmercenary_junk_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_starfortress_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_starfortress.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "spacestationvalerian_junk_diffuse.dds"
+			texture_normal = "spacestationvalerian_junk_normal.dds"
+			texture_specular = "spacestationvalerian_junk_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_starhold_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_starhold.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "spacemercstarport_junk_diffuse.dds"
+			texture_normal = "spacemercstarport_junk_normal.dds"
+			texture_specular = "spacemercstarport_junk_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_starport_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_starport.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "starport_junk_diffuse.dds"
+			texture_normal = "starport_junk_normal.dds"
+			texture_specular = "starport_junk_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_outpost_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_outpost.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "spaceordinancetower_junk_diffuse.dds"
+			texture_normal = "spaceordinancetower_junk_normal.dds"
+			texture_specular = "spaceordinancetower_junk_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_ioncannon_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_ioncannon.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "desertcannon_diffuse.dds"
+			texture_normal = "desertcannon_normal.dds"
+			texture_specular = "desertcannon_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_constructor_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_constructor.mesh"
+		scale = 1.0
+
+        meshsettings = {
+            name = "Mesh.003"
+            index = 0
+            texture_diffuse = "junker_scv_diff.dds"
+            texture_normal = "junker_scv_norm.dds"
+            texture_specular = "junker_scv_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh.003"
+            index = 1
+            texture_diffuse = "junker_scv_diff.dds"
+            texture_normal = "junker_scv_norm.dds"
+            texture_specular = "junker_scv_spec.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_destroyer_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_destroyer.mesh"
+		scale = 1.0
+
+        meshsettings = {
+            name = "lib"
+            index = 0
+            texture_diffuse = "liberator_junker_diffuse.dds"
+            texture_normal = "liberator_junker_normal.dds"
+            texture_specular = "liberator_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "lib"
+            index = 1
+            texture_diffuse = "liberator_junker_diffuse.dds"
+            texture_normal = "liberator_junker_normal.dds"
+            texture_specular = "liberator_junker_spec.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_scienceship_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_scienceship.mesh"
+		scale = 1.0
+
+        meshsettings = {
+            name = "vessel"
+            index = 0
+            texture_diffuse = "thor_junker_collection_diff.dds"
+            texture_normal = "thor_junker_collection_norm.dds"
+            texture_specular = "thor_specular.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "vessel"
+            index = 1
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "vessel"
+            index = 2
+            texture_diffuse = "raven_junker_collection_diff.dds"
+            texture_normal = "raven_junker_collection_norm.dds"
+            texture_specular = "raven_junker_collection_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "vessel"
+            index = 3
+            texture_diffuse = "Junker_ScienceVessel_Diffuse.dds"
+            texture_normal = "sciencevessel_normal.dds"
+            texture_specular = "Junker_ScienceVessel_Specular.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_station_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_station.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "sciencefacility_junk_diffuse.dds"
+			texture_normal = "sciencefacility_junk_normal.dds"
+			texture_specular = "sciencefacility_junk_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_cruiser_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_cruiser.mesh"
+		scale = 1.0
+
+        meshsettings = {
+            name = "junk"
+            index = 0
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "junk"
+            index = 1
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "junk"
+            index = 2
+            texture_diffuse = "battlecruiser_junker_diff.dds"
+            texture_normal = "battlecruiser_junker_norm.dds"
+            texture_specular = "battlecruiser_junker_spec.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "terran_pirate_01_corvette_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_corvette.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "viking_junker_collection_diff.dds"
+			texture_normal = "viking_junker_collection_norm.dds"
+			texture_specular = "viking_junker_collection_spec.dds"
+			
+			shader =  "PdxMeshShip"
+		}
+	}
+	
+	
+	pdxmesh = {
+		name = "terran_pirate_01_bomber_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_bomber.mesh"
+		scale = 1.0
+		
+			        meshsettings = {
+            name = "Mesh.001"
+            index = 0
+            texture_diffuse = "hornerhan_strikefighter_upgrade_diff.dds"
+            texture_normal = "hornerhan_strikefighter_upgrade_norm.dds"
+            texture_specular = "hornerhan_strikefighter_upgrade_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh.001"
+            index = 1
+            texture_diffuse = "hornerhan_strikefighter_upgrade_diff.dds"
+            texture_normal = "hornerhan_strikefighter_upgrade_norm.dds"
+            texture_specular = "hornerhan_strikefighter_upgrade_spec.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_fighter_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_wraith.mesh"
+		scale = 1.0
+
+			        meshsettings = {
+            name = "Mesh.001"
+            index = 0
+            texture_diffuse = "wraith_junker_collection_diff.dds"
+            texture_normal = "wraith_junker_collection_norm.dds"
+            texture_specular = "wraith_junker_collection_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh.001"
+            index = 1
+            texture_diffuse = "wraith_junker_collection_diff.dds"
+            texture_normal = "wraith_junker_collection_norm.dds"
+            texture_specular = "wraith_junker_collection_spec.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_pirate_01_cargo_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_launcher.mesh"
+		scale = 1.0
+
+        meshsettings = {
+            name = "Mesh.002"
+            index = 0
+            texture_diffuse = "medivac_junker_diff.dds"
+            texture_normal = "medivac_junker_norm.dds"
+            texture_specular = "medivac_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh.002"
+            index = 1
+            texture_diffuse = "medivac_junker_diff.dds"
+            texture_normal = "medivac_junker_norm.dds"
+            texture_specular = "medivac_junker_spec.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "terran_pirate_01_droppod_mesh"
+		file = "gfx/models/ships/terran_pirate_01/terran_pirate_01_launcher.mesh"
+		scale = 1.0
+
+			        meshsettings = {
+            name = "Mesh.002"
+            index = 0
+            texture_diffuse = "medivac_junker_diff.dds"
+            texture_normal = "medivac_junker_norm.dds"
+            texture_specular = "medivac_junker_spec.dds"
+            shader = "PdxMeshShip"
+        }
+
+        meshsettings = {
+            name = "Mesh.002"
+            index = 1
+            texture_diffuse = "medivac_junker_diff.dds"
+            texture_normal = "medivac_junker_norm.dds"
+            texture_specular = "medivac_junker_spec.dds"
+            shader = "PdxMeshShip"
+		}
+	}
+	
+	
+	
+	
+	
+}

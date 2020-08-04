@@ -1,0 +1,319 @@
+@Edict2Cost = 200
+
+@EdictDuration = 3600
+
+exalted_benevolent_intervention = {
+	length = @EdictDuration
+
+	potential = {
+		has_country_flag = exalted_domination_subject_edicts
+	}
+
+	allow = {
+		any_subject = {
+			relative_power = {
+				who = FROM
+				value <= equivalent
+			}
+		}
+	}
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict2Cost
+		}
+	}
+
+	effect = {
+		every_subject = {
+			limit = {
+				relative_power = {
+					who = FROM
+					value <= equivalent
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = { has_modifier = modifier_exalted_benevolent_intervention }
+				}
+
+				add_modifier = {
+					modifier = modifier_exalted_benevolent_intervention
+				}
+			}
+
+			hidden_effect = {
+				set_country_flag = exalted_benevolent_intervention_isactive
+
+				add_opinion_modifier = {
+					who = FROM
+					modifier = opinion_subject_provided_aid
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+
+		modifier = {
+			weight = @EdictHighPrio
+			has_ascension_perk = ap_shared_destiny
+		}
+
+		modifier = {
+			factor = 0.1
+			has_country_resource = {
+				type = influence
+				amount < 500
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+
+		modifier = {
+			factor = 5
+			has_civic = civic_feudal_realm
+		}
+	}
+}
+
+exalted_developing_civilization_outreach = {
+	length = @EdictDuration
+
+	potential = {
+		has_country_flag = exalted_domination_subject_edicts
+	}
+	
+	allow = {
+		any_subject = {
+			relative_power = {
+				who = FROM
+				value <= equivalent
+			}
+		}
+	}
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict2Cost
+		}
+	}
+
+	effect = {
+		every_subject = {
+			limit = {
+				relative_power = {
+					who = FROM
+					value <= equivalent
+				}
+			}
+
+			add_modifier = {
+				modifier = modifier_exalted_developing_civilization_outreach
+			}
+
+			hidden_effect = {
+				set_country_flag = exalted_developing_civilization_outreach_isactive
+
+				add_opinion_modifier = {
+					who = FROM
+					modifier = opinion_subject_provided_aid
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+
+		modifier = {
+			weight = @EdictHighPrio
+			has_ascension_perk = ap_shared_destiny
+		}
+
+		modifier = {
+			factor = 0.1
+			has_country_resource = {
+				type = influence
+				amount < 500
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+
+		modifier = {
+			factor = 5
+			has_civic = civic_feudal_realm
+		}
+	}
+}
+
+exalted_military_aid_packages = {
+	length = @EdictDuration
+
+	potential = {
+		has_country_flag = exalted_domination_subject_edicts
+	}
+	
+	allow = {
+		any_subject = {
+			relative_power = {
+				who = FROM
+				value <= equivalent
+			}
+		}
+	}
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict2Cost
+		}
+	}
+
+	effect = {
+		every_subject = {
+			limit = {
+				relative_power = {
+					who = FROM
+					value <= equivalent
+				}
+			}
+
+			add_modifier = {
+				modifier = modifier_exalted_military_aid_package
+			}
+
+			hidden_effect = {
+				set_country_flag = exalted_military_aid_packages_isactive
+
+				add_opinion_modifier = {
+					who = FROM
+					modifier = opinion_subject_provided_aid
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = @EdictLowPrio
+
+		modifier = {
+			weight = @EdictMedPrio
+			has_ascension_perk = ap_shared_destiny
+		}
+
+		modifier = {
+			weight = @EdictHighPrio
+			any_subject = {
+				relative_power = {
+					who = from
+					value <= equivalent
+				}
+				is_at_war = yes
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			has_country_resource = {
+				type = influence
+				amount < 500
+			}
+			is_at_war = no
+		}
+
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+
+		modifier = {
+			factor = 5
+			has_civic = civic_feudal_realm
+		}
+	}
+}
+
+# Proxy war: make your Puppet States declare war on a neighboring country
+
+ver_proxy_war = {
+	resources = {
+		category = edicts
+		cost = {
+			influence = 300
+		}
+	}
+
+	length = 0
+
+	effect = {
+		custom_tooltip = edict_ver_proxy_war_effect
+		hidden_effect = { country_event = { id = ver.30 } }
+	}
+
+	potential = {
+		is_overlord = yes
+		any_subject = {
+			OR = {
+				is_subject_type = verpuppet
+				is_subject_type = verkobun
+			}
+		}
+	}
+
+	allow = {
+		NOT = { has_country_flag = ver_called_proxy_war }
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			any_subject = {
+				OR = {
+					is_subject_type = verpuppet
+					is_subject_type = verkobun
+				}
+				is_at_war = no
+				any_neighbor_country = {
+					opinion = {
+						who = Root
+						value = -50
+					}
+				}
+			}
+			factor = 100
+		}
+	}
+}

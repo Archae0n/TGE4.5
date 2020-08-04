@@ -1,0 +1,15 @@
+# This = subject
+# From = subject's overlord
+on_becoming_subject = {
+	events = {
+		vfef.146    # Join Overlord's Federation if laws permit
+	}
+}
+
+# This = empire trying to leave federation
+# From = empire who declined (federation leader)
+on_ask_to_leave_federation_declined = {
+	events = {
+		vfef.147
+	}
+}

@@ -1,0 +1,1206 @@
+###############################################################################
+# Harder Great Khan                                                           #
+# designed by Orbb                                                            #
+###############################################################################
+
+# Documentation template 
+#
+###############################################################################
+# Event:                                                                      #
+#                                                                             #
+# Description:                                                                #
+#                                                                             #
+# Scope:                                                                      #
+#                                                                             #
+# Trigger:                                                                    #
+#                                                                             #
+# Invoked by:                                                                 #
+###############################################################################
+
+namespace = hgk
+
+###############################################################################
+# Event:                                                                      #
+#       1                                                                     #
+#                                                                             #
+# Description:                                                                #
+#       Possibility for a dormant marauder country to join the Khan cause     #
+#       Roughly 1/4 every time this is invoked                                #
+#                                                                             #
+# Scope:                                                                      #
+#       No scope                                                              #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan already triggered by the game                              #
+#                                                                             #
+# Invoked by:                                                                 #
+#       Yearly by common/on_action                                            #
+###############################################################################
+
+event = {
+	id = hgk.1
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+	}
+
+	immediate = {
+		random_list = {
+			25 = {
+				random_country = {
+					limit = { 
+						is_country_type = dormant_marauders
+					}
+
+					country_event = { id = hgk.11 }
+				}
+			}
+			75 = { }
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       2                                                                     #
+#                                                                             #
+# Description:                                                                #
+#       Turn any subject of the Khan fiendly between themselves               #
+#                                                                             #
+# Scope:                                                                      #
+#       No scope                                                              #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan already triggered by the game                              #
+#                                                                             #
+# Invoked by:                                                                 #
+#       Yearly by common/on_action                                            #
+###############################################################################
+
+
+event = {
+	id = hgk.2
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+	}
+
+	immediate = {
+		# Any satropy under the Khan will be friendly.
+		every_country = {
+			limit = {
+				is_country_type = default
+				is_subject_type = satrapy
+			}
+
+			every_country = {
+				limit = {
+					is_country_type = awakened_marauders
+				}
+
+				set_faction_hostility = {
+					target = prev
+					set_hostile = no
+					set_neutral = no
+					set_friendly = yes
+				}
+			}
+		}
+
+		# Any awakened marauder will be friendly between themselves.
+		every_country = {
+			limit = {
+				is_country_type = awakened_marauders
+				is_subject_type = satrapy
+			}
+
+			every_country = {
+				limit = {
+					is_country_type = awakened_marauders
+					is_subject_type = satrapy
+					NOT = { is_same_value = prev }
+				}
+
+				set_faction_hostility = {
+					target = prev
+					set_hostile = no
+					set_neutral = no
+					set_friendly = yes
+				}
+			}
+		}
+	}
+}
+
+###############################################################################
+# Dormant marauder empire becomes a satrapy of the Great Khan                 #
+###############################################################################
+
+###############################################################################
+# Event:                                                                      #
+#       10                                                                    #
+#                                                                             #
+# Description:                                                                #
+#       A random country becomes an active satropy of the Great Khan          #
+#       This is the console version of the marauder activation                #
+#                                                                             #
+# Scope:                                                                      #
+#       No scope                                                              #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan already triggered by game or console                       #
+#                                                                             #
+# Invoked by:                                                                 #
+#                                                                             #
+###############################################################################
+
+event = {
+	id = hgk.10
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+	}
+
+	immediate = {
+		random_country = {
+			limit = { 
+				is_country_type = dormant_marauders
+			}
+
+			country_event = {id = hgk.11 }
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       11                                                                    #
+#                                                                             #
+# Description:                                                                #
+#       Selected country becomes an active satropy of the Great Khan          #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan already triggered by game or console                       #
+#       Country in scope must be a dormant marauder empire                    #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.1                                                                 #
+#       hgk.10                                                                #
+###############################################################################
+
+country_event = {
+	id = hgk.11
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+		is_country_type = dormant_marauders
+	}
+
+	immediate = {
+		# This wakes up the satropy, which otherwise stay dormant
+		set_country_type = awakened_marauders
+
+		# The country will not clash with the Khan; satropy will be friendly and collaborating with it.
+		set_subject_of = {
+			who = event_target:raider_khanate
+			subject_type = satrapy
+		}
+
+		hidden_effect = {
+			# Will rebel to the Khan only after 10 years, so really unlikely to happen before death.
+			set_timed_country_flag = { flag = rebellion_cooldown days = 3600 }
+
+			save_event_target_as = new_satrapy
+
+			# Makes everyone with active comms to realize that the empire has become a satropy.
+			every_country = {
+				limit = {
+					is_ai = no
+					has_communications = root
+					NOT = { is_same_value = root }
+				}
+
+				country_event = { id = hgk.800 }
+			}
+
+			# The marauders satropy will be provided with a powerful fleet
+			country_event = { id = hgk.12 days = 30 }
+
+			create_ship_design = { design = "NAME_Pirate_Transport" }
+			add_ship_design = last_created_design
+			create_ship_design = { design = "NAME_Clan_Builder" }
+			add_ship_design = last_created_design
+			create_ship_design = { design = "NAME_Clan_Colonizer" }
+			add_ship_design = last_created_design
+
+			# Friendly and NOT hostile!
+			event_target:raider_khanate = {
+				set_faction_hostility = {
+					target = root
+					set_hostile = no
+					set_neutral = no
+					set_friendly = yes
+				}
+			}
+
+			add_modifier = {
+				modifier = "satrapy_of_horde"
+				days = -1
+			}
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       12                                                                    #
+#                                                                             #
+# Description:                                                                #
+#       Selected country obtains a powerful fleet (around 100k)               #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.11                                                                #
+###############################################################################
+
+country_event = {
+	id = hgk.12
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		# Constructors
+		country_event = { id = hgk.100 }
+		country_event = { id = hgk.100 }
+		country_event = { id = hgk.100 }
+		# Army
+		country_event = { id = hgk.102 }
+		country_event = { id = hgk.102 }
+		country_event = { id = hgk.102 }
+		country_event = { id = hgk.102 }
+		# Fleets
+		country_event = { id = hgk.103 }
+		country_event = { id = hgk.103 }
+		country_event = { id = hgk.103 }
+		country_event = { id = hgk.103 }
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       100                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Spawn a single constructor around a random planet, on a random system #
+#       within the country borders. This avoid the event fails if the         #
+#       spawning system is camped or blocked by a Fallen Empire.              #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.12 (initial fleet)                                                #
+#       hgk.201 (satropy reinforcements)                                      #
+#       hgk.301 (khan reinforcements bypassed)                                #
+###############################################################################
+
+country_event = {
+	id = hgk.100
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_system_within_border = {
+				limit = {
+					has_star_flag = marauder_system
+					owner = {
+						is_same_value = root
+					}
+				}
+				random_system_planet = {
+					create_fleet = {
+						effect = {
+							set_owner = root
+							create_ship = {
+								name = random
+								design = "NAME_Clan_Builder"
+							}
+							set_location = {
+								target = prev
+								distance = 20
+								angle = random
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       101                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Spawn a single colonizer around a random planet, on a random system   #
+#       within the country borders. This avoid the event fails if the         #
+#       spawning system is camped or blocked by a Fallen Empire.              #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#                                                                             #
+# Invoked by:                                                                 #
+#                                                                             #
+###############################################################################
+
+country_event = {
+	id = hgk.101
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_system_within_border = {
+				limit = {
+					has_star_flag = marauder_system
+					owner = {
+						is_same_value = root
+					}
+				}
+				random_system_planet = {
+					create_fleet = {
+						effect = {
+							set_owner = root
+							create_ship = {
+								name = random
+								design = "NAME_Clan_Colonizer"
+							}
+							set_fleet_flag = marauder_colonizer_ship
+							set_location = {
+								target = prev
+								distance = 20
+								angle = random
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       102                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Spawn an army around a random planet, on a random system within the   #
+#       country borders. This avoid the event fails if the spawning system is #
+#       camped or blocked by a Fallen Empire.                                 #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.12 (initial fleet)                                                #
+#       hgk.201 (satropy reinforcements)                                      #
+#       hgk.301 (khan reinforcements bypassed)                                #
+###############################################################################
+
+country_event = {
+	id = hgk.102
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		# NOTE: This must be done outside random_* scope and within the country one
+		create_leader = {
+			class = general
+			species = owner_main_species
+			name = random
+			skill = 3
+			traits = {
+				trait = random_trait
+			}
+		}
+
+		hidden_effect = {
+			random_system_within_border = {
+				limit = {
+					has_star_flag = marauder_system
+					owner = {
+						is_same_value = root
+					}
+				}
+				random_system_planet = {
+					create_fleet = {
+						effect = {
+							set_owner = root
+							while = {
+								count = 20
+								create_army_transport = {
+									ship_name = "NAME_Pirate_Transport"
+									graphical_culture = "mammalian_01"
+									army_type = "assault_army"
+									species = event_target:raider_khanate
+								}
+							}
+							assign_leader = last_created_leader
+							set_location = {
+								target = prev
+								distance = 20
+								angle = random
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       103                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Spawn a fleet around a random planet, on a random system within the   #
+#       country borders. This avoid the event fails if the spawning system is #
+#       camped or blocked by a Fallen Empire.                                 #
+#                                                                             #
+#       This fleet is around 18k of attack power                              #
+#                                                                             #
+#       This differs from scripted effects since fleets settings are geatly   #
+#       different.                                                            #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.12 (initial fleet)                                                #
+#       hgk.201 (satropy reinforcements)                                      #
+#       hgk.301 (khan reinforcements bypassed)                                #
+###############################################################################
+
+country_event = {
+	id = hgk.103
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		# NOTE: This must be done outside random_* scope and within the country one
+		create_leader = {
+			class = admiral
+			species = owner_main_species
+			name = random
+			skill = 3
+			leader_age_min = 25
+			leader_age_max = 45
+			traits = {
+				trait = leader_trait_mercenary_warrior
+				trait = random_trait
+			}
+		}
+
+		hidden_effect = {
+			random_system_within_border = {
+				limit = {
+					has_star_flag = marauder_system
+					owner = {
+						is_same_value = root
+					}
+				}
+				random_system_planet = {
+					create_fleet = {
+						effect = {
+							set_owner = root
+							while = {
+								count = 16
+								create_ship = {
+									name = random
+									design = "NAME_Outrider"
+									prefix = no
+									graphical_culture = "pirate_01"
+								}
+							}
+							while = {
+								count = 8
+								create_ship = {
+									name = random
+									design = "NAME_Lancer"
+									prefix = no
+									graphical_culture = "pirate_01"
+								}
+							}
+							while = {
+								count = 6
+								create_ship = {
+									name = random
+									design = "NAME_Void_Champion"
+									prefix = no
+									graphical_culture = "pirate_01"
+								}
+							}
+							while = {
+								count = 1
+								create_ship = {
+									name = random
+									design = "NAME_Ancestral_Glory"
+									prefix = no
+									graphical_culture = "pirate_01"
+								}
+							}
+							assign_leader = last_created_leader
+							set_location = {
+								target = prev
+								distance = 45
+								angle = random
+							}
+							set_fleet_stance = aggressive
+							set_aggro_range_measure_from = this
+							set_aggro_range = 3000
+						}
+						settings = {
+							# The fleet does not:
+							#	- use naval capacity
+							#	- be upgraded
+							#
+							uses_naval_capacity = no
+							can_upgrade = no
+							#
+							# The fleet does:
+							#	- change leader according to AI decisions
+							#	- ignore strength, so extremly aggressive (should not hold in the system borders)
+							#	- change composition, so can split/merge with others
+							#	- have an aggressive stance
+							#	- have a wide aggro range, so will be triggered very quickly
+							can_change_leader = yes
+							ai_ignore_strength = yes
+							can_change_composition = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+###############################################################################
+# Reinforcement cycle for marauder satropy                                    #
+###############################################################################
+
+###############################################################################
+# Event:                                                                      #
+#       200                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Selects every marauder satropy and perform fleet checks               #
+#                                                                             #
+# Scope:                                                                      #
+#       No scope                                                              #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan crysis ongoing                                             #
+#                                                                             #
+# Invoked by:                                                                 #
+#       Monthly by common/on_action                                           #
+###############################################################################
+
+event = {
+	id = hgk.200
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_subject_type = satrapy
+				is_country_type = awakened_marauders
+			}
+			
+			country_event = { id = hgk.201 }
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       201                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Perform fleet check over the selected country                         #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan crysis ongoing                                             #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.200                                                               #
+###############################################################################
+
+country_event = {
+	id = hgk.201
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+	}
+
+	immediate = {
+		# Limit the number of constructor around 5/6 units
+		if = {
+			limit = {
+				count_owned_ship = {
+					limit = { is_ship_size = constructor }
+					count < 5
+				}
+			}
+			country_event = { id = hgk.100 }
+			country_event = { id = hgk.100 }
+		}
+
+		# Limit the number of colonizer to 1
+		if = {
+			limit = {
+				count_owned_ship = {
+					limit = { is_ship_size = colonizer }
+					count < 1
+				}
+			}
+			country_event = { id = hgk.101 }
+		}
+
+		# Limit available armies around 40, in groups of 20
+		if = {
+			limit = { num_armies < 40 }
+			country_event = { id = hgk.102 }
+		}
+
+		# Limit the fleet power to 100k
+		if = {
+			limit = { fleet_power < 100000 }
+			country_event = { id = hgk.103 }
+		}
+	}
+}
+
+###############################################################################
+# Reinforcement cycle for the Great Khan                                      #
+###############################################################################
+
+###############################################################################
+# Event:                                                                      #
+#       300                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Selects every Great Khan country and perform fleet checks.            #
+#       Kept like that for a future Great Khan antagonist (idea to expand     #
+#       later).                                                               #
+#                                                                             #
+# Scope:                                                                      #
+#       No scope                                                              #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan crysis ongoing                                             #
+#                                                                             #
+# Invoked by:                                                                 #
+#       Monthly by common/on_action                                           #
+###############################################################################
+
+event = {
+	id = hgk.300
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				# These are the condition for a Khan country
+				AND = {
+					is_country_type = awakened_marauders
+					NOT = { is_subject_type = satrapy }
+				}
+			}
+
+			country_event = { id = hgk.301 }
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       301                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Perform fleet check over the selected country; this cycle shall be    #
+#       reserved for the Great Khan country, as the fleet is spawned with     #
+#       more power at every cycle (two fleets per cycle instead of one).      #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan crysis ongoing                                             #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.200                                                               #
+###############################################################################
+
+country_event = {
+	id = hgk.301
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+	}
+
+	immediate = {
+		# Limit the number of constructor around 5/6 units
+		if = {
+			limit = {
+				count_owned_ship = {
+					limit = { is_ship_size = constructor }
+					count < 5
+				}
+			}
+			country_event = { id = hgk.100 }
+			country_event = { id = hgk.100 }
+		}
+
+		# Limit the number of colonizer to 1
+		if = {
+			limit = {
+				count_owned_ship = {
+					limit = { is_ship_size = colonizer }
+					count < 1
+				}
+			}
+			country_event = { id = hgk.101 }
+		}
+
+		# Limit available armies around 40, in groups of 20
+		if = {
+			limit = { num_armies < 40 }
+			country_event = { id = hgk.102 }
+		}
+
+		# Limit the fleet power to 100k
+		if = {
+			limit = { fleet_power < 100000 }
+			country_event = { id = hgk.103 }
+			country_event = { id = hgk.103 }
+		}
+	}
+}
+
+###############################################################################
+# Fleet additional logic                                                      #
+###############################################################################
+
+###############################################################################
+# Event:                                                                      #
+#       400                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Switch to country scope; start commanding colonization ships for      #
+#       marauders empires                                                     #
+# Scope:                                                                      #
+#       No scope                                                              #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan crysis ongoing                                             #
+#                                                                             #
+# Invoked by:                                                                 #
+#       Monthly by common/on_action                                           #
+###############################################################################
+
+event = {
+	id = hgk.400
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = awakened_marauders
+			}
+
+			country_event = { id = hgk.401 }
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       401                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       As a marauder country, command any ship which has the 'colonizer'     #
+#       flag                                                                  #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.400                                                               #
+###############################################################################
+
+country_event = {
+	id = hgk.401
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_system_within_border = {
+			every_fleet_in_system = {
+				limit = {
+					has_fleet_flag = marauder_colonizer_ship
+				}
+
+				fleet_event = { id = hgk.402 }
+			}
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       402                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       As a colonizer ship, find the nearest owned system with a colonizable #
+#       planet (which is not holy) and colonize it. Holy planet can be marked #
+#       also by regular empires, but for the moment I leave the issue open.   #
+#                                                                             #
+# Scope:                                                                      #
+#       Fleet                                                                 #
+#                                                                             #
+# Trigger:                                                                    #
+#       Fleet is not marked as 'colonizing'                                   #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.401                                                               #
+###############################################################################
+
+fleet_event = {
+	id = hgk.402
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_fleet_flag = marauder_colonization_ongoing }
+	}
+
+	immediate = {
+		# Avoid to accumulate orders on the ship.
+		set_fleet_flag = marauder_colonization_ongoing
+
+		queue_actions = {
+			# Find closest owned system which has a colonizable planet and move to the system
+			find_random_system = {
+				trigger = {
+					owner = { is_same_value = from.owner }
+					any_system_planet = {
+						AND = {
+							NOT = { has_modifier = holy_planet}
+							is_colonizable = yes
+						}
+					}
+				}
+				found_system = {
+					move_to = this
+				}
+			}
+			# Find closest planet which is colonizable and move to orbit
+			find_closest_planet = {
+				trigger = {
+					AND = {
+						NOT = { has_modifier = holy_planet }
+						is_colonizable = yes
+					}
+				}
+				found_planet = {
+					orbit_planet = this
+					# Wait some time to emulate the actual colonization phase; 1/2 year for full colonization here
+					wait = {
+						duration = 180
+					}
+					effect = {
+						# Mark the planet as "can be colonized"
+						set_planet_flag = marauders_can_colonize
+					}
+				}
+			}
+			effect = {
+				# The colony ship can be ordered again to go to another system
+				remove_fleet_flag = marauder_colonization_ongoing
+			}
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       403                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Switch to country scope and check for planet flagged; every with such #
+#       flag will be transformed in a country colony.                         #
+#                                                                             #
+# Scope:                                                                      #
+#       Fleet                                                                 #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan crysis ongoing                                             #
+#                                                                             #
+# Invoked by:                                                                 #
+#       Monthly by common/on_action                                           #
+###############################################################################
+
+event = {
+	id = hgk.403
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = marauder_crisis_ongoing
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = awakened_marauders
+			}
+
+			country_event = { id = hgk.404 }
+		}
+	}
+}
+
+###############################################################################
+# Event:                                                                      #
+#       404                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Switch to country scope and check for planet flagged; every with such #
+#       flag will be transformed in a country colony.                         #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.403                                                               #
+###############################################################################
+
+country_event = {
+	id = hgk.404
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_planet = {
+			limit = { 
+				has_planet_flag = marauders_can_colonize
+			}
+
+			#
+			# Create the colony
+			#
+			create_colony = {
+				owner = root
+				species = owner_main_species
+				ethos = owner
+			}
+
+			#
+			# Clear all the blockers
+			#
+			clear_blockers = yes
+
+			#
+			# Add pops to the planet
+			#
+			while = {
+				count = 14
+				create_pop = {
+					species = owner
+				}
+			}
+
+			#
+			# Districts
+			#
+			add_district = district_city
+			add_district = district_city
+			add_district = district_farming
+			add_district = district_mining
+			add_district = district_generator
+			add_building = building_capital
+			add_building = building_fortress
+
+			# Remove the planet flag, since now it has been colonized
+			remove_planet_flag = marauders_can_colonize
+
+			#
+			# Capturing a planet will automatically provide some resources to the empire.
+			# This only happens for colonization, not invasion.
+			#
+
+			add_resource = { energy = 2000 }
+			add_resource = { minerals = 5000 }
+			add_resource = { alloys = 1000 }
+			add_resource = { food = 2000 }
+			add_resource = { influence = 50 }
+			add_resource = { consumer_goods = 2000 }
+			add_resource = { rare_crystals = 250 }
+			add_resource = { volatile_motes = 500 } # A little more due to fortress consumption
+			add_resource = { exotic_gases = 250 }
+		}
+	}
+}
+
+###############################################################################
+# End of the marauders empires                                                #
+###############################################################################
+
+###############################################################################
+# Event:                                                                      #
+#       500                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Following the in-game event logic for marauders, decide what to do    #
+#       with the awakened marauders empires.                                  #
+#                                                                             #
+# Scope:                                                                      #
+#       No scope                                                              #
+#                                                                             #
+# Trigger:                                                                    #
+#       Great Khan died and the crysis ended                                  #
+#                                                                             #
+# Invoked by:                                                                 #
+#       Monthly by common/on_action                                           #
+###############################################################################
+
+event = {
+	id = hgk.500
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = great_khan_dead
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = awakened_marauders
+			}
+
+			country_event = { id = marauder.600 }
+		}
+	}
+}
+
+###############################################################################
+# Visible messages                                                            #
+###############################################################################
+
+###############################################################################
+# Event:                                                                      #
+#       800                                                                   #
+#                                                                             #
+# Description:                                                                #
+#       Show an event window with the alert of a dormant marauder joining the #
+#       Great Khan horde.                                                     #
+#                                                                             #
+# Scope:                                                                      #
+#       Country                                                               #
+#                                                                             #
+# Trigger:                                                                    #
+#                                                                             #
+# Invoked by:                                                                 #
+#       hgk.11                                                                #
+###############################################################################
+
+country_event = {
+	id = hgk.800
+	title = "hgk.800.name"
+	desc = "hgk.800.desc"
+	picture = GFX_evt_khan_throne_room
+	show_sound = event_conversation
+
+	is_triggered_only = yes
+
+	option = {
+		name = hgk.800.a
+	}
+}
+
+################################################################################
+# Debug events                                                                 #
+################################################################################
+

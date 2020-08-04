@@ -1,0 +1,28 @@
+objectTypes = {
+	pdxmesh = {
+		name = "tw_01_ea_strikecruiser_mesh"
+		file = "gfx/models/ships/tw_01/tw_01_ea_strikecruiser.mesh"
+		scale = 8.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+			}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "tw_01_rs_heavy_dreadnought_type_tw_mesh"
+		file = "gfx/models/ships/tw_01/tw_01_flagship2.mesh"
+		scale = 32.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+			}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "empty_mesh"
+		file = "gfx/models/ships/tw_01/empty.mesh"
+	}
+}

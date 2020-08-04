@@ -1,0 +1,167 @@
+map_the_stars = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = map_the_stars }			
+			}
+			influence = 200
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = map_the_stars
+			}
+			influence = 100
+		}
+	}
+
+	modifier = {
+		science_ship_survey_speed = 0.25
+		ship_anomaly_generation_chance_mult = 0.10
+	}
+
+	potential = {
+		has_tradition = trp_discovery_exploration_b ##Traditions+
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictHighPrio
+			years_passed < 50
+		}
+	}
+}
+research_subsidies = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = research_subsidies }			
+			}
+			influence = 200
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = research_subsidies
+			}
+			influence = 100
+		}
+	}
+
+	modifier = {
+		planet_researchers_produces_mult = 0.10
+		custom_tooltip = edict_research_subsidies_tooltip
+		show_only_custom_tooltip = no
+	}
+
+	potential = {
+		has_tradition = trp_discovery_curiosity_b ##Traditions+
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
+diplomatic_grants = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict1Cost
+		}
+	}
+
+	modifier = {
+		envoys_add = 1
+	}
+
+	potential = {
+		has_tradition = trp_diplomacy_association_b ##Traditions+
+		#has_comms_with_alien_empire = yes
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+diplomatic_grants = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict1Cost
+		}
+	}
+
+	modifier = {
+		envoys_add = 1
+	}
+
+	potential = {
+		has_tradition = trp_diplomacy_association_b
+		has_comms_with_alien_empire = yes
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+extended_shifts = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = extended_shifts }			
+			}
+			influence = 200
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = extended_shifts
+			}
+			influence = 100
+		}
+	}
+
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.10
+		planet_jobs_slave_produces_mult = 0.10
+		pop_cat_worker_happiness = -0.10
+		pop_cat_slave_happiness = -0.10
+	}
+
+	potential = {
+		has_tradition = trp_production_assembly_b
+	}
+
+	ai_weight = {
+		weight = @EdictHighPrio
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_authoritarian
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+	}
+}

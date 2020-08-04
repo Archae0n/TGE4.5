@@ -1,0 +1,380 @@
+objectTypes = {
+	
+	# Color variant #06
+	
+	
+	pdxmesh = {
+		name = "terran_01_warship_large_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_battleship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "battlecruiser_diffuse.dds"
+			texture_normal = "battlecruiser_normal.dds"
+			texture_specular = "battlecrusier_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_titan_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_titan.mesh"
+		scale = 1.0
+
+		meshsettings = {
+		
+			texture_diffuse = "battlecruiser2.dds"
+			texture_normal = "battlecruiser-normal.dds"
+			texture_specular = "battlecruiser-specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_warship_small_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_destroyer.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "liberator_diff.dds"
+			texture_normal = "liberator_nor.dds"
+			texture_specular = "liberator_spec.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_warship_middle_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_cruiser.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "battlecruiser_diffuse.dds"
+			texture_normal = "battlecruiser_normal.dds"
+			texture_specular = "battlecruiser_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_warship_old_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_cruiserex.mesh"
+		scale = 1.0
+
+		meshsettings = {
+		
+			texture_diffuse = "battlecruiser.dds"
+			texture_normal = "battlecruiser-normal.dds"
+			texture_specular = "battlecruiser-specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_battleship_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_battleship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "battlecruiser_diffuse.dds"
+			texture_normal = "battlecruiser_normal.dds"
+			texture_specular = "battlecruiser_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_colony_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_transportship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "colonistship_body_diffuse.dds"
+			texture_normal = "colonistship_body_normal.dds"
+			texture_specular = "colonistship_parts_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_transportship_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_transportship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "colonistship_body_diffuse.dds"
+			texture_normal = "colonistship_body_normal.dds"
+			texture_specular = "colonistship_parts_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_citadel_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_citadel.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "spacestationsmercenary_diffuse.dds"
+			texture_normal = "spacestationsmercenary_normal.dds"
+			texture_specular = "spacestationsmercenary_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_starfortress_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_starfortress.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "spacestationvalerian_diffuse.dds"
+			texture_normal = "spacestationvalerian_normal.dds"
+			texture_specular = "spacestationvalerian_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_starhold_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_starhold.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "spacemercstarport_diffuse.dds"
+			texture_normal = "spacemercstarport_normal.dds"
+			texture_specular = "spacemercstarport_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_starport_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_starport.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "starport_diffuse.dds"
+			texture_normal = "starport_normal.dds"
+			texture_specular = "starport_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_outpost_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_outpost.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "spaceordinancetower_diffuse.dds"
+			texture_normal = "spaceordinancetower_normal.dds"
+			texture_specular = "spaceordinancetower_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_ioncannon_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_ioncannon.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			
+			texture_diffuse = "desertcannon_diffuse.dds"
+			texture_normal = "desertcannon_normal.dds"
+			texture_specular = "desertcannon_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_constructor_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_constructor.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "mule_diffuse.dds"
+			texture_normal = "mule_normal.dds"
+			texture_specular = "mule_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_destroyer_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_destroyer.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "liberator_diff.dds"
+			texture_normal = "liberator_norm.dds"
+			texture_specular = "liberator_spec.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_scienceship_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_scienceship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "sciencevessel_diffuse.dds"
+			texture_normal = "sciencevessel_normal.dds"
+			texture_specular = "sciencevessel_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_station_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_station.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "sciencefacility_diffuse.dds"
+			texture_normal = "sciencefacility_normal.dds"
+			texture_specular = "sciencefacility_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_cruiser_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_cruiser.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "battlecruiser_diffuse.dds"
+			texture_normal = "battlecruiser_normal.dds"
+			texture_specular = "battlecruiser_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_cruiserex_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_cruiserex.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "battlecruiser.dds"
+			texture_normal = "battlecruiser-normal.dds"
+			texture_specular = "battlecruiser-specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_corvette_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_corvette.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "viking_diffuse.dds"
+			texture_normal = "viking_normal.dds"
+			texture_specular = "viking_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	
+	pdxmesh = {
+		name = "terran_01_bomber_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_interceptor.mesh"
+		scale = 1.0
+		meshsettings = {
+			texture_diffuse = "wraith_diffuse.dds"
+			texture_normal = "wraith_normal.dds"
+			texture_specular = "wraith_specular.dds"
+			shader = "PdxMeshShip"
+			
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_fighter_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_interceptor.mesh"
+		scale = 1.0
+		meshsettings = {
+			texture_diffuse = "wraith_diffuse.dds"
+			texture_normal = "wraith_normal.dds"
+			texture_specular = "wraith_specular.dds"
+			shader = "PdxMeshShip"
+			
+		}
+	}
+	
+	pdxmesh = {
+		name = "terran_01_cargo_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_medivac.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			
+			texture_diffuse = "medivac_diffuse.dds"
+			texture_normal = "medivac_normal.dds"
+			texture_specular = "medivac_specular.dds"
+			
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "terran_01_droppod_mesh"
+		file = "gfx/models/ships/terran_01/terran_01_medivac.mesh"
+		scale = 1.0
+		meshsettings = {
+			texture_diffuse = "medivac_diffuse.dds"
+			texture_normal = "medivac_normal.dds"
+			texture_specular = "medivac_specular.dds"
+			shader = "PdxMeshShip"
+			
+		}
+	}
+	
+	
+	
+	
+	
+}

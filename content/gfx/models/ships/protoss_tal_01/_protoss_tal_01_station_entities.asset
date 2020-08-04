@@ -1,0 +1,372 @@
+﻿@turret = 0.20
+@corvette_scale = 6.5
+@destroyer_scale = 9.5
+@cruiser_scale = 8.7
+@battleship_scale = 13.0
+@missile_scale = 1.0
+@transport_scale = 9.0
+@colonizer_scale = 11.0
+@science_scale = 1.0
+@constructor_scale = 12.0
+@military_station_large = 9.0
+@military_station_medium = 9.0
+@military_station_small = 15.0
+@orbital_station = 17
+@research_station = 13
+@mining_station = 13
+@terraforming_station = 13
+
+@small_trail_W = 10
+@small_trail_L = 60
+@medium_trail_W = 25
+@medium_trail_L = 150
+@large_trail_W = 50
+@large_trail_L =  300
+
+
+###################################################################################
+###																				###
+###									STATIONS									###
+###																				###
+###################################################################################
+
+entity = {
+	name = "protoss_tal_01_orbital_station_entity"
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "part2" 	position = { 0 0 0 } }
+	locator = { name = "part3" 	position = { 0 0 0 } }
+	locator = { name = "part4" 	position = { 0 0 0 } }
+	locator = { name = "part5" 	position = { 0 0 0 } }
+	locator = { name = "part6" 	position = { 0 0 0 } }
+	locator = { name = "part7" 	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_fallen_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" } }
+	}
+	
+	scale = 0.45
+}
+
+entity = {
+	name = "protoss_tal_01_orbital_station_core_entity"
+	pdxmesh = "protoss_tal_01_starfortress_mesh"	
+	locator = { name = "medium_gun_01" position = { 0 0 0 } }
+	locator = { name = "medium_gun_02" position = { 0 0 0 } }
+	locator = { name = "small_gun_01" position = { 0 0 0 } }
+	locator = { name = "small_gun_02" position = { 0 0 0 } }
+	locator = { name = "small_gun_03" position = { 0 0 0 } }
+	locator = { name = "small_gun_04" position = { 0 0 0 } }
+	scale = 2.0
+
+}
+
+
+entity = {
+	name = "protoss_tal_01_orbital_station_assemblyyard_section_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+	
+	scale = 0.45
+}
+
+entity = {
+	name = "protoss_tal_01_orbital_station_hangarbay_section_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+	
+	scale = 0.45
+}
+
+entity = {
+	name = "protoss_tal_01_orbital_station_refinery_section_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+	
+	scale = 0.45
+}
+
+entity = {
+	name = "protoss_tal_01_orbital_station_science_section_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+	
+	scale = 0.45
+}
+
+
+
+
+
+entity = {
+	name = "protoss_tal_01_mining_station_entity"
+	pdxmesh = "protoss_tal_01_mining_mesh"
+	
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 1.0
+		
+}
+
+entity = {
+	name = "protoss_tal_01_research_station_entity"
+	pdxmesh = "protoss_tal_01_research_mesh"
+	
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 2.0
+		
+}
+
+entity = {
+	name = "protoss_tal_01_observation_station_entity"
+	pdxmesh = "protoss_tal_01_observestation_mesh"
+	
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 1.0
+		
+}
+
+entity = {
+	name = "protoss_tal_01_terraform_station_entity"
+	pdxmesh = "protoss_tal_01_terraform_mash"
+	
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 1.0
+		
+}
+
+entity = {
+	name = "protoss_tal_01_wormhole_station_entity"
+	pdxmesh = "protoss_tal_01_wormhole_mesh"
+	
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 1.0
+		
+}
+
+#	entity = {
+#		name = "protoss_tal_01_military_station_entity"
+#		locator = { name = "part1" 		position = { 0  0 	0 	} }
+#		scale = 17.0
+#	}
+
+entity = {
+	name = "protoss_tal_01_military_station_large_fallen_empire_entity"
+	pdxmesh = "protoss_tal_01_citadel_mesh"	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	
+	scale = 8
+}
+
+entity = {
+	name = "protoss_tal_01_military_station_small_fallen_empire_entity"
+	pdxmesh = ""
+	
+	locator = { name = "part1" 		position = { 0 	  0    0 } rotation = {	0	0	 0	}	}
+	locator = { name = "part2" 		position = { 0 	-2.0   0 } rotation = {	0	0	 0	}	}
+	locator = { name = "part3" 		position = { 0 	-2.0   0 } rotation = {	0	90	 60	}	}
+	locator = { name = "part4" 		position = { 0 	-2.0   0 } rotation = {	0	90	-60	}	}
+	locator = { name = "part5" 		position = { 0 	-2.0   0 } rotation = {	0	90	 180 }	}
+	locator = { name = "part6" 		position = { 0 	-2.0   0 } rotation = {	0	90	-120 }	}
+	locator = { name = "part7" 		position = { 0 	-2.0   0 } rotation = {	0	90	 120 }	}
+	locator = { name = "part8" 		position = { 0 	-2.0   0 } rotation = {	0	90	-180 }	}
+	
+	attach = { "part1" 		 		= "" }
+	attach = { "part2" 		 		= "protoss_tal_01_station_entity" }
+´
+
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 4.5
+		
+}
+
+entity = {
+	name = "protoss_tal_01_military_station_large_entity"
+	pdxmesh = "protoss_tal_01_outpost_mesh"	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	scale = 3
+}
+
+entity = {
+	name = "protoss_tal_01_military_station_medium_entity"
+	pdxmesh = "protoss_tal_01_turrets_mesh"
+	
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 1.35
+		
+}
+
+entity = {
+	name = "protoss_tal_01_military_station_small_entity"
+	pdxmesh = "protoss_tal_01_turrets_mesh"
+	
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 0.9
+		
+}
+
+entity = {
+	name = "protoss_tal_01_military_station_section_heavy_entity"
+	pdxmesh = ""	
+	scale = 0.045
+	
+	locator = { name = "large_gun_01" position = { 0 0 0 } }
+	locator = { name = "large_gun_02" position = { 0 0 0 } }
+	locator = {
+		name = "root"
+	}	
+}
+
+entity = {
+	name = "protoss_tal_01_military_station_section_medium_entity"
+	pdxmesh = ""	
+	scale = 0.045
+	locator = { name = "medium_gun_01" position = { 0 0 0 } }
+	locator = { name = "medium_gun_02" position = { 0 0 0 } }
+	locator = { name = "medium_gun_03" position = { 0 0 0 } }
+	locator = { name = "medium_gun_04" position = { 0 0 0 } }
+	locator = {
+		name = "root"
+	}	
+}
+
+entity = {
+	name = "protoss_tal_01_military_station_section_light_entity"
+	pdxmesh = ""	
+	scale = 0.045
+	locator = { name = "small_gun_01" position = { 0 0 0 } }
+	locator = { name = "small_gun_02" position = { 0 0 0 } }
+	locator = { name = "small_gun_03" position = { 0 0 0 } }
+	locator = { name = "small_gun_04" position = { 0 0 0 } }
+	locator = {
+		name = "root"
+	}
+}
+
+entity = {
+	name = "protoss_tal_01_outpost_station_entity"
+	pdxmesh = "protoss_tal_01_outpost_mesh"
+	
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 0.45
+		
+}
+
+entity = {
+	name = "protoss_tal_01_outpost_station_section_entity"
+	pdxmesh = "protoss_tal_01_outpost_mesh"
+	
+	locator = { name = "part1" 			position = { 0 0 0 } }
+
+	scale = 0.45
+		
+}
+
+##################         	 CONSTRUCTION ENTITIES           ########################
+
+entity = {
+	name = "protoss_tal_01_outpost_station_construction_entity"
+	pdxmesh = "protoss_tal_01_outpost_mesh"	
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	
+	scale = 0.5
+	
+}
+
+entity = {
+	name = "protoss_tal_01_military_station_large_construction_entity"
+	pdxmesh = "protoss_tal_01_turrets_mesh"	
+	
+	default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+		
+	scale = 0.5
+}
+
+entity = {
+	name = "protoss_tal_01_military_station_medium_construction_entity"
+	pdxmesh = "protoss_tal_01_turrets_mesh"	
+
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	
+	scale = 0.5
+
+entity = {
+	name = "protoss_tal_01_military_station_small_construction_entity"
+	pdxmesh = "protoss_tal_01_turrets_mesh"	
+	
+			default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	
+	
+	scale = 0.5
+}
+
+entity = {
+	name = "protoss_tal_01_orbital_station_construction_entity"
+	pdxmesh = "protoss_tal_01_station_mesh"	
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+}
+entity = {
+	name = "protoss_tal_01_mining_station_construction_entity"
+	pdxmesh = "protoss_tal_01_mining_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = 0.7
+}
+entity = {
+	name = "protoss_tal_01_research_station_construction_entity"
+	pdxmesh = "protoss_tal_01_research_mesh"
+		default_state = "idle"
+		state = { name = "idle" animation = idle
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = 0.6
+}
+entity = {
+	name = "protoss_tal_01_wormhole_station_construction_entity"
+	pdxmesh = "protoss_tal_01_wormhole_mesh"
+		default_state = "idle"
+		state = { name = "idle" animation = idle
+		event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = 0.6
+}
+entity = {
+	name = "protoss_tal_01_terraform_station_construction_entity"
+	pdxmesh = "protoss_tal_01_terraform_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = 0.7 
+}
+entity = {
+	name = "protoss_tal_01_observation_station_construction_entity"
+	pdxmesh = "protoss_tal_01_observestation_mesh"
+		default_state = "idle"
+		state = { name = "idle" animation = idle
+		event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = 0.6
+}

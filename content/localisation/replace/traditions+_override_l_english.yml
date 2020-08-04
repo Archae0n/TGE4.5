@@ -1,0 +1,12 @@
+﻿l_english:
+ ###Vanilla Override
+ TRADITIONS_FINISH_AP:0 ""
+ TRADITIONS_UNLOCKED:0 "We have unlocked $COUNT|Y$ out of §Y15§! Traditions in this tree. Pair §Y3§! Traditions with another §Y3§! to unlock an Ancension Perk."
+ TRADITION_ADOPTED_COUNT:0 "$COUNT$ / 15"
+ tr_diplomacy_the_federation:0 "The Federation"
+ tr_diplomacy_the_federation_desc:0 "$TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_FEDERATION_TITLE$\n§YFederation Naval Capacity Contribution§! increased by §G+100%§!."
+ tr_diplomacy_the_federation_delayed:0 "§EFederation Path§!\nWe will find those like-minded and construct something to stand the test of time. Together we are far stronger than we could ever hope to be alone."
+ TRADITION_COST_MULT_NUM_TR:0 ""
+ tr_prosperity_public_works:0 "Public Works Division"
+ tr_prosperity_public_works_desc:0 "£housing£ §YHousing§! from §YCity Districts§! increased by §G+1§!."
+ tr_prosperity_public_works_delayed:0 "§EMetropolis Path§!\nOur growing cities will be augmented by inspired public works on a scale never before seen."

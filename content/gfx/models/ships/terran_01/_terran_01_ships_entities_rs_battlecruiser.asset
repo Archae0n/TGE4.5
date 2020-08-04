@@ -1,0 +1,141 @@
+########################
+### RS BATTLECRUISER ###
+########################
+
+@cruiser_scale = 8.7
+
+#############
+### FRAME ###
+#############
+
+entity = {
+	name = "terran_01_rs_battlecruiser_entity"
+	pdxmesh = "terran_01_cruiser_frame_mesh"
+
+
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 0 } }
+
+	scale = 0.45
+	
+	game_data = {
+		size = @cruiser_scale
+		emissive_recolor_crunch = 4.0
+	}
+}
+
+###########
+### BOW ###
+###########
+
+entity = {
+	name = "terran_01_rs_battlecruiser_bow_L1_entity"
+	pdxmesh = "terran_01_empty_mesh"
+	
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_bow_XL1_entity"
+	pdxmesh = "terran_01_empty_mesh"
+	
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_bow_M1S2_entity"
+	pdxmesh = "terran_01_empty_mesh"
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_bow_M2_entity"
+	pdxmesh = "terran_01_empty_mesh"
+
+
+}
+
+############
+### MID1 ###
+############
+
+entity = {
+	name = "terran_01_rs_battlecruiser_mid1_S2HB_entity"
+	pdxmesh = "terran_01_strikecruiser_mesh"
+	
+	scale = 0.6
+	
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_mid1_L1M1_entity"
+	pdxmesh = "terran_01_strikecruiser_mesh"
+	
+	scale = 0.6
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_mid1_M3_entity"
+	pdxmesh = "terran_01_strikecruiser_mesh"
+	
+	scale = 0.6
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_mid1_M2S2_entity"
+	pdxmesh = "terran_01_strikecruiser_mesh"
+	
+	scale = 0.6
+
+}
+
+############
+### MID2 ###
+############
+
+entity = {
+	name = "terran_01_rs_battlecruiser_mid2_S2HB_entity"
+	pdxmesh = "terran_01_empty_mesh"
+	
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_mid2_L1M1_entity"
+	pdxmesh = "terran_01_empty_mesh"
+	
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_mid2_M3_entity"
+	pdxmesh = "terran_01_empty_mesh"
+	
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_mid2_M2S2_entity"
+	pdxmesh = "terran_01_empty_mesh"
+
+}
+
+#############
+### STERN ###
+#############
+
+entity = {
+	name = "terran_01_rs_battlecruiser_stern_M1_entity"
+	pdxmesh = "terran_01_empty_mesh"
+	
+
+}
+
+entity = {
+	name = "terran_01_rs_battlecruiser_stern_S2_entity"
+	pdxmesh = "terran_01_empty_mesh"
+	
+
+}

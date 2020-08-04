@@ -1,0 +1,44 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fe_01_ea_cruiser_mesh"
+		file = "gfx/models/ships/fe_01/fe_01_strikecruiser.mesh"
+		scale = 4.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+			}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "fe_01_rs_battlecruiser_mesh"
+		file = "gfx/models/ships/fe_01/fe_01_battlecruiser.mesh"
+		scale = 4.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+			}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "fe_01_rs_support_mesh"
+		file = "gfx/models/ships/fe_01/fe_01_lightcarrier.mesh"
+		scale = 4.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+			}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "fe_01_rs_heavy_dreadnought_type_fe_mesh"
+		file = "gfx/models/ships/fe_01/fe_01_flag.mesh"
+		scale = 6.7
+		meshsettings = {
+			shader = "PdxMeshShip"
+			}
+	}
+}
+

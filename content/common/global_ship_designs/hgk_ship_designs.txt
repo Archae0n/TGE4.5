@@ -1,0 +1,15 @@
+
+ship_design = {
+	name = "NAME_Clan_Colonizer"
+	ship_size = colonizer
+
+	section = {
+		template = "DEFAULT_COLONIZATION_SECTION"
+		slot = "mid"
+	}
+
+	required_component = "SENSOR_2"
+	required_component = "HYPER_DRIVE_2"
+	required_component = "SHIP_THRUSTER_3"
+	required_component = "CORVETTE_COLD_FUSION_REACTOR"
+}

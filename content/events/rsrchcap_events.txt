@@ -1,0 +1,7937 @@
+
+namespace = rsrchcap
+
+# Does everything needed on game start
+event = {
+	id = rsrchcap.1
+
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = rsrchcap_enabled	# Set global flag for mod
+
+		# Calculate mid-game start years
+		event_target:global_event_country = {
+			if = {
+				limit = {
+					mid_game_years_passed <= -1000
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 1000
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -995
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 995
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -990
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 990
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -985
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 985
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -980
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 980
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -975
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 975
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -970
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 970
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -965
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 965
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -960
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 960
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -955
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 955
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -950
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 950
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -945
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 945
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -940
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 940
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -935
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 935
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -930
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 930
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -925
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 925
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -920
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 920
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -915
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 915
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -910
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 910
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -905
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 905
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -900
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 900
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -895
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 895
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -890
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 890
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -885
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 885
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -880
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 880
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -875
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 875
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -870
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 870
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -865
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 865
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -860
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 860
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -855
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 855
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -850
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 850
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -845
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 845
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -840
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 840
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -835
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 835
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -830
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 830
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -825
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 825
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -820
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 820
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -815
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 815
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -810
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 810
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -805
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 805
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -800
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 800
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -795
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 795
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -790
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 790
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -785
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 785
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -780
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 780
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -775
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 775
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -770
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 770
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -765
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 765
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -760
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 760
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -755
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 755
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -750
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 750
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -745
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 745
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -740
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 740
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -735
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 735
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -730
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 730
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -725
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 725
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -720
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 720
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -715
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 715
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -710
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 710
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -705
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 705
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -700
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 700
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -695
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 695
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -690
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 690
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -685
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 685
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -680
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 680
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -675
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 675
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -670
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 670
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -665
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 665
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -660
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 660
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -655
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 655
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -650
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 650
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -645
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 645
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -640
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 640
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -635
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 635
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -630
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 630
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -625
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 625
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -620
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 620
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -615
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 615
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -610
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 610
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -605
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 605
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -600
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 600
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -595
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 595
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -590
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 590
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -585
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 585
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -580
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 580
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -575
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 575
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -570
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 570
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -565
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 565
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -560
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 560
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -555
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 555
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -550
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 550
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -545
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 545
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -540
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 540
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -535
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 535
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -530
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 530
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -525
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 525
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -520
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 520
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -515
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 515
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -510
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 510
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -505
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 505
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -500
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 500
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -495
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 495
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -490
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 490
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -485
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 485
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -480
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 480
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -475
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 475
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -470
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 470
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -465
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 465
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -460
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 460
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -455
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 455
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -450
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 450
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -445
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 445
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -440
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 440
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -435
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 435
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -430
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 430
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -425
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 425
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -420
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 420
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -415
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 415
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -410
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 410
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -405
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 405
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -400
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 400
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -395
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 395
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -390
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 390
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -385
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 385
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -380
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 380
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -375
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 375
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -370
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 370
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -365
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 365
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -360
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 360
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -355
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 355
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -350
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 350
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -345
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 345
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -340
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 340
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -335
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 335
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -330
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 330
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -325
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 325
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -320
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 320
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -315
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 315
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -310
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 310
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -305
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 305
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -300
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 300
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -295
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 295
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -290
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 290
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -285
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 285
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -280
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 280
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -275
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 275
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -270
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 270
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -265
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 265
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -260
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 260
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -255
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 255
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -250
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 250
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -245
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 245
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -240
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 240
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -235
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 235
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -230
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 230
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -225
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 225
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -220
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 220
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -215
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 215
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -210
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 210
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -205
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 205
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -200
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 200
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -195
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 195
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -190
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 190
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -185
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 185
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -180
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 180
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -175
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 175
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -170
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 170
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -165
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 165
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -160
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 160
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -155
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 155
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -150
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 150
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -145
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 145
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -140
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 140
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -135
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 135
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -130
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 130
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -125
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 125
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -120
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 120
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -115
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 115
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -110
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 110
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -105
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 105
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -100
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 100
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -95
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 95
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -90
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 90
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -85
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 85
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -80
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 80
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -75
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 75
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -70
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 70
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -65
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 65
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -60
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 60
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -55
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 55
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -50
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 50
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -45
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 45
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -40
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 40
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -35
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 35
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -30
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 30
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -25
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 25
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -20
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 20
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -15
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 15
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -10
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 10
+				}
+			}
+			else_if = {
+				limit = {
+					mid_game_years_passed <= -5
+				}
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 5
+				}
+			}
+			else = {
+				set_variable = {
+					which = rsrchcap_mid_game_start
+					value = 0
+				}
+			}
+		}
+
+		# Calculate end-game start years
+		event_target:global_event_country = {
+			if = {
+				limit = {
+					end_game_years_passed <= -2000
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 2000
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1995
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1995
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1990
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1990
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1985
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1985
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1980
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1980
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1975
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1975
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1970
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1970
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1965
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1965
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1960
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1960
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1955
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1955
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1950
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1950
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1945
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1945
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1940
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1940
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1935
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1935
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1930
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1930
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1925
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1925
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1920
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1920
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1915
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1915
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1910
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1910
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1905
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1905
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1900
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1900
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1895
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1895
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1890
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1890
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1885
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1885
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1880
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1880
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1875
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1875
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1870
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1870
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1865
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1865
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1860
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1860
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1855
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1855
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1850
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1850
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1845
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1845
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1840
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1840
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1835
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1835
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1830
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1830
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1825
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1825
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1820
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1820
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1815
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1815
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1810
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1810
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1805
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1805
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1800
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1800
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1795
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1795
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1790
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1790
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1785
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1785
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1780
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1780
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1775
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1775
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1770
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1770
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1765
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1765
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1760
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1760
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1755
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1755
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1750
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1750
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1745
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1745
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1740
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1740
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1735
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1735
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1730
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1730
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1725
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1725
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1720
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1720
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1715
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1715
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1710
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1710
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1705
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1705
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1700
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1700
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1695
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1695
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1690
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1690
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1685
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1685
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1680
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1680
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1675
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1675
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1670
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1670
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1665
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1665
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1660
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1660
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1655
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1655
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1650
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1650
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1645
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1645
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1640
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1640
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1635
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1635
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1630
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1630
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1625
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1625
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1620
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1620
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1615
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1615
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1610
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1610
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1605
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1605
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1600
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1600
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1595
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1595
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1590
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1590
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1585
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1585
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1580
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1580
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1575
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1575
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1570
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1570
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1565
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1565
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1560
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1560
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1555
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1555
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1550
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1550
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1545
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1545
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1540
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1540
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1535
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1535
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1530
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1530
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1525
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1525
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1520
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1520
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1515
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1515
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1510
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1510
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1505
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1505
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1500
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1500
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1495
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1495
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1490
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1490
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1485
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1485
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1480
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1480
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1475
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1475
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1470
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1470
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1465
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1465
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1460
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1460
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1455
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1455
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1450
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1450
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1445
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1445
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1440
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1440
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1435
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1435
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1430
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1430
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1425
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1425
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1420
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1420
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1415
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1415
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1410
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1410
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1405
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1405
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1400
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1400
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1395
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1395
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1390
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1390
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1385
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1385
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1380
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1380
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1375
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1375
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1370
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1370
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1365
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1365
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1360
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1360
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1355
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1355
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1350
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1350
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1345
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1345
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1340
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1340
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1335
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1335
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1330
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1330
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1325
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1325
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1320
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1320
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1315
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1315
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1310
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1310
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1305
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1305
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1300
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1300
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1295
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1295
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1290
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1290
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1285
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1285
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1280
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1280
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1275
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1275
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1270
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1270
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1265
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1265
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1260
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1260
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1255
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1255
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1250
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1250
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1245
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1245
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1240
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1240
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1235
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1235
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1230
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1230
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1225
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1225
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1220
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1220
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1215
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1215
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1210
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1210
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1205
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1205
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1200
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1200
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1195
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1195
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1190
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1190
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1185
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1185
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1180
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1180
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1175
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1175
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1170
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1170
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1165
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1165
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1160
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1160
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1155
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1155
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1150
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1150
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1145
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1145
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1140
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1140
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1135
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1135
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1130
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1130
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1125
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1125
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1120
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1120
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1115
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1115
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1110
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1110
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1105
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1105
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1100
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1100
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1095
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1095
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1090
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1090
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1085
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1085
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1080
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1080
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1075
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1075
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1070
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1070
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1065
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1065
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1060
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1060
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1055
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1055
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1050
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1050
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1045
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1045
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1040
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1040
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1035
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1035
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1030
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1030
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1025
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1025
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1020
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1020
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1015
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1015
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1010
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1010
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -1005
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1005
+				}
+			}
+			if = {
+				limit = {
+					end_game_years_passed <= -1000
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 1000
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -995
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 995
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -990
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 990
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -985
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 985
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -980
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 980
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -975
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 975
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -970
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 970
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -965
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 965
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -960
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 960
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -955
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 955
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -950
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 950
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -945
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 945
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -940
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 940
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -935
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 935
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -930
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 930
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -925
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 925
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -920
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 920
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -915
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 915
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -910
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 910
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -905
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 905
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -900
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 900
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -895
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 895
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -890
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 890
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -885
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 885
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -880
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 880
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -875
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 875
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -870
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 870
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -865
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 865
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -860
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 860
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -855
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 855
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -850
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 850
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -845
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 845
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -840
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 840
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -835
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 835
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -830
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 830
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -825
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 825
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -820
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 820
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -815
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 815
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -810
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 810
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -805
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 805
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -800
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 800
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -795
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 795
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -790
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 790
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -785
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 785
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -780
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 780
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -775
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 775
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -770
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 770
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -765
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 765
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -760
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 760
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -755
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 755
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -750
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 750
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -745
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 745
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -740
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 740
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -735
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 735
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -730
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 730
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -725
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 725
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -720
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 720
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -715
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 715
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -710
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 710
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -705
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 705
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -700
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 700
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -695
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 695
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -690
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 690
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -685
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 685
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -680
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 680
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -675
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 675
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -670
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 670
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -665
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 665
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -660
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 660
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -655
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 655
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -650
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 650
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -645
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 645
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -640
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 640
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -635
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 635
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -630
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 630
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -625
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 625
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -620
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 620
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -615
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 615
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -610
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 610
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -605
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 605
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -600
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 600
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -595
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 595
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -590
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 590
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -585
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 585
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -580
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 580
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -575
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 575
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -570
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 570
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -565
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 565
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -560
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 560
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -555
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 555
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -550
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 550
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -545
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 545
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -540
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 540
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -535
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 535
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -530
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 530
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -525
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 525
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -520
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 520
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -515
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 515
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -510
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 510
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -505
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 505
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -500
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 500
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -495
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 495
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -490
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 490
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -485
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 485
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -480
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 480
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -475
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 475
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -470
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 470
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -465
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 465
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -460
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 460
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -455
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 455
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -450
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 450
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -445
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 445
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -440
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 440
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -435
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 435
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -430
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 430
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -425
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 425
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -420
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 420
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -415
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 415
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -410
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 410
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -405
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 405
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -400
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 400
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -395
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 395
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -390
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 390
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -385
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 385
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -380
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 380
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -375
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 375
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -370
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 370
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -365
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 365
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -360
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 360
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -355
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 355
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -350
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 350
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -345
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 345
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -340
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 340
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -335
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 335
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -330
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 330
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -325
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 325
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -320
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 320
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -315
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 315
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -310
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 310
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -305
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 305
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -300
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 300
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -295
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 295
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -290
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 290
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -285
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 285
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -280
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 280
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -275
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 275
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -270
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 270
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -265
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 265
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -260
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 260
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -255
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 255
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -250
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 250
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -245
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 245
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -240
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 240
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -235
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 235
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -230
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 230
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -225
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 225
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -220
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 220
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -215
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 215
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -210
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 210
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -205
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 205
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -200
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 200
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -195
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 195
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -190
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 190
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -185
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 185
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -180
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 180
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -175
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 175
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -170
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 170
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -165
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 165
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -160
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 160
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -155
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 155
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -150
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 150
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -145
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 145
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -140
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 140
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -135
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 135
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -130
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 130
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -125
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 125
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -120
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 120
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -115
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 115
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -110
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 110
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -105
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 105
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -100
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 100
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -95
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 95
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -90
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 90
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -85
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 85
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -80
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 80
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -75
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 75
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -70
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 70
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -65
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 65
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -60
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 60
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -55
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 55
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -50
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 50
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -45
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 45
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -40
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 40
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -35
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 35
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -30
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 30
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -25
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 25
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -20
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 20
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -15
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 15
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -10
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 10
+				}
+			}
+			else_if = {
+				limit = {
+					end_game_years_passed <= -5
+				}
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 5
+				}
+			}
+			else = {
+				set_variable = {
+					which = rsrchcap_end_game_start
+					value = 0
+				}
+			}
+		}
+
+		# Calculate early-, late-mid-, and late-end-game start years
+		event_target:global_event_country = {
+			set_variable = {
+				which = rsrchcap_late_early_game_start
+				value = rsrchcap_mid_game_start
+			}
+			divide_variable = {
+				which = rsrchcap_late_early_game_start
+				value = 2
+			}
+
+			set_variable = {
+				which = rsrchcap_late_mid_game_start
+				value = rsrchcap_mid_game_start
+			}
+			change_variable = {
+				which = rsrchcap_late_mid_game_start
+				value = rsrchcap_end_game_start
+			}
+			divide_variable = {
+				which = rsrchcap_late_mid_game_start
+				value = 2
+			}
+
+			set_variable = {
+				which = rsrchcap_late_end_game_start
+				value = rsrchcap_mid_game_start
+			}
+			change_variable = {
+				which = rsrchcap_late_end_game_start
+				value = rsrchcap_end_game_start
+			}
+			divide_variable = {
+				which = rsrchcap_late_end_game_start
+				value = 2
+			}
+			subtract_variable = {
+				which = rsrchcap_late_end_game_start
+				value = rsrchcap_mid_game_start
+			}
+			change_variable = {
+				which = rsrchcap_late_end_game_start
+				value = rsrchcap_end_game_start
+			}
+		}
+
+		# Create the comparison countries and save them as global event targets
+		event_target:global_event_country = {
+			create_country = {
+				name = "rsrchcap_compare_country_t1 "
+				type = rsrchcap_compare_country_t1
+				effect = {
+					save_global_event_target_as = rsrchcap_compare_country_t1
+				}
+			}
+			create_country = {
+				name = "rsrchcap_compare_country_t2 "
+				type = rsrchcap_compare_country_t2
+				effect = {
+					save_global_event_target_as = rsrchcap_compare_country_t2
+				}
+			}
+			create_country = {
+				name = "rsrchcap_compare_country_t3 "
+				type = rsrchcap_compare_country_t3
+				effect = {
+					save_global_event_target_as = rsrchcap_compare_country_t3
+				}
+			}
+			create_country = {
+				name = "rsrchcap_compare_country_t4 "
+				type = rsrchcap_compare_country_t4
+				effect = {
+					save_global_event_target_as = rsrchcap_compare_country_t4
+				}
+			}
+			create_country = {
+				name = "rsrchcap_compare_country_t5 "
+				type = rsrchcap_compare_country_t5
+				effect = {
+					save_global_event_target_as = rsrchcap_compare_country_t5
+				}
+			}
+			create_country = {
+				name = "rsrchcap_compare_country_t6 "
+				type = rsrchcap_compare_country_t6
+				effect = {
+					save_global_event_target_as = rsrchcap_compare_country_t6
+				}
+			}
+		}
+
+		# Set t1 as the compare country
+		event_target:rsrchcap_compare_country_t1 = {
+			save_global_event_target_as = rsrchcap_compare_country
+		}
+
+		create_country = {
+			name = "rsrchcap_tech_cost_test_country "
+			type = rsrchcap_tech_cost_test_country
+			effect = {
+				add_modifier = { modifier = rsrchcap_test_technology_researching days = 29 }
+				add_research_option = rsrchcap_tech_cost_test
+				country_event = { id = rsrchcap.21 days = 29 }
+				country_event = { id = rsrchcap.20 days = 2 }
+			}
+		}
+	}
+}
+
+# Change the comparison country to t2 at early-game start
+event = {
+	id = rsrchcap.2
+
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+
+	trigger = {
+		event_target:global_event_country = {
+			OR = {
+				AND = {
+					event_target:rsrchcap_compare_country = { is_same_value = event_target:rsrchcap_compare_country_t1 }
+					check_variable = {
+						which = rsrchcap_average_tech_ratio
+						value >= 1.5
+					}
+				}
+				check_variable = {
+					which = rsrchcap_late_early_game_start
+					value <= 0
+				}
+			}
+		}
+	}
+
+	immediate = {
+		clear_global_event_target = rsrchcap_compare_country
+		event_target:rsrchcap_compare_country_t2 = {
+			save_global_event_target_as = rsrchcap_compare_country
+			country_event = { id = rsrchcap.11 }
+		}
+	}
+}
+
+# Change the comparison country to t3 at mid-game start
+event = {
+	id = rsrchcap.3
+
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+
+	trigger = {
+		event_target:global_event_country = {
+			OR = {
+				AND = {
+					event_target:rsrchcap_compare_country = { is_same_value = event_target:rsrchcap_compare_country_t2 }
+					check_variable = {
+						which = rsrchcap_average_tech_ratio
+						value >= 1.5
+					}
+				}
+				check_variable = {
+					which = rsrchcap_mid_game_start
+					value <= 0
+				}
+			}
+		}
+	}
+
+	immediate = {
+		clear_global_event_target = rsrchcap_compare_country
+		event_target:rsrchcap_compare_country_t3 = {
+			save_global_event_target_as = rsrchcap_compare_country
+			country_event = { id = rsrchcap.11 }
+		}
+	}
+}
+
+# Change the comparison country to t4 at late-mid-game start (curently unused)
+event = {
+	id = rsrchcap.4
+
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+
+	trigger = {
+		always = no
+		event_target:global_event_country = {
+			OR = {
+				AND = {
+					event_target:rsrchcap_compare_country = { is_same_value = event_target:rsrchcap_compare_country_t3 }
+					check_variable = {
+						which = rsrchcap_average_tech_ratio
+						value >= 1.5
+					}
+				}
+				check_variable = {
+					which = rsrchcap_late_mid_game_start
+					value <= 0
+				}
+			}
+		}
+	}
+
+	immediate = {
+		clear_global_event_target = rsrchcap_compare_country
+		event_target:rsrchcap_compare_country_t4 = {
+			save_global_event_target_as = rsrchcap_compare_country
+			country_event = { id = rsrchcap.11 }
+		}
+	}
+}
+
+# Change the comparison country to t5 at end-game start (currently unused)
+event = {
+	id = rsrchcap.5
+
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+
+	trigger = {
+		always = no
+		event_target:global_event_country = {
+			OR = {
+				AND = {
+					event_target:rsrchcap_compare_country = { is_same_value = event_target:rsrchcap_compare_country_t4 }
+					check_variable = {
+						which = rsrchcap_average_tech_ratio
+						value >= 1.5
+					}
+				}
+				check_variable = {
+					which = rsrchcap_end_game_start
+					value <= 0
+				}
+			}
+		}
+	}
+
+	immediate = {
+		clear_global_event_target = rsrchcap_compare_country
+		event_target:rsrchcap_compare_country_t5 = {
+			save_global_event_target_as = rsrchcap_compare_country
+			country_event = { id = rsrchcap.11 }
+		}
+	}
+}
+
+# Change the comparison country to t6 at late-end-game start (currently unused)
+event = {
+	id = rsrchcap.6
+
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+
+	trigger = {
+		always = no
+		event_target:global_event_country = {
+			OR = {
+				AND = {
+					event_target:rsrchcap_compare_country = { is_same_value = event_target:rsrchcap_compare_country_t5 }
+					check_variable = {
+						which = rsrchcap_average_tech_ratio
+						value >= 1.5
+					}
+				}
+				check_variable = {
+					which = rsrchcap_late_end_game_start
+					value <= 0
+				}
+			}
+		}
+	}
+
+	immediate = {
+		clear_global_event_target = rsrchcap_compare_country
+		event_target:rsrchcap_compare_country_t6 = {
+			save_global_event_target_as = rsrchcap_compare_country
+			country_event = { id = rsrchcap.11 }
+		}
+	}
+}
+
+# Change the years remaining until each stage (must be run before the change comparison country events)
+event = {
+	id = rsrchcap.10
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_global_flag = rsrchcap_tech_cost_check
+	}
+
+	immediate = {
+		event_target:global_event_country = {
+			subtract_variable = {
+				which = rsrchcap_late_early_game_start
+				value = 1
+			}
+			subtract_variable = {
+				which = rsrchcap_mid_game_start
+				value = 1
+			}
+			subtract_variable = {
+				which = rsrchcap_late_mid_game_start
+				value = 1
+			}
+			subtract_variable = {
+				which = rsrchcap_end_game_start
+				value = 1
+			}
+			subtract_variable = {
+				which = rsrchcap_late_end_game_start
+				value = 1
+			}
+		}
+	}
+}
+
+# Compare country tech levels and update modifier
+event = {
+	id = rsrchcap.11
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		# Reset variables
+		event_target:global_event_country = {
+			set_variable = {
+				which = rsrchcap_average_tech_ratio
+				value = 0
+			}
+			set_variable = {
+				which = rsrchcap_country_count
+				value = 0
+			}
+		}
+
+		every_playable_country = {
+			rsrchcap_calculate_tech_ratio = yes
+
+			event_target:global_event_country = {
+				change_variable = {
+					which = rsrchcap_country_count
+					value = 1
+				}
+			}
+		}
+
+		event_target:global_event_country = {
+			divide_variable = {
+				which = rsrchcap_average_tech_ratio
+				value = rsrchcap_country_count
+			}
+
+			change_variable = {
+				which = rsrchcap_average_tech_ratio
+				value = 0.005
+			}
+			divide_variable = {
+				which = rsrchcap_average_tech_ratio
+				value = 1000
+			}
+			multiply_variable = {
+				which = rsrchcap_average_tech_ratio
+				value = 1000
+			}
+		}
+
+		every_playable_country = {
+			set_variable = {
+				which = rsrchcap_average_tech_ratio
+				value = event_target:global_event_country
+			}
+			set_variable = {
+				which = rsrchcap_relative_tech_ratio
+				value = rsrchcap_tech_ratio
+			}
+			subtract_variable = {
+				which = rsrchcap_relative_tech_ratio
+				value = rsrchcap_average_tech_ratio
+			}
+			change_variable = {
+				which = rsrchcap_relative_tech_ratio
+				value = 1.00
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						which = rsrchcap_relative_tech_ratio
+						value > 1.00
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value >= 2.00
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_200 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.99
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_199 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.98
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_198 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.97
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_197 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.96
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_196 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.95
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_195 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.94
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_194 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.93
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_193 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.92
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_192 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.91
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_191 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.90
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_190 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.89
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_189 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.88
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_188 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.87
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_187 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.86
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_186 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.85
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_185 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.84
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_184 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.83
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_183 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.82
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_182 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.81
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_181 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.80
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_180 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.79
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_179 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.78
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_178 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.77
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_177 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.76
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_176 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.75
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_175 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.74
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_174 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.73
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_173 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.72
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_172 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.71
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_171 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.70
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_170 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.69
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_169 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.68
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_168 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.67
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_167 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.66
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_166 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.65
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_165 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.64
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_164 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.63
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_163 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.62
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_162 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.61
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_161 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.60
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_160 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.59
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_159 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.58
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_158 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.57
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_157 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.56
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_156 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.55
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_155 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.54
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_154 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.53
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_153 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.52
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_152 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.51
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_151 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.50
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_150 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.49
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_149 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.48
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_148 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.47
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_147 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.46
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_146 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.45
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_145 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.44
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_144 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.43
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_143 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.42
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_142 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.41
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_141 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.40
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_140 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.39
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_139 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.38
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_138 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.37
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_137 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.36
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_136 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.35
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_135 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.34
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_134 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.33
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_133 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.32
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_132 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.31
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_131 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.30
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_130 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.29
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_129 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.28
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_128 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.27
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_127 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.26
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_126 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.25
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_125 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.24
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_124 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.23
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_123 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.22
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_122 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.21
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_121 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.20
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_120 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.19
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_119 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.18
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_118 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.17
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_117 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.16
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_116 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.15
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_115 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.14
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_114 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.13
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_113 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.12
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_112 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.11
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_111 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.10
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_110 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.09
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_109 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.08
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_108 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.07
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_107 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.06
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_106 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.05
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_105 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.04
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_104 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.03
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_103 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.02
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_102 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 1.01
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_101 days = 360 }
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable = {
+						which = rsrchcap_relative_tech_ratio
+						value < 1.00
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.99
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_099 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.98
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_098 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.97
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_097 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.96
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_096 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.95
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_095 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.94
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_094 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.93
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_093 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.92
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_092 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.91
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_091 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.90
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_090 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.89
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_089 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.88
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_088 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.87
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_087 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.86
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_086 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.85
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_085 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.84
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_084 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.83
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_083 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.82
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_082 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.81
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_081 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.80
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_080 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.79
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_079 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.78
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_078 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.77
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_077 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.76
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_076 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.75
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_075 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.74
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_074 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.73
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_073 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.72
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_072 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.71
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_071 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.70
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_070 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.69
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_069 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.68
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_068 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.67
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_067 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.66
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_066 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.65
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_065 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.64
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_064 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.63
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_063 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.62
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_062 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.61
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_061 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.60
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_060 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.59
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_059 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.58
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_058 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.57
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_057 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.56
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_056 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.55
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_055 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.54
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_054 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.53
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_053 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.52
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_052 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.51
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_051 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.50
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_050 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.49
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_049 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.48
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_048 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.47
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_047 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.46
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_046 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.45
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_045 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.44
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_044 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.43
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_043 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.42
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_042 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.41
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_041 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.40
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_040 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.39
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_039 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.38
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_038 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.37
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_037 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.36
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_036 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.35
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_035 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.34
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_034 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.33
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_033 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.32
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_032 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.31
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_031 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.30
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_030 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.29
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_029 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.28
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_028 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.27
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_027 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.26
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_026 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.25
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_025 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.24
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_024 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.23
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_023 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.22
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_022 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.21
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_021 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.20
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_020 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.19
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_019 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.18
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_018 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.17
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_017 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.16
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_016 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.15
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_015 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.14
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_014 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.13
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_013 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.12
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_012 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.11
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_011 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.10
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_010 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.09
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_009 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.08
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_008 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.07
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_007 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.06
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_006 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.05
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_005 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.04
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_004 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.03
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_003 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.02
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_002 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value = 0.01
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_001 days = 360 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = rsrchcap_relative_tech_ratio
+							value <= 0.00
+						}
+					}
+					add_modifier = { modifier = rsrchcap_modifier_000 days = 360 }
+				}
+			}
+
+			else = {
+				add_modifier = { modifier = rsrchcap_modifier_100 days = 360 }
+			}
+		}
+	}
+}
+
+# Calculate the tech cost
+country_event = {
+	id = rsrchcap.20
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_country_type = rsrchcap_tech_cost_test_country
+		NOT = { has_global_flag = rsrchcap_tech_cost_check }
+	}
+
+	immediate = {
+		change_variable = {
+			which = rsrchcap_months_passed
+			value = 1
+		}
+		if = {
+			limit = {
+				OR = {
+					is_researching_technology = rsrchcap_tech_cost_test
+					has_technology = rsrchcap_tech_cost_test
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = rsrchcap_tech_cost_not_researching
+				}
+				change_variable = {
+					which = rsrchcap_tech_cost
+					value = -0.25
+				}
+				remove_country_flag = rsrchcap_tech_cost_not_researching
+			}
+			change_variable = {
+				which = rsrchcap_tech_cost
+				value = 0.25
+			}
+			log = "Researching Tech ([this.rsrchcap_tech_cost])"
+
+			if = {
+				limit = {
+					has_technology = rsrchcap_tech_cost_test
+				}
+				event_target:global_event_country = {
+					set_variable = {
+						which = rsrchcap_tech_cost
+						value = root
+					}
+					set_variable = {
+						which = rsrchcap_months_passed
+						value = root
+					}
+					if = {
+						limit = {
+							has_global_flag = rsrchcap_scale_tech_cost
+						}
+						multiply_variable = {
+							which = rsrchcap_late_early_game_start
+							value = rsrchcap_tech_cost
+						}
+						multiply_variable = {
+							which = rsrchcap_mid_game_start
+							value = rsrchcap_tech_cost
+						}
+						multiply_variable = {
+							which = rsrchcap_late_mid_game_start
+							value = rsrchcap_tech_cost
+						}
+						multiply_variable = {
+							which = rsrchcap_end_game_start
+							value = rsrchcap_tech_cost
+						}
+						multiply_variable = {
+							which = rsrchcap_late_end_game_start
+							value = rsrchcap_tech_cost
+						}
+					}
+					divide_variable = {
+						which = rsrchcap_months_passed
+						value = 12
+					}
+					divide_variable = {
+						which = rsrchcap_months_passed
+						value = 100000
+					}
+					multiply_variable = {
+						which = rsrchcap_months_passed
+						value = 100000
+					}
+					subtract_variable = {
+						which = rsrchcap_late_early_game_start
+						value = rsrchcap_months_passed
+					}
+					subtract_variable = {
+						which = rsrchcap_mid_game_start
+						value = rsrchcap_months_passed
+					}
+					subtract_variable = {
+						which = rsrchcap_late_mid_game_start
+						value = rsrchcap_months_passed
+					}
+					subtract_variable = {
+						which = rsrchcap_end_game_start
+						value = rsrchcap_months_passed
+					}
+					subtract_variable = {
+						which = rsrchcap_late_end_game_start
+						value = rsrchcap_months_passed
+					}
+					change_variable = {
+						which = rsrchcap_late_early_game_start
+						value = 0.5
+					}
+					change_variable = {
+						which = rsrchcap_mid_game_start
+						value = 0.5
+					}
+					change_variable = {
+						which = rsrchcap_late_mid_game_start
+						value = 0.5
+					}
+					change_variable = {
+						which = rsrchcap_end_game_start
+						value = 0.5
+					}
+					change_variable = {
+						which = rsrchcap_late_end_game_start
+						value = 0.5
+					}
+					divide_variable = {
+						which = rsrchcap_late_early_game_start
+						value = 10000
+					}
+					divide_variable = {
+						which = rsrchcap_mid_game_start
+						value = 10000
+					}
+					divide_variable = {
+						which = rsrchcap_late_mid_game_start
+						value = 10000
+					}
+					divide_variable = {
+						which = rsrchcap_end_game_start
+						value = 10000
+					}
+					divide_variable = {
+						which = rsrchcap_late_end_game_start
+						value = 10000
+					}
+					multiply_variable = {
+						which = rsrchcap_late_early_game_start
+						value = 10000
+					}
+					multiply_variable = {
+						which = rsrchcap_mid_game_start
+						value = 10000
+					}
+					multiply_variable = {
+						which = rsrchcap_late_mid_game_start
+						value = 10000
+					}
+					multiply_variable = {
+						which = rsrchcap_end_game_start
+						value = 10000
+					}
+					multiply_variable = {
+						which = rsrchcap_late_end_game_start
+						value = 10000
+					}
+					set_global_flag = rsrchcap_tech_cost_check
+					log = "Tech Cost Found: [This.rsrchcap_tech_cost]"
+					break = yes
+				}
+			}
+		}
+		else = {
+			set_country_flag = rsrchcap_tech_cost_not_researching
+		}
+		country_event = { id = rsrchcap.20 days = 30 }
+	}
+}
+
+country_event = {
+	id = rsrchcap.21
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_country_type = rsrchcap_tech_cost_test_country
+		NOT = { has_technology = rsrchcap_tech_cost_test }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				is_researching_technology = rsrchcap_tech_cost_test
+			}
+			add_modifier = { modifier = rsrchcap_test_technology_researching days = 30 }
+		}
+		else = {
+			add_modifier = { modifier = rsrchcap_test_technology_not_researching days = 30 }
+		}
+		if = {
+			limit = {
+				has_technology = tech_administrative_ai
+			}
+			add_modifier = { modifier = rsrchcap_test_technology_tech_administrative_ai }
+		}
+		if = {
+			limit = {
+				has_technology = tech_sapient_ai
+			}
+			add_modifier = { modifier = rsrchcap_test_technology_tech_sapient_ai }
+		}
+		if = {
+			limit = {
+				has_technology = tech_positronic_implants
+			}
+			add_modifier = { modifier = rsrchcap_test_technology_tech_positronic_implants }
+		}
+		country_event = { id = rsrchcap.21 days = 30 }
+	}
+}
+
+event = {
+	id = rsrchcap.100
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				any_country = { is_ai = no }
+			}
+			every_country = {
+				limit = { is_ai = no }
+				country_event = { id = rsrchcap.101 }
+				break = yes
+			}
+		}
+		else = {
+			every_country = {
+				country_event = { id = rsrchcap.101 }
+				break = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rsrchcap.101
+
+	title = rsrchcap.101.name
+	desc = rsrchcap.101.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	force_open = yes
+
+	abort_trigger = {
+		any_country = {
+			is_country_type = rsrchcap_tech_cost_test_country
+			has_technology = rsrchcap_tech_cost_test
+		}
+	}
+
+	abort_effect = {
+		hidden_effect = { remove_global_flag = rsrchcap_scale_tech_cost }
+	}
+
+	option = {
+		name = NO
+		hidden_effect = { remove_global_flag = rsrchcap_scale_tech_cost }
+	}
+
+	option = {
+		name = YES
+		hidden_effect = { set_global_flag = rsrchcap_scale_tech_cost }
+	}
+}

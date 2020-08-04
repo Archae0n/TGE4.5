@@ -1,0 +1,213 @@
+
+# Hyper Shields
+utility_component_template = {
+	key = "SMALL_SHIELD_5"
+	size = small
+	icon = "GFX_ship_part_shield_5"
+	icon_frame = 1
+	power = @power_S5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t5_cost
+			exotic_gases = 0.333
+		}
+		upkeep = {
+			energy = @shield_s_t5_upkeep_energy
+			alloys = @shield_s_t5_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S5
+		ship_shield_regen_add_static = @regen_S5 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_5" }
+	upgrades_to = "C_SMALL_SHIELD_6"
+	component_set = "SHIELD_5"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}
+}
+utility_component_template = {
+	key = "MEDIUM_SHIELD_5"
+	size = medium
+	icon = "GFX_ship_part_shield_5"
+	icon_frame = 1
+	power = @power_M5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t5_cost
+			exotic_gases = 0.666
+		}
+		upkeep = {
+			energy = @shield_m_t5_upkeep_energy
+			alloys = @shield_m_t5_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M5
+		ship_shield_regen_add_static = @regen_M5 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_5" }
+	upgrades_to = "C_MEDIUM_SHIELD_6"
+	component_set = "SHIELD_5"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}
+}
+utility_component_template = {
+	key = "LARGE_SHIELD_5"
+	size = large
+	icon = "GFX_ship_part_shield_5"
+	icon_frame = 1
+	power = @power_L5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t5_cost
+			exotic_gases = 1.333
+		}
+		upkeep = {
+			energy = @shield_l_t5_upkeep_energy
+			alloys = @shield_l_t5_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L5
+		ship_shield_regen_add_static = @regen_L5 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_5" }
+	upgrades_to = "C_LARGE_SHIELD_6"
+	component_set = "SHIELD_5"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}
+}
+
+####################
+# Psionic Shields
+####################
+
+utility_component_template = {
+	key = "SMALL_PSI_SHIELD"
+	size = small
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = @power_S7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t7_cost
+			sr_zro = 0.111
+		}
+		upkeep = {
+			energy = @shield_s_t7_upkeep_energy
+			alloys = @shield_s_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S7
+		ship_shield_regen_add_static = @regen_S7 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "PSI_SHIELD"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_zro value <= 0 }
+		}
+	}
+	upgrades_to = "C_SMALL_SHIELD_11"
+}
+
+utility_component_template = {
+	key = "MEDIUM_PSI_SHIELD"
+	size = medium
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = @power_M7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t7_cost
+			sr_zro = 0.222
+		}
+		upkeep = {
+			energy = @shield_m_t7_upkeep_energy
+			alloys = @shield_m_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M7
+		ship_shield_regen_add_static = @regen_M7 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "PSI_SHIELD"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_zro value <= 0 }
+		}
+	}
+	upgrades_to = "C_MEDIUM_SHIELD_11"
+}
+
+utility_component_template = {
+	key = "LARGE_PSI_SHIELD"
+	size = large
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = @power_L7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t7_cost
+			sr_zro = 0.333
+		}
+		upkeep = {
+			energy = @shield_l_t7_upkeep_energy
+			alloys = @shield_l_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L7
+		ship_shield_regen_add_static = @regen_L7 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "PSI_SHIELD"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_zro value <= 0 }
+		}
+	}
+	upgrades_to = "C_LARGE_SHIELD_11"
+}

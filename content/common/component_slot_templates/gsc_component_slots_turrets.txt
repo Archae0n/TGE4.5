@@ -1,0 +1,21 @@
+
+
+gsc_small_turret = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "small_kinetic_gun_entity"
+		weapon_type_energy =  "small_laser_gun_entity"
+	}
+}
+
+gsc_medium_turret = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "medium_kinetic_gun_entity"
+		weapon_type_energy =  "medium_laser_gun_entity"
+		weapon_type_explosive = "turret_missile_medium_entity" # Failsafe for saved "invalid designs"
+	}
+}
+

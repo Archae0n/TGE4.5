@@ -1,0 +1,326 @@
+namespace = trp_setup_event
+
+event = {
+	id = trp_setup_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ia_setup_event.1.a
+		add_tradition = trp_diplomacy_adopt
+		add_tradition = trp_supremacy_adopt
+		add_tradition = trp_expansion_adopt
+		add_tradition = trp_production_adopt
+		add_tradition = trp_discovery_adopt
+		add_tradition = trp_commerce_adopt
+		add_tradition = trp_prosperity_adopt
+	}
+}
+country_event = { ##Ascension Perk System
+	id = trp_setup_event.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ia_setup_event.2.a
+		trigger = {
+			AND = {
+				has_country_flag = trp_ascension_perk_ready
+				num_ascension_perks < 7
+			}
+		}
+		give_technology = { tech = repeatable_tech_trp_ap_1 message = no }
+		remove_country_flag = trp_ascension_perk_ready
+	}
+	option = {
+		name = ia_setup_event.2.b
+		trigger = {
+			NOT = { has_country_flag = trp_ascension_perk_ready }
+		}
+		set_country_flag = trp_ascension_perk_ready
+	}
+}
+country_event = { ##Engineering Choice
+	id = trp_setup_event.3
+	hide_window = no
+	is_triggered_only = yes
+	title = "trp_setup.3.name"
+	desc = "trp_setup.3.desc"
+	picture = GFX_evt_engineering_research
+	show_sound = event_ship_thrusters
+	
+	#fire_only_once = yes
+	
+	option = { ##Materials
+		name = trp_setup_event.3.a
+		set_country_flag = trp_engineering_c_materials
+		custom_tooltip = "trp_engineering_c_materials_tt"
+	}
+	option = { ##Voidcraft
+		name = trp_setup_event.3.b
+		set_country_flag = trp_engineering_c_voidcraft
+		custom_tooltip = "trp_engineering_c_voidcraft_tt"
+	}
+	option = { ##Propulsion
+		name = trp_setup_event.3.c
+		set_country_flag = trp_engineering_c_propulsion
+		custom_tooltip = "trp_engineering_c_propulsion_tt"
+	}
+}
+country_event = { ##Physics Choice
+	id = trp_setup_event.4
+	hide_window = no
+	is_triggered_only = yes
+	title = "trp_setup.4.name"
+	desc = "trp_setup.4.desc"
+	picture = GFX_evt_black_hole
+	show_sound = event_laboratory_sound
+	
+	#fire_only_once = yes
+	
+	option = { ##Computing
+		name = trp_setup_event.4.a
+		set_country_flag = trp_physics_c_computing
+		custom_tooltip = "trp_physics_c_computing_tt"
+	}
+	option = { ##Field Manipulation
+		name = trp_setup_event.4.b
+		set_country_flag = trp_physics_c_fieldm
+		custom_tooltip = "trp_physics_c_fieldm_tt"
+	}
+	option = { ##Particles
+		name = trp_setup_event.4.c
+		set_country_flag = trp_physics_c_particles
+		custom_tooltip = "trp_physics_c_particles_tt"
+	}
+}
+country_event = { ##Society Choice
+	id = trp_setup_event.5
+	hide_window = no
+	is_triggered_only = yes
+	title = "trp_setup.5.name"
+	desc = "trp_setup.5.desc"
+	picture = GFX_evt_scanning_remains
+	show_sound = event_primitive_civilization
+	
+	#fire_only_once = yes
+	
+	option = { ##Biology
+		name = trp_setup_event.5.a
+		set_country_flag = trp_society_c_biology
+		custom_tooltip = "trp_society_c_biology_tt"
+	}
+	option = { ##Military Theory
+		name = trp_setup_event.5.b
+		set_country_flag = trp_society_c_miltheory
+		custom_tooltip = "trp_society_c_miltheory_tt"
+	}
+	option = { ##New Worlds
+		name = trp_setup_event.5.c
+		set_country_flag = trp_society_c_newworlds
+		custom_tooltip = "trp_society_c_newworlds_tt"
+	}
+}
+country_event = { ##Enterprises Choice
+	id = trp_setup_event.6
+	hide_window = no
+	is_triggered_only = yes
+	title = "trp_setup.6.name"
+	desc = "trp_setup.6.desc"
+	picture = GFX_evt_cargoship_caravan
+	show_sound = event_factions
+	
+	#fire_only_once = yes
+	
+	option = { ##Culture
+		name = trp_setup_event.6.a
+		set_country_flag = trp_enterprises_c_culture
+		custom_tooltip = "trp_enterprises_c_culture_tt"
+	}
+	option = { ##Mercenaries
+		name = trp_setup_event.6.b
+		set_country_flag = trp_enterprises_c_mercenaries
+		custom_tooltip = "trp_enterprises_c_mercenaries_tt"
+	}
+}
+country_event = { ##Banking System
+	id = trp_setup_event.7
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {	
+		has_tradition = trp_commerce_accumulation_a
+	}
+	immediate = {	
+		if = {
+			limit = {
+				has_country_resource = { 
+					type = energy 
+					amount > 4999
+				}
+			}
+			add_modifier = { modifier = trp_bank_system_1 days = -1 }
+			remove_modifier = trp_bank_system_2
+			remove_modifier = trp_bank_system_3
+			remove_modifier = trp_bank_system_4
+		}
+		if = {
+			limit = {
+				has_country_resource = { 
+					type = energy 
+					amount > 9999
+				}
+			}
+			add_modifier = { modifier = trp_bank_system_2 days = -1 }
+			remove_modifier = trp_bank_system_1
+			remove_modifier = trp_bank_system_3
+			remove_modifier = trp_bank_system_4
+		}
+		if = {
+			limit = {
+				has_country_resource = { 
+					type = energy 
+					amount > 14999
+				}
+			}
+			add_modifier = { modifier = trp_bank_system_3 days = -1 }
+			remove_modifier = trp_bank_system_1
+			remove_modifier = trp_bank_system_2
+			remove_modifier = trp_bank_system_4
+		}
+		if = {
+			limit = {
+				has_country_resource = { 
+					type = energy 
+					amount > 19999
+				}
+			}
+			add_modifier = { modifier = trp_bank_system_4 days = -1 }
+			remove_modifier = trp_bank_system_1
+			remove_modifier = trp_bank_system_2
+			remove_modifier = trp_bank_system_3
+		}
+	}
+}
+country_event = { ##Tradition Finisher Check
+	id = trp_setup_event.8
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {	
+		if = { ##Supremacy
+			limit = {
+				AND = {
+					NOT = { has_tradition = tr_supremacy_finish }
+					has_tradition = trp_supremacy_admirality_c
+					has_tradition = trp_supremacy_deterrence_c
+					has_tradition = trp_supremacy_warfare_c
+					has_tradition = trp_supremacy_devastation_c
+					OR = {
+						has_tradition = trp_supremacy_quantity_c
+						has_tradition = trp_supremacy_quality_c
+					}
+				}
+			}
+			add_tradition = tr_supremacy_finish
+		}
+		if = { ##Expansion
+			limit = {
+				AND = {
+					NOT = { has_tradition = trp_expansion_finish }
+					has_tradition = trp_expansion_population_c
+					has_tradition = trp_expansion_infrastructure_c
+					has_tradition = trp_expansion_bureaucracy_c
+					OR = {
+						has_tradition = trp_expansion_foundation_c
+						has_swapped_tradition = trp_expansion_foundation_c_habitat
+						has_swapped_tradition = trp_expansion_foundation_c_ring
+					}
+					OR = {
+						has_tradition = trp_expansion_colonization_c
+						has_tradition = trp_expansion_space_race_c
+					}
+				}
+			}
+			add_tradition = trp_expansion_finish
+		}
+		if = { ##Statecraft
+			limit = {
+				AND = {
+					NOT = { has_tradition = trp_diplomacy_finish }
+					has_tradition = trp_diplomacy_integration_c
+					has_tradition = trp_diplomacy_association_c
+					has_tradition = trp_diplomacy_administration_c
+					has_tradition = trp_diplomacy_ideology_c
+					OR = {
+						has_tradition = tr_diplomacy_the_federation
+						has_tradition = trp_diplomacy_government_c
+					}
+				}
+			}
+			add_tradition = trp_diplomacy_finish
+		}
+		if = { ##Discovery
+			limit = {
+				AND = {
+					NOT = { has_tradition = trp_discovery_finish }
+					has_tradition = trp_discovery_academy_c
+					OR = {
+						has_swapped_tradition = trp_discovery_engineering_c_materials
+						has_swapped_tradition = trp_discovery_engineering_c_voidcraft
+						has_swapped_tradition = trp_discovery_engineering_c_propulsion
+					}
+					OR = {
+						has_swapped_tradition = trp_discovery_physics_c_machine
+						has_swapped_tradition = trp_discovery_physics_c_computing
+						has_swapped_tradition = trp_discovery_physics_c_fieldm
+					}
+					OR = {
+						has_swapped_tradition = trp_discovery_society_c_biology
+						has_swapped_tradition = trp_discovery_society_c_miltheory
+						has_swapped_tradition = trp_discovery_society_c_newworlds
+					}
+					OR = {
+						has_tradition = trp_discovery_exploration_c
+						has_tradition = trp_discovery_curiosity_c
+					}
+				}
+			}
+			add_tradition = trp_discovery_finish
+		}
+		if = { ##Production
+			limit = {
+				AND = {
+					NOT = { has_tradition = trp_production_finish }
+					has_tradition = trp_production_excavation_c
+					has_tradition = trp_production_assembly_c
+					has_tradition = trp_production_refinement_c
+					has_tradition = trp_production_agriculture_c
+					OR = {
+						has_tradition = trp_production_manufacturing_c
+						has_tradition = trp_production_fabrication_c
+					}
+				}
+			}
+			add_tradition = trp_production_finish
+		}
+		if = { ##Commerce
+			limit = {
+				AND = {
+					NOT = { has_tradition = trp_commerce_finish }
+					has_tradition = trp_commerce_trade_c
+					has_tradition = trp_commerce_security_c
+					has_tradition = trp_commerce_capability_c
+					OR = {
+						has_swapped_tradition = trp_commerce_enterprises_c_mercenaries
+						has_swapped_tradition = trp_commerce_enterprises_c_entertainment
+					}
+					OR = {
+						has_tradition = trp_commerce_exchange_c
+						has_tradition = trp_commerce_accumulation_c
+					}
+				}
+			}
+			add_tradition = trp_commerce_finish
+		}
+	}
+}
+	
