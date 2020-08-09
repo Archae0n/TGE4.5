@@ -8,12 +8,12 @@ decision_ottereditor = {
 	}
 
 	potential = {
-		always=yes
+		is_multiplayer = no
 		FROM = { is_ai = no	}
 	}
 			
 	allow = {
-		always=yes
+		is_multiplayer = no
 		FROM = { is_ai = no	}
 	}		
 	
