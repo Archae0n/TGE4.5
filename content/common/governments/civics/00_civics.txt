@@ -1812,7 +1812,7 @@ civic_consumerism = {
 	}
 	possible = {
 		ethics = {
-			NOR = {
+			OR = {
 				text = civic_tooltip_capitalism
 				 value = ethic_capitalism
 				 value = ethic_fanatic_capitalism
