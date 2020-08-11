@@ -61,6 +61,7 @@ civic_state_monopoly = {
 				value = ethic_egalitarian
 			}
 			OR = {
+				value = ethic_capitalism
 				value = ethic_fanatic_capitalism
 			}
 			OR = {
@@ -76,7 +77,7 @@ civic_state_monopoly = {
 
 		modifier = {
 		   station_gatherers_produces_mult = 0.10
-		   job_mogul_per_pop = 0.04
+		   job_mogul_per_pop = 0.03
 		   pop_cat_worker_political_power = -1
 		   pop_cat_worker_happiness = -0.05
 		   trade_value_mult = -0.03
@@ -130,6 +131,7 @@ civic_merchant_guilds = {
 
 		ethics = {
 			OR = {
+				value = ethic_capitalism
 				value = ethic_fanatic_capitalism
 			}
 			NOR = {
@@ -144,7 +146,7 @@ civic_merchant_guilds = {
 
 
 		modifier = {
-		   job_mogul_per_pop = 0.03
+		   job_mogul_per_pop = 0.02
 		   pop_ethic_elitist_attraction_mult = 0.15	
 		   pop_cat_worker_political_power = -0.5		   
 	}
@@ -315,9 +317,9 @@ civic_terraforming = {
 	random_weight = { base = 5 }
 	modifier = {
 		deposit_blockers_cost_mult = -0.25
-		planet_clear_blocker_time_mult = -1
-		terraforming_cost_mult = -0.25
-		terraform_speed_mult = 0.25
+		planet_clear_blocker_time_mult = -0.5
+		terraforming_cost_mult = -0.10
+		terraform_speed_mult = 0.10
 		category_new_worlds_research_speed_mult = 0.25
 
 	}
@@ -429,7 +431,7 @@ civic_peacekeepers = {
 	modifier = {
 
 					  diplomacy_upkeep_mult = -0.15
-                      diplo_weight_mult = 0.15
+                      diplo_weight_mult = 0.05
 					  envoys_add = 3
 					  envoy_improve_relations_mult = 0.15
                       country_border_friction_mult = -0.25
@@ -468,7 +470,7 @@ civic_xeno_militarist = {
 	random_weight = { base = 5 }
 	modifier = {
 
-					  federation_naval_cap_contribution_mult = 1
+					  federation_naval_cap_contribution_mult = 0.5
 					  country_vassal_naval_capacity_contribution_mult = 0.33
 					  DIPLO_WEIGHT_NAVAL_MULT = 0.25
 					  country_subject_power_penalty_mult = -0.15
@@ -502,8 +504,8 @@ civic_star_settlers = {
 	random_weight = { base = 5 }
 	modifier = {
 
-				country_starbase_influence_cost_mult = -0.15
-				planet_colony_development_speed_mult = 0.33
+				country_starbase_influence_cost_mult = -0.05
+				planet_colony_development_speed_mult = 0.25
 				colony_start_num_pops_add = 1
                 category_new_worlds_research_speed_mult	= 0.1
                 category_voidcraft_research_speed_mult = 0.1				
@@ -533,9 +535,9 @@ civic_distributism = {
 			}			
 
 			OR = {
-			    text = civic_tooltip_spiritualist
-			     value = ethic_spiritualist
-				 value = ethic_fanatic_spiritualist
+			    text = civic_tooltip_pluralist
+				 value = ethic_pluralist
+				 value = ethic_fanatic_pluralist
 			}
 
 		}
@@ -607,16 +609,10 @@ civic_industrial_automatation = {
 		ethics = {
 
 			OR = {
-				text = civic_tooltip_capitalism
-				value = ethic_capitalism
-				value = ethic_fanatic_capitalism
-			}
-
-			OR = {
-				text = civic_tooltip_materialist
-				value = ethic_materialist
-				value = ethic_fanatic_materialist
-			}
+			    text = civic_tooltip_industrial
+			     value = ethic_industrial
+				 value = ethic_fanatic_industrial
+			}	
 
 		}
 
@@ -1018,7 +1014,6 @@ civic_divine_order = {
 			}
 
 			NOR = {
-				 value = ethic_fanatic_capitalism
 				 value = ethic_fanatic_socialism
 				 value = ethic_egalitarian
 				 value = ethic_fanatic_egalitarian				 
@@ -1067,7 +1062,6 @@ civic_mining_guilds = {
 	random_weight = { base = 5 }
 	modifier = {
 		planet_miners_minerals_produces_add = 1
-		category_materials_research_speed_mult = 0.15
 		job_miner_per_pop = 0.04
 	}
 }
@@ -1591,11 +1585,11 @@ civic_shared_burden = {
 		}
 	}
 	modifier = {
-	            pop_growth_speed = 0.1
-				job_labour_hero_per_pop = 0.05
+	            pop_growth_speed = 0.05
+				job_labour_hero_per_pop = 0.04
                 country_society_tech_research_speed	= 0.05
                 country_leader_pool_size = 1
-                pop_demotion_time_mult = -1
+                pop_demotion_time_mult = -0.75
 				planet_pops_unemployed_consumer_goods_upkeep_add = 2
 				planet_districts_cities_upkeep_mult = 0.2
 	}
@@ -1672,12 +1666,6 @@ civic_military_industry = {
 				text = civic_tooltip_militarist
 				 value = ethic_militarist
 				 value = ethic_fanatic_militarist
-			}
-
-			OR = {
-			    text = civic_tooltip_materialist
-			     value = ethic_materialist
-				 value = ethic_fanatic_materialist
 			}
 
 		}
@@ -1850,7 +1838,7 @@ civic_consumerism = {
                   planet_max_districts_add = 1
 				  planet_clear_blocker_time_mult = -0.5
 				  planet_building_build_speed_mult = 0.5
-				  pop_environment_tolerance = -0.05				  
+				  pop_environment_tolerance = -0.10		  
 				  planet_structures_upkeep_mult = 0.1
 				  deposit_blockers_cost_mult = 0.2
 
@@ -1952,6 +1940,7 @@ civic_spiritual_democracy = {
 	possible = {
 		ethics = {
 		OR = {
+				 value = ethic_spiritualist
 				 value = ethic_fanatic_spiritualist
 			}
 		}
@@ -1986,6 +1975,7 @@ civic_cyber_demos_cratos = {
 
 
 			OR = {
+				 value = ethic_materialist
 				 value = ethic_fanatic_materialist
 			}
 
@@ -2057,6 +2047,7 @@ civic_divine_council = {
 
 	ethics = {
 			OR = {
+				 value = ethic_spiritualist
 				 value = ethic_fanatic_spiritualist
 			}
 		}
@@ -2092,6 +2083,7 @@ civic_military_junta = {
 	possible = {
 		ethics = {
 			OR = {
+			     value = ethic_militarist
 				 value = ethic_fanatic_militarist
 			}
 		}
@@ -2194,6 +2186,7 @@ civic_executive_committee = {
 
 		ethics = {
 			OR = {
+				 value = ethic_pacifist
 				 value = ethic_fanatic_pacifist
 			}
 		}
@@ -2226,6 +2219,7 @@ civic_cyber_dictatorship = {
 
 
 			OR = {
+				 value = ethic_materialist
 				 value = ethic_fanatic_materialist
 			}
 
@@ -2821,6 +2815,7 @@ civic_stratocracy = {
 	possible = {
 		ethics = {
 			OR = {
+				value = ethic_militarist
 				value = ethic_fanatic_militarist
 			}
 		}
@@ -2861,6 +2856,7 @@ civic_bureaucracy = {
 	possible = {
 		ethics = {
 			OR = {
+				value = ethic_pacifist
 				value = ethic_fanatic_pacifist
 			}
 		}
@@ -2934,6 +2930,7 @@ civic_exalted_priesthood = {
 	possible = {
 		ethics = {
 			OR = {
+				value = ethic_spiritualist
 				value = ethic_fanatic_spiritualist
 			}
 		}
