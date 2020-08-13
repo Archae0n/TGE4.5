@@ -25,6 +25,27 @@ colonist = {
 		planet_amenities_add = 5
 	}
 
+	#
+
+	resources = {
+		category = planet_administrators
+		produces = {
+			trigger = {
+				owner = { has_valid_civic = civic_star_settlers   }
+			}
+			unity = 5
+		}
+
+		###Traditions+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = trp_expansion_colonization_c }
+			}
+			unity = 3
+		}
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -132,13 +153,32 @@ researcher = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_valid_civic = civic_technocracy }
+				owner = { OR = { has_valid_civic = civic_technocracy  has_valid_civic = civic_cyber_dictatorship  has_valid_civic = civic_science_directorate  has_valid_civic = civic_cyber_demos_cratos } }
 			}
 			unity = 1
 		}
+
+		###Traditions+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = trp_discovery_society_a }
+			}
+			unity = 1
+		}
+
 		upkeep = {
 			consumer_goods = 2
 		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = research_subsidies
+				}
+			}
+			energy = 1
+		}		
 	}
 
 	weight = {
@@ -254,7 +294,7 @@ priest = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_valid_civic = civic_exalted_priesthood }
+				owner = { or = { has_valid_civic = civic_exalted_priesthood   has_valid_civic = civic_imperial_cult  has_valid_civic = civic_divine_council  has_valid_civic = civic_spiritual_democracy } }
 			}
 			unity = 1
 		}
@@ -297,7 +337,7 @@ priest = {
 		modifier = {
 			factor = 2
 			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
+			owner = { or = { has_valid_civic = civic_exalted_priesthood  has_valid_civic = civic_imperial_cult  has_valid_civic = civic_divine_council  has_valid_civic = civic_spiritual_democracy } }
 		}
 		modifier = {
 			factor = 2
@@ -416,10 +456,30 @@ foundry = {
 		produces = {
 			alloys = 3
 		}
+
+		###Traditions+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = trp_production_fabrication_c }
+			}
+			alloys = 1
+		}
+
 		upkeep = {
 			minerals = 6
 		}
+		upkeep = {
+		   	trigger = {
+				exists = owner
+				owner = { is_green = yes }
+			}
+			minerals = -1
+		}
+
 	}
+
+
 
 	weight = {
 		weight = @specialist_job_weight
@@ -459,6 +519,10 @@ foundry = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
+		 modifier = {
+		 	factor = 1.3
+		 	has_ethic = ethic_industrial
+		 }			
 	}
 }
 
@@ -492,8 +556,8 @@ enforcer = {
 		}
 		upkeep = {
 			trigger = {
-				exists = planet
-				planet = { has_modifier = anticrime_campaign }
+			exists = planet
+			planet = { has_modifier = anticrime_campaign }
 			}
 			energy = 2
 		}
@@ -524,6 +588,17 @@ enforcer = {
 		}
 		modifier = {
 			planet_crime_add = -10
+		}
+	}
+
+	###Traditions+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = trp_prosperity_tranquillity_a }
+		}
+		modifier = {
+			planet_crime_add = -5
 		}
 	}
 
@@ -619,6 +694,7 @@ enforcer = {
 		}
 	}
 }
+
 
 telepath = {
 	category = specialist
@@ -750,6 +826,7 @@ telepath = {
 	}
 }
 
+
 artisan = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -771,8 +848,45 @@ artisan = {
 		produces = {
 			consumer_goods = 6
 		}
+
+		produces = { ##Traditions+
+			trigger = {
+				exists = owner
+				owner = { has_tradition = trp_prosperity_renaissance_b }
+			}
+			unity = 1
+		}		
+
 		upkeep = {
 			minerals = 6
+		}
+		upkeep = {
+		   	trigger = {
+				exists = owner
+				owner = { is_green = yes }
+			}
+			minerals = -1
+		}			
+
+	}
+
+	triggered_planet_modifier = { ##Traditions+
+		potential = {
+			exists = owner
+			owner = { has_tradition = trp_production_manufacturing_c }
+		}
+		modifier = {
+			planet_stability_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = { ##Traditions+
+		potential = {
+			exists = owner
+			owner = { has_swapped_tradition = trp_commerce_enterprises_c_entertainment }
+		}
+		modifier = {
+			trade_value_add = 4
 		}
 	}
 
@@ -858,6 +972,16 @@ entertainer = {
 		}
 		modifier = {
 			planet_amenities_add = -2
+		}
+	}
+
+	triggered_planet_modifier = { ##Traditions+
+		potential = {
+			exists = owner
+			owner = { has_tradition = trp_prosperity_recreation_b }
+		}
+		modifier = {
+			planet_amenities_add = 5
 		}
 	}
 
@@ -978,6 +1102,16 @@ duelist = {
 		}
 	}
 
+	triggered_country_modifier = { ###Traditions+
+		potential = {
+			exists = owner
+			owner = { has_swapped_tradition = trp_prosperity_recreation_b_duelist }
+		}
+		modifier = {
+			country_naval_cap_add = 2
+		}
+	}
+
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1070,10 +1204,40 @@ culture_worker = {
 			unity = 3
 			society_research = 3
 		}
+
+		produces = { ###Traditions+
+			trigger = {
+				exists = owner
+				owner = { has_tradition = trp_prosperity_renaissance_c }
+			}
+			alloys = 1
+		}
+
 		upkeep = {
 			consumer_goods = 2
 		}
 	}
+
+	triggered_planet_modifier = { ##Traditions+
+		potential = {
+			exists = owner
+			owner = { has_tradition = trp_prosperity_aesthetics_c }
+		}
+		modifier = {
+			planet_amenities_add = 8
+		}
+	}
+	
+	triggered_planet_modifier = { ##Traditions+
+		potential = {
+			exists = owner
+			owner = { has_swapped_tradition = trp_commerce_enterprises_c_entertainment }
+		}
+		modifier = {
+			trade_value_add = 4
+		}
+	}
+
 
 	weight = {
 		weight = @specialist_job_weight
@@ -1187,6 +1351,16 @@ bureaucrat = {
 
 	resources = {
 		category = planet_bureaucrats
+
+		###Traditions+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = trp_expansion_bureaucracy_b }
+			}
+			society_research = 2
+		}
+
 		upkeep = {
 			consumer_goods = 1
 		}
@@ -1318,6 +1492,16 @@ chemist = {
 		}
 	}
 
+	triggered_planet_modifier = { ##Traditions+
+		potential = {
+			exists = owner
+			owner = { has_tradition = trp_production_refinement_c }
+		}
+		modifier = {
+			planet_stability_add = 3
+		}
+	}
+
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1345,6 +1529,7 @@ chemist = {
 			factor = 2
 			has_trait = trait_void_dweller_1
 		}
+		
 	}
 }
 
@@ -1369,6 +1554,16 @@ translucer = {
 		produces = {
 			rare_crystals = 2
 		}
+
+		###Traditions+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = trp_production_refinement_c }
+			}
+			energy = 10
+		}
+
 		upkeep = {
 			minerals = 10
 		}
@@ -1441,6 +1636,16 @@ gas_refiner = {
 		}
 	}
 
+	triggered_planet_modifier = { ##Traditions+
+		potential = {
+			exists = owner
+			owner = { has_tradition = trp_production_refinement_c }
+		}
+		modifier = {
+			planet_amenities_add = 5
+		}
+	}
+
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1488,14 +1693,14 @@ roboticist = {
 	building_icon = building_robot_assembly_plant
 	clothes_texture_index = 3
 
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
-	}
-
-	possible = {
-		specialist_job_check_trigger = yes
 	}
 
 	planet_modifier = {
@@ -1504,8 +1709,19 @@ roboticist = {
 
 	resources = {
 		category = planet_pop_assemblers
+		
+		###Traditions+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = trp_discovery_engineering_b }
+			}
+			engineering_research = 4
+		}
+
+
 		upkeep = {
-			alloys = 2
+			minerals = 6
 		}
 	}
 
@@ -1538,7 +1754,47 @@ healthcare = {
 	resources = {
 		category = planet_doctors
 		upkeep = {
+		   	trigger = {
+				exists = owner
+				owner = { not = { has_policy_flag = public_healthcare } }
+			}
 			consumer_goods = 1
+		}
+		upkeep = {
+		   	trigger = {
+				exists = owner
+				owner = { has_policy_flag = public_healthcare }
+			}
+			consumer_goods = 0.5
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_policy_flag = public_healthcare }
+			}
+			unity = 1
+		}
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_policy_flag = public_healthcare }
+		}
+		modifier = {
+			planet_amenities_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_policy_flag = private_healthcare }
+		}
+		modifier = {
+			trade_value_add = 2
+			pop_growth_speed = -0.02
 		}
 	}
 
@@ -1559,6 +1815,16 @@ healthcare = {
 		}
 		modifier = {
 			planet_amenities_add = -1
+		}
+	}
+
+	triggered_planet_modifier = { ##Traditions+
+		potential = {
+			exists = owner
+			owner = { has_tradition = trp_prosperity_recreation_c }
+		}
+		modifier = {
+			pop_growth_speed = 0.05
 		}
 	}
 
@@ -1764,7 +2030,7 @@ bluelotus_technician = {
 	possible = {
 		worker_job_check_trigger = yes
 	}
-	
+
 	resources = {
 		category = planet_metallurgists
 		produces = {
@@ -1772,20 +2038,20 @@ bluelotus_technician = {
 		}
 
 		upkeep = {
-			trigger = { 
+			trigger = {
 				is_organic_species = yes
 				is_lithoid = no
 			}
 			food = @living_standard_food_normal
 		}
 		upkeep = {
-			trigger = { 
+			trigger = {
 				is_lithoid = yes
 			}
 			minerals = @living_standard_food_normal
 		}
 		upkeep = {
-			trigger = { 
+			trigger = {
 				is_robotic_species = yes
 			}
 			energy = @living_standard_energy_normal
