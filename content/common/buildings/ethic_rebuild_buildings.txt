@@ -500,7 +500,7 @@ building_thermal_borehole = {
 	category = resource
 
 	potential = {
-		owner = { or = { has_civic = civic_consumerism } }
+		owner = { has_valid_civic = civic_ruthless_industrialism }
 		NOT = { has_modifier = resort_colony }
 		NOR = { is_planet_class = pc_habitat  is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = slave_colony }
