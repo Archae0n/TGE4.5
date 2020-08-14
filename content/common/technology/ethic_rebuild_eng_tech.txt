@@ -10,7 +10,7 @@ tech_thermal_borehole = {
 	#allows Thermal Borehole
 
 	potential = {
-		or = { has_civic = civic_consumerism }
+		has_civic = civic_ruthless_industrialism
 	}
 
 	weight_modifier = {
