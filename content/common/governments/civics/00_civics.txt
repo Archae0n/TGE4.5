@@ -89,7 +89,7 @@ civic_state_monopoly = {
 
 
 
-#Financial Elitism - §YCapital Buildings§! provide £job_merchant£ §Y$job_mogul$§! Jobs ; building_galactic_stock_exchange +1 mogul job ; text = job_mogul_effect_desc	;
+#Financial Elitism - Â§YCapital BuildingsÂ§! provide Â£job_merchantÂ£ Â§Y$job_mogul$Â§! Jobs ; building_galactic_stock_exchange +1 mogul job ; text = job_mogul_effect_desc	;
 civic_merchant_guilds = {
 
 	potential = {
@@ -606,9 +606,9 @@ civic_industrial_automatation = {
 		ethics = {
 
 			OR = {
-			    text = civic_tooltip_industrial
-			     value = ethic_industrial
-				 value = ethic_fanatic_industrial
+			    text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
 			}	
 
 		}
@@ -1372,7 +1372,7 @@ civic_beacon_of_liberty = {
 
 
 
-#Trade League - offworld_trading_company produce §Y4§! additional trade value\nStarts with the §Y$tech_space_trading$§! technology already unlocked\n £job_merchant£ §Y$job_merchant_plural$§! also produce §Y1§! £unity£ Unity
+#Trade League - offworld_trading_company produce Â§Y4Â§! additional trade value\nStarts with the Â§Y$tech_space_trading$Â§! technology already unlocked\n Â£job_merchantÂ£ Â§Y$job_merchant_plural$Â§! also produce Â§Y1Â§! Â£unityÂ£ Unity
 civic_corporate_dominion = {
 	potential = {
 		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
