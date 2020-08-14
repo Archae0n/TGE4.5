@@ -120,53 +120,99 @@ country_event = {
 			}
 			if = {
 				limit = {
-					OR = {
-						is_planet_class = pc_tropical
-						is_planet_class = pc_continental
-						is_planet_class = pc_ocean
-					}
+					is_wet = yes
 				}
 				random_list = {
-					17 = { change_pc = pc_arctic }
-					17 = { change_pc = pc_tundra }
-					17 = { change_pc = pc_alpine }
-					17 = { change_pc = pc_arid }
-					17 = { change_pc = pc_desert }
-					17 = { change_pc = pc_savannah }
+		10 = { change_pc = pc_arid }
+		10 = { change_pc = pc_desert }
+		10 = { change_pc = pc_savannah }
+		10 = { change_pc = pc_steppe }
+		10 = { change_pc = pc_sandsea }
+		10 = { change_pc = pc_oasis }
+		10 = { change_pc = pc_mesa }
+		10 = { change_pc = pc_outback }
+		10 = { change_pc = pc_hadesert }
+		10 = { change_pc = pc_prairie }
+		10 = { change_pc = pc_med }
+
+		10 = { change_pc = pc_arctic }
+		10 = { change_pc = pc_tundra }
+		10 = { change_pc = pc_alpine }
+		10 = { change_pc = pc_swamp }
+		10 = { change_pc = pc_frozen_desert }
+		10 = { change_pc = pc_glacial }
+		10 = { change_pc = pc_boreal }
+		10 = { change_pc = pc_mushroom }
+		10 = { change_pc = pc_antarctic }
+		10 = { change_pc = pc_snow }
+		10 = { change_pc = pc_highland }
+
 				}
 			}
 			else_if = {
 				limit = {
-					OR = {
-						is_planet_class = pc_arctic
-						is_planet_class = pc_tundra
-						is_planet_class = pc_alpine
-					}
+					is_cold = yes
 				}
 				random_list = {
-					17 = { change_pc = pc_tropical }
-					17 = { change_pc = pc_continental }
-					17 = { change_pc = pc_ocean }
-					17 = { change_pc = pc_arid }
-					17 = { change_pc = pc_desert }
-					17 = { change_pc = pc_savannah }
+		10 = { change_pc = pc_arid }
+		10 = { change_pc = pc_desert }
+		10 = { change_pc = pc_savannah }
+		10 = { change_pc = pc_steppe }
+		10 = { change_pc = pc_sandsea }
+		10 = { change_pc = pc_oasis }
+		10 = { change_pc = pc_mesa }
+		10 = { change_pc = pc_outback }
+		10 = { change_pc = pc_hadesert }
+		10 = { change_pc = pc_prairie }
+		10 = { change_pc = pc_med }
+
+		10 = { change_pc = pc_ocean }
+		10 = { change_pc = pc_continental }
+		10 = { change_pc = pc_tropical }
+		10 = { change_pc = pc_cascadian }
+		10 = { change_pc = pc_desertislands }
+		10 = { change_pc = pc_subarctic }
+		10 = { change_pc = pc_mangrove }
+		10 = { change_pc = pc_wetswamp }
+		10 = { change_pc = pc_hajungle }
+		10 = { change_pc = pc_biolumen }
+		10 = { change_pc = pc_retinal }
+		10 = { change_pc = pc_forest }
+		10 = { change_pc = pc_lake }
+
 				}
 			}
 			else_if = {
 				limit = {
-					OR = {
-						is_planet_class = pc_arid
-						is_planet_class = pc_desert
-						is_planet_class = pc_savannah
-					}
+					is_dry = yes
 				}
 				random_list = {
-					17 = { change_pc = pc_tropical }
-					17 = { change_pc = pc_continental }
-					17 = { change_pc = pc_ocean }
-					17 = { change_pc = pc_arctic }
-					17 = { change_pc = pc_tundra }
-					17 = { change_pc = pc_alpine }
+					10 = { change_pc = pc_arid }
+		10 = { change_pc = pc_ocean }
+		10 = { change_pc = pc_continental }
+		10 = { change_pc = pc_tropical }
+		10 = { change_pc = pc_cascadian }
+		10 = { change_pc = pc_desertislands }
+		10 = { change_pc = pc_subarctic }
+		10 = { change_pc = pc_mangrove }
+		10 = { change_pc = pc_wetswamp }
+		10 = { change_pc = pc_hajungle }
+		10 = { change_pc = pc_biolumen }
+		10 = { change_pc = pc_retinal }
+		10 = { change_pc = pc_forest }
+		10 = { change_pc = pc_lake }
+
+		10 = { change_pc = pc_arctic }
+		10 = { change_pc = pc_tundra }
+		10 = { change_pc = pc_alpine }
+		10 = { change_pc = pc_swamp }
+		10 = { change_pc = pc_frozen_desert }
+		10 = { change_pc = pc_glacial }
+		10 = { change_pc = pc_boreal }
+		10 = { change_pc = pc_mushroom }
+		10 = { change_pc = pc_antarctic }
+		10 = { change_pc = pc_snow }
+		10 = { change_pc = pc_highland }
 				}
 			}
 			remove_district = district_city
