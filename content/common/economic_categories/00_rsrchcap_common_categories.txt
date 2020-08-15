@@ -2,6 +2,85 @@
 planet_jobs = {
 	parent = planets
 
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+
+	triggered_produces_modifier = {
+		key = planet_jobs_slave
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			is_pop_category = slave
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = planet_jobs_worker
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			OR = {
+				is_pop_category = worker
+				is_pop_category = slave # Yes, slave should count towards both worker and slave
+				is_pop_category = simple_drone
+			}
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = planet_jobs_specialist
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			is_pop_category = specialist
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = planet_jobs_ruler
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			is_pop_category = ruler
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = planet_jobs_simple_drone
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			is_pop_category = simple_drone
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = planet_jobs_complex_drone
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			is_pop_category = complex_drone
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = planet_jobs_robotic
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			is_robot_pop = yes
+		}
+	}
+
 	triggered_produces_modifier = {
 		key = rsrchcap_purge
 		modifier_types = {
@@ -19,7 +98,12 @@ planet_jobs = {
 }
 
 planet_researchers = {
+	icon = "job_researcher"
 	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
 
 	triggered_produces_modifier = {
 		key = rsrchcap_head_researcher
@@ -76,6 +160,9 @@ planet_researchers = {
 
 planet_priests = {
 	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+	}
 
 	triggered_produces_modifier = {
 		key = rsrchcap_priest
@@ -93,6 +180,9 @@ planet_priests = {
 
 planet_culture_workers = {
 	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+	}
 
 	triggered_produces_modifier = {
 		key = rsrchcap_culture_worker
@@ -107,6 +197,9 @@ planet_culture_workers = {
 
 planet_managers = {
 	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+	}
 
 	triggered_produces_modifier = {
 		key = rsrchcap_manager
@@ -121,6 +214,11 @@ planet_managers = {
 
 megastructures = {
 	parent = country
+	use_for_ai_budget = yes
+	ai_use_parent_for_resources_upkeep = {
+		energy
+		consumer_goods
+	}
 
 	triggered_produces_modifier = {
 		key = rsrchcap_science_nexus_1
