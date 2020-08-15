@@ -53,7 +53,17 @@ building_factory_1 = {
 			job_artisan_drone_add = @b1_jobs
 		}
 	}
-	
+
+	#original consumerism civic
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_consumerism }
+		}
+		modifier = {
+			job_artisan_add = 1
+		}
+	}
 
 	resources = {
 		category = planet_buildings
@@ -205,7 +215,16 @@ building_factory_2 = {
 		}
 	}
 	
-
+	#original consumerism civic
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_consumerism }
+		}
+		modifier = {
+			job_artisan_add = 2
+		}
+	}
 
 	resources = {
 		category = planet_buildings
@@ -320,6 +339,16 @@ building_factory_3 = {
 		}
 	}
 	
+	#original consumerism civic
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_consumerism }
+		}
+		modifier = {
+			job_artisan_add = 3
+		}
+	}
 	
 
 	resources = {
@@ -471,7 +500,7 @@ building_thermal_borehole = {
 	category = resource
 
 	potential = {
-		owner = { or = { has_civic = civic_consumerism } }
+		owner = { has_valid_civic = civic_ruthless_industrialism }
 		NOT = { has_modifier = resort_colony }
 		NOR = { is_planet_class = pc_habitat  is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = slave_colony }
@@ -3483,6 +3512,17 @@ building_commercial_zone = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+					has_valid_civic = civic_consumerism
+			}
+		}
+		modifier = {
+			job_clerk_add = 2
+		}
+	}
 
 	prerequisites = {
 		"tech_interplanetary_commerce"
@@ -3583,7 +3623,17 @@ building_commercial_megaplex = {
 		}
 	}
 
-
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+					has_valid_civic = civic_consumerism
+			}
+		}
+		modifier = {
+			job_clerk_add = 3
+		}
+	}
 
 	prerequisites = {
 		"tech_interstellar_economics"

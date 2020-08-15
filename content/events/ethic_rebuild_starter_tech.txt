@@ -23,14 +23,6 @@ event = {
 
 			if = {
 				limit = {
-					has_civic = civic_industrial_economy
-					NOT = { has_origin = origin_mechanists }
-				}
-				give_technology = { tech = tech_robotic_workers }
-			}			
-
-			if = {
-				limit = {
 					has_civic = civic_slave_race
 				}
 				give_technology = { tech = tech_neural_implants }
@@ -68,14 +60,6 @@ event = {
 				give_technology = { tech = tech_holographic_rituals }
 			}				
 
-			if = {
-				limit = {
-					has_civic = civic_machine_cult
-				}
-				give_technology = { tech = tech_robotic_workers }
-			}			
-				
-			
 			if = {
 				limit = {
 					has_civic = civic_symbiotic_race

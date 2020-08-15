@@ -10,7 +10,7 @@ tech_thermal_borehole = {
 	#allows Thermal Borehole
 
 	potential = {
-		or = { has_civic = civic_consumerism }
+		has_valid_civic = civic_ruthless_industrialism
 	}
 
 	weight_modifier = {
@@ -68,7 +68,7 @@ tech_droid_workers = {
 				has_ethic = "ethic_fanatic_spiritualist"
 			}
 
-			not = { has_civic = civic_machine_cult }
+			not = { has_valid_civic = civic_machine_cult }
 		}
 		modifier = {
 			factor = 2
@@ -162,7 +162,7 @@ tech_synthetic_workers = {
 				has_ethic = "ethic_spiritualist"
 				has_ethic = "ethic_fanatic_spiritualist"
 			}
-			not = { has_civic = civic_machine_cult }
+			not = { has_valid_civic = civic_machine_cult }
 		}
 		modifier = {
 			factor = 2
@@ -189,7 +189,7 @@ tech_synthetic_workers = {
 		}
 		modifier = {
 			factor = 2
-			has_civic = civic_machine_cult
+			has_valid_civic = civic_machine_cult
 		}
 		modifier = {
 			factor = 4
