@@ -210,7 +210,7 @@ civic_environmentalist = {
 
 	possible = {
 	    ethics = {
-			NOR = {
+			OR = {
 			    text = civic_tooltip_socialism
 				value = ethic_socialism
 				value = ethic_fanatic_socialism

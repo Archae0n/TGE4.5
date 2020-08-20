@@ -1,4 +1,4 @@
-﻿l_italian:
+﻿l_spanish:
 
  INSULT_PROPOSE_COL_IND:0 "Is the [Root.GetName] even a real nation or just an anarchic gaggle of quarreling individuals? You must forgive me, but your political system, such as it is, makes it hard to tell."
  02_INSULT_PROPOSE_COL_IND:0 "So who is it that rules your amusing little star nation today? What a quaint notion, to "vote" someone into power! It will inevitably lead to your collapse, of course."
@@ -141,7 +141,7 @@
  agri_consortium_desc:0 "Oligarchic government, representing a conglomerate of giant interstellar corporations, engaged in agriculture and food production."
 
  div_imperium:0 "Divine Ascendancy"
- div_imperium_desc:0 "Ultimate spiritualistic Autocracy. Society is build around the idea of it's total spiritual supremacy, serving the almighty Gods and spreading their will all over the Galaxy. The Holy Inquisition keeps a watchful eye on the society, protecting the Emperor and occasionally banning fundamental research, being recognized as dangerous and aaaa."
+ div_imperium_desc:0 "Ultimate spiritualistic Autocracy. Society is build around the idea of it's total spiritual supremacy, serving the almighty Gods and spreading their will all over the Galaxy. The Holy Inquisition keeps a watchful eye on the society, protecting the Emperor and occasionally banning fundamental research, being recognized as dangerous ."
  div_imperium_special:0 "Each Ruler can build an Elite Inquisition Force"
 
  adv_technocratic:0 "Cybernetic Commonwealth"

@@ -141,7 +141,7 @@
  agri_consortium_desc:0 "Oligarchic government, representing a conglomerate of giant interstellar corporations, engaged in agriculture and food production."
 
  div_imperium:0 "Divine Ascendancy"
- div_imperium_desc:0 "Ultimate spiritualistic Autocracy. Society is build around the idea of it's total spiritual supremacy, serving the almighty Gods and spreading their will all over the Galaxy. The Holy Inquisition keeps a watchful eye on the society, protecting the Emperor and occasionally banning fundamental research, being recognized as dangerous and godless."
+ div_imperium_desc:0 "Ultimate spiritualistic Autocracy. Society is build around the idea of it's total spiritual supremacy, serving the almighty Gods and spreading their will all over the Galaxy. The Holy Inquisition keeps a watchful eye on the society, protecting the Emperor and occasionally banning fundamental research, being recognized as dangerous and aaaa."
  div_imperium_special:0 "Each Ruler can build an Elite Inquisition Force"
 
  adv_technocratic:0 "Cybernetic Commonwealth"
@@ -2504,8 +2504,11 @@ civic_peacekeepers_desc:0 "This Civilization is driven into Space by the spirit 
 civic_commonwealth:0 "Harmonious Collective"
 civic_commonwealth_desc:0 "This society is characterized with a strong sense of cultural community and development of common good amongst it's citizens."
 
-civic_consumerism:0 "Ruthless Industrialism"
-civic_consumerism_desc:0 "This capitalistic society considers all natural resources as something to be either utilized or commodified. They have little concern of possible environmental outcomes and only focus on short term economic gratification.  \n\nCan learn §YDeep Core Mining§! technology, allowing to construct §YThermal Borehole§! and hire §YDeep Core Engineers§! \n\n§YEntrepreneurs§! faction will be happy for §YConsumer Benefits§! trade policy"
+civic_consumerism:0 "Wasteful Consumerism"
+civic_consumerism_desc:0 "This society preserves social and economic ideology that encourages the acquisition of goods and services in ever-increasing amounts. \n\n§YClerk§! Jobs provide additionally §Y0.25§! £trade_value£ and §Y0.5§! £amenities£  \n§YMerchant§! Jobs additionally produce §G+1§! £consumer_goods£ §YConsumer Goods§!  \n§YCivilian Industries§! provide additional £job_artisan£ §YArtisan§! Jobs \nBuildings §YCommercial Zone§!, §YCommercial Megaplex§! and §YCity Districts§! provide additional £job_clerk£ §YClerk§! Jobs \n§YEntrepreneurs§! faction will be unhappy about §YIncreased Environmental Regulation§! policy and will be happy for §YConsumer Benefits§! trade policy"
+
+civic_ruthless_industrialism:0 "Ruthless Industrialism"
+civic_ruthless_industrialism_desc:0 "This capitalistic society considers all natural resources as something to be either utilized or commodified. They have little concern of possible environmental outcomes and only focus on short term economic gratification.  \n\nCan learn §YDeep Core Mining§! technology, allowing to construct §YThermal Borehole§! and hire §YDeep Core Engineers§!"
 
 
 civic_military_dictatorship:0 "War Lord"

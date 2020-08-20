@@ -82,7 +82,6 @@ decision_mom_arcology_project_overcrowded = {
 				entity = "city_planet_entity"
 				graphical_culture = owner
 			}
-			add_deposit = d_former_relic_world
 			planet_event = { id =  mega.201 }
 			while = {
 				count = 4
