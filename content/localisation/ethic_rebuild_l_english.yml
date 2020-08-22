@@ -2628,9 +2628,9 @@ tech_public_education_desc:0 "Unlocks §YPublic§! option of §YEducation§! pol
 
 policy_healthcare:0 "Healthcare"
  policy_healthcare_name:0 "Healthcare"
- policy_healthcare_desc:0 " "
+ policy_healthcare_desc:0 "When people get sick, its usually not a big deal, until it is, at which point we need safeguards in place"
  mixed_healthcare:0 "Mixed"
- mixed_healthcare_desc:0 " "
+ mixed_healthcare_desc:0 "Unified funding of Private Healthcare options combined with a fallback public healthcare service for the less fortunate allows for sufficient healthcare options for everyone, leading to no bonuses or penalties"
  private_healthcare:0 "Private Healthcare"
  private_healthcare_desc:0 "Leader lifespan is increased by §G+15§!, £job_healthcare£ $job_healthcare_plural$ produce §G+2§! £mod_trade_value_add£ §Y$TRADE_VALUE$§!, but §YPop Growth§! from $job_healthcare_plural$ is reduced by §R-2%§!."
  public_healthcare:0 "Public Healthcare"
@@ -2638,13 +2638,13 @@ policy_healthcare:0 "Healthcare"
 
 policy_education:0 "Education"
  policy_education_name:0 "Education"
- policy_education_desc:0 " "
+ policy_education_desc:0 "Cool kids stay in school"
  mixed_education:0 "Mixed"
- mixed_education_desc:0 " "
+ mixed_education_desc:0 "Funding of Public Education services as well as acknowledgement and support services for private education allows for a generic and satisfactory education for your entire empire"
  private_education:0 "Private Education"
- private_education_desc:0 " "
+ private_education_desc:0 "Funneling resources into the private, higher end academia makes our smartest even smarter, but the less fortunate and less educated get left behind"
  public_education:0 "Public Education"
- public_education_desc:0 " "
+ public_education_desc:0 "An empire-wide educational campaign means that while we have no intellectual stragglers amongst our empire, those which the ambitions to go further are left with few options in our borders"
 
 tech_transportation:0 "Statecraft: Ministry of Interstellar Transportation & Logistics"
 tech_transportation_desc:0 "Unlocks §YTransportation & Logistics§! policies."
@@ -2670,11 +2670,11 @@ policy_interstellar_telecom_desc:0 " "
 
 civilian_telecom:0 "Civilian Telecom"
 civilian_telecom_name:0 "Civilian Telecom"
-civilian_telecom_desc:0 " "
+civilian_telecom_desc:0 "Prioritize signal traffic and communications policies to benefit the civilian sector. Military operations are hampered slightly as a result."
 
 military_telecom:0 "Military Telecom"
 military_telecom_name:0 "Military Telecom"
-military_telecom_desc:0 " "
+military_telecom_desc:0 "Prioritize signal traffic and communications policies to our military-industrial complex. Our armed forces are more coordinated, but civilians are disadvantaged"
 
 none_telecom:0 "Not specified"
 none_telecom_name:0 "Not specified"
@@ -2690,15 +2690,15 @@ policy_interstellar_media_desc:0 "To unlock §YGalactic Media Holding§! tech, y
 
 free_media:0 "Free Media"
 free_media_name:0 "Free Media"
-free_media_desc:0 " "
+free_media_desc:0 "The greatest tool of the masses and greatest enemy of oppressors is an outlet for critical and impartial journalism"
 
 state_media:0 "State Media"
 state_media_name:0 "State Media"
-state_media_desc:0 " "
+state_media_desc:0 "Are you contributing YOUR part to our great nation?"
 
 none_media:0 "Mixed"
 none_media_name:0 "Mixed"
-none_media_desc:0 " "
+none_media_desc:0 "Critique is welcome, but lets avoid a tyranny of the masses spurred from conspiratorial reporters, shall we?"
 
 tech_interstellar_media:0 "Statecraft: Galactic Media Holding"
 tech_interstellar_media_desc:0 "Unlocks §YMass Media§! policies."
@@ -2973,19 +2973,19 @@ civic_agrarian_idyll_desc:1 "A simple life can often be the most rewarding. This
 civic_aristocratic_elite_desc:0 "This society has an entrenched nobility that occupies the upper echelons of society. \n\n£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_noble£ §Y$job_noble_plural$§!\nCan construct £building£ §Y$building_noble_estates$§! buildings that add additional £job_noble£ §Y$job_noble$§! Jobs \n§YElitists§! faction will be pleased"
 
 policy_industrial:0 "Environmental Regulation"
-policy_industrial_desc:0 " "
+policy_industrial_desc:0 "When digging for gold, what happens to the topsoil?"
 
 mixed_industrial:0 "Moderate"
 mixed_industrial_name:0 "Moderate"
-mixed_industrial_desc:0 " "
+mixed_industrial_desc:0 "Fragile and unique environments are preserved to maintain biodiversity on our worlds, but miners have to mine from somewhere"
 
 industrial_growth:0 "Reduced"
 industrial_growth_name:0 "Reduced"
-industrial_growth_desc:0 "Environmental regulation is reduced, which leads to an increased manufacturing productivity, at the cost of potential environmental destabilization."
+industrial_growth_desc:0 "Fracking is a necessity to maintain the high industrial demand of the nation. Those few disadvantaged from it must put up with it."
 
 industrial_efficiency:0 "Increased"
 industrial_efficiency_name:0 "Increased"
-industrial_efficiency_desc:0 "Environmental regulation is increased, with planetary development being shaped in accordance with more efficient usage of natural resources."
+industrial_efficiency_desc:0 "Great care is taken to avoid environmental damage, and mining conglomerates inside your empire are required to follow strict environmental policies and enact harsh cleanup routines, a policy that no Mining CEO is a fan of."
 
 tech_industrial_efficiency:0 "Industrial Doctrine: Efficiency"
 tech_industrial_efficiency_desc:0 "Unlocks §YEfficiency§! Manufacturing Policy".

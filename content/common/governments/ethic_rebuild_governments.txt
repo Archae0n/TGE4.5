@@ -223,40 +223,42 @@ gov_republican_dictatorship = {
 gov_peoples_republic = {
 	ruler_title = RT_CHAIRMAN
 	ruler_title_female = RT_CHAIRMAN
-	
-	election_candidates = {
 
-	}	
-	
-	should_force_rename = yes
+	possible = {
+		has_authority = auth_dictatorial	
 
-	possible = {	
-		
-				
-		NOR = {	
-		has_ethic = ethic_capitalism 
-		has_ethic = ethic_fanatic_capitalism
+		OR = {
+		has_ethic = ethic_socialism
+		has_ethic = ethic_fanatic_socialism
+		}
+
+		OR = {	
+		has_ethic = ethic_authoritarian
+		has_ethic = ethic_fanatic_authoritarian		
 		}	
 
 		OR = {	
 		has_ethic = ethic_pluralist
-		has_ethic = ethic_fanatic_pluralist
+		has_ethic = ethic_fanatic_pluralist	
 		}			
-
-		has_authority = auth_dictatorial
-        		
-
 	}
 	
+	should_force_rename = yes
 
 	weight = {
-		base = 200
+		base = 2000
 		modifier = {
-			factor = 5
-			has_valid_civic = civic_political_pluralism
-		}	
+			factor = 10
+			has_ethic = ethic_fanatic_socialism
+		}
+		modifier = {
+			factor = 10
+			has_valid_civic = civic_ultimate_collective
+		}
 		
 	}
+	
+	
 }
 
 
@@ -649,7 +651,7 @@ gov_enlighted_socialism = {
 	
 
 	weight = {
-		base = 1000	
+		base = 250	
 		modifier = {
 			factor = 5
 			has_valid_civic = civic_welfare_state

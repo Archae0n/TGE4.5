@@ -47,10 +47,10 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			food = 3
+			zro = 1
 		}
 		upkeep = {
-			food = 0.10
+			zro = 0.10
 		}
 	}
 	modifier = {
@@ -180,10 +180,10 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 3
+			food = 3
 		}
 		upkeep = {
-			alloys = 0.03
+			food = 0.10
 		}
 	}
 	modifier = {
@@ -210,10 +210,11 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			food = 3
+			food = 1.5
+			
 		}
 		upkeep = {
-			food = 0.10
+			food = 0.05
 		}
 	}
 	modifier = {
@@ -244,13 +245,15 @@ utility_component_template = {
 		category = ship_components
 		cost = {
 			food = 3
+			energy = 3
 		}
 		upkeep = {
 			food = 0.10
+			energy = 3
 		}
 	}
 	modifier = {
-		ship_experience_gain_mult = 0.25
+		ship_experience_gain_mult = 0.50
 		ship_fire_rate_mult = 0.05
 	}
 	
@@ -277,13 +280,15 @@ utility_component_template = {
 		category = ship_components
 		cost = {
 			food = 5
+			energy = 5
 		}
 		upkeep = {
 			food = 0.15
+			energy = 5
 		}
 	}
 	modifier = {
-		ship_experience_gain_mult = 0.50
+		ship_experience_gain_mult = 1.00
 		ship_fire_rate_mult = 0.10
 	}
 	
