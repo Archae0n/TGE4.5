@@ -1,0 +1,31 @@
+buildings_unemployed = {
+	planet = {
+		has_building_construction = no
+		any_owned_pop = {
+			NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+			complex_specialist_job_check_trigger = yes
+			NOR = {
+				is_pop_category = specialist
+				is_pop_category = ruler
+			}
+			OR = {
+				is_unemployed = yes
+				has_job = servant
+			}
+		}
+	}
+}
+
+gai_districts_unemployed = {
+	planet = {
+		has_building_construction = no
+		any_owned_pop = {
+			NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+			complex_specialist_job_check_trigger = no
+			OR = {
+				is_unemployed = yes
+				has_job = servant
+			}
+		}
+	}
+}

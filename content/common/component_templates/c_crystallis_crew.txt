@@ -180,12 +180,6 @@ utility_component_template = {
 	power = @power_cost
 	resources = {
 		category = ship_components
-		cost = {
-			food = 3
-		}
-		upkeep = {
-			food = 0.10
-		}
 	}
 	modifier = {
 	}
@@ -193,11 +187,7 @@ utility_component_template = {
 	component_set = "c_ship_crew"
 	
 	ai_weight = {
-		weight = 10
-		modifier = {
-			factor = 0
-			has_monthly_income = { resource = food value < 0 }
-		}
+		weight = 1
 	}
 }
 

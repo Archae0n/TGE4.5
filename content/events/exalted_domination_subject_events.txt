@@ -11,26 +11,20 @@ namespace = exalted_subjects
 @SymbioticBondsMin = 100
 @SymbioticBondsVariance = 3500
 
-# 
+
+#
 country_event = {
 	id = exalted_subjects.611
 	hide_window = yes
 	is_triggered_only = yes
 
-	trigger = {
-		overlord = {
-			is_country_type = default
-		}
-	}
-
 	immediate = {
 		overlord = {
 			if = {
-				limit = { NOT = { is_megacrop = yes } }
+				limit = { NOT = { is_megacorp = yes } }
 				country_event = { id = exalted_subjects.0 }
 			}
 			else_if = {
-				limit = { NOT = { is_megacrop = yes } }
 				country_event = { id = exalted_subjects.4 }
 			}
 		}
@@ -46,7 +40,13 @@ country_event = {
 	trigger = {
 		is_subject_type = subsidiary
 		exists = FROM
-		FROM = { is_country_type = default }
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
+		}
 	}
 
 	immediate = {
@@ -92,7 +92,13 @@ country_event = {
 	trigger = {
 		is_subject_type = vassal
 		exists = FROM
-		FROM = { is_country_type = default }
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
+		}
 	}
 
 	immediate = {
@@ -140,7 +146,13 @@ country_event = {
 	trigger = {
 		is_subject_type = tributary
 		exists = FROM
-		FROM = { is_country_type = default }
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
+		}
 	}
 
 	immediate = {
@@ -163,7 +175,13 @@ country_event = {
 		NOT = { has_country_flag = exalted_advanced_vassal_offered }
 		is_subject_type = vassal
 		exists = overlord
-		overlord = { is_country_type = default }
+		overlord = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
+		}
 	}
 
 	immediate = {
@@ -213,7 +231,13 @@ country_event = {
 		NOT = { has_country_flag = exalted_advanced_vassal_offered }
 		is_subject_type = subsidiary
 		exists = overlord
-		overlord = { is_country_type = default }
+		overlord = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
+		}
 	}
 
 	immediate = {
@@ -259,7 +283,13 @@ country_event = {
 
 	trigger = {
 		exists = FROM
-		FROM = { is_country_type = default }
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
+		}
 	}
 
 	immediate = {
@@ -901,6 +931,12 @@ country_event = {
 
 		hidden_effect = {
 			log = "exalted_subjects.5: Leaving [Root.GetName] as Vassal"
+			from = {
+				set_subject_of = {
+					who = root
+					subject_type = vervassal
+				}
+			}
 		}
 	}
 }
@@ -1183,7 +1219,7 @@ country_event = {
 		custom_tooltip = ver.101.subsidiary.tooltip
 
 		hidden_effect = {
-			log = "exalted_subjects.7: Leaving [Root.GetName] as Subsidiary"
+			log = "exalted_subjects.52: Leaving [Root.GetName] as Subsidiary"
 			from = {
 				set_subject_of = {
 					who = root
@@ -1595,8 +1631,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = {
-			is_country_type = default
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
 		}
 	}
 
@@ -1644,7 +1684,11 @@ country_event = {
 
 	trigger = {
 		from = {
-			is_country_type = default
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
 		}
 	}
 
@@ -1787,8 +1831,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = {
-			is_country_type = default
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
 		}
 	}
 
@@ -1843,8 +1891,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = {
-			is_country_type = default
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
 		}
 	}
 
@@ -1884,7 +1936,7 @@ country_event = {
 			# Vassal is now Stellar Guardian
 			change_government = {
 				civics = {
-					civic = civic_distinguished_admiralty
+					civic = civic_naval_traditions
 					civic = civic_stellar_guardian
 				}
 			}
@@ -1899,8 +1951,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = {
-			is_country_type = default
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
 		}
 	}
 
@@ -1949,8 +2005,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = {
-			is_country_type = default
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
 		}
 	}
 
@@ -1966,8 +2026,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = {
-			is_country_type = default
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
 		}
 	}
 
@@ -1983,8 +2047,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = {
-			is_country_type = default
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = ascended_empire
+			}
 		}
 	}
 

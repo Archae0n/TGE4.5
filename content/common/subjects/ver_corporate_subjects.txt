@@ -14,7 +14,11 @@ versubsidiary = {
 	}
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate
@@ -151,7 +155,11 @@ verdevotee = {
 	}
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate
@@ -300,7 +308,11 @@ verkobun = {
 	}
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate
@@ -449,7 +461,11 @@ versupplier = {
 	}
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate
@@ -598,7 +614,11 @@ verworshipper = {
 	}
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate
@@ -735,7 +755,11 @@ verdebtor = {
 	diplo_threat = 1.5
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate
@@ -893,7 +917,11 @@ versubscriber = {
 	}
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate
@@ -1041,7 +1069,11 @@ verarmsdealer = {
 	}
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate
@@ -1195,7 +1227,11 @@ versubcontractor = {
 	}
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate
@@ -1343,7 +1379,11 @@ verdependency = {
 	}
 
 	potential = {
-		is_country_type = default
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = ascended_empire
+		}
 		from = {
 			OR = {
 				has_authority = auth_corporate

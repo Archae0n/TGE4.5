@@ -1,13 +1,4 @@
 # this = country
-on_monthly_pulse_country = {
-	events = {
-		exalted_subjects.2
-		exalted_subjects.41
-		exalted_subjects.611
-	}
-}
-
-# this = country
 on_yearly_pulse_country = {
 	events = {
 		exalted_subjects.142 # Automated Assembler - Send Pops and Armies
@@ -46,7 +37,6 @@ on_becoming_subject = {
 		exalted_subjects.1 # Set Tributary type
 		exalted_subjects.3 # Force open borders between Overlord and subjects
 		exalted_subjects.4 # Set Subsidiary type
-		exalted_subjects.611 # Backup
 	}
 }
 
@@ -56,7 +46,6 @@ on_monthly_pulse_country = {
 		exalted_subjects.9 # Check for removal of subject edicts and flags
 		exalted_subjects.2 # Set Vassal type if necessary
 		exalted_subjects.41 # Set Subsidiary type if necessary
-		exalted_subjects.611 # Set Vassal type if necessary
 	}
 }
 

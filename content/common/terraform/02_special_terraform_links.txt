@@ -18,22 +18,20 @@ terraform_link = {
 	energy = 10000
 	duration = 7200
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 		modifier = {
-			factor = 0
-			OR = {
-				is_mechanical_empire = yes
-				is_cyborg_empire = yes
-				has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_desert
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
 			}
 		}
 	}
@@ -46,22 +44,20 @@ terraform_link = {
 	energy = 10000
 	duration = 7200
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 		modifier = {
-			factor = 0
-			OR = {
-				is_mechanical_empire = yes
-				is_cyborg_empire = yes
-				has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_arid
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
 			}
 		}
 	}
@@ -74,22 +70,20 @@ terraform_link = {
 	energy = 10000
 	duration = 7200
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 		modifier = {
-			factor = 0
-			OR = {
-				is_mechanical_empire = yes
-				is_cyborg_empire = yes
-				has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
 			}
 		}
 	}
@@ -102,22 +96,20 @@ terraform_link = {
 	energy = 10000
 	duration = 7200
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 		modifier = {
-			factor = 0
-			OR = {
-				is_mechanical_empire = yes
-				is_cyborg_empire = yes
-				has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
 			}
 		}
 	}
@@ -130,22 +122,20 @@ terraform_link = {
 	energy = 10000
 	duration = 7200
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 		modifier = {
-			factor = 0
-			OR = {
-				is_mechanical_empire = yes
-				is_cyborg_empire = yes
-				has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
 			}
 		}
 	}
@@ -158,22 +148,20 @@ terraform_link = {
 	energy = 10000
 	duration = 7200
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 		modifier = {
-			factor = 0
-			OR = {
-				is_mechanical_empire = yes
-				is_cyborg_empire = yes
-				has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
 			}
 		}
 	}
@@ -186,22 +174,20 @@ terraform_link = {
 	energy = 10000
 	duration = 7200
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 		modifier = {
-			factor = 0
-			OR = {
-				is_mechanical_empire = yes
-				is_cyborg_empire = yes
-				has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_continental
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
 			}
 		}
 	}
@@ -214,22 +200,20 @@ terraform_link = {
 	energy = 10000
 	duration = 7200
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 		modifier = {
-			factor = 0
-			OR = {
-				is_mechanical_empire = yes
-				is_cyborg_empire = yes
-				has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
 			}
 		}
 	}
@@ -242,22 +226,20 @@ terraform_link = {
 	energy = 10000
 	duration = 7200
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 		modifier = {
-			factor = 0
-			OR = {
-				is_mechanical_empire = yes
-				is_cyborg_empire = yes
-				has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
 			}
 		}
 	}
@@ -275,25 +257,14 @@ terraform_link = {
 	duration = @gaiaTime
 	
 	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
-	potential = {
 		has_ascension_perk = "ap_world_shaper"
 	}
 	
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 0	
-			resource_stockpile_compare = { resource = energy value < 40000 }
-		}
-		# modifier = {
-		# 	factor = 0		
-		# 	from = { sector_controlled = yes }
-		# }
-		modifier = {
 			factor = 0
+			has_country_flag = gai_machines_have_organics
 			OR = {		
 				is_mechanical_empire = yes
 				is_cyborg_empire = yes
@@ -311,26 +282,15 @@ terraform_link = {
 	duration = @gaiaTime
 	
 	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
-	potential = {
 		has_ascension_perk = "ap_world_shaper"
 	}
 	
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 0	
-			resource_stockpile_compare = { resource = energy value < 40000 }
-		}
-		# modifier = {
-		# 	factor = 0		
-		# 	from = { sector_controlled = yes }
-		# }
-		modifier = {
 			factor = 0
-			OR = {
+			has_country_flag = gai_machines_have_organics
+			OR = {		
 				is_mechanical_empire = yes
 				is_cyborg_empire = yes
 				has_authority = auth_machine_intelligence
@@ -347,26 +307,15 @@ terraform_link = {
 	duration = @gaiaTime
 	
 	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
-	potential = {
 		has_ascension_perk = "ap_world_shaper"
 	}
 	
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 0	
-			resource_stockpile_compare = { resource = energy value < 40000 }
-		}
-		# modifier = {
-		# 	factor = 0		
-		# 	from = { sector_controlled = yes }
-		# }
-		modifier = {
 			factor = 0
-			OR = {
+			has_country_flag = gai_machines_have_organics
+			OR = {		
 				is_mechanical_empire = yes
 				is_cyborg_empire = yes
 				has_authority = auth_machine_intelligence
@@ -383,26 +332,15 @@ terraform_link = {
 	duration = @gaiaTime
 	
 	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
-	potential = {
 		has_ascension_perk = "ap_world_shaper"
 	}
 	
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 0	
-			resource_stockpile_compare = { resource = energy value < 40000 }
-		}
-		# modifier = {
-		# 	factor = 0		
-		# 	from = { sector_controlled = yes }
-		# }
-		modifier = {
 			factor = 0
-			OR = {
+			has_country_flag = gai_machines_have_organics
+			OR = {		
 				is_mechanical_empire = yes
 				is_cyborg_empire = yes
 				has_authority = auth_machine_intelligence
@@ -419,26 +357,15 @@ terraform_link = {
 	duration = @gaiaTime
 	
 	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
-	potential = {
 		has_ascension_perk = "ap_world_shaper"
 	}
 	
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 0	
-			resource_stockpile_compare = { resource = energy value < 40000 }
-		}
-		# modifier = {
-		# 	factor = 0		
-		# 	from = { sector_controlled = yes }
-		# }
-		modifier = {
 			factor = 0
-			OR = {
+			has_country_flag = gai_machines_have_organics
+			OR = {		
 				is_mechanical_empire = yes
 				is_cyborg_empire = yes
 				has_authority = auth_machine_intelligence
@@ -455,26 +382,15 @@ terraform_link = {
 	duration = @gaiaTime
 	
 	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
-	potential = {
 		has_ascension_perk = "ap_world_shaper"
 	}
 	
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 0	
-			resource_stockpile_compare = { resource = energy value < 40000 }
-		}
-		# modifier = {
-		# 	factor = 0		
-		# 	from = { sector_controlled = yes }
-		# }
-		modifier = {
 			factor = 0
-			OR = {
+			has_country_flag = gai_machines_have_organics
+			OR = {		
 				is_mechanical_empire = yes
 				is_cyborg_empire = yes
 				has_authority = auth_machine_intelligence
@@ -491,26 +407,15 @@ terraform_link = {
 	duration = @gaiaTime
 	
 	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
-	potential = {
 		has_ascension_perk = "ap_world_shaper"
 	}
 	
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 0	
-			resource_stockpile_compare = { resource = energy value < 40000 }
-		}
-		# modifier = {
-		# 	factor = 0		
-		# 	from = { sector_controlled = yes }
-		# }
-		modifier = {
 			factor = 0
-			OR = {
+			has_country_flag = gai_machines_have_organics
+			OR = {		
 				is_mechanical_empire = yes
 				is_cyborg_empire = yes
 				has_authority = auth_machine_intelligence
@@ -527,26 +432,15 @@ terraform_link = {
 	duration = @gaiaTime
 	
 	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
-	potential = {
 		has_ascension_perk = "ap_world_shaper"
 	}
 	
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 0	
-			resource_stockpile_compare = { resource = energy value < 40000 }
-		}
-		# modifier = {
-		# 	factor = 0		
-		# 	from = { sector_controlled = yes }
-		# }
-		modifier = {
 			factor = 0
-			OR = {
+			has_country_flag = gai_machines_have_organics
+			OR = {		
 				is_mechanical_empire = yes
 				is_cyborg_empire = yes
 				has_authority = auth_machine_intelligence
@@ -563,26 +457,83 @@ terraform_link = {
 	duration = @gaiaTime
 	
 	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
-	potential = {
 		has_ascension_perk = "ap_world_shaper"
 	}
 	
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 0	
-			resource_stockpile_compare = { resource = energy value < 40000 }
+			factor = 0
+			has_country_flag = gai_machines_have_organics
+			OR = {		
+				is_mechanical_empire = yes
+				is_cyborg_empire = yes
+				has_authority = auth_machine_intelligence
+			}
 		}
-		# modifier = {
-		# 	factor = 0		
-		# 	from = { sector_controlled = yes }
-		# }
+	}
+}
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_gaia"
+	
+	energy = @gaiaCost
+	duration = @gaiaTime
+	
+	potential = {
+		has_ascension_perk = "ap_world_shaper"
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+	
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+	
+	ai_weight = {
+		weight = 1
 		modifier = {
 			factor = 0
-			OR = {
+			has_country_flag = gai_machines_have_organics
+			OR = {		
+				is_mechanical_empire = yes
+				is_cyborg_empire = yes
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_gaia"
+	
+	energy = @gaiaCost
+	duration = @gaiaTime
+	
+	potential = {
+		has_ascension_perk = "ap_world_shaper"
+		from = { has_modifier = terraforming_candidate }
+	}
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+	
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			has_country_flag = gai_machines_have_organics
+			OR = {		
 				is_mechanical_empire = yes
 				is_cyborg_empire = yes
 				has_authority = auth_machine_intelligence
@@ -602,11 +553,9 @@ terraform_link = {
 	energy = 5000
 	duration = 3600
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -615,7 +564,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -626,11 +585,9 @@ terraform_link = {
 	energy = 5000
 	duration = 3600
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -639,7 +596,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -650,11 +617,9 @@ terraform_link = {
 	energy = 5000
 	duration = 3600
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -663,7 +628,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -674,11 +649,9 @@ terraform_link = {
 	energy = 10000
 	duration = 5400
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -687,7 +660,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -698,11 +681,9 @@ terraform_link = {
 	energy = 10000
 	duration = 5400
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -711,7 +692,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -722,11 +713,9 @@ terraform_link = {
 	energy = 10000
 	duration = 5400
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -735,7 +724,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -747,11 +746,9 @@ terraform_link = {
 	energy = 15000
 	duration = 7200
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -760,7 +757,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -771,11 +778,9 @@ terraform_link = {
 	energy = 15000
 	duration = 7200
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -784,7 +789,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -795,11 +810,9 @@ terraform_link = {
 	energy = 15000
 	duration = 7200
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -808,7 +821,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -819,11 +842,9 @@ terraform_link = {
 	energy = 5000
 	duration = 3600
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -832,7 +853,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -843,11 +874,9 @@ terraform_link = {
 	energy = 5000
 	duration = 3600
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	} 
 	
@@ -856,7 +885,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -867,11 +906,9 @@ terraform_link = {
 	energy = 5000
 	duration = 3600
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -880,7 +917,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -891,11 +938,9 @@ terraform_link = {
 	energy = 10000
 	duration = 5400
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -904,7 +949,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -915,11 +970,9 @@ terraform_link = {
 	energy = 10000
 	duration = 5400
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -928,7 +981,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -939,11 +1002,9 @@ terraform_link = {
 	energy = 10000
 	duration = 5400
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -952,7 +1013,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -963,11 +1034,9 @@ terraform_link = {
 	energy = 15000
 	duration = 7200
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -976,7 +1045,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -987,11 +1066,9 @@ terraform_link = {
 	energy = 15000
 	duration = 7200
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -1000,7 +1077,17 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -1011,11 +1098,9 @@ terraform_link = {
 	energy = 15000
 	duration = 7200
 	
-	potential = {
+	condition = { 
+		exists = from 
 		from = { has_modifier = terraforming_candidate }
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	condition = {
 		has_technology = "tech_climate_restoration"
 	}
 	
@@ -1024,14 +1109,23 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
 ###################
 ## Machine World ##
 ###################
-
 
 terraform_link = {
 	to = "pc_machine"
@@ -1042,7 +1136,7 @@ terraform_link = {
 	
 	potential = {
 		has_ascension_perk = ap_machine_worlds
-		gpm_has_required_terraform_modifier = yes
+		from = { has_modifier = terraforming_candidate }
 	}
 	
 	ai_weight = {
@@ -1076,7 +1170,7 @@ terraform_link = {
 	
 	potential = {
 		has_ascension_perk = ap_machine_worlds
-		gpm_has_required_terraform_modifier = yes
+		from = { has_modifier = terraforming_candidate }
 	}
 	
 	ai_weight = {
@@ -1145,7 +1239,7 @@ terraform_link = {
 		has_ascension_perk = ap_machine_worlds
 	}
 	
-	condition = {
+	condition = { 
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1519,10 +1613,16 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_desert
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -1546,10 +1646,16 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_arid
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -1573,10 +1679,16 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -1600,10 +1712,16 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -1627,10 +1745,16 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -1654,10 +1778,16 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -1681,10 +1811,16 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_continental
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -1708,10 +1844,16 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -1735,10 +1877,16 @@ terraform_link = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2182,12 +2330,25 @@ terraform_link = {
 	potential = {
 		has_technology = tech_climate_restoration
 	}
+
+	effect = {
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_hive_mind
+			weight = 1
+			has_country_flag = gai_likes_desert
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2202,12 +2363,25 @@ terraform_link = {
 	potential = {
 		has_technology = tech_climate_restoration
 	}
+
+	effect = {
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_hive_mind
+			weight = 1
+			has_country_flag = gai_likes_arid
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2222,12 +2396,25 @@ terraform_link = {
 	potential = {
 		has_technology = tech_climate_restoration
 	}
+
+	effect = {
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_hive_mind
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2242,12 +2429,25 @@ terraform_link = {
 	potential = {
 		has_technology = tech_climate_restoration
 	}
+
+	effect = {
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_hive_mind
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2262,12 +2462,25 @@ terraform_link = {
 	potential = {
 		has_technology = tech_climate_restoration
 	}
+
+	effect = {
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_hive_mind
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2282,12 +2495,25 @@ terraform_link = {
 	potential = {
 		has_technology = tech_climate_restoration
 	}
+
+	effect = {
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_hive_mind
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2302,12 +2528,25 @@ terraform_link = {
 	potential = {
 		has_technology = tech_climate_restoration
 	}
+
+	effect = {
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_hive_mind
+			weight = 1
+			has_country_flag = gai_likes_continental
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2322,12 +2561,25 @@ terraform_link = {
 	potential = {
 		has_technology = tech_climate_restoration
 	}
+
+	effect = {
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_hive_mind
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2342,12 +2594,25 @@ terraform_link = {
 	potential = {
 		has_technology = tech_climate_restoration
 	}
+
+	effect = {
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			has_authority = auth_hive_mind
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
 		}
 	}
 }
@@ -2364,6 +2629,18 @@ terraform_link = {
 	duration = 360
 	potential = { from = { has_modifier = terraforming_candidate } }
 	effect = { from = { remove_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
+	}
 }
 
 terraform_link = {
@@ -2374,6 +2651,18 @@ terraform_link = {
 	duration = 360
 	potential = { from = { has_modifier = terraforming_candidate } }
 	effect = { from = { remove_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
+	}
 }
 
 terraform_link = {
@@ -2384,6 +2673,18 @@ terraform_link = {
 	duration = 360
 	potential = { from = { has_modifier = terraforming_candidate } }
 	effect = { from = { remove_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
+	}
 }
 
 terraform_link = {
@@ -2394,6 +2695,19 @@ terraform_link = {
 	duration = 360
 	potential = { from = { has_modifier = terraforming_candidate } }
 	effect = { from = { remove_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
+	}
 }
 
 terraform_link = {
@@ -2404,6 +2718,19 @@ terraform_link = {
 	duration = 360
 	potential = { from = { has_modifier = terraforming_candidate } }
 	effect = { from = { remove_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
+	}
 }
 
 terraform_link = {
@@ -2414,6 +2741,19 @@ terraform_link = {
 	duration = 360
 	potential = { from = { has_modifier = terraforming_candidate } }
 	effect = { from = { remove_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
+	}
 }
 
 terraform_link = {
@@ -2424,6 +2764,19 @@ terraform_link = {
 	duration = 360
 	potential = { from = { has_modifier = terraforming_candidate } }
 	effect = { from = { remove_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
+	}
 }
 
 terraform_link = {
@@ -2434,6 +2787,19 @@ terraform_link = {
 	duration = 360
 	potential = { from = { has_modifier = terraforming_candidate } }
 	effect = { from = { remove_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
+	}
 }
 
 terraform_link = {
@@ -2444,4 +2810,17 @@ terraform_link = {
 	duration = 360
 	potential = { from = { has_modifier = terraforming_candidate } }
 	effect = { from = { remove_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
+	}
 }

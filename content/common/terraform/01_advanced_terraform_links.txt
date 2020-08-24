@@ -8,17 +8,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+			NOT = { has_country_flag = gai_likes_continental }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -28,17 +34,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+			NOT = { has_country_flag = gai_likes_continental }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -48,17 +60,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			NOT = { has_country_flag = gai_likes_continental }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -68,17 +86,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			NOT = { has_country_flag = gai_likes_continental }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -88,17 +112,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			NOT = { has_country_flag = gai_likes_continental }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -108,17 +138,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			NOT = { has_country_flag = gai_likes_continental }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -132,17 +168,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+			NOT = { has_country_flag = gai_likes_tropical }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -152,17 +194,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+			NOT = { has_country_flag = gai_likes_tropical }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -172,17 +220,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			NOT = { has_country_flag = gai_likes_tropical }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -192,17 +246,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			NOT = { has_country_flag = gai_likes_tropical }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -212,17 +272,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			NOT = { has_country_flag = gai_likes_tropical }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -232,17 +298,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			NOT = { has_country_flag = gai_likes_tropical }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -256,17 +328,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+			NOT = { has_country_flag = gai_likes_ocean }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -276,17 +354,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+			NOT = { has_country_flag = gai_likes_ocean }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -296,17 +380,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			NOT = { has_country_flag = gai_likes_ocean }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -316,17 +406,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			NOT = { has_country_flag = gai_likes_ocean }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -336,17 +432,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			NOT = { has_country_flag = gai_likes_ocean }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -356,17 +458,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			NOT = { has_country_flag = gai_likes_ocean }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -380,17 +488,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			NOT = { has_country_flag = gai_likes_arid }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -400,17 +514,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+			NOT = { has_country_flag = gai_likes_arid }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -420,17 +540,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			NOT = { has_country_flag = gai_likes_arid }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -440,17 +566,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			NOT = { has_country_flag = gai_likes_arid }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -460,17 +592,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			NOT = { has_country_flag = gai_likes_arid }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -480,17 +618,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			NOT = { has_country_flag = gai_likes_arid }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -504,17 +648,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			NOT = { has_country_flag = gai_likes_desert }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -524,17 +674,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+			NOT = { has_country_flag = gai_likes_desert }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -544,17 +700,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			NOT = { has_country_flag = gai_likes_desert }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -564,17 +726,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			NOT = { has_country_flag = gai_likes_desert }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -584,17 +752,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			NOT = { has_country_flag = gai_likes_desert }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -604,17 +778,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			NOT = { has_country_flag = gai_likes_desert }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -628,17 +808,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			NOT = { has_country_flag = gai_likes_savannah }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -648,17 +834,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+			NOT = { has_country_flag = gai_likes_savannah }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -668,17 +860,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			NOT = { has_country_flag = gai_likes_savannah }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -688,17 +886,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+			NOT = { has_country_flag = gai_likes_savannah }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -708,17 +912,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+			NOT = { has_country_flag = gai_likes_savannah }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -728,17 +938,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+			NOT = { has_country_flag = gai_likes_savannah }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -752,17 +968,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			NOT = { has_country_flag = gai_likes_arctic }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -772,17 +994,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+			NOT = { has_country_flag = gai_likes_arctic }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -792,17 +1020,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			NOT = { has_country_flag = gai_likes_arctic }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -812,17 +1046,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+			NOT = { has_country_flag = gai_likes_arctic }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -832,17 +1072,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+			NOT = { has_country_flag = gai_likes_arctic }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -852,17 +1098,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			NOT = { has_country_flag = gai_likes_arctic }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -876,17 +1128,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			NOT = { has_country_flag = gai_likes_tundra }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -896,17 +1154,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+			NOT = { has_country_flag = gai_likes_tundra }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -916,17 +1180,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			NOT = { has_country_flag = gai_likes_tundra }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -936,17 +1206,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+			NOT = { has_country_flag = gai_likes_tundra }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -956,17 +1232,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+			NOT = { has_country_flag = gai_likes_tundra }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -976,17 +1258,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			NOT = { has_country_flag = gai_likes_tundra }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -1000,17 +1288,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+			NOT = { has_country_flag = gai_likes_alpine }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -1020,17 +1314,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+			NOT = { has_country_flag = gai_likes_alpine }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -1040,17 +1340,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+			NOT = { has_country_flag = gai_likes_alpine }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -1060,17 +1366,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+			NOT = { has_country_flag = gai_likes_alpine }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -1080,17 +1392,23 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+			NOT = { has_country_flag = gai_likes_alpine }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }
 
@@ -1100,16 +1418,22 @@ terraform_link = {
 	
 	energy = 5000
 	duration = 3600
-	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
+
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+			NOT = { has_country_flag = gai_likes_alpine }
+			NOR = {
+				has_ascension_perk = ap_hive_worlds #hive
+				has_ascension_perk = ap_machine_worlds #robot
+				has_ascension_perk = ap_world_shaper #gaia
+			}
+		}
 	}
 }

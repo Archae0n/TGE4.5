@@ -1,0 +1,513 @@
+@MODIFIER_DURATION=30
+#lower limit: 0.000000, upper limit: 127.000000, accuracy: 1.000000
+SGM_ship_modifier_supply_add={
+    if={limit={check_variable={which=SGM_ship_modifier_supply value < 64.000000}} #0.000000<=VAL<64.000000
+        if={limit={check_variable={which=SGM_ship_modifier_supply value < 32.000000}} #0.000000<=VAL<32.000000
+            if={limit={check_variable={which=SGM_ship_modifier_supply value < 16.000000}} #0.000000<=VAL<16.000000
+                if={limit={check_variable={which=SGM_ship_modifier_supply value < 8.000000}} #0.000000<=VAL<8.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 4.000000}} #0.000000<=VAL<4.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 2.000000}} #0.000000<=VAL<2.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 1.000000}} #0.000000<=VAL<1.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0000 days=@MODIFIER_DURATION}
+                            }else={ #1.000000<=VAL<2.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0001 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #2.000000<=VAL<4.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 3.000000}} #2.000000<=VAL<3.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0002 days=@MODIFIER_DURATION}
+                            }else={ #3.000000<=VAL<4.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0003 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #4.000000<=VAL<8.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 6.000000}} #4.000000<=VAL<6.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 5.000000}} #4.000000<=VAL<5.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0004 days=@MODIFIER_DURATION}
+                            }else={ #5.000000<=VAL<6.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0005 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #6.000000<=VAL<8.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 7.000000}} #6.000000<=VAL<7.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0006 days=@MODIFIER_DURATION}
+                            }else={ #7.000000<=VAL<8.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0007 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }else={ #8.000000<=VAL<16.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 12.000000}} #8.000000<=VAL<12.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 10.000000}} #8.000000<=VAL<10.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 9.000000}} #8.000000<=VAL<9.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0008 days=@MODIFIER_DURATION}
+                            }else={ #9.000000<=VAL<10.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0009 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #10.000000<=VAL<12.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 11.000000}} #10.000000<=VAL<11.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0010 days=@MODIFIER_DURATION}
+                            }else={ #11.000000<=VAL<12.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0011 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #12.000000<=VAL<16.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 14.000000}} #12.000000<=VAL<14.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 13.000000}} #12.000000<=VAL<13.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0012 days=@MODIFIER_DURATION}
+                            }else={ #13.000000<=VAL<14.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0013 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #14.000000<=VAL<16.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 15.000000}} #14.000000<=VAL<15.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0014 days=@MODIFIER_DURATION}
+                            }else={ #15.000000<=VAL<16.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0015 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }
+            }else={ #16.000000<=VAL<32.000000
+                if={limit={check_variable={which=SGM_ship_modifier_supply value < 24.000000}} #16.000000<=VAL<24.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 20.000000}} #16.000000<=VAL<20.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 18.000000}} #16.000000<=VAL<18.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 17.000000}} #16.000000<=VAL<17.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0016 days=@MODIFIER_DURATION}
+                            }else={ #17.000000<=VAL<18.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0017 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #18.000000<=VAL<20.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 19.000000}} #18.000000<=VAL<19.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0018 days=@MODIFIER_DURATION}
+                            }else={ #19.000000<=VAL<20.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0019 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #20.000000<=VAL<24.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 22.000000}} #20.000000<=VAL<22.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 21.000000}} #20.000000<=VAL<21.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0020 days=@MODIFIER_DURATION}
+                            }else={ #21.000000<=VAL<22.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0021 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #22.000000<=VAL<24.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 23.000000}} #22.000000<=VAL<23.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0022 days=@MODIFIER_DURATION}
+                            }else={ #23.000000<=VAL<24.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0023 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }else={ #24.000000<=VAL<32.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 28.000000}} #24.000000<=VAL<28.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 26.000000}} #24.000000<=VAL<26.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 25.000000}} #24.000000<=VAL<25.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0024 days=@MODIFIER_DURATION}
+                            }else={ #25.000000<=VAL<26.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0025 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #26.000000<=VAL<28.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 27.000000}} #26.000000<=VAL<27.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0026 days=@MODIFIER_DURATION}
+                            }else={ #27.000000<=VAL<28.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0027 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #28.000000<=VAL<32.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 30.000000}} #28.000000<=VAL<30.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 29.000000}} #28.000000<=VAL<29.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0028 days=@MODIFIER_DURATION}
+                            }else={ #29.000000<=VAL<30.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0029 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #30.000000<=VAL<32.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 31.000000}} #30.000000<=VAL<31.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0030 days=@MODIFIER_DURATION}
+                            }else={ #31.000000<=VAL<32.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0031 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }
+            }
+        }else={ #32.000000<=VAL<64.000000
+            if={limit={check_variable={which=SGM_ship_modifier_supply value < 48.000000}} #32.000000<=VAL<48.000000
+                if={limit={check_variable={which=SGM_ship_modifier_supply value < 40.000000}} #32.000000<=VAL<40.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 36.000000}} #32.000000<=VAL<36.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 34.000000}} #32.000000<=VAL<34.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 33.000000}} #32.000000<=VAL<33.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0032 days=@MODIFIER_DURATION}
+                            }else={ #33.000000<=VAL<34.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0033 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #34.000000<=VAL<36.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 35.000000}} #34.000000<=VAL<35.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0034 days=@MODIFIER_DURATION}
+                            }else={ #35.000000<=VAL<36.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0035 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #36.000000<=VAL<40.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 38.000000}} #36.000000<=VAL<38.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 37.000000}} #36.000000<=VAL<37.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0036 days=@MODIFIER_DURATION}
+                            }else={ #37.000000<=VAL<38.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0037 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #38.000000<=VAL<40.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 39.000000}} #38.000000<=VAL<39.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0038 days=@MODIFIER_DURATION}
+                            }else={ #39.000000<=VAL<40.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0039 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }else={ #40.000000<=VAL<48.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 44.000000}} #40.000000<=VAL<44.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 42.000000}} #40.000000<=VAL<42.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 41.000000}} #40.000000<=VAL<41.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0040 days=@MODIFIER_DURATION}
+                            }else={ #41.000000<=VAL<42.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0041 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #42.000000<=VAL<44.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 43.000000}} #42.000000<=VAL<43.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0042 days=@MODIFIER_DURATION}
+                            }else={ #43.000000<=VAL<44.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0043 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #44.000000<=VAL<48.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 46.000000}} #44.000000<=VAL<46.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 45.000000}} #44.000000<=VAL<45.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0044 days=@MODIFIER_DURATION}
+                            }else={ #45.000000<=VAL<46.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0045 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #46.000000<=VAL<48.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 47.000000}} #46.000000<=VAL<47.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0046 days=@MODIFIER_DURATION}
+                            }else={ #47.000000<=VAL<48.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0047 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }
+            }else={ #48.000000<=VAL<64.000000
+                if={limit={check_variable={which=SGM_ship_modifier_supply value < 56.000000}} #48.000000<=VAL<56.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 52.000000}} #48.000000<=VAL<52.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 50.000000}} #48.000000<=VAL<50.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 49.000000}} #48.000000<=VAL<49.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0048 days=@MODIFIER_DURATION}
+                            }else={ #49.000000<=VAL<50.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0049 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #50.000000<=VAL<52.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 51.000000}} #50.000000<=VAL<51.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0050 days=@MODIFIER_DURATION}
+                            }else={ #51.000000<=VAL<52.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0051 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #52.000000<=VAL<56.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 54.000000}} #52.000000<=VAL<54.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 53.000000}} #52.000000<=VAL<53.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0052 days=@MODIFIER_DURATION}
+                            }else={ #53.000000<=VAL<54.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0053 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #54.000000<=VAL<56.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 55.000000}} #54.000000<=VAL<55.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0054 days=@MODIFIER_DURATION}
+                            }else={ #55.000000<=VAL<56.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0055 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }else={ #56.000000<=VAL<64.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 60.000000}} #56.000000<=VAL<60.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 58.000000}} #56.000000<=VAL<58.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 57.000000}} #56.000000<=VAL<57.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0056 days=@MODIFIER_DURATION}
+                            }else={ #57.000000<=VAL<58.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0057 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #58.000000<=VAL<60.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 59.000000}} #58.000000<=VAL<59.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0058 days=@MODIFIER_DURATION}
+                            }else={ #59.000000<=VAL<60.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0059 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #60.000000<=VAL<64.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 62.000000}} #60.000000<=VAL<62.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 61.000000}} #60.000000<=VAL<61.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0060 days=@MODIFIER_DURATION}
+                            }else={ #61.000000<=VAL<62.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0061 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #62.000000<=VAL<64.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 63.000000}} #62.000000<=VAL<63.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0062 days=@MODIFIER_DURATION}
+                            }else={ #63.000000<=VAL<64.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0063 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }else={ #64.000000<=VAL<128.000000
+        if={limit={check_variable={which=SGM_ship_modifier_supply value < 96.000000}} #64.000000<=VAL<96.000000
+            if={limit={check_variable={which=SGM_ship_modifier_supply value < 80.000000}} #64.000000<=VAL<80.000000
+                if={limit={check_variable={which=SGM_ship_modifier_supply value < 72.000000}} #64.000000<=VAL<72.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 68.000000}} #64.000000<=VAL<68.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 66.000000}} #64.000000<=VAL<66.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 65.000000}} #64.000000<=VAL<65.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0064 days=@MODIFIER_DURATION}
+                            }else={ #65.000000<=VAL<66.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0065 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #66.000000<=VAL<68.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 67.000000}} #66.000000<=VAL<67.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0066 days=@MODIFIER_DURATION}
+                            }else={ #67.000000<=VAL<68.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0067 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #68.000000<=VAL<72.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 70.000000}} #68.000000<=VAL<70.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 69.000000}} #68.000000<=VAL<69.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0068 days=@MODIFIER_DURATION}
+                            }else={ #69.000000<=VAL<70.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0069 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #70.000000<=VAL<72.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 71.000000}} #70.000000<=VAL<71.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0070 days=@MODIFIER_DURATION}
+                            }else={ #71.000000<=VAL<72.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0071 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }else={ #72.000000<=VAL<80.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 76.000000}} #72.000000<=VAL<76.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 74.000000}} #72.000000<=VAL<74.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 73.000000}} #72.000000<=VAL<73.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0072 days=@MODIFIER_DURATION}
+                            }else={ #73.000000<=VAL<74.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0073 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #74.000000<=VAL<76.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 75.000000}} #74.000000<=VAL<75.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0074 days=@MODIFIER_DURATION}
+                            }else={ #75.000000<=VAL<76.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0075 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #76.000000<=VAL<80.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 78.000000}} #76.000000<=VAL<78.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 77.000000}} #76.000000<=VAL<77.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0076 days=@MODIFIER_DURATION}
+                            }else={ #77.000000<=VAL<78.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0077 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #78.000000<=VAL<80.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 79.000000}} #78.000000<=VAL<79.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0078 days=@MODIFIER_DURATION}
+                            }else={ #79.000000<=VAL<80.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0079 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }
+            }else={ #80.000000<=VAL<96.000000
+                if={limit={check_variable={which=SGM_ship_modifier_supply value < 88.000000}} #80.000000<=VAL<88.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 84.000000}} #80.000000<=VAL<84.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 82.000000}} #80.000000<=VAL<82.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 81.000000}} #80.000000<=VAL<81.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0080 days=@MODIFIER_DURATION}
+                            }else={ #81.000000<=VAL<82.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0081 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #82.000000<=VAL<84.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 83.000000}} #82.000000<=VAL<83.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0082 days=@MODIFIER_DURATION}
+                            }else={ #83.000000<=VAL<84.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0083 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #84.000000<=VAL<88.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 86.000000}} #84.000000<=VAL<86.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 85.000000}} #84.000000<=VAL<85.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0084 days=@MODIFIER_DURATION}
+                            }else={ #85.000000<=VAL<86.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0085 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #86.000000<=VAL<88.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 87.000000}} #86.000000<=VAL<87.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0086 days=@MODIFIER_DURATION}
+                            }else={ #87.000000<=VAL<88.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0087 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }else={ #88.000000<=VAL<96.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 92.000000}} #88.000000<=VAL<92.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 90.000000}} #88.000000<=VAL<90.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 89.000000}} #88.000000<=VAL<89.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0088 days=@MODIFIER_DURATION}
+                            }else={ #89.000000<=VAL<90.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0089 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #90.000000<=VAL<92.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 91.000000}} #90.000000<=VAL<91.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0090 days=@MODIFIER_DURATION}
+                            }else={ #91.000000<=VAL<92.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0091 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #92.000000<=VAL<96.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 94.000000}} #92.000000<=VAL<94.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 93.000000}} #92.000000<=VAL<93.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0092 days=@MODIFIER_DURATION}
+                            }else={ #93.000000<=VAL<94.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0093 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #94.000000<=VAL<96.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 95.000000}} #94.000000<=VAL<95.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0094 days=@MODIFIER_DURATION}
+                            }else={ #95.000000<=VAL<96.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0095 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }
+            }
+        }else={ #96.000000<=VAL<128.000000
+            if={limit={check_variable={which=SGM_ship_modifier_supply value < 112.000000}} #96.000000<=VAL<112.000000
+                if={limit={check_variable={which=SGM_ship_modifier_supply value < 104.000000}} #96.000000<=VAL<104.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 100.000000}} #96.000000<=VAL<100.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 98.000000}} #96.000000<=VAL<98.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 97.000000}} #96.000000<=VAL<97.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0096 days=@MODIFIER_DURATION}
+                            }else={ #97.000000<=VAL<98.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0097 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #98.000000<=VAL<100.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 99.000000}} #98.000000<=VAL<99.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0098 days=@MODIFIER_DURATION}
+                            }else={ #99.000000<=VAL<100.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0099 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #100.000000<=VAL<104.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 102.000000}} #100.000000<=VAL<102.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 101.000000}} #100.000000<=VAL<101.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0100 days=@MODIFIER_DURATION}
+                            }else={ #101.000000<=VAL<102.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0101 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #102.000000<=VAL<104.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 103.000000}} #102.000000<=VAL<103.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0102 days=@MODIFIER_DURATION}
+                            }else={ #103.000000<=VAL<104.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0103 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }else={ #104.000000<=VAL<112.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 108.000000}} #104.000000<=VAL<108.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 106.000000}} #104.000000<=VAL<106.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 105.000000}} #104.000000<=VAL<105.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0104 days=@MODIFIER_DURATION}
+                            }else={ #105.000000<=VAL<106.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0105 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #106.000000<=VAL<108.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 107.000000}} #106.000000<=VAL<107.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0106 days=@MODIFIER_DURATION}
+                            }else={ #107.000000<=VAL<108.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0107 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #108.000000<=VAL<112.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 110.000000}} #108.000000<=VAL<110.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 109.000000}} #108.000000<=VAL<109.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0108 days=@MODIFIER_DURATION}
+                            }else={ #109.000000<=VAL<110.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0109 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #110.000000<=VAL<112.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 111.000000}} #110.000000<=VAL<111.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0110 days=@MODIFIER_DURATION}
+                            }else={ #111.000000<=VAL<112.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0111 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }
+            }else={ #112.000000<=VAL<128.000000
+                if={limit={check_variable={which=SGM_ship_modifier_supply value < 120.000000}} #112.000000<=VAL<120.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 116.000000}} #112.000000<=VAL<116.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 114.000000}} #112.000000<=VAL<114.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 113.000000}} #112.000000<=VAL<113.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0112 days=@MODIFIER_DURATION}
+                            }else={ #113.000000<=VAL<114.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0113 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #114.000000<=VAL<116.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 115.000000}} #114.000000<=VAL<115.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0114 days=@MODIFIER_DURATION}
+                            }else={ #115.000000<=VAL<116.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0115 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #116.000000<=VAL<120.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 118.000000}} #116.000000<=VAL<118.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 117.000000}} #116.000000<=VAL<117.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0116 days=@MODIFIER_DURATION}
+                            }else={ #117.000000<=VAL<118.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0117 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #118.000000<=VAL<120.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 119.000000}} #118.000000<=VAL<119.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0118 days=@MODIFIER_DURATION}
+                            }else={ #119.000000<=VAL<120.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0119 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }else={ #120.000000<=VAL<128.000000
+                    if={limit={check_variable={which=SGM_ship_modifier_supply value < 124.000000}} #120.000000<=VAL<124.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 122.000000}} #120.000000<=VAL<122.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 121.000000}} #120.000000<=VAL<121.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0120 days=@MODIFIER_DURATION}
+                            }else={ #121.000000<=VAL<122.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0121 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #122.000000<=VAL<124.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 123.000000}} #122.000000<=VAL<123.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0122 days=@MODIFIER_DURATION}
+                            }else={ #123.000000<=VAL<124.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0123 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }else={ #124.000000<=VAL<128.000000
+                        if={limit={check_variable={which=SGM_ship_modifier_supply value < 126.000000}} #124.000000<=VAL<126.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 125.000000}} #124.000000<=VAL<125.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0124 days=@MODIFIER_DURATION}
+                            }else={ #125.000000<=VAL<126.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0125 days=@MODIFIER_DURATION}
+                            }
+                        }else={ #126.000000<=VAL<128.000000
+                            if={limit={check_variable={which=SGM_ship_modifier_supply value < 127.000000}} #126.000000<=VAL<127.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0126 days=@MODIFIER_DURATION}
+                            }else={ #127.000000<=VAL<128.000000
+                                add_modifier={modifier=SGM_ship_modifier_supply_0127 days=@MODIFIER_DURATION}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

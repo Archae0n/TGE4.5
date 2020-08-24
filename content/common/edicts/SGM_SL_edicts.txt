@@ -1,0 +1,106 @@
+##########################################################################
+# Planet edicts
+##########################################################################
+
+# Variables:
+#  name, the name of the edict, also serves as localisation key.
+#  influence_cost, the base influence cost of activating the edict.
+#  potential, planet or country trigger to decide whether the edict should be shown.
+#  allow, planet or country trigger to decide if whether this edict can be activated.
+#  effect, an effect that is executed when this trigger activates.
+#  prerequisites, tech requirements for this trigger.
+#  ai_will_do, determines AI scoring for edict
+#  modifier, a list of modifiers
+#  length, number of days the trigger is active.
+
+SL_deactivate_for_AI = {
+	potential = {
+        is_ai = no
+        NOT = { has_global_flag = SL_DISABLE_FOR_AI }
+        NOT = { has_global_flag = SL_hide_edicts }
+    }		
+	allow = { NOT = {has_global_flag = SL_DISABLE_FOR_AI } }	
+	ai_weight = {weight = 0}
+	resources = {
+		category = edicts
+		cost = {}
+	}
+	effect={
+        set_global_flag = SL_DISABLE_FOR_AI
+	}
+}
+
+SL_activate_for_AI = {
+	potential = {
+        is_ai = no
+        has_global_flag = SL_DISABLE_FOR_AI
+        NOT = { has_global_flag = SL_hide_edicts }
+    }
+	allow = {
+        has_global_flag = SL_DISABLE_FOR_AI
+    }	
+	ai_weight = {weight = 0}
+	resources = {
+		category = edicts
+		cost = {}
+	}
+	effect={
+        remove_global_flag = SL_DISABLE_FOR_AI
+	}
+}
+
+#Bug Testing: Technosphere blows up from monthy wear and tear
+#I suspect a bug in reduce_hp_percent that causes an overflow
+#Bug bandait fix: Do not use reduce_hp_percent for ships with more than 25000 HP (limit could be 2^15=32768)
+# planet_edict = {
+	# name = "SL_technosphere_test"
+	# influence_cost = 0
+	# length = 0
+	# potential = {}
+	# effect={	
+		# owner={save_event_target_as=sphereOwner}
+		# create_fleet = {
+			# effect = {
+				# set_owner = event_target:sphereOwner
+				# create_ship = {name = random design = "NSC Infinity Machine" }
+				# set_location = {target = root distance = 10 angle = random}
+				# set_fleet_stance = passive
+			# }
+		# }
+	# }
+	# ai_weight={weight=0}
+# }
+
+SL_hide_edicts = {
+	length = 0
+	potential = {
+        is_ai = no
+        NOT = { has_global_flag = SL_hide_edicts }
+    }
+	effect={
+        set_global_flag = SL_hide_edicts
+	}
+	ai_weight={weight=0}
+	resources = {
+		category = edicts
+		cost = {
+		}
+	}
+}
+
+SL_show_edicts = {
+	length = 0
+	potential = {
+        is_ai = no
+        has_global_flag = SL_hide_edicts
+    }
+	effect={
+        remove_global_flag = SL_hide_edicts
+	}
+	ai_weight={weight=0}
+	resources = {
+		category = edicts
+		cost = {
+		}
+	}
+}

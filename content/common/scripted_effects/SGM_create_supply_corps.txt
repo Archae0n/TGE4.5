@@ -1,0 +1,23 @@
+create_supply_corps={
+	create_country = {
+		name = "Supply Corps"
+		type = SGM_supply_corps
+		species = this	
+		flag = {
+			icon= {
+				category = "blocky"
+				file = "flag_blocky_13.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "00_solid.dds"
+			}
+			colors={
+				"black"
+				"black"
+				"null"
+				"null"
+			}
+		}
+	}
+}

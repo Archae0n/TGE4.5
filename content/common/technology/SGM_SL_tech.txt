@@ -1,0 +1,16 @@
+tech_supply_ships = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { voidcraft }
+	tier = 0
+	prerequisites = { }	
+	icon = "tech_repeatable_weapon_type_strike_craft_fire_damage"
+	
+	weight_modifier = {
+		factor = 0
+	}
+	ai_weight = {
+		factor = 0		
+	}
+}

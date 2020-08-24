@@ -1,0 +1,22 @@
+SGM_country_sub_alloys = {
+    set_variable = {
+        which = SGM_sub_alloys
+        value = $AMOUNT$
+    }
+	while={limit={check_variable={which=SGM_sub_alloys value>1000}}
+        add_resource = { alloys = -1000 }
+		change_variable={which=SGM_sub_alloys value=-1000}
+	}
+	while={limit={check_variable={which=SGM_sub_alloys value>100}}
+        add_resource = { alloys = -100 }
+		change_variable={which=SGM_sub_alloys value=-100}
+	}
+	while={limit={check_variable={which=SGM_sub_alloys value>10}}
+        add_resource = { alloys = -10 }
+		change_variable={which=SGM_sub_alloys value=-10}
+	}
+	while={limit={check_variable={which=SGM_sub_alloys value>0}}
+        add_resource = { alloys = -1 }
+		change_variable={which=SGM_sub_alloys value=-1}
+	}
+}

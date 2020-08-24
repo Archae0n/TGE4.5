@@ -1,0 +1,317 @@
+##########################################################################
+# Planet decisions
+##########################################################################
+
+# Variables:
+#  name, the name of the edict, also serves as localisation key.
+#  influence_cost, the base influence cost of activating the edict.
+#  potential, planet or country trigger to decide whether the edict should be shown.
+#  allow, planet or country trigger to decide if whether this edict can be activated.
+#  effect, an effect that is executed when this trigger activates.
+#  prerequisites, tech requirements for this trigger.
+#  ai_will_do, determines AI scoring for edict
+#  modifier, a list of modifiers
+#  length, number of days the trigger is active.
+
+
+@SL_rebase_cost = 10
+
+SL_01_base_set = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_01_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_01_base_fixed every_controlled_planet={remove_planet_flag = SL_01_base}} set_planet_flag = SL_01_base}
+}
+
+SL_02_base_set = {	
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_02_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_02_base_fixed every_controlled_planet={remove_planet_flag = SL_02_base}} set_planet_flag = SL_02_base}
+}
+
+SL_03_base_set = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_03_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_03_base_fixed every_controlled_planet={remove_planet_flag = SL_03_base}} set_planet_flag = SL_03_base}
+}
+
+SL_04_base_set = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_04_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_04_base_fixed every_controlled_planet={remove_planet_flag = SL_04_base}} set_planet_flag = SL_04_base}
+}
+
+SL_05_base_set = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_05_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_05_base_fixed every_controlled_planet={remove_planet_flag = SL_05_base}} set_planet_flag = SL_05_base}
+}
+
+SL_06_base_set = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_06_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_06_base_fixed every_controlled_planet={remove_planet_flag = SL_06_base}} set_planet_flag = SL_06_base}
+}
+
+SL_07_base_set = {	
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_07_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_07_base_fixed every_controlled_planet={remove_planet_flag = SL_07_base}} set_planet_flag = SL_07_base}
+}
+
+SL_08_base_set = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_08_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_08_base_fixed every_controlled_planet={remove_planet_flag = SL_08_base}} set_planet_flag = SL_08_base}
+}
+
+SL_09_base_set = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_09_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_09_base_fixed every_controlled_planet={remove_planet_flag = SL_09_base}} set_planet_flag = SL_09_base}
+}
+
+SL_10_base_set = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions}} NOT={has_planet_flag=SL_10_base}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={set_country_flag=SL_10_base_fixed every_controlled_planet={remove_planet_flag = SL_10_base}} set_planet_flag = SL_10_base}
+}
+
+SL_01_base_remove = {	
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_01_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_01_base_fixed every_controlled_planet={remove_planet_flag = SL_01_base}}}
+}
+
+SL_02_base_remove = {	
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_02_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_02_base_fixed every_controlled_planet={remove_planet_flag = SL_02_base}}}
+}
+
+SL_03_base_remove = {	
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_03_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_03_base_fixed every_controlled_planet={remove_planet_flag = SL_03_base}}}
+}
+
+SL_04_base_remove = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_04_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_04_base_fixed every_controlled_planet={remove_planet_flag = SL_04_base}}}
+}
+
+SL_05_base_remove = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_05_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_05_base_fixed every_controlled_planet={remove_planet_flag = SL_05_base}}}
+}
+
+SL_06_base_remove = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_06_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_06_base_fixed every_controlled_planet={remove_planet_flag = SL_06_base}}}
+}
+
+SL_07_base_remove = {	
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_07_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_07_base_fixed every_controlled_planet={remove_planet_flag = SL_07_base}}}
+}
+
+SL_08_base_remove = {	
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_08_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_08_base_fixed every_controlled_planet={remove_planet_flag = SL_08_base}}}
+}
+
+SL_09_base_remove = {
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_09_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_09_base_fixed every_controlled_planet={remove_planet_flag = SL_09_base}}}
+}
+
+SL_10_base_remove = {	
+	owned_planets_only = yes
+	potential={owner={NOT={has_country_flag=SL_hide_decisions} any_controlled_planet={has_planet_flag = SL_10_base}}}	
+	allow={}
+	prerequisites={}
+	ai_weight={weight=0}
+	resources = {
+		category = decisions
+		cost = {
+            influence = @SL_rebase_cost
+		}
+	}
+	effect={owner={remove_country_flag=SL_10_base_fixed every_controlled_planet={remove_planet_flag = SL_10_base}}}
+}

@@ -9,16 +9,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+		}
 	}
 }
 
@@ -30,16 +30,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+		}
 	}
 }
 
@@ -50,16 +50,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+		}
 	}
 }
 
@@ -70,16 +70,20 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tropical
+		}
 	}
 }
 
@@ -90,16 +94,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_continental
+		}
 	}
 }
 
@@ -110,16 +114,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_ocean
+		}
 	}
 }
 
@@ -134,16 +138,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+		}
 	}
 }
 
@@ -155,16 +159,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+		}
 	}
 }
 
@@ -175,16 +179,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+		}
 	}
 }
 
@@ -195,16 +199,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arctic
+		}
 	}
 }
 
@@ -215,16 +219,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_alpine
+		}
 	}
 }
 
@@ -235,16 +239,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_tundra
+		}
 	}
 }
 
@@ -259,16 +263,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+		}
 	}
 }
 
@@ -280,16 +284,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+		}
 	}
 }
 
@@ -300,16 +304,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+		}
 	}
 }
 
@@ -320,16 +324,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_arid
+		}
 	}
 }
 
@@ -340,16 +344,16 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_desert
+		}
 	}
 }
 
@@ -360,15 +364,15 @@ terraform_link = {
 	energy = 2000
 	duration = 1800
 	
-	potential = {
-		NOT = { has_global_flag = has_planetary_diversity_mod }
-	}
-	
 	condition = {
 		has_technology = "tech_terrestrial_sculpting"
 	}
 	
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 1
+			has_country_flag = gai_likes_savannah
+		}
 	}
 }
