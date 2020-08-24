@@ -77,6 +77,13 @@ event = {
 
 			if = {
 				limit = {
+					has_civic = civic_machine_cult
+				}
+				give_technology = { tech = tech_robotic_workers }
+			}
+
+			if = {
+				limit = {
 					or = {
 					    has_civic = civic_environmentalist
 						}
