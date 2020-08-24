@@ -5,13 +5,13 @@ trp_diplomacy_adopt = { ##Statecraft
 }
 trp_diplomacy_finish = {
 	modifier = {
-		country_base_influence_produces_add = 2
+		country_base_influence_produces_add = 1
 	}
 }
 ###Federation Path
 trp_diplomacy_federation_a = {
 	modifier = {
-		country_trust_cap_add = 50 
+		diplomacy_upkeep_mult = -0.25
 	}
 	possible = {
 		NOT = { has_tradition = trp_diplomacy_government_a }
@@ -440,7 +440,7 @@ trp_diplomacy_ideology_a = { ###Ideology Path
 }
 trp_diplomacy_ideology_b = {
 	modifier = {
-		country_unity_produces_mult = 0.10
+		country_unity_produces_mult = 0.20
 	}
 	possible = {
 		has_tradition = trp_diplomacy_ideology_a
@@ -958,7 +958,7 @@ trp_diplomacy_government_c = {
 ###Integration Path
 trp_diplomacy_integration_a = { ###Integration Path
 	modifier = {
-		country_subject_acceptance_add = 10
+		country_federation_fleet_contribution_discount = 0.25
 	}
 	ai_weight = {
 		factor = 10
@@ -1127,8 +1127,7 @@ trp_diplomacy_integration_a = { ###Integration Path
 }
 trp_diplomacy_integration_b = {
 	modifier = {
-		country_subject_trust_cap_add = 50
-		country_subject_power_penalty_mult = -0.25
+		federation_leader_fleet_scale_mult = 0.1
 	}
 	possible = {
 		has_tradition = trp_diplomacy_integration_a
@@ -1139,7 +1138,7 @@ trp_diplomacy_integration_b = {
 }
 trp_diplomacy_integration_c = {
 	modifier = {
-		subject_integration_influence_cost_mult = -0.5
+		federation_leader_diplo_weight_from_members_mult = 0.1
 	}
 	possible = {
 		has_tradition = trp_diplomacy_integration_b

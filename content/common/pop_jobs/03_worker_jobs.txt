@@ -31,7 +31,7 @@ clerk = {
 				exists = owner
 				owner = { has_tradition = trp_commerce_trade_c }
 			}
-			consumer_goods = 0.5
+			consumer_goods = 0.25
 		}
 		produces = {
 			trigger = {
