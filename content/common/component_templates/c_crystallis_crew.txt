@@ -47,14 +47,15 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			zro = 1
+			sr_zro = 1
 		}
 		upkeep = {
-			zro = 0.10
+			sr_zro = 0.10
 		}
 	}
 	modifier = {
-		ship_tracking_add = 10
+		ship_tracking_add = 5
+		ship_evasion_add = 5
 		ship_piracy_suppression_mult = 10.00
 	}
 	
@@ -65,7 +66,7 @@ utility_component_template = {
 		weight = 35
 		modifier = {
 			factor = 0
-			has_monthly_income = { resource = food value < 0 }
+			has_monthly_income = { resource = sr_zro value < 0 }
 		}
 	}
 }

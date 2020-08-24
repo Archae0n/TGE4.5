@@ -7922,12 +7922,7 @@ country_event = {
 	}
 
 	abort_effect = {
-		hidden_effect = { remove_global_flag = rsrchcap_scale_tech_cost }
-	}
-
-	option = {
-		name = NO
-		hidden_effect = { remove_global_flag = rsrchcap_scale_tech_cost }
+		hidden_effect = { set_global_flag = rsrchcap_scale_tech_cost }
 	}
 
 	option = {

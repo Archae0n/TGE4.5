@@ -1,8 +1,8 @@
 ﻿l_english:
 
-	rsrchcap_ahead_of_time:0 "Ahead of time"
-	rsrchcap_not_ahead_of_time:0 "Not ahead of time"
-	rsrchcap_behind_time:0 "Behind time"
+	rsrchcap_ahead_of_time:0 "Tech Pioneer"
+	rsrchcap_not_ahead_of_time:0 "Average Tech"
+	rsrchcap_behind_time:0 "Lagging Behind Technologically"
 
 	rsrchcap_modifier_000:0 "$rsrchcap_behind_time$"
 	rsrchcap_modifier_001:0 "$rsrchcap_behind_time$"
