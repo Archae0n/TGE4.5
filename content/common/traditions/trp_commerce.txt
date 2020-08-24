@@ -222,7 +222,7 @@ trp_commerce_exchange_b = {
 }
 trp_commerce_exchange_c = {
 	modifier = {
-		job_merchant_per_pop = 0.02
+		job_merchant_per_pop = 0.03
 	}
 	possible = {
 		has_tradition = trp_commerce_exchange_b

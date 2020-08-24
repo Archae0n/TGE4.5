@@ -37,7 +37,7 @@ trp_supremacy_quantity_a = { ###Quantity Path
 }
 trp_supremacy_quantity_b = {
 	modifier = {
-		ships_upkeep_mult = -0.25
+		ships_upkeep_mult = -0.10
 	}
 	possible = {
 		has_tradition = trp_supremacy_quantity_a
@@ -51,7 +51,7 @@ trp_supremacy_quantity_b = {
 			is_machine_empire = yes
 		}
 		modifier = {
-			ships_upkeep_mult = -0.25
+			ships_upkeep_mult = -0.10
 		}
 		weight = {
 			factor = 1

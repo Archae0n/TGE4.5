@@ -331,6 +331,13 @@ brain_drone = {
 			engineering_research = 4
 			society_research = 4
 		}
+	produces = {
+		trigger = {
+			exists = owner
+			owner = { has_tradition = trp_discovery_society_a_hive }
+			}
+			unity = 0.5
+		}
 		upkeep = {
 			minerals = 6
 		}
@@ -406,6 +413,13 @@ calculator = {
 			physics_research = 4
 			engineering_research = 4
 			society_research = 4
+		}
+		produces = {
+		trigger = {
+			exists = owner
+			owner = { has_tradition = trp_discovery_society_a_machine }
+			}
+			unity = 0.5
 		}
 		upkeep = {
 			energy = 4

@@ -3502,10 +3502,19 @@ building_commercial_zone = {
 		}
 	}
 
-	resources = {
+	resources = { ##Traditions+
 		category = planet_buildings
 		cost = {
+			trigger = {
+				owner = { NOT = { has_tradition = trp_commerce_trade_a }}
+			}
 			minerals = @b1_minerals
+		}
+		cost = {
+			trigger = {
+				owner = { has_tradition = trp_commerce_trade_a }
+			}
+			minerals = 300
 		}
 		upkeep = {
 			energy = @b1_upkeep
@@ -3618,8 +3627,15 @@ building_commercial_megaplex = {
 			rare_crystals = @b2_rare_cost
 		}
 		upkeep = {
+			trigger = { NOT = { owner = { has_tradition = trp_commerce_trade_a } }
+			}
 			energy = @b2_upkeep
 			rare_crystals = @b2_rare_upkeep
+		}
+		upkeep = {
+			trigger = { owner = { has_tradition = trp_commerce_trade_a }
+			}
+			energy = @b2_upkeep
 		}
 	}
 
