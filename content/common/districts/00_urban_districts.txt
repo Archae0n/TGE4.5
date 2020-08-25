@@ -67,6 +67,30 @@ district_city = {
 		potential = {
 			exists = owner
 			owner = {
+				OR = { has_valid_civic = civic_consumerism }
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				is_regular_empire = yes
 				is_fallen_empire = no
 			}
@@ -144,11 +168,56 @@ district_city = {
 			num_free_districts = { type = district_mining value = 0 }
 			num_free_districts = { type = district_generator value = 0 }
 			num_free_districts = { type = district_farming value = 0 }
-			num_free_districts = { type = district_mining_uncapped value = 0 }
-			num_free_districts = { type = district_generator_uncapped value = 0 }
-			num_free_districts = { type = district_farming_uncapped value = 0 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			OR = {
+				num_free_districts = { type = district_mining value > 0 }
+				num_free_districts = { type = district_generator value > 0 }
+				num_free_districts = { type = district_farming value > 0 }
+			}
+			count_pops = {
+				limit = {
+					is_unemployed = yes
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+				count >= 1
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			owner = {
+				has_resource = {
+					type = minerals
+					amount < 400
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			free_jobs > 1
+			free_housing > 1
 		}
 	}
+
 }
 
 district_hive = {
@@ -156,7 +225,6 @@ district_hive = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
-		exists = from
 		from = { is_hive_empire = yes }
 		OR = {
 			uses_district_set = standard
@@ -248,14 +316,8 @@ district_hive = {
 			weight = 100
 			planet = {
 				planet_devastation < 1
-				years_passed > 5
-				OR = {
-					free_housing < 4
-					AND = {
-						free_amenities < 4
-						free_jobs < 4
-					}
-				}
+				years_passed > 10
+				free_housing < 4
 			}
 		}
 		modifier = {
@@ -263,9 +325,53 @@ district_hive = {
 			num_free_districts = { type = district_mining value = 0 }
 			num_free_districts = { type = district_generator value = 0 }
 			num_free_districts = { type = district_farming value = 0 }
-			num_free_districts = { type = district_mining_uncapped value = 0 }
-			num_free_districts = { type = district_generator_uncapped value = 0 }
-			num_free_districts = { type = district_farming_uncapped value = 0 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			OR = {
+				num_free_districts = { type = district_mining value > 0 }
+				num_free_districts = { type = district_generator value > 0 }
+				num_free_districts = { type = district_farming value > 0 }
+			}
+			count_pops = {
+				limit = {
+					is_unemployed = yes
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+				count >= 1
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			owner = {
+				has_resource = {
+					type = minerals
+					amount < 400
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			free_jobs > 1
+			free_housing > 1
 		}
 	}
 }
@@ -275,7 +381,6 @@ district_nexus = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
-		exists = from
 		from = { is_machine_empire = yes }
 		OR = {
 			uses_district_set = standard
@@ -357,14 +462,8 @@ district_nexus = {
 			weight = 100
 			planet = {
 				planet_devastation < 1
-				years_passed > 5
-				OR = {
-					free_housing < 4
-					AND = {
-						free_amenities < 4
-						free_jobs < 4
-					}
-				}
+				years_passed > 10
+				free_housing < 4
 			}
 		}
 		modifier = {
@@ -372,9 +471,53 @@ district_nexus = {
 			num_free_districts = { type = district_mining value = 0 }
 			num_free_districts = { type = district_generator value = 0 }
 			num_free_districts = { type = district_farming value = 0 }
-			num_free_districts = { type = district_mining_uncapped value = 0 }
-			num_free_districts = { type = district_generator_uncapped value = 0 }
-			num_free_districts = { type = district_farming_uncapped value = 0 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			OR = {
+				num_free_districts = { type = district_mining value > 0 }
+				num_free_districts = { type = district_generator value > 0 }
+				num_free_districts = { type = district_farming value > 0 }
+			}
+			count_pops = {
+				limit = {
+					is_unemployed = yes
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+				count >= 1
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			owner = {
+				has_resource = {
+					type = minerals
+					amount < 400
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			free_jobs > 1
+			free_housing > 1
 		}
 	}
 }

@@ -1625,7 +1625,9 @@ tech_centralized_state = {
 	prerequisites = { "tech_galactic_administration" }
 	weight = @tier3weight1
 
-
+	potential = {
+		is_gestalt = no
+	}
 
 	weight_modifier = {
 		modifier = {
@@ -1676,7 +1678,9 @@ tech_federal_state = {
 	prerequisites = { "tech_galactic_administration" }
 	weight = @tier3weight1
 
-
+	potential = {
+		is_gestalt = no
+	}
 
 	weight_modifier = {
 		modifier = {

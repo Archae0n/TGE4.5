@@ -171,6 +171,19 @@ building_paradise_dome = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = civic_keepers_harmony
+			}
+		}
+		modifier = {
+			planet_jobs_unity_produces_mult = 0.1
+			planet_housing_add = 2
+		}
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
