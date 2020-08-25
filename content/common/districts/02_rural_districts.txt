@@ -32,6 +32,13 @@ district_generator = {
 		upkeep = {
 			energy = 1
 		}
+
+		upkeep = {
+		  	trigger = {
+				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+			}
+			energy = 0.15
+		}
 	}
 
 	planet_modifier = {
@@ -84,6 +91,18 @@ district_generator = {
 		}
 	}
 
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+            owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } } 
+		}
+		modifier = {
+			job_technician_add = 1
+			planet_housing_add = 1
+		}
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -126,16 +145,97 @@ district_generator = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 96500
+			weight = 3
+			OR = {
+				free_jobs < 2
+				AND = {
+					districts_good_energy = yes
+					free_jobs < 5
+				}
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 150
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+		modifier = {
+			weight = 3
 			free_jobs < 2
+			num_free_districts = { type = district_mining value = 0 }
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 250
+				}
+			}
+		}
+		modifier = {
+			weight = 250
+			years_passed > 4
+			OR = {
+				free_jobs < 3
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+			OR = {
+				owner = { country_uses_food = no }
+				owner = {
+					has_monthly_income = {
+						resource = food
+						value > 0
+					}
+				}
+				num_free_districts = { type = district_farming value = 0 }
+			}
 			OR = {
 				owner = {
 					has_monthly_income = {
 						resource = energy
-						value < 3
+						value < -10
 					}
 				}
-				free_jobs = 0
+				owner = {
+					has_monthly_income = {
+						resource = minerals
+						value > 50
+					}
+				}
+				num_free_districts = { type = district_mining value = 0 }
+			}
+		}
+		modifier = {
+			factor = 3
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_deficit = energy
 			}
 		}
 	}
@@ -147,6 +247,8 @@ district_generator = {
 		}
 	}
 }
+
+
 district_mining = {
 	base_buildtime = 240
 
@@ -178,6 +280,19 @@ district_mining = {
 		upkeep = {
 			energy = 1
 		}
+
+		upkeep = {
+		  	trigger = {
+				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+			}
+			energy = 0.15
+		}
+		upkeep = {
+		  	trigger = {
+				owner = { or = { has_valid_civic = civic_mining_guilds	}	}
+			}
+			energy = 0.2
+		}
 	}
 
 	planet_modifier = {
@@ -193,6 +308,47 @@ district_mining = {
 		}
 		modifier = {
 			planet_housing_add = 1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_mining_guilds
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_miner_add = 1
+		}
+	}	
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+		}
+		modifier = {
+			job_miner_add = 1
+			planet_housing_add = 1
+		}
+	}
+
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+              or = {
+				has_valid_civic = civic_keepers_harmony
+				}
+			}
+		}
+		modifier = {
+			planet_amenities_add = -1
 		}
 	}
 
@@ -229,6 +385,10 @@ district_mining = {
 			job_miner_add = 2
 		}
 	}
+
+
+
+
 
 	triggered_planet_modifier = {
 		potential = {
@@ -273,29 +433,81 @@ district_mining = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 6500
-			free_jobs < 2
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 25
+			weight = 3
+			OR = {
+				free_jobs < 2
+				AND = {
+					districts_good_minerals = yes
+					free_jobs < 6
+				}
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
 				}
 			}
 		}
 		modifier = {
-			weight = 6500
+			weight = 300
 			OR = {
-				gai_buildings_unemployed = yes
-				gai_districts_unemployed = yes
-			}
-			owner = {
-				OR = {
-					country_uses_food = no
-					has_monthly_income = {
-						resource = food
-						value > 15
+				AND = {
+					years_passed > 4
+					OR = {
+						free_jobs < 3
+						owner = { has_ascension_perk = ap_arcology_project }
+						any_owned_pop = {
+							is_unemployed = yes
+							NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+							NOR = {
+								is_pop_category = specialist
+								is_pop_category = ruler
+							}
+						}
+					}
+					owner = {
+						has_monthly_income = {
+							resource = minerals
+							value < 100
+						}
+					}
+					OR = {
+						owner = {
+							has_monthly_income = {
+								resource = food
+								value > 0
+							}
+						}
+						num_free_districts = { type = district_farming value = 0 }
 					}
 				}
+				AND = {
+					free_jobs < 5
+					districts_good_energy = no
+					districts_good_food = no
+					owner = {
+						used_naval_capacity_percent < 0.9
+						has_monthly_income = {
+							resource = alloys
+							value <= 5
+						}#Alloy production has shut down which means the current mineral income can't be trusted
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = {
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_deficit = minerals
 			}
 		}
 	}
@@ -339,6 +551,12 @@ district_farming = {
 		upkeep = {
 			energy = 1
 		}
+		upkeep = {
+		  	trigger = {
+				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+			}
+			energy = 0.15
+		}
 	}
 
 	planet_modifier = {
@@ -356,6 +574,8 @@ district_farming = {
 			planet_housing_add = 1
 		}
 	}
+
+
 
 	triggered_planet_modifier = {
 		potential = {
@@ -404,6 +624,18 @@ district_farming = {
 		}
 	}
 
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+		}
+		modifier = {
+			job_farmer_add = 1
+			planet_housing_add = 1
+		}
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -446,29 +678,72 @@ district_farming = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 6500
-			free_jobs < 2
+			weight = 3
+			owner = { country_uses_food = yes }
+			num_free_districts = { type = district_mining value = 0 }
+			num_free_districts = { type = district_generator value = 0 }
+			OR = {
+				free_jobs < 2
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+		}
+		modifier = {
+			weight = 250
+			years_passed > 4
+			OR = {
+				free_jobs < 3
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+			OR = {
+				owner = {
+					country_uses_food = yes
+					has_monthly_income = {
+						resource = food
+						value < 20
+					}
+				}
+				owner = {
+					country_uses_food = no
+					has_monthly_income = {
+						resource = food
+						value < -1
+					}
+				}
+			}#If an AI has matrix'd pops it will need food.. not much food but some.
+		}
+		modifier = {
+			weight = 1
+			free_jobs < 5
 			owner = {
+				has_resource = {
+					type = food
+					amount < 10
+				}
 				has_monthly_income = {
 					resource = food
 					value < 0
 				}
 			}
 		}
+
 		modifier = {
-			weight = 4500
-			OR = {
-				gai_buildings_unemployed = yes
-				gai_districts_unemployed = yes
-			}
+			factor = 10
 			owner = {
-				OR = {
-					country_uses_food = no
-					has_monthly_income = {
-						resource = food
-						value > 15
-					}
-				}
+				has_deficit = food
 			}
 		}
 	}
@@ -480,6 +755,8 @@ district_farming = {
 		}
 	}
 }
+
+
 
 district_generator_uncapped = {
 	base_buildtime = 240
@@ -517,6 +794,12 @@ district_generator_uncapped = {
 		upkeep = {
 			energy = 1
 		}
+		upkeep = {
+		  	trigger = {
+			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+			}
+			energy = 0.15
+		}
 	}
 
 	planet_modifier = {
@@ -534,6 +817,7 @@ district_generator_uncapped = {
 			planet_housing_add = 1
 		}
 	}
+
 
 	triggered_planet_modifier = {
 		potential = {
@@ -566,6 +850,19 @@ district_generator_uncapped = {
 		}
 		modifier = {
 			job_technician_add = 2
+		}
+	}
+
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+		}
+		modifier = {
+			job_technician_add = 1
+			planet_housing_add = 1
 		}
 	}
 
@@ -607,13 +904,31 @@ district_generator_uncapped = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 7500
-			free_jobs < 2
+			weight = 250
+			districts_build_district = yes
+			OR = {
+				owner = {
+					has_monthly_income = {
+						resource = energy
+							value < 200
+					}
+				}
+				num_free_districts = { type = district_mining_uncapped value = 0 } #ring worlds
+			}
+		}
+		modifier = {
+			factor = 3
 			owner = {
 				has_monthly_income = {
 					resource = energy
-					value < 4
+						value < 0
 				}
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_deficit = energy
 			}
 		}
 	}
@@ -662,10 +977,37 @@ district_mining_uncapped = {
 		upkeep = {
 			energy = 1
 		}
+
+		upkeep = {
+		  	trigger = {
+				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+			}
+			energy = 0.15
+		}
+
+		upkeep = {
+		  	trigger = {
+				owner = { or = { has_valid_civic = civic_mining_guilds	}	}
+			}
+			energy = 0.2
+		}
 	}
 
 	planet_modifier = {
 		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_mining_guilds
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_miner_add = 1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -679,6 +1021,21 @@ district_mining_uncapped = {
 			planet_housing_add = 1
 		}
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+              or = {
+				has_valid_civic = civic_keepers_harmony
+				}
+			}
+		}
+		modifier = {
+			planet_amenities_add = -1
+		}
+	}
+
 
 	triggered_planet_modifier = {
 		potential = {
@@ -711,6 +1068,18 @@ district_mining_uncapped = {
 		}
 		modifier = {
 			job_miner_add = 2
+		}
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+		}
+		modifier = {
+			job_miner_add = 1
+			planet_housing_add = 1
 		}
 	}
 
@@ -754,7 +1123,41 @@ district_mining_uncapped = {
 	}
 
 	ai_weight = {
-		factor = 0
+		weight = 0
+		modifier = {
+			weight = 300
+			districts_build_district = yes
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value > 10
+				}
+				has_monthly_income = {
+					resource = energy
+					value > 200
+				}
+			}
+		}
+		modifier = {
+			weight = 250
+				any_owned_pop = {
+						is_unemployed = yes
+				NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = {
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_deficit = minerals
+			}
+		}
 	}
 
 	ai_resource_production = {
@@ -769,8 +1172,6 @@ district_farming_uncapped = {
 	base_buildtime = 240
 	icon = district_farming
 	is_capped_by_modifier = no
-
-	show_on_uncolonized = {	is_planet_class = pc_hive }
 
 	show_on_uncolonized = { uses_district_set = hive_world }
 
@@ -792,6 +1193,13 @@ district_farming_uncapped = {
 		}
 		upkeep = {
 			energy = 1
+		}
+
+		upkeep = {
+		  	trigger = {
+				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+			}
+			energy = 0.15
 		}
 	}
 
@@ -824,6 +1232,8 @@ district_farming_uncapped = {
 		}
 	}
 
+
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -855,6 +1265,17 @@ district_farming_uncapped = {
 		}
 		modifier = {
 			job_farmer_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+		}
+		modifier = {
+			job_farmer_add = 1
+			planet_housing_add = 1
 		}
 	}
 
@@ -894,7 +1315,55 @@ district_farming_uncapped = {
 	}
 
 	ai_weight = {
-		factor = 0
+		weight = 0
+		modifier = {
+			weight = 250
+			districts_build_district = yes
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 15
+				}
+			}
+		}
+		modifier = {
+			weight = 250
+			any_owned_pop = {
+				is_unemployed = yes
+				NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+			}
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 50
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value > 80
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0
+			owner = {
+				country_uses_food = no
+				NOT = { has_deficit = food }
+			}
+		}
+
+		modifier = {
+			factor = 10
+			owner = {
+				has_deficit = food
+			}
+		}
 	}
 
 	ai_resource_production = {
