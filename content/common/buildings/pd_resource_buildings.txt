@@ -592,6 +592,16 @@ building_energy_nexus = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_policy_flag = economic_stance_market }
+		}
+		modifier = {
+			trade_value_add = 10
+		}
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
