@@ -283,6 +283,20 @@ building_institute = {
 		job_head_researcher_add = 1
 	}
 
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = civic_innovative_economy
+			}
+		}
+		modifier = {
+			planet_jobs_unity_produces_mult = 0.05
+
+		}
+	}
+
 	prerequisites = {
 		"tech_global_research_initiative"
 	}
