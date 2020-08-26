@@ -152,8 +152,9 @@ country_event = {
 		}
 		
 		#If we are not docked and out of supply, apply modifiers on ship scope.
-		if={limit={always=yes}
-			every_owned_ship={
+		if={
+			limit = { is_country_type = default }
+			every_owned_ship = {
 				limit={
 					is_ship_class = shipclass_military
 					has_HP < 28000
@@ -193,7 +194,7 @@ event = {
 		
 	immediate = {
 		every_country={
-			
+			limit={is_country_type=default}
 			every_owned_ship={
 				limit={
 					is_ship_class = shipclass_military
