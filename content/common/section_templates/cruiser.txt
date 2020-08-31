@@ -10,6 +10,8 @@ ship_section_template = {
 	entity = "cruiser_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
 	
+ prerequisites = { tech_cruisers }
+	
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -139,6 +141,12 @@ ship_section_template = {
 		rotation = 90
 		locatorname = "strike_craft_locator_01"
 	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}	
 	
 	medium_utility_slots = 4
 	
@@ -157,6 +165,8 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_mid_L1M1_entity"
 	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_cruisers }
 	
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -277,6 +287,8 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
+
+	prerequisites = { tech_cruisers }
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"

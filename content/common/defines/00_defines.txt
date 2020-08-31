@@ -901,13 +901,13 @@
 		ANOMALY_SPAWN_CHANCE					= 0.050 # Percent chance that a planet gets a discovery when surveyed
 		ANOMALY_SPAWN_CHANCE_INCREMENT			= 0.005 # Percentage increase towards next chance when failing
 
-		GOVERNMENT_COOLDOWN_YEARS				= 20	# Cooldown years after changing government before you can change it again
-		GOVERNMENT_CHANGE_INFLUENCE_COST		= 250	# The Influence it costs to change government typ
+		GOVERNMENT_COOLDOWN_YEARS				= 10	# Cooldown years after changing government before you can change it again
+		GOVERNMENT_CHANGE_INFLUENCE_COST		= 100	# The Influence it costs to change government typ
 
-		EMPIRE_SIZE_BASE						= 30	# No penalties at this empire size or below
-		EMPIRE_SIZE_FROM_DISTRICTS				= 1		# Per district
-		EMPIRE_SIZE_FROM_SYSTEMS				= 1		# Per system
-		EMPIRE_SIZE_FROM_COLONIES				= 5		# Per planet
+		EMPIRE_SIZE_BASE						= 100	# No penalties at this empire size or below
+		EMPIRE_SIZE_FROM_DISTRICTS				= 1.0		# Per district
+		EMPIRE_SIZE_FROM_SYSTEMS				= 1.0		# Per system
+		EMPIRE_SIZE_FROM_COLONIES				= 5.0		# Per planet
 		EMPIRE_SIZE_FROM_BRANCH_OFFICES			= 2		# Per branch office
 		EMPIRE_SIZE_FROM_POPS					= 0.5		# Per pop
 
@@ -921,8 +921,8 @@
 		DIPLOMACY_WEIGHT_ECONOMY_FACTOR			= 0.15		# Factors Economic Power before it is added to diplo weight
 		DIPLOMACY_WEIGHT_TECHNOLOGY_FACTOR		= 0.1		# Factors Technology Level before it is added to diplo weight
 
-		EMPIRE_SIZE_TECH_COST_PENALTY			= 0.004	# Per empire size above base
-		EMPIRE_SIZE_TRADITION_COST_PENALTY		= 0.006	# Per empire size above base
+		EMPIRE_SIZE_TECH_COST_PENALTY			= 0.005	# Per empire size above base
+		EMPIRE_SIZE_TRADITION_COST_PENALTY		= 0.005	# Per empire size above base
 
 		NUM_TECH_ALTERNATIVES					= 3
 		TECH_WEIGHT_BASE						= 10
@@ -1050,7 +1050,7 @@
 		OPINION_TERRIBLE					= -750		# Max value to be considered level terrible
 		OPINION_MIN 						= -1500		# Lower limit for opinion value
 
-		FAVOR_CAP							= 10		# Max amount of favors from same empire that can be stored
+		FAVOR_CAP							= 100		# Max amount of favors from same empire that can be stored
 		FAVORS_PER_RESOLUTION_CAP			= 100		# Max amount of favors that can be used for a resolution
 		BORROWED_DIPLO_WEIGHT_FAVOR_MULT	= 0.1 		# Diplo weight mult per favor
 

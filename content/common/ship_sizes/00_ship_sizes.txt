@@ -91,7 +91,7 @@ destroyer = {
 	
 	default_behavior = picket
 	
-	prerequisites = { "tech_destroyers" }
+	prerequisites = { "tech_corvettes" }
 	
 	combat_disengage_chance = 1.50
 	
@@ -141,7 +141,7 @@ cruiser = {
 	
 	default_behavior = line
 	
-	prerequisites = { "tech_cruisers" }
+	prerequisites = { "tech_corvettes" }
 	
 	combat_disengage_chance = 1.50
 	

@@ -74,6 +74,19 @@ ship_section_template = {
 		rotation = 90
 		locatorname = "eac_underside_large_turret"
 	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "large_gun_01"
+	}
+				
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "eac_underside_large_turret"
+	}	
 
 	medium_utility_slots = @eac_medium_utility_slots
 	aux_utility_slots = @eac_aux_ulility_slots

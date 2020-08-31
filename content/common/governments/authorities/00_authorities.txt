@@ -298,8 +298,8 @@ auth_corporate = {
 	}
 
 	country_modifier = {
-		country_admin_cap_add = 20
-		empire_size_penalty_mult = 0.5
+		country_admin_cap_add = 100
+		empire_size_penalty_mult = 1.0
 		pop_cat_worker_political_power = 2
 		pop_cat_specialist_political_power = 3
 		pop_cat_ruler_political_power = 5			

@@ -1,3 +1,19 @@
+empire_base = {
+	max_rivalries = 3
+	country_occupation_armies_add = 5
+	local_trade_protection_add = 2
+	country_alloys_produces_add = 20
+}
+
+# Per empire size over admin cap
+empire_size_over_cap = {
+	campaigns_cost_mult = 0.01
+	pop_government_ethic_attraction = -0.005
+	job_criminal_per_pop = 0.0005
+	job_criminal_per_crime = 0.0005
+	leader_age = -0.1	
+}
+
 ##########################################################################
 # Icon Frames
 ##########################################################################

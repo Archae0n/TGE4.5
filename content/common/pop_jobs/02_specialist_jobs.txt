@@ -1358,11 +1358,11 @@ bureaucrat = {
 				exists = owner
 				owner = { has_tradition = trp_expansion_bureaucracy_b }
 			}
-			society_research = 2
+			society_research = 1
 		}
 
 		upkeep = {
-			consumer_goods = 1
+			consumer_goods = 0.5
 		}
 		produces = {
 			trigger = {
@@ -1384,7 +1384,7 @@ bureaucrat = {
 	}
 
 	country_modifier = {
-		country_admin_cap_add = 10
+		country_admin_cap_add = 5
 	}
 
 	triggered_country_modifier = {
@@ -1399,7 +1399,7 @@ bureaucrat = {
 			}
 		}
 		modifier = {
-			country_admin_cap_add = 1
+			country_admin_cap_add = 0.5
 		}
 	}
 
@@ -1409,7 +1409,7 @@ bureaucrat = {
 			planet = { has_designation = col_bureau }
 		}
 		modifier = {
-			country_admin_cap_add = 2
+			country_admin_cap_add = 1
 		}
 	}
 
