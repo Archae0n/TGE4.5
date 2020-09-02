@@ -24,21 +24,12 @@ action_invite_to_federation = {
 		custom_tooltip = {
 			fail_text = "requires_tradition_the_federation"
 			OR = {
-				has_authority = auth_machine_intelligence
 				has_federation = yes
 				has_non_swapped_tradition = tr_diplomacy_the_federation
 				NOT = { is_country_type = default }
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_tradition_universal_compatibility"
-			OR = {
-				NOT = { has_authority = auth_machine_intelligence }
-				has_federation = yes
-				has_swapped_tradition = tr_diplomacy_the_federation
-				NOT = { is_country_type = default }
-			}
-		}
+
 		custom_tooltip = {
 			fail_text = "requires_actor_not_fanatic_purifiers"
 			OR = {
