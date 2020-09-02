@@ -707,6 +707,7 @@ trp_discovery_engineering_c = {
 trp_discovery_society_a = { ###Society Path
 	modifier = {
 		##researcher unity
+		rsrchcap_researcher_unity_produces_add = 0.5
 	}
 	tradition_swap = {
 		name = trp_discovery_society_a_machine
@@ -718,6 +719,7 @@ trp_discovery_society_a = { ###Society Path
 		}
 		modifier = {
 			##calculator unity
+			rsrchcap_researcher_unity_produces_add = 0.5
 		}
 		weight = {
 			factor = 1
@@ -733,6 +735,7 @@ trp_discovery_society_a = { ###Society Path
 		}
 		modifier = {
 			##brain drone unity
+			rsrchcap_researcher_unity_produces_add = 0.5
 		}
 		weight = {
 			factor = 1

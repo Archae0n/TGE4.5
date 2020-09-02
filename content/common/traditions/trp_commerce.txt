@@ -422,6 +422,7 @@ trp_commerce_trade_b = {
 trp_commerce_trade_c = {
 	modifier = {
 		##clerks consumer goods unlock
+		planet_clerk_consumer_goods_produces_add = 0.25
 	}
 	possible = {
 		has_tradition = trp_commerce_trade_b
@@ -692,6 +693,7 @@ trp_commerce_accumulation_a = { ##Accumulation Path
 trp_commerce_accumulation_b = {
 	modifier = {
 		##clerks energy unlock implemented
+		planet_clerk_energy_produces_add = 1
 	}
 	possible = {
 		has_tradition = trp_commerce_accumulation_a
@@ -896,6 +898,7 @@ trp_commerce_capability_b = {
 trp_commerce_capability_c = {
 	modifier = {
 		##technician energy increase
+		mod_technician_energy_produces_add = 1
 	}
 	possible = {
 		has_tradition = trp_commerce_capability_b

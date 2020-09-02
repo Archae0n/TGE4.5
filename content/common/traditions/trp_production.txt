@@ -409,7 +409,7 @@ trp_production_fabrication_a = { ##Fabrication Path
 }
 trp_production_fabrication_b = {
 	modifier = {
-		planet_foundry_minerals_upkeep_mult = -0.15
+		mod_foundry_minerals_upkeep_mult = -0.15
 	}
 	possible = {
 		has_tradition = trp_production_fabrication_a
@@ -421,6 +421,7 @@ trp_production_fabrication_b = {
 trp_production_fabrication_c = {
 	modifier = {
 		##foundry alloy increase
+		mod_foundry_alloys_produces_add = 0.5
 	}
 	possible = {
 		has_tradition = trp_production_fabrication_b
@@ -1007,6 +1008,7 @@ trp_production_agriculture_b = {
 trp_production_agriculture_c = {
 	modifier = {
 		##farmers food increase
+		mod_farmer_food_produces_add = 1.0
 	}
 	possible = {
 		has_tradition = trp_production_agriculture_b

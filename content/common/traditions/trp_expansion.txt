@@ -1346,6 +1346,7 @@ trp_expansion_bureaucracy_a = { ###Bureaucracy Path
 trp_expansion_bureaucracy_b = {
 	modifier = {
 		##society research unlock
+		mod_paperwork_society_research_produces_add = 2
 	}
 	possible = {
 		has_tradition = trp_expansion_bureaucracy_a
@@ -1360,6 +1361,7 @@ trp_expansion_bureaucracy_b = {
 		}
 		modifier = {
 			##society research unlock implemented
+			mod_synapse_drone_society_research_produces_add = 2
 		}
 		weight = {
 			factor = 1
@@ -1375,6 +1377,7 @@ trp_expansion_bureaucracy_b = {
 		}
 		modifier = {
 			##engineering research unlock implemented
+			mod_coordinator_engineering_research_produces_add = 2
 		}
 		weight = {
 			factor = 1
