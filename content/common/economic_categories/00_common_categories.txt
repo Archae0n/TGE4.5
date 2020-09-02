@@ -1410,9 +1410,49 @@ planet_farmers = {
 		produces
 		upkeep
 	}
+	
+	triggered_produces_modifier = {
+		key = mod_farmer
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			OR = {
+				has_job = farmer
+				has_job = agri_drone
+			}
+		}
+	}
 }
 
 planet_miners = {
+	parent = planet_jobs
+	generate_add_modifiers = {
+		produces
+        upkeep
+	}
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	
+	triggered_produces_modifier = {
+		key = mod_miner
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			OR = {
+				has_job = miner
+				has_job = mining_drone
+			}
+		}
+	}
+}
+
+planet_clerk = {
 	parent = planet_jobs
 	generate_add_modifiers = {
 		produces
@@ -1445,6 +1485,20 @@ planet_technician = {
 	generate_mult_modifiers = {
 		produces
 		upkeep
+	}
+	
+	triggered_produces_modifier = {
+		key = mod_technician
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			OR = {
+				has_job = technician
+				has_job = technician_drone
+			}
+		}
 	}
 }
 
@@ -1690,18 +1744,6 @@ planet_merchants = {
 }
 
 planet_entertainers = {
-	parent = planet_jobs
-	generate_add_modifiers = {
-		produces
-        upkeep
-	}
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-}
-
-planet_soldiers = {
 	parent = planet_jobs
 	generate_add_modifiers = {
 		produces
