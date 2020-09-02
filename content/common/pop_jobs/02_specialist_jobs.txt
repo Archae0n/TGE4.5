@@ -457,15 +457,6 @@ foundry = {
 			alloys = 3
 		}
 
-		###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_production_fabrication_c }
-			}
-			alloys = 0.5
-		}
-
 		upkeep = {
 			minerals = 6
 		}
@@ -476,10 +467,7 @@ foundry = {
 			}
 			minerals = -1
 		}
-
 	}
-
-
 
 	weight = {
 		weight = @specialist_job_weight
@@ -867,7 +855,6 @@ artisan = {
 			}
 			minerals = -1
 		}			
-
 	}
 
 	triggered_planet_modifier = { ##Traditions+
@@ -1358,11 +1345,11 @@ bureaucrat = {
 				exists = owner
 				owner = { has_tradition = trp_expansion_bureaucracy_b }
 			}
-			society_research = 1
+			society_research = 2
 		}
 
 		upkeep = {
-			consumer_goods = 0.5
+			consumer_goods = 1
 		}
 		produces = {
 			trigger = {
@@ -1384,7 +1371,7 @@ bureaucrat = {
 	}
 
 	country_modifier = {
-		country_admin_cap_add = 5
+		country_admin_cap_add = 10
 	}
 
 	triggered_country_modifier = {
@@ -1399,7 +1386,7 @@ bureaucrat = {
 			}
 		}
 		modifier = {
-			country_admin_cap_add = 0.5
+			country_admin_cap_add = 1
 		}
 	}
 
@@ -1409,7 +1396,7 @@ bureaucrat = {
 			planet = { has_designation = col_bureau }
 		}
 		modifier = {
-			country_admin_cap_add = 1
+			country_admin_cap_add = 2
 		}
 	}
 

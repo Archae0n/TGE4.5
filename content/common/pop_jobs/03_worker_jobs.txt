@@ -26,20 +26,7 @@ clerk = {
 
 	resources = { ###Traditions+
 		category = planet_clerk
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_commerce_trade_c }
-			}
-			consumer_goods = 0.25
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_commerce_accumulation_b }
-			}
-			energy = 1
-		}
+		
 	}
 
 	triggered_planet_modifier = {
@@ -161,15 +148,6 @@ technician = {
 				}
 			}
 			energy = 2
-		}
-
-		###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_commerce_capability_c }
-			}
-			energy = 1
 		}
 	}
 
@@ -744,15 +722,6 @@ farmer = {
 				}
 			}
 			food = -1
-		}
-
-		###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_production_agriculture_c }
-			}
-			food = 1
 		}
 	}
 
