@@ -82,13 +82,61 @@ megastructures = {
 		consumer_goods
 	}
 	parent = country
-    generate_mult_modifiers = {
+	generate_mult_modifiers = {
+		produces
 		cost
-        produces
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		produces
+		cost
+		upkeep
+	}
+	
+	triggered_produces_modifier = {
+		key = rsrchcap_science_nexus_1
+		modifier_types = {
+			add
+		}
+		trigger = {
+			is_megastructure_type = think_tank_1
+		}
+	}
+	triggered_produces_modifier = {
+		key = rsrchcap_science_nexus_2
+		modifier_types = {
+			add
+		}
+		trigger = {
+			is_megastructure_type = think_tank_2
+		}
+	}
+	triggered_produces_modifier = {
+		key = rsrchcap_science_nexus_3
+		modifier_types = {
+			add
+		}
+		trigger = {
+			OR = {
+				is_megastructure_type = think_tank_3
+				is_megastructure_type = think_tank_restored
+			}
+		}
+	}
+	triggered_produces_modifier = {
+		key = rsrchcap_science_nexus_4
+		modifier_types = {
+			add
+		}
+		trigger = {
+			is_megastructure_type = think_tank_4
+		}
 	}
 }
 
 colonies = {
+	parent = country
 	use_for_ai_budget = yes
 	ai_use_parent_for_resources_upkeep = {
 		energy
@@ -106,14 +154,30 @@ colonies = {
 			is_ship_class = shipclass_colonizer
 		}
 	}
-
-	parent = country
+	
+	generate_mult_modifiers = {
+		produces
+		cost
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		produces
+		cost
+		upkeep
+	}
 }
 
 ships = {
 	use_for_ai_budget = yes
 	generate_mult_modifiers = {
 		upkeep
+		cost
+	}
+	
+	generate_add_modifiers = {
+		upkeep
+		cost
 	}
 
 	ai_use_parent_for_resources_upkeep = {
@@ -128,6 +192,35 @@ ships = {
 
 		modifier_types = {
 			mult
+			add
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_colonizer
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = colonizer
+		}
+	}
+	
+	triggered_upkeep_modifier = {
+		key = ship_colonizer
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = colonizer
 		}
 	}
 
@@ -136,6 +229,21 @@ ships = {
 		use_parent_icon = yes
 		modifier_types = {
 			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = corvette
+		}
+	}
+	
+	triggered_upkeep_modifier = {
+		key = ship_corvette
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
 		}
 
 		trigger = {
@@ -149,6 +257,20 @@ ships = {
 		use_parent_icon = yes
 		modifier_types = {
 			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = destroyer
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = ship_destroyer
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
 		}
 
 		trigger = {
@@ -162,6 +284,20 @@ ships = {
 		use_parent_icon = yes
 		modifier_types = {
 			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = cruiser
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = ship_cruiser
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
 		}
 
 		trigger = {
@@ -175,11 +311,82 @@ ships = {
 		use_parent_icon = yes
 		modifier_types = {
 			mult
+			add
 		}
 
 		trigger = {
 			is_scope_valid = yes #When called from ship designer the design is not valid yet.
 			is_ship_size = battleship
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_titan
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = titan
+		}
+	}
+
+	##colossus	
+	triggered_cost_modifier = {
+		key = ship_colossus
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = colossus
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = ship_colossus
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = colossus
+		}
+	}
+
+	##juggernaut	
+	triggered_cost_modifier = {
+		key = ship_juggernaut
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = juggernaut
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = ship_juggernaut
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = juggernaut
 		}
 	}
 
@@ -188,6 +395,7 @@ ships = {
 		use_parent_icon = yes
 		modifier_types = {
 			mult
+			add
 		}
 
 		trigger = {
@@ -201,6 +409,20 @@ ships = {
 		use_parent_icon = yes
 		modifier_types = {
 			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = science
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = ship_science
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
 		}
 
 		trigger = {
@@ -208,23 +430,419 @@ ships = {
 			is_ship_class = shipclass_science_ship
 		}
 	}
+	
+	triggered_cost_modifier = {
+		key = ship_constructor
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = constructor
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = ship_constructor
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_class = shipclass_constructor
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = starbase_outpost
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_outpost
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_outpost
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_outpost
+		}
+	}
+	triggered_cost_modifier = {
+		key = starbase_starport
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starport
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_starport
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starport
+		}
+	}
+	triggered_cost_modifier = {
+		key = starbase_starhold
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starhold
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_starhold
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starhold
+		}
+	}
+	triggered_cost_modifier = {
+		key = starbase_starfortress
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starfortress
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_starfortress
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starfortress
+		}
+	}
+	triggered_cost_modifier = {
+		key = starbase_citadel
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_citadel
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_citadel
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_citadel
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_StrikeCruiser
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = StrikeCruiser
+		}
+	}	
+	
+	triggered_cost_modifier = {
+		key = ship_Battlecruiser
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = Battlecruiser
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_Carrier
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = Carrier
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_Dreadnought
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = Dreadnought
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_Flagship
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = Flagship
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_supportship
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = supportship
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_military_station_medium
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = military_station_medium
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_military_station_large
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = military_station_large
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_xl_cannon
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = xl_cannon
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_ion_cannon
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = ion_cannon
+		}
+	}
 }
 
 ship_components = {
 	parent = ships
-    generate_mult_modifiers = {
+	
+	generate_mult_modifiers = {
+		cost
+	}
+	
+	generate_add_modifiers = {
 		cost
 	}
 }
 
 ship_sections = {
 	parent = ships
+	
+	generate_mult_modifiers = {
+		upkeep
+		cost
+	}
+	
+	generate_add_modifiers = {
+		upkeep
+		cost
+	}
+	
+		##defense platforms	 bad	
+	triggered_cost_modifier = {
+		key = ship_military_station_small
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = military_station_small
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = ship_military_station_small
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = military_station_small
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_military_station_medium
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = military_station_medium
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = ship_military_station_medium
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = military_station_medium
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_military_station_large
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = military_station_large
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = ship_military_station_large
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = military_station_large
+		}
+	}
+	##end platforms  bad	
 }
 
 ship_upgrades = {
 	parent = ships
 	use_for_ai_budget = yes
+	
+	generate_mult_modifiers = {
+		upkeep
+		cost
+	}
+	generate_add_modifiers = {
+		upkeep
+		cost
+	}
 }
+
 
 stations = {
 	use_for_ai_budget = yes
@@ -234,6 +852,14 @@ stations = {
 
 	generate_mult_modifiers = {
 		produces
+		upkeep
+		cost
+	}
+	
+	generate_add_modifiers = {
+		produces
+		upkeep
+		cost
 	}
 
 	parent = country
@@ -245,6 +871,13 @@ station_gatherers = {
 	generate_mult_modifiers = {
 		produces
 		cost
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		produces
+		cost
+		upkeep
 	}
 }
 
@@ -253,16 +886,47 @@ station_researchers = {
 
 	generate_mult_modifiers = {
 		produces
+		cost
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		produces
+		cost
 		upkeep
 	}
 }
 
 station_observers = {
 	parent = stations
+	
+	generate_mult_modifiers = {
+		produces
+		cost
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		produces
+		cost
+		upkeep
+	}
 }
 
 station_observer_missions = {
 	parent = station_observers
+	
+	generate_mult_modifiers = {
+		produces
+		cost
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		produces
+		cost
+		upkeep
+	}
 }
 
 starbases = {
@@ -270,7 +934,11 @@ starbases = {
 
 	generate_mult_modifiers = {
 		upkeep
-        cost
+		cost
+	}
+	generate_add_modifiers = {
+		upkeep
+		cost
 	}
 	ai_use_parent_for_resources_upkeep = {
 		energy
@@ -286,11 +954,149 @@ starbase_stations = {
 		key = starbase_outpost
 		modifier_types = {
 			mult
+			add
 		}
 
 		trigger = {
 			is_scope_valid = yes #When called from ship designer the design is not valid yet.
 			is_ship_size = starbase_outpost
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_outpost
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_outpost
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = starbase_starport
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starport
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_starport
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starport
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = starbase_starhold
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starhold
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_starhold
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starhold
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = starbase_starfortress
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starfortress
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_starfortress
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_starfortress
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = starbase_citadel
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_citadel
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_citadel
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = starbase_citadel
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = starbase_ion_cannon
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = ion_cannon
+		}
+	}
+	triggered_upkeep_modifier = {
+		key = starbase_ion_cannon
+		modifier_types = {
+			mult
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_ship_size = ion_cannon
 		}
 	}
 }
@@ -300,6 +1106,12 @@ starbase_buildings = {
 
 	generate_mult_modifiers = {
 		cost
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		cost
+		upkeep
 	}
 }
 
@@ -308,6 +1120,12 @@ starbase_modules = {
 
 	generate_mult_modifiers = {
 		cost
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		cost
+		upkeep
 	}
 }
 
@@ -317,14 +1135,26 @@ planets = {
 	ai_use_parent_for_resources_upkeep = {
 		energy
 	}
+	
+	generate_mult_modifiers = {
+		produces
+	}
+	
+	generate_add_modifiers = {
+		produces
+	}
 
-	hidden = yes
+	# hidden = yes
 }
 
 planet_structures = {
 	parent = planets
-	hidden = yes
+	#hidden = yes
 	generate_mult_modifiers = {
+		cost
+		upkeep
+	}
+	generate_add_modifiers = {
 		cost
 		upkeep
 	}
@@ -337,6 +1167,10 @@ planet_buildings = {
 		cost
 		upkeep
 	}
+	generate_add_modifiers = {
+		cost
+		upkeep
+	}
 }
 
 planet_buildings_strongholds = {
@@ -344,22 +1178,41 @@ planet_buildings_strongholds = {
 
 	generate_mult_modifiers = {
 		cost
+		upkeep
+	}
+	generate_add_modifiers = {
+		cost
+		upkeep
 	}
 }
+
 planet_branch_offices = {
 	parent = planets
 
 	generate_mult_modifiers = {
 		cost
+		upkeep
 	}
-
+	
 	generate_add_modifiers = {
+		cost
+		upkeep
 		produces
 	}
 }
 
 planet_branch_office_buildings = {
 	parent = planets
+
+	generate_mult_modifiers = {
+		cost
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		cost
+		upkeep
+	}
 }
 
 planet_districts = {
@@ -369,10 +1222,19 @@ planet_districts = {
 		cost
 		upkeep
 	}
+	generate_add_modifiers = {
+		cost
+		upkeep
+	}
 }
 
 planet_districts_cities = {
 	parent = planet_districts
+
+	generate_add_modifiers = {
+		cost
+		upkeep
+	}
 
 	generate_mult_modifiers = {
 		cost
@@ -608,6 +1470,16 @@ planet_managers = {
 		produces
 		upkeep
 	}
+	
+	triggered_produces_modifier = {
+		key = rsrchcap_manager
+		modifier_types = {
+			add
+		}
+		trigger = {
+			has_job = manager
+		}
+	}
 }
 
 planet_administrators = {
@@ -625,9 +1497,43 @@ planet_administrators = {
 planet_bureaucrats = {
 	icon = "job_bureaucrat"
 	parent = planet_jobs
+	generate_add_modifiers = {
+		produces
+        upkeep
+	}
 	generate_mult_modifiers = {
 		produces
 		upkeep
+	}
+	
+	triggered_produces_modifier = {
+		key = mod_paperworks
+		modifier_types = {
+			add
+		}
+		trigger = {
+			has_job = bureaucrat
+		}
+	}
+	
+	triggered_produces_modifier = {
+		key = mod_coordinator
+		modifier_types = {
+			add
+		}
+		trigger = {
+			has_job = coordinator
+		}
+	}
+	
+	triggered_produces_modifier = {
+		key = mod_synapse_drone
+		modifier_types = {
+			add
+		}
+		trigger = {
+			has_job = synapse_drone
+		}
 	}
 }
 
@@ -642,6 +1548,58 @@ planet_researchers = {
 		produces
 		upkeep
 	}
+	
+	triggered_produces_modifier = {
+		key = rsrchcap_head_researcher
+		modifier_types = {
+			add
+		}
+		trigger = {
+			has_job = head_researcher
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = rsrchcap_researcher
+		modifier_types = {
+			add
+		}
+		trigger = {
+			OR = {
+				has_job = researcher
+				has_job = brain_drone
+				has_job = calculator
+			}
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = rsrchcap_dimensional_portal_researcher
+		modifier_types = {
+			add
+		}
+		trigger = {
+			OR = {
+				has_job = dimensional_portal_researcher
+				has_job = dimensional_portal_researcher_gestalt
+			}
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = rsrchcap_dimensional_portal_researcher_closed
+		modifier_types = {
+			add
+		}
+		trigger = {
+			OR = {
+				has_job = dimensional_portal_researcher
+				has_job = dimensional_portal_researcher_gestalt
+			}
+			exists = planet
+			planet = { has_planet_flag = dportal_closed }
+		}
+	}
 }
 
 planet_metallurgists = {
@@ -655,6 +1613,20 @@ planet_metallurgists = {
 		produces
 		upkeep
 	}
+	
+	triggered_produces_modifier = {
+		key = mod_foundry
+		modifier_types = {
+			add
+		}
+		trigger = {
+			OR = {
+				has_job = foundry
+				has_job = alloy_drone
+				has_job = fabricator
+			}
+		}
+	}
 }
 
 planet_culture_workers = {
@@ -666,6 +1638,16 @@ planet_culture_workers = {
 	generate_mult_modifiers = {
 		produces
 		upkeep
+	}
+	
+	triggered_produces_modifier = {
+		key = rsrchcap_culture_worker
+		modifier_types = {
+			add
+		}
+		trigger = {
+			has_job = culture_worker
+		}
 	}
 }
 
@@ -740,6 +1722,19 @@ planet_priests = {
 	generate_mult_modifiers = {
 		produces
 		upkeep
+	}
+	
+	triggered_produces_modifier = {
+		key = rsrchcap_priest
+		modifier_types = {
+			add
+		}
+		trigger = {
+			OR = {
+				has_job = high_priest
+				has_job = priest
+			}
+		}
 	}
 }
 
@@ -1033,8 +2028,15 @@ armies = {
 	use_for_ai_budget = yes
 
 	generate_mult_modifiers = {
-		cost
+		produces
 		upkeep
+		cost
+	}
+	
+	generate_add_modifiers = {
+		produces
+		upkeep
+		cost
 	}
 
 	ai_use_parent_for_resources_upkeep = {
