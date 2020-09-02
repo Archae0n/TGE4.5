@@ -1450,6 +1450,20 @@ planet_miners = {
 			}
 		}
 	}
+	
+	triggered_produces_modifier = {
+		key = mod_crystal_miner
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			OR = {
+				has_job = crystal_miner
+				has_job = crystal_mining_drone
+			}
+		}
+	}
 }
 
 planet_clerk = {
