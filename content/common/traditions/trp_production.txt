@@ -188,7 +188,8 @@ trp_production_excavation_b = {
 }
 trp_production_excavation_c = {
 	modifier = {
-		planet_miners_minerals_produces_add = 1
+		mod_miner_minerals_produces_add = 1
+		mod_crystal_miner_rare_crystals_produces_add = 1
 		##crystal miner unlock
 	}
 	possible = {
