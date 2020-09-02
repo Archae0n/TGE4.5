@@ -425,14 +425,6 @@ crystal_miner = {
 		produces = {
 			rare_crystals = 2
 		}
-		###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_production_excavation_c }
-			}
-			rare_crystals = 1
-		}
 	}
 
 	weight = {
