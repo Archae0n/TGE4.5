@@ -1234,11 +1234,22 @@ planet_districts_cities = {
 	generate_add_modifiers = {
 		cost
 		upkeep
+		produces
 	}
 
 	generate_mult_modifiers = {
 		cost
 		upkeep
+	}
+}
+
+planet_districts_farming = {
+	parent = planet_structures
+	generate_add_modifiers = {
+		produces
+	}
+	generate_mult_modifiers = {
+		cost
 	}
 }
 
@@ -1325,6 +1336,16 @@ planet_jobs = {
 		modifier_types = {
 			mult
 			add
+		}
+		trigger = {
+			is_pop_category = specialist
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = planet_jobs_specialist
+		modifier_types = {
+			mult
 		}
 		trigger = {
 			is_pop_category = specialist
@@ -1769,6 +1790,18 @@ planet_entertainers = {
 	}
 }
 
+planet_soldiers = {
+	parent = planet_jobs
+	generate_add_modifiers = {
+		produces
+        upkeep
+	}
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+}
+
 planet_priests = {
 	parent = planet_jobs
 	generate_add_modifiers = {
@@ -2138,6 +2171,9 @@ leader_scientists = {
 		cost
 		upkeep
 	}
+	generate_add_modifiers = {
+		produces
+	}
 }
 
 leader_governors = {
@@ -2153,6 +2189,9 @@ diplomacy = {
 	parent = country
 	generate_mult_modifiers = {
 		upkeep
+	}
+	generate_add_modifiers = {
+		produces
 	}
 }
 
@@ -2195,10 +2234,16 @@ migration_pacts = {
 
 research_agreements = {
 	parent = diplomacy
+	generate_mult_modifiers = {
+		upkeep
+	}
 }
 
 commercial_pacts = {
 	parent = diplomacy
+	generate_mult_modifiers = {
+		upkeep
+	}
 }
 
 defensive_pacts = {
