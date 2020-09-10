@@ -7,7 +7,7 @@
 #If out of supply (must also be changed in SL_ship_modifiers.txt)
 @SL_PENALTY_INC =  6 	    	# per SL_SUPPLY_CHECK_INTERVAL
 @SL_PENALTY_DEC = -6			# Bonus of arriving supply fleets
-@SL_HP_PENALTY = 5       		# per SL_SUPPLY_CHECK_INTERVAL
+@SL_HP_PENALTY = 3       		# per SL_SUPPLY_CHECK_INTERVAL
 
 #Number of days that consumer has supplies
 @SL_SUPPLY_DURATION = 180
@@ -164,7 +164,7 @@ country_event = {
 					}				
 				}
 				reduce_hp_percent = @SL_HP_PENALTY #does only work with integer??!
-				reduce_hp = 2 #because reduce_hp_percent is based on CURRENT hp, not total, otherwise ships never die of starvation			
+				reduce_hp = 1 #because reduce_hp_percent is based on CURRENT hp, not total, otherwise ships never die of starvation			
 			}
         }
 		else={

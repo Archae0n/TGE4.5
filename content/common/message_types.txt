@@ -168,9 +168,9 @@ message_type = {
 	icon = "GFX_message_repairs_complete"
 	icon_frame = 1
 
-	sound = "notification_repair_fleet"
+	#sound = "notification_repair_fleet"
 	#sound = "advisor_notification_construction_complete"
-	ping = "ping_notification_green"
+	#ping = "ping_notification_green"
 }
 
 message_type = {
