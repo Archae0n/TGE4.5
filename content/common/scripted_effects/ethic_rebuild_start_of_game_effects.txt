@@ -7,10 +7,12 @@ generate_start_pops = {
 			owner = {
 				OR = {
 					has_origin = origin_syncretic_evolution
+					has_origin = origin_hive_overmind
 					has_valid_civic = civic_machine_servitor
 					has_valid_civic = civic_machine_assimilator
 					has_valid_civic = civic_symbiotic_race
 					has_valid_civic = civic_slave_race
+					has_valid_civic = civic_machine_cult
 				}
 			}
 		}
@@ -137,11 +139,39 @@ generate_start_pops = {
 		}
 	}
 	if = {
-		limit = { owner = { is_hive_empire = yes } }
+		limit = { 
+			owner = { 
+					is_hive_empire = yes
+					NOT = { has_origin = origin_hive_overmind } 
+				} 
+			}
 		while = {
 			limit = { num_pops < 34 }
 			create_pop = {
 				species = owner_main_species
+				ethos = random
+			}
+		}
+	}
+	if = {
+		limit = { owner = { has_origin = origin_hive_overmind } }
+		
+		last_created_species = {
+			set_species_flag = overminded_flag
+			save_event_target_as = overminded_species
+			
+			}
+			event_target:overminded_species = {
+			if = {
+				limit = { is_lithoid = yes }
+				root = { owner = { set_country_flag = lithoid_overminded_species } }
+			}
+			else = { root = { owner = { set_country_flag = organic_overminded_species } } }
+			}
+		while = {
+			limit = { num_pops < 34 }
+			create_pop = {
+				species = last_created_species
 				ethos = random
 			}
 		}
