@@ -25,7 +25,6 @@ intervene_help_friendly_nation = {
 		}
 		any_country = {
 			is_war_leader = yes
-			opinion = { who = root value > 0 }
 			NOR = {
 				is_at_war_with = root
 				is_same_value = root
@@ -160,7 +159,6 @@ allow = {
 	}
 	any_country = {
 		is_war_leader = yes
-		opinion = { who = root value > 0 }
 		NOR = {
 			is_at_war_with = root
 			is_same_value = root

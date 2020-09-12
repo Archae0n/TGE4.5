@@ -12,14 +12,12 @@ stargate = {
 		always = no
 	}
 	possible = {
+
 	
 		custom_tooltip = {
 			fail_text = "requires_technology_gateway_construction"
 			from = { has_technology = tech_gateway_construction }
 		}
-	}
-	upgrade_from = {
-		
 	}
 	build_time = 1800
 	resources = {
@@ -34,4 +32,82 @@ stargate = {
 	construction_blocked_by_others = no
 
 	bypass_type = stargate
+}
+
+trade_gate_0 = {
+	entity = "wormhole_station_entity"
+	construction_entity = "wormhole_station_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes 						# indicates this will use "free" placement between the system's inner and outer ring
+															# if this option is active, the placement_rules will be completely ignored
+	show_galactic_map_icon = no
+	potential = {
+		has_technology = tech_wormhole_stabilization
+	}
+	possible = {	
+		custom_tooltip = {
+			fail_text = "requires_technology_wormholes"
+			from = { has_technology = tech_wormhole_stabilization}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_gateway"
+			NOR = {
+				has_megastructure = trade_gate_0
+			}
+		}
+	}
+	
+	build_time = 360
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 50
+		}
+		upkeep = {
+			energy = 20
+		}
+	}
+
+
+	construction_blocks_others = no
+	construction_blocked_by_others = no
+
+	bypass_type = trade_gate
+}
+
+trade_gate_destroy = {
+	entity = "wormhole_station_entity"
+	construction_entity = "wormhole_station_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes 	
+	
+	potential = {
+		has_technology = tech_wormhole_stabilization
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_wormholes"
+			from = { has_technology = tech_wormhole_stabilization}
+		}
+	}
+	upgrade_from = {
+		trade_gate_0
+	}
+	build_time = 30
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 100
+		}
+	}
+	construction_blocks_others = no
+	construction_blocked_by_others = no
+
+	on_build_complete = {
+		remove_megastructure = fromfrom
+	}
 }

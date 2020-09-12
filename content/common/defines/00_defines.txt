@@ -979,7 +979,7 @@
 		COMMAND_LIMIT_BASE 										= 20	# Base value of Command Limit
 
 		NAVAL_CAPACITY_MAX										= 9999	# Max value of Naval Capacity
-		NAVAL_CAPACITY_BASE 									= 20	# Base value of Naval Capacity
+		NAVAL_CAPACITY_BASE 									= 40	# Base value of Naval Capacity
 		NAVAL_CAPACITY_POP_MULT									= 0		# Mult value of Naval Capacity for each Pop
 
 		STARBASE_CAPACITY_MAX									= 999	# Max value of Starbase Capacity
