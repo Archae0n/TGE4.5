@@ -1315,8 +1315,6 @@ tech_planned_economy = {
 	}
 }
 
-
-
 # Economic Paradigm: Innovation & Progress
 tech_innovations = {
 	cost = @tier3cost1
@@ -1370,10 +1368,6 @@ tech_innovations = {
 		}
 	}
 }
-
-
-
-
 
 tech_agri_consortium = {
 	cost = @tier3cost1
@@ -1482,15 +1476,6 @@ tech_mining_consortium = {
 	}
 }
 
-
-
-
-
-
-
-
-
-
 # Galactic Markets
 tech_galactic_markets = {
 	cost = @tier4cost1
@@ -1571,8 +1556,6 @@ tech_galactic_markets = {
 	}
 }
 
-
-
 #Global Manufacturing
 tech_global_production_strategy = {
 	cost = @tier3cost1
@@ -1611,118 +1594,3 @@ tech_global_production_strategy = {
 		}
 	}
 }
-
-
-
-
-
-
-tech_centralized_state = {
-	cost = @tier3cost1
-	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_galactic_administration" }
-	weight = @tier3weight1
-
-	potential = {
-		is_gestalt = no
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-		modifier = {
-			factor = 1.25
-				OR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
-		}
-
-		modifier = {
-			factor = 0
-				OR = {
-					has_ethic = ethic_fanatic_egalitarian
-					has_valid_civic = civic_beacon_of_liberty
-				}
-		}
-
-	}
-
-	ai_weight = {
-		factor = 2
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-	}
-}
-
-
-
-
-tech_federal_state = {
-	cost = @tier3cost1
-	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_galactic_administration" }
-	weight = @tier3weight1
-
-	potential = {
-		is_gestalt = no
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-		modifier = {
-			factor = 1.25
-				OR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
-		}
-
-		modifier = {
-			factor = 0
-				OR = {
-					has_ethic = ethic_fanatic_authoritarian
-					has_valid_civic = civic_ultimate_collective
-				}
-		}
-
-	}
-
-	ai_weight = {
-		factor = 2
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-	}
-}
-
-
-
-
-
-
-

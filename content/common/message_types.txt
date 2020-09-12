@@ -163,15 +163,15 @@ message_type = {
 	ping = "ping_notification_green"
 }
 
-message_type = {
-	key = "FLEET_REPARATIONS_DONE_MESSAGE_TYPE"
-	icon = "GFX_message_repairs_complete"
-	icon_frame = 1
+#message_type = {
+	#key = "FLEET_REPARATIONS_DONE_MESSAGE_TYPE"
+	#icon = "GFX_message_repairs_complete"
+	#icon_frame = 1
 
 	#sound = "notification_repair_fleet"
 	#sound = "advisor_notification_construction_complete"
 	#ping = "ping_notification_green"
-}
+#}
 
 message_type = {
 	key = "POP_CONSTRUCTION_MESSAGE_TYPE"

@@ -1007,12 +1007,7 @@ trade_policy = {
 		}
 	}
 
-
-
-
-
 }
-
 
 bureaucracy = {
 
@@ -1033,17 +1028,12 @@ bureaucracy = {
 		}
 
 	}
-
-
-
-
-
 	option = {
 		name = "centralized_state"
 
 		valid = {
 			is_country_type = default
-			has_technology = tech_centralized_state
+			#has_technology = tech_centralized_state
             not = { has_valid_civic = civic_beacon_of_liberty }
 			NOR = {
 				has_ethic = "ethic_fanatic_egalitarian"
@@ -1075,14 +1065,6 @@ bureaucracy = {
 
 	}
 
-
-
-
-
-
-
-
-
 	option = {
 		name = "federal_state"
 
@@ -1093,7 +1075,7 @@ bureaucracy = {
 
 		valid = {
 			is_country_type = default
-			has_technology = tech_federal_state
+			#has_technology = tech_federal_state
             not = { has_valid_civic = civic_ultimate_collective }
 			NOR = {
 				has_ethic = "ethic_fanatic_authoritarian"
