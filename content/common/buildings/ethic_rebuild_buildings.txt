@@ -1967,6 +1967,86 @@ building_hospital = {
 # Capital buildings
 #############
 
+# Colony
+building_colony_shelter = {
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+
+	category = government
+
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			is_fallen_empire = no
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	convert_to = {
+		building_hive_capital
+		building_deployment_post
+		building_resort_capital
+		building_slave_capital
+		building_ancient_control_center
+		building_ancient_palace
+	}
+
+	planet_modifier = {
+		planet_housing_add = 3
+		planet_amenities_add = 3
+
+		job_colonist_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_mechanical_empire = yes
+				NOT = { has_policy_flag = organic_priority }
+			}
+		}
+		job_roboticist_add = 1
+	}
+
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	upgrades = {
+		building_capital
+	}
+
+	triggered_desc = {
+		text = job_colonist_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_mechanical_empire = yes
+				NOT = { has_policy_flag = organic_priority }
+			}
+		}
+		text = job_roboticist_effect_desc
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
 
 # Planetary Administration
 building_capital = {
@@ -2061,7 +2141,10 @@ building_capital = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_mechanical_empire = yes }
+			owner = {
+				is_mechanical_empire = yes
+				NOT = { has_policy_flag = organic_priority }
+			}
 		}
 		job_roboticist_add = 1
 	}
@@ -2079,9 +2162,9 @@ building_capital = {
 					has_civic = civic_military_dictatorship  has_civic = civic_military_junta  has_civic = civic_citizen_service
 					has_civic = civic_executive_committee  has_civic = civic_philosopher_king  has_civic = civic_peaceful_republic
 					has_civic = civic_exalted_priesthood
-                    has_civic = civic_technocracy
-                    has_civic = civic_bureaucracy
-                    has_civic = civic_stratocracy
+                   			has_civic = civic_technocracy
+                    			has_civic = civic_bureaucracy
+                    			has_civic = civic_stratocracy
 					has_civic = civic_state_monopoly
 				}
 			}
@@ -2248,7 +2331,10 @@ building_capital = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_mechanical_empire = yes }
+			owner = {
+				is_mechanical_empire = yes
+				NOT = { has_policy_flag = organic_priority }
+			}
 		}
 		text = job_roboticist_effect_desc
 	}
@@ -2364,9 +2450,23 @@ building_major_capital = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_mechanical_empire = yes }
+			owner = {
+				is_mechanical_empire = yes
+				NOT = {	has_policy_flag = organic_priority }
+			}
 		}
-		job_roboticist_add = 2
+		job_roboticist_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_mechanical_empire = yes
+				has_policy_flag = synth_priority
+			}
+		}
+		job_roboticist_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -2548,7 +2648,10 @@ building_major_capital = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_mechanical_empire = yes }
+			owner = {
+				is_mechanical_empire = yes
+				NOT = { has_policy_flag = organic_priority }
+			}
 		}
 		text = job_roboticist_effect_desc
 	}
@@ -2679,9 +2782,23 @@ building_system_capital = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_mechanical_empire = yes }
+			owner = {
+				is_mechanical_empire = yes
+				NOT = {	has_policy_flag = organic_priority }
+			}
 		}
-		job_roboticist_add = 3
+		job_roboticist_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_mechanical_empire = yes
+				has_policy_flag = synth_priority
+			}
+		}
+		job_roboticist_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -2865,7 +2982,10 @@ building_system_capital = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_mechanical_empire = yes }
+			owner = {
+				is_mechanical_empire = yes
+				NOT = { has_policy_flag = organic_priority }
+			}
 		}
 		text = job_roboticist_effect_desc
 	}
@@ -2909,7 +3029,17 @@ building_hab_major_capital = {
 	category = government
 
 	potential = {
+		OR = {
 		is_planet_class = pc_habitat
+		is_planet_class = pc_pd_gas_giant_hab
+		is_planet_class = pc_pd_barren_hab
+		is_planet_class = pc_pd_barren_cold_hab
+		is_planet_class = pc_pd_frozen_hab
+		is_planet_class = pc_pd_molten_hab
+		is_planet_class = pc_pd_toxic_hab
+		is_planet_class = pc_pd_hothouse_hab
+		is_planet_class = pc_pd_asteroid_hab
+		}
 		exists = owner
 		owner = { is_fallen_empire = no }
 	}
@@ -2977,9 +3107,23 @@ building_hab_major_capital = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_mechanical_empire = yes }
+			owner = {
+				is_mechanical_empire = yes
+				NOT = { has_policy_flag = organic_priority }
+			}
 		}
-		job_roboticist_add = 2
+		job_roboticist_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_mechanical_empire = yes
+				NOT = { has_policy_flag = cyber_priority }
+			}
+		}
+		job_roboticist_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -3163,7 +3307,10 @@ building_hab_major_capital = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_mechanical_empire = yes }
+			owner = {
+				is_mechanical_empire = yes
+				NOT = { has_policy_flag = organic_priority }
+			}
 		}
 		text = job_roboticist_effect_desc
 	}
