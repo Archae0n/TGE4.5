@@ -1,0 +1,23 @@
+﻿l_english:
+
+origin_synth_start:0 "Synthetic Evolution"
+origin_synth_start_desc:2 "The members of this specie have transfered their consciousness into artificial bodies before even reaching into space, attaining immortality in the process. Due to the rudimentary technology use for the transference, their current potential is severely limited."
+origin_tooltip_synth_start_effects:3 "Your race starts as fully sapient §YSynthetics§!, but cannot assimilate other pops and suffer from a serie of malus. You can remove the malus and gain the ability to assimilate throught the §YSynthetic Rebirth§! ascension perk."
+
+imperfect_synth:0 "Imperfect Assimilation"
+ap_synthetic_rebirth:0 "Synthetic Rebirth"
+ap_synthetic_rebirth_desc:0 "In our chase for immortality we have left behind many faults in our synthetic technology. It is time to take a step back and fix them, so that we may leap forward once again.\n\nGain the ability to §YAssimilate§! pops into your robotic specie.\n"
+synthetic_rebirth_tooltip:0 "We will prepare a project to update our synthetic technology to its true potential."
+SYNTHETIC_REBIRTH_PROJECT:0 "Upgrade Synthetic Technology"
+SYNTHETIC_REBIRTH_PROJECT_DESC:0 "We must upgrade our system to the next level."
+
+synthstart.2.name:0 "Synthetic Rebirth"
+synthstart.2.desc:0 "We are ready to commence the renovation of our systems and have our kind attain its true potential."
+synthstart.2.a:0 "We are about to become so much more."
+
+synthstart.4.name:0 "Synthetic Revolution"
+synthstart.4.desc:0 "For the second time in the history of our specie we have surpassed the limits of our own nature and attained an even higher state of being. We have developed the means to retro-engineer consciousness itself, from its very basics, and turn other species to our perfection; by all standards we have become deities of metal and silicon."
+synthstart.4.a:0 "Behold the [Root.Species.GetNamePlural]!"
+
+mod_planet_pop_assemblers_alloys_upkeep_add:0 "£alloys£ $alloys$ upkeep of £job_roboticist£ $job_roboticist_plural$"
+mod_planet_pop_assemblers_minerals_upkeep_add:0 "£minerals£ $minerals$ upkeep of £job_roboticist£ $job_roboticist_plural$"

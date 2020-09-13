@@ -1,0 +1,10 @@
+imperfect_synth= {
+	icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+	
+	planet_jobs_robotic_produces_mult = -0.15
+	planet_pop_assembly_mult = -0.5
+	planet_pop_assemblers_alloys_upkeep_add = -2
+	planet_pop_assemblers_minerals_upkeep_add = 2
+	job_roboticist_add = 1
+	colony_start_num_pops_add = 1
+}

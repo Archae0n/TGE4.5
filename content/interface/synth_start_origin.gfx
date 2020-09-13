@@ -1,0 +1,14 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_origin_synth_start"
+		texturefile = "gfx/event_pictures/origins/origin_synth_start.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ap_synthetic_rebirth"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_synthetic_evolution.dds"
+		alwaystransparent = yes
+	}
+}

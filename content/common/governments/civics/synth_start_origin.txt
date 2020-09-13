@@ -1,0 +1,30 @@
+origin_synth_start = {
+
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_mechanist.dds"
+	picture = GFX_origin_synth_start
+
+	playable = {
+		host_has_dlc = "Utopia"
+		#always = yes
+	}
+
+	possible = {
+		ethics = {
+			NOT = { value = ethic_gestalt_consciousness }
+		}
+	}
+
+	modifier = {
+		country_base_food_produces_add = -10
+	}
+
+	description = "origin_tooltip_synth_start_effects"
+
+	traits = {
+	}
+
+	random_weight = {
+		base = 5
+	}
+}
