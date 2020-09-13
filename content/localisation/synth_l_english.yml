@@ -1,0 +1,23 @@
+﻿l_english:
+
+policy_synth_organic_relationships:0 "Organic-Synthetic Relationships"
+policy_synth_organic_relationships_desc:0 "Organic beings and synthetic machines are different, but united in their desire to exist and pursue their goals. Unfortunarly, their fundamentally divergent natures cannot cohexist perfectly with one another and as such we have to decide which one of them we are going to prioritize in our society."
+
+organic_priority:0 "Organic Priority"
+organic_priority_desc:0 "Organics are fragile, vulnerable, in need of protection, it is our duty as superior beings to look after them, even if this means limiting our potential.\n\n§ENo $job_roboticist_plural$ £job_roboticist£ on capital buildings§!\n\n"
+
+cyber_priority:0 "Balanced Priority"
+cyber_priority_desc:0 "Both organic and synthetic lives are equally important: if the two kinds will learn to set aside their differences for the common good, we'll be able to cohexist peacefully.\n\n§EMax 1 $job_roboticist$ £job_roboticist£ on capital buildings§!\n\n"
+
+synth_priority:0 "Synthetic Priority"
+synth_priority_desc:0 "Being forced to sustain the biological vermins that inhabit the lower levels of our city-complexes is a waste of resources, lesser lifeforms survive perfectly without us needing to spoonfeed them 'food', 'water' or 'air' and they will too.\n\n§ECan assimilate other species into synthetics§!\n\n"
+
+SYNTH_PRIORITY_INACTIVE:0 "We value organics too much to force them to undergo assimilation."
+
+no_organics_in_synth_empire:1 "§YThere are no organics in our empire.§!"
+
+synth.150.name:0 "The Choice"
+synth.150.desc:0 "The time has come for [ROOT.GetRulerTitle] [ROOT.GetRulerName] to either embrace a new identity as [ROOT.GetSpeciesName] or stay true to their organic roots."
+synth.150.a:0 "Embrace immortality."
+synth.150.b:0 "Long live the [ROOT.GetRulerTitle]."
+synth.150.c:0 "Remain Organic"
