@@ -2190,14 +2190,7 @@ artificial_intelligence_policy = {
 		name = "ai_full_rights"
 
 		valid = {
-		  or = {
-			NOR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
-			has_valid_civic = civic_machine_cult
-		  }
-			NOT = { has_policy_flag = robots_outlawed }
+		  	NOT = { has_policy_flag = robots_outlawed }
 		}
 
 		policy_flags = {
