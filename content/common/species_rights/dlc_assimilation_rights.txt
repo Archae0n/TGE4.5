@@ -22,6 +22,7 @@ citizenship_assimilation = {
 			}
 			from = { # synthetically ascended empire
 				has_country_flag = synthetic_empire
+				NOT = { has_modifier = imperfect_synth }
 			}
 			from = { # cyborg empire
 				has_country_flag = flesh_weakened
@@ -39,6 +40,17 @@ citizenship_assimilation = {
 
 	allow = {
 		hidden_trigger = { exists = from }
+		
+		custom_tooltip = {
+			fail_text = SYNTH_PRIORITY_INACTIVE
+			from = {
+				OR = {
+					NOT = { is_mechanical_empire = yes }
+					has_policy_flag = synth_priority
+				}
+			}
+		}
+		
 		custom_tooltip = {
 			fail_text = MUST_NOT_BE_DOMINANT_SPECIES
 			NOT = { is_exact_same_species = from }
