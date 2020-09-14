@@ -7,8 +7,8 @@ SL_supply_ship_modifier = {
 
 SL_weapon_repair_mod = {ship_weapon_damage = 0.075}
 SL_fresh_supplies = {
-    ship_hull_regen_add_perc = 10.0
-    ship_armor_regen_add_perc = 10.0
+    ship_hull_regen_add_perc = 5.0
+    ship_armor_regen_add_perc = 5.0
 }
 
 

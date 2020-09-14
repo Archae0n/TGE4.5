@@ -195,14 +195,15 @@ event = {
 	immediate = {
 		every_country={
 			limit={is_country_type=default}
-			every_owned_ship={
-				limit={
-					is_ship_class = shipclass_military
-					has_HP < 28000
-					fleet={NOT={has_fleet_flag = SL_docked_at_friendly_spaceport}}					
-				}
-				reduce_hp_percent = @SL_HP_WEAR_AND_TEAR #does only work with integer??!
-			}
+			# We are disabling this as it causes notification spam - Arch
+			#every_owned_ship={
+			#	limit={
+			#		is_ship_class = shipclass_military
+			#		has_HP < 28000
+			#		fleet={NOT={has_fleet_flag = SL_docked_at_friendly_spaceport}}					
+			#	}
+			#	reduce_hp_percent = @SL_HP_WEAR_AND_TEAR #does only work with integer??!
+			#}
 			#debt handling
 			if={limit={check_variable={which=SL_alloys_demand value > 0}}
 				# save_event_target_as=SGM_result_scope				
