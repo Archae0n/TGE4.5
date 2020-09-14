@@ -1254,26 +1254,43 @@ planet_districts_farming = {
 }
 
 planet_districts_hab_energy = {
-	parent = planet_districts
+	parent = planet_structures
 
 	generate_mult_modifiers = {
 		cost
+		upkeep
 	}
+	generate_add_modifiers = {
+		cost
+		upkeep
+	}
+	
 }
 
 planet_districts_hab_research = {
-	parent = planet_districts
+	parent = planet_structures
 
 	generate_mult_modifiers = {
 		cost
+		upkeep
 	}
+	generate_add_modifiers = {
+		cost
+		upkeep
+	}
+	
 }
 
 planet_districts_hab_mining = {
-	parent = planet_districts
+	parent = planet_structures
 
 	generate_mult_modifiers = {
 		cost
+		upkeep
+	}
+	generate_add_modifiers = {
+		cost
+		upkeep
 	}
 }
 
@@ -1397,6 +1414,19 @@ planet_jobs = {
 	}
 }
 
+planet_larva_queens = {
+	icon = "job_larva_queen"
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+}
+
 planet_bio_trophies = {
 	parent = planet_jobs
     generate_add_modifiers = {
@@ -1413,7 +1443,7 @@ planet_pop_assemblers = {
 	parent = planet_jobs
 	generate_add_modifiers = {
 		produces
-        upkeep
+        	upkeep
 	}
 	generate_mult_modifiers = {
 		produces
@@ -1503,7 +1533,7 @@ planet_livestock = {
 	parent = planet_jobs
 	generate_add_modifiers = {
 		produces
-        upkeep
+       		upkeep
 	}
 	generate_mult_modifiers = {
 		produces
@@ -1863,18 +1893,6 @@ planet_doctors = {
 	}
 }
 
-planet_refiners = {
-	parent = planet_jobs
-	generate_add_modifiers = {
-		produces
-        upkeep
-	}
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-}
-
 planet_translucers = {
 	parent = planet_jobs
 	generate_add_modifiers = {
@@ -1951,8 +1969,12 @@ planet_pops = {
 
 unemployment_resources = {
 	parent = planet_pops
+	generate_mult_modifiers = {
+		produces
+	}
 	generate_add_modifiers = {
 		upkeep
+		produces
 	}
 }
 
