@@ -87,8 +87,20 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		set_country_flag = synthetic_empire
-		
+		set_policy = {
+			policy = robot_pop_policy
+			option = robot_pops_allowed
+			cooldown = yes
+		}
+
+		set_policy = {
+			policy = artificial_intelligence_policy
+			option = ai_full_rights
+			cooldown = yes
+		}
+
+		set_country_flag = synthetic_empire		
+
 		give_technology = { tech = tech_bio_reactor message = no }
 		
 		if = {
@@ -130,6 +142,8 @@ country_event = {
 						name_list = ascension_list
 					}
 					
+					set_species_flag = former_organic
+
 					save_event_target_as = new_robotic_species
 				}
 			}
@@ -175,6 +189,8 @@ country_event = {
 						name_list = ascension_list
 					}
 					
+					set_species_flag = former_organic
+
 					save_event_target_as = new_robotic_species
 				}
 			}
@@ -216,98 +232,78 @@ country_event = {
 						prompt_country = root #If targeted country is a player they will get a popup asking for a name/plural/adjective combo. Otherwise the species will get a random name from the specified name_list
 						name_list = ascension_list
 					}
+
+					set_species_flag = former_organic
 					
 					save_event_target_as = new_robotic_species
 				}
 			}
 		}
 
-		every_owned_pop = {
+		while = {
 			limit = {
-				species = {
-					has_trait = trait_cybernetic 
+				pop_percentage = {
+					percentage <= 0.20
+					limit = {
+						species = { has_species_flag = former_organic }
+						has_trait = "trait_mechanical"
+					}
+				}
+				any_owned_pop = {
+					is_sapient = yes
+					NOR = {
+						has_trait = "trait_mechanical"
+						has_trait = "trait_machine_unit"
+					}
 				}
 			}
-			change_species = event_target:new_robotic_species
-		}
 
-		every_owned_ship = {
-			limit = {
-				is_ship_class = shipclass_colonizer
-				species = {
-					has_trait = trait_cybernetic
+			random_owned_pop = {
+				limit = {
+					is_sapient = yes
+					NOR = {
+						has_trait = "trait_mechanical"
+						has_trait = "trait_machine_unit"
+					}
 				}
-			}
-			change_species = event_target:new_robotic_species
-		}
-
-		every_owned_army = {
-			limit = {
-				exists = species
-				exists = planet
-				species = {
-					has_trait = trait_cybernetic
-				}
-				army_type = assault_army
-			}
-			modify_army = {
-				name = random
-				type = "robotic_army"
-				species = event_target:new_robotic_species
+				change_species = event_target:new_robotic_species
 			}
 		}
 
-		every_owned_army = {
-			limit = {
-				exists = species
-				exists = planet
-				species = {
-					has_trait = trait_cybernetic
-				}
-				army_type = defense_army
-			}
-			modify_army = {
-				name = random
-				type = "robotic_defense_army"
-				species = event_target:new_robotic_species
-			}
-		}
-		
 		every_owned_leader = {
 			limit = { 
-				OR = {
-					has_trait = leader_trait_admiral_cyborg
-					has_trait = leader_trait_general_cyborg
-					has_trait = leader_trait_governor_cyborg
-					has_trait = leader_trait_scientist_cyborg
-					has_trait = leader_trait_ruler_cyborg
-					has_trait = leader_trait_admiral_synthetic
-					has_trait = leader_trait_ruler_synthetic
-					has_trait = leader_trait_general_synthetic
-					has_trait = leader_trait_governor_synthetic
-					has_trait = leader_trait_scientist_synthetic
+				NOR = {
+					species = { has_trait = trait_mechanical }
+					species = { has_trait = trait_machine_unit }
+					leader_class = ruler
 				}
 			}
-			change_species = event_target:new_robotic_species
-			change_leader_portrait = species
+			random_list = {
+				50 = {
+					# 50% chance of not turning
+				}
+				50 = {
+					change_species = event_target:new_robotic_species
+					change_leader_portrait = species
+				}
+			}
 		}
 		every_pool_leader = {
 			limit = { 
-				OR = {
-					has_trait = leader_trait_admiral_cyborg
-					has_trait = leader_trait_general_cyborg
-					has_trait = leader_trait_governor_cyborg
-					has_trait = leader_trait_scientist_cyborg
-					has_trait = leader_trait_ruler_cyborg
-					has_trait = leader_trait_admiral_synthetic
-					has_trait = leader_trait_ruler_synthetic
-					has_trait = leader_trait_general_synthetic
-					has_trait = leader_trait_governor_synthetic
-					has_trait = leader_trait_scientist_synthetic
+				NOR = {
+					species = { has_trait = trait_mechanical }
+					species = { has_trait = trait_machine_unit }
 				}
 			}
-			change_species = event_target:new_robotic_species
-			change_leader_portrait = species
+			random_list = {
+				50 = {
+					# 50% chance of not turning
+				}
+				50 = {
+					change_species = event_target:new_robotic_species
+					change_leader_portrait = species
+				}
+			}
 		}
 		change_dominant_species = { species = event_target:new_robotic_species }
 		
@@ -459,5 +455,9 @@ country_event = {
 	option = {
 		name = "utopia.2551.a"
 		custom_tooltip = SYNTH_ASSIMILATION_CITIZENSHIP_ENABLED
+
+		hidden_effect = {
+			country_event = { id = synth.150 days = 30 }
+		}
 	}
 }
