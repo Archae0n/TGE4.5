@@ -7,7 +7,7 @@ special_project = {
 			limit = {
 			}
 			scope = this
-			add = 200
+			add = 40
 			calc = pop_count
 		}
 	}
@@ -43,6 +43,17 @@ special_project = {
 					policy = artificial_intelligence_policy
 					option = ai_full_rights
 					cooldown = yes
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_active_resolution = "resolution_divinity_silence_the_soulless"
+						is_active_resolution = "resolution_divinity_a_defined_purpose"
+					}
+				}
+				owner = {
+					set_timed_country_flag = { flag = resolution_breached_synthetic_evolution days = 3600 }
 				}
 			}
 			country_event = { id = esap_ascension_paths.4 }
