@@ -309,7 +309,8 @@ origin_scion = {
 	max_once_global = yes
 
 	playable = {
-		host_has_dlc = Federations
+		always = no
+		#host_has_dlc = Federations
 	}
 
 	possible = {
@@ -481,7 +482,8 @@ origin_common_ground = {
 	max_once_global = yes
 
 	playable = {
-		host_has_dlc = "Federations"
+		always = no
+		#host_has_dlc = "Federations"
 	}
 
 	possible = {
@@ -538,7 +540,8 @@ origin_hegemon = {
 	max_once_global = yes
 
 	playable = {
-		host_has_dlc = "Federations"
+		always = no
+		#host_has_dlc = "Federations"
 	}
 
 	possible = {
@@ -620,7 +623,7 @@ origin_lost_colony = {
 	max_once_global = yes
 
 	playable = {
-		always = yes
+		always = no
 	}
 
 	possible = {

@@ -5,6 +5,9 @@ origin_timeless = {
 	icon = "gfx/interface/icons/origins/origin_timeless.dds"
 	picture = GFX_origin_timeless
 	max_once_global = yes
+	playable = {
+		always = no
+	}
 	possible = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 	}

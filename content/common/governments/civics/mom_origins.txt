@@ -7,6 +7,7 @@ origin_mom_house_divided = {
 	max_once_global = yes
 
 	playable = {
+		always = no
 	}
 
 	possible = {

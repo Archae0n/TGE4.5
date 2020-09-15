@@ -1,7 +1,8 @@
 civic_feudal_realm = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		always = no
+		#ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		#authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
 		authority = {
@@ -24,8 +25,9 @@ civic_mostly_harmless = {
 	description = civic_tooltip_mostly_harmless
 	icon = gfx/interface/icons/ethics/ethic_pacifist.dds
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		always = no
+		#ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		#authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
 		ethics = {
@@ -50,8 +52,9 @@ civic_stellar_guardian = {
 	description = civic_tooltip_stellar_guardian
 	icon = gfx/interface/icons/governments/civics/civic_warrior_culture.dds
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		always = no
+		#ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		#authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
 		ethics = {
