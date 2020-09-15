@@ -6,7 +6,7 @@ special_project = {
 			limit = {
 			}
 			scope = this
-			add = 200
+			add = 150
 			calc = pop_count
 		}
 	}
