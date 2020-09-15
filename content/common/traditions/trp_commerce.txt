@@ -926,6 +926,7 @@ trp_commerce_capability_b = {
 trp_commerce_capability_c = {
 	modifier = {
 		##technician energy increase
+		mod_technician_energy_produces_add = 1.0
 	}
 	possible = {
 		has_tradition = trp_commerce_capability_b
