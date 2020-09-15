@@ -43,7 +43,8 @@ citizenship_slavery = {
 			is_lonely_hive_mind_pop = no
 		}
 		from = { 
-			NOR = { 
+			NOR = {
+				has_valid_civic = civic_mutualistic_behavior
 				has_valid_civic = civic_machine_servitor 
 				has_valid_civic = civic_machine_assimilator
 				has_valid_civic = civic_machine_terminator
