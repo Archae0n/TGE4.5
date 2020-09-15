@@ -702,13 +702,6 @@ civic_slave_race = {
 				value = ethic_xenophobe
 				value = ethic_fanatic_xenophobe
 			}
-			
-			OR = {
-				text = civic_tooltip_materialist
-				value = ethic_materialist
-				value = ethic_fanatic_materialist
-			}			
-
 		}
 
 		civics = {
@@ -758,17 +751,13 @@ civic_reeducated_labor = {
 		ethics = {
 
 			NOR = {
-				 value = ethic_fanatic_egalitarian
+				text = civic_tooltip_not_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
 			}
             OR = {
 				 value = ethic_fanatic_elitist
-			}			
-			OR = {
-			     text = civic_tooltip_capitalism
-			     value = ethic_capitalism
-				 value = ethic_fanatic_capitalism
 			}
-
 		}
 		civics = {
 			NOR = {     value = civic_slaver_guilds   value = civic_indentured_assets }
@@ -1226,7 +1215,7 @@ civic_slaver_guilds = {
 			}
 
 			NOR = {
-				value = ethic_fanatic_pluralist
+				value = ethic_fanatic_pluralist				
 			}
 
 		}
@@ -2634,12 +2623,11 @@ civic_shadow_council = {
 				 value = auth_dictatorial
 			}
 		}
-
 	}
 	random_weight = { base = 5 }
 	modifier = {
 		country_election_influence_cost_mult = -0.75
-		planet_jobs_ruler_produces_mult = 0.10
+		planet_jobs_ruler_produces_mult = 0.25
 	}
 }
 
