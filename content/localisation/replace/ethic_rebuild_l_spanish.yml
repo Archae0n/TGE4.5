@@ -3433,7 +3433,7 @@ living_standard_shared_burden:1 "Social Equality"
 
 7_HAPPINESS:0 "§G+7%§! £happiness£ "
 
-SHARED_BURDEN_POP_EFFECTS:0 "$RULERS$: $SHARED_BURDEN_LUXURIES$, $6_HAPPINESS$\n$SPECIALISTS$: $SHARED_BURDEN_LUXURIES$, $6_HAPPINESS$\n$WORKERS$: $SHARED_BURDEN_LUXURIES$, $6_HAPPINESS$"
+SHARED_BURDEN_POP_EFFECTS:0 "$RULERS$: $SHARED_BURDEN_LUXURIES$, $5_HAPPINESS$\n$SPECIALISTS$: $SHARED_BURDEN_LUXURIES$, $5_HAPPINESS$\n$WORKERS$: $SHARED_BURDEN_LUXURIES$, $5_HAPPINESS$"
 
 empire_socialism_utopia_non_market:0 "$TRIGGER_FAIL$Our Empire is reqiured to have §YFanatic Cooperative§! and §YPluralism§! ethic combination."
 
