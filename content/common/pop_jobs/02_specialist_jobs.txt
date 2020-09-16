@@ -164,7 +164,7 @@ researcher = {
 				exists = owner
 				owner = { has_tradition = trp_discovery_society_a }
 			}
-			unity = 0.5
+			unity = 0.3
 		}
 
 		upkeep = {

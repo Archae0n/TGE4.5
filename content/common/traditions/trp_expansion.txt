@@ -6,7 +6,7 @@ trp_expansion_adopt = {
 }
 trp_expansion_finish = {
 	modifier = {
-		country_admin_cap_mult = 0.50
+		empire_size_penalty_mult = -0.1
 	}
 }
 ###Colonization Path
