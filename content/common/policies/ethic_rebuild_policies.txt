@@ -632,9 +632,9 @@ economic_stance = {
 
 		modifier = {
 		    job_mogul_per_pop = 0.03
-			job_merchant_per_pop = 0.04
-            job_clerk_per_pop = 0.06
-			country_trade_fee = -0.1
+			job_merchant_per_pop = 0.03
+            job_clerk_per_pop = 0.05
+			country_trade_fee = -0.05
 			country_trade_attractiveness = 0.33
 			country_base_influence_produces_add = -0.5
 			local_trade_protection_add = -4
@@ -714,7 +714,7 @@ economic_stance = {
 			planet_building_build_speed_mult = 0.15
 			starbase_shipyard_build_speed_mult = 0.15
 		    planet_colony_development_speed_mult = 0.15
-			country_trade_fee = 0.2
+			country_trade_fee = 0.10
 			pop_ethic_socialism_attraction_mult = 0.2
 		}
 
@@ -1084,9 +1084,9 @@ bureaucracy = {
 
 		modifier = {
 
-		country_admin_cap_mult = 0.2
+		country_admin_cap_mult = 0.10
         governor_skill_levels = 1
-		edicts_cost_mult = 0.25
+		edicts_cost_mult = 0.15
 		pop_ethic_egalitarian_attraction_mult = 0.15
 
 
@@ -1280,7 +1280,7 @@ education = {
 		modifier = {
 
 
-		planet_jobs_specialist_produces_mult = 0.15	
+		planet_jobs_specialist_produces_mult = 0.075
 		planet_crime_add = 10
 		pop_ethic_capitalism_attraction_mult = 0.05
 		pop_ethic_elitist_attraction_mult = 0.1
@@ -1326,6 +1326,7 @@ education = {
 
         pop_government_ethic_attraction = 0.1
         country_unity_produces_mult = 0.1
+		planet_jobs_specialist_produces_mult = 0.05
         planet_crime_add = -10
 		country_energy_produces_mult = -0.04
 		pop_ethic_socialism_attraction_mult = 0.05
@@ -1404,8 +1405,8 @@ transportation_logistics = {
 
         trade_value_mult = 0.1
 		pop_growth_from_immigration = 0.33
-		planet_colony_development_speed_mult = 0.33
-		ships_upkeep_mult = 0.05
+		planet_colony_development_speed_mult = 0.25
+		ships_upkeep_mult = 0.075
 		local_trade_protection_add = -3
 		pop_ethic_pacifist_attraction_mult = 0.25
 
@@ -1637,8 +1638,8 @@ interstellar_telecom = {
 
 		modifier = {
 
-        country_naval_cap_mult = 0.33
-		country_starbase_capacity_add = 5
+        country_naval_cap_mult = 0.10
+		country_starbase_capacity_add = 2
 		station_researchers_produces_mult = -0.15
 		pop_ethic_militarist_attraction_mult = 0.25
 
@@ -1763,7 +1764,7 @@ interstellar_media = {
 
         pop_government_ethic_attraction = 0.2
 		country_war_exhaustion_mult = -0.2
-		pop_factions_produces_mult = -0.15
+		country_unity_produces_mult = 0.1
         pop_ethic_authoritarian_attraction_mult = 0.15
 
 
