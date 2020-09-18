@@ -103,54 +103,27 @@ event = {
 				is_planet_class = pc_city
 				AND = {
 					has_owner = yes
-					owner = {
-						NOT = {
-							is_country_type = default
-						}
-					}
+					owner = { has_ethic = ethic_gestalt_consciousness }
 				}
 			}
 		}
 	}
 
 	immediate = {
-		while = {
+		every_planet = {
 			limit = {
-				any_planet = {
-					has_planet_flag = mom_crowded_planet
-					OR = {
-						has_owner = no
-						is_planet_class = pc_city
-						AND = {
-							has_owner = yes
-							owner = {
-								NOT = {
-									is_country_type = default
-								}
-							}
-						}
+				has_planet_flag = mom_crowded_planet
+				OR = {
+					has_owner = no
+					is_planet_class = pc_city
+					AND = {
+						has_owner = yes
+						owner = { has_ethic = ethic_gestalt_consciousness }
 					}
 				}
 			}
-			random_planet = {
-				limit = {
-					has_planet_flag = mom_crowded_planet
-					OR = {
-						has_owner = no
-						is_planet_class = pc_city
-						AND = {
-							has_owner = yes
-							owner = {
-								NOT = {
-									is_country_type = default
-								}
-							}
-						}
-					}
-				}
-				remove_planet_flag = mom_crowded_planet
-				remove_modifier = mom_crowded_world
-			}
+			remove_planet_flag = mom_crowded_planet
+			remove_modifier = mom_crowded_world
 		}
 	}
 }
