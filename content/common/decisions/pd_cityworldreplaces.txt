@@ -44,6 +44,29 @@ decision_arcology_project = {
 		hidden_effect = {		
 			clear_deposits = yes
 			change_pc = pc_city
+
+			remove_modifier = "karst"
+			remove_modifier = "pdsalt"
+			remove_modifier = "pdmegaflora"
+			remove_modifier = "radiotrophic"
+			remove_modifier = "ammonia"
+			remove_modifier = "methane"
+			remove_modifier = "ash"
+			remove_modifier = "primal"
+			remove_modifier = "aquatic"
+			remove_modifier = "geothermal"
+			remove_modifier = "superhabitable"
+			remove_modifier = "floating"
+			remove_modifier = "crystal"
+			remove_modifier = "graveyard"
+			remove_modifier = "biolumen"
+			remove_modifier = "technoorganic"
+			remove_modifier = "technoorganic2"
+			remove_modifier = "archive"
+
+			remove_planet_flag = mom_crowded_planet
+			remove_modifier = mom_crowded_world
+	
 			IF = {
 				limit = { owner = { NOT = { has_trait = trait_pc_aquatic_preference } } }
 				set_planet_entity = {
