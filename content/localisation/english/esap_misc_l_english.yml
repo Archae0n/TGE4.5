@@ -13,6 +13,10 @@
  building_esap_spiritualist_2_sacred_nexus_desc:0 "$building_sacred_nexus_desc$"
  building_esap_spiritualist_2_citadel_of_faith:0 "$building_citadel_of_faith$"
  building_esap_spiritualist_2_citadel_of_faith_desc:0 "$building_citadel_of_faith_desc$"
+ esap_spiritualist_2_doctrine:0 "Spiritual Doctrine"
+ policy_option_esap_spiritualist_2_doctrine_engineering:0 "God in the Machine"
+ policy_option_esap_spiritualist_2_doctrine_physics:0 "Divinity amongst the Stars"
+ policy_option_esap_spiritualist_2_doctrine_society:0 "The Flesh is Sacred"
 
 ####################################
 # Decisions
