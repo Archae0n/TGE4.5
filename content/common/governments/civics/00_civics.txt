@@ -2641,8 +2641,9 @@ civic_fanatic_purifiers = {
 	modification = no
 	playable = { host_has_dlc = "Utopia" }
 	potential = {
-		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
-		authority = { NOT = {  value = auth_corporate } }
+		always = no
+		#ethics = { NOT = {  value = ethic_gestalt_consciousness } }
+		#authority = { NOT = {  value = auth_corporate } }
 	}
 	possible = {
 		ethics = {
