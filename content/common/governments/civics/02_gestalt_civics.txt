@@ -92,7 +92,10 @@ civic_hive_pooled_knowledge = {
 
 civic_hive_devouring_swarm = {
 	modification = no
-	potential = { authority = { value = auth_hive_mind } }
+	potential = {
+		always = no
+		#authority = { value = auth_hive_mind }
+	}
 	random_weight = { base = 5 }
 
 	description = "civic_tooltip_devouring_swarm_effects"
@@ -170,7 +173,10 @@ civic_machine_servitor = {
 }
 
 civic_machine_terminator = {
-	potential = { authority = { value = auth_machine_intelligence } }
+	potential = {
+		always = no
+		#authority = { value = auth_machine_intelligence }
+	}
 	homeworld = pc_nuked # Changes homeworld class regardless of what is picked for empire
 	possible = {
 		civics = {
@@ -326,7 +332,10 @@ civic_machine_predictive_analysis = {
 }
 
 civic_machine_replication = {
-	potential = { authority = { value = auth_machine_intelligence } }
+	potential = {
+		always = no
+		#authority = { value = auth_machine_intelligence }
+	}
 	random_weight = { base = 5 }
 	modifier = {
 		planet_pop_assembly_mult = 0.33
