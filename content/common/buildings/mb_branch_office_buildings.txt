@@ -136,7 +136,7 @@ building_targeted_fauna = {
 			minerals = 500
 		}	
 		produces = {
-			society_research = 20
+			society_research = 10
 		}		
 		upkeep = {
 			food = 2
@@ -183,7 +183,7 @@ building_observatory = {
 			minerals = 500
 		}	
 			produces = {
-			physics_research = 20
+			physics_research = 10
 		}	
 		upkeep = {
 			energy = 2
@@ -228,7 +228,7 @@ building_foreign_arquitecture = {
 			minerals = 500
 		}	
 		produces = {
-			engineering_research = 20
+			engineering_research = 10
 		}	
 		upkeep = {
 			minerals = 3
@@ -316,62 +316,6 @@ building_urban_maintenance = {
 		produces = {
 			unity = 4
 		}	
-		upkeep = {
-			energy = 2
-		}
-	}
-	
-	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 3
-			branch_office_owner = { 
-				has_monthly_income = {
-					resource = energy
-					value < 8
-				}
-			}
-		}
-	}
-}
-
-building_tourism_campaign = {
-	base_buildtime = 480
-	
-	
-	branch_office_building = yes
-	
-	allow = {
-		num_pops >= 35
-	}
-	
-	potential = {
-		has_branch_office = yes
-		branch_office_owner = { 
-		has_valid_civic = civic_mutualistic_behavior		
-		NOT = { is_organic = yes}
-		}
-	}
-	
-	planet_modifier = {
-		planet_emigration_push_add = 50
-		job_clerk_add = 3
-	}
-
-
-	country_modifier = {
-		diplo_weight_economy_mult = 0.05
-	}
-
-	resources = {
-		category = planet_branch_office_buildings
-		cost = {
-			minerals = 400
-		}	
-		produces = {
-			#society_research = 6
-		}		
 		upkeep = {
 			energy = 2
 		}
@@ -525,7 +469,7 @@ building_organic_targeted_fauna = {
 			larva = 10
 		}	
 		produces = {
-			society_research = 20
+			society_research = 10
 		}		
 		upkeep = {
 			food = 2
@@ -574,7 +518,7 @@ building_organic_observatory = {
 			larva = 10
 		}	
 			produces = {
-			physics_research = 20
+			physics_research = 10
 		}	
 		upkeep = {
 			energy = 2
@@ -621,7 +565,7 @@ building_organic_foreign_arquitecture = {
 			larva = 10
 		}	
 		produces = {
-			engineering_research = 20
+			engineering_research = 10
 		}	
 		upkeep = {
 			minerals = 3
@@ -716,60 +660,6 @@ building_organic_urban_maintenance = {
 		}	
 		produces = {
 			unity = 4
-		}	
-	}
-	
-	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 3
-			branch_office_owner = { 
-				has_monthly_income = {
-					resource = energy
-					value < 8
-				}
-			}
-		}
-	}
-}
-
-building_organic_tourism_campaign = {
-	base_buildtime = 480
-	icon = building_tourism_campaign
-	
-	branch_office_building = yes
-	
-	allow = {
-		num_pops >= 35
-	}
-	
-	potential = {
-		has_branch_office = yes
-		branch_office_owner = { 
-		has_valid_civic = civic_mutualistic_behavior		
-		is_organic = yes
-		}
-	}
-	
-	country_modifier = {
-		diplo_weight_economy_mult = 0.05
-	}
-
-	planet_modifier = {
-		planet_emigration_push_add = 50
-		job_clerk_add = 3
-	}
-
-	resources = {
-		category = planet_branch_office_buildings
-		cost = {
-			minerals = 200
-			food = 200
-			larva = 50
-		}	
-		produces = {
-			#society_research = 6
 		}	
 	}
 	

@@ -1214,15 +1214,15 @@ trait_genetic_memory = {
 }
 
 trait_time_lords = {
-	cost = 4
+	cost = 5
 	potential_crossbreeding_chance = 0.5
 	opposites = { "trait_nerve_stapled" "trait_enduring" "trait_venerable" "trait_fleeting" "trait_quick_learners" "trait_slow_learners" }
-	initial = no
-	randomized = no
+	initial = yes
+	randomized = yes
 	advanced_trait = yes
+	immortal_leaders = yes
 	allowed_archetypes = { BIOLOGICAL BIOMORPH LITHOID PLANTOID }
 	modifier = {
-		leader_age = 120
 		planet_jobs_produces_mult = 0.05
 		species_leader_exp_gain = -0.5
 		army_experience_gain_mult = -0.5

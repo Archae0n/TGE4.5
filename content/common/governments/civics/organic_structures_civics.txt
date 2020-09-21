@@ -1,13 +1,7 @@
 civic_hive_organic = {
 	#is_origin = yes
-	potential = { authority = { value = auth_hive_mind } }
-
-	possible = {
-		species = {
-			value = BIOLOGICAL
-		}
-	
-	}	
+	modification = no
+	potential = { authority = { value = auth_hive_mind } }	
 	flags = { custom_start_screen }
 	advanced_start = yes
 	
