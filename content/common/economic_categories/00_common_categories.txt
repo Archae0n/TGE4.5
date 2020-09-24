@@ -1644,16 +1644,6 @@ planet_bureaucrats = {
 			has_job = coordinator
 		}
 	}
-	
-	triggered_produces_modifier = {
-		key = mod_synapse_drone
-		modifier_types = {
-			add
-		}
-		trigger = {
-			has_job = synapse_drone
-		}
-	}
 }
 
 planet_researchers = {
@@ -1779,6 +1769,9 @@ planet_evaluators = {
 
 planet_synapse_drones = {
 	parent = planet_jobs
+	generate_add_modifiers = {
+		produces
+	}
 	generate_mult_modifiers = {
 		produces
 	}
