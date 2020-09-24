@@ -1,0 +1,142 @@
+﻿l_english:
+
+### Event titles ###
+TOW_LST.NOPOZPLEASE:0 "Pick from the basic ruler traits"
+TOW_LST.EXTENDMEFAMPAI:0 "Pick from the LARP traits"
+TOW_LST.CUCKMYSHITUP:0 "I have good boy points! Show me mommies secret tendie stash!"
+TOW_LST.NOPENOPENOPE:0 "BACK"
+TOW_LST.EVENT_ALPHA:0 "Select Trait Group"
+TOW_LST.EVENT_ALPHA_DESC:0 "Traits grouped by mod. installation of that mod is REQUIRED for traits to function.\n\nActually I changed my mind you are not getting external mod support you ungrateful anons."
+TOW_LST.EVENT_ZERO:0 "Enable Ruler trait selection?"
+TOW_LST.EVENT_ZERO_DESC:0 "Do you wish to enable ruler trait selection?"
+TOW_LST.EVENT_ONE:0 "Choose First Ruler Trait"
+TOW_LST.EVENT_ONE_DESC:0 "Choose your first ruler trait from the options below."
+TOW_LST.EVENT_TWO:0 "Choose Second Ruler Trait"
+TOW_LST.EVENT_TWO_DESC:0 "Please select a second trait from the options below."
+TOW_LST.SAVEMEMOONMAN_TITLE:0 "Choose an additional trait"
+TOW_LST.SAVEMEMOONMAN_DESC:0 "Please select a trait from the options below."
+TOW_LST.SAVEMEMOONMAN:0 "But Mom! I NEED MORE THAN 2 MORE TRAITS!"
+TOW_LST.MOMMYGIBMILK_DESC:0 "This traits will make your ruler suck"
+TOW_LST.MOMMYGIBMILK:0 "If you'd only donated I would have supported this mod"
+TOW_LST.CHEATINGBAGUETTE:0 "MOMMIES SECRET TENDIES"
+TOW_LST.CHEATINGBAGUETTE_DESC:0 "These traits can only be obtained by turning in Good Boy Points"
+
+
+### Event options ###
+TOW_LST.ARCHSEN:0 "Architectural sense"
+TOW_LST.ARCHSEN_DESC:0 "-10% Building cost"
+TOW_LST.CHARI:0 "Charismatic"
+TOW_LST.CHARI_DESC:0 "-10% edict cost and +20% edict duration"
+TOW_LST.CHAMP_PEEP:0 "Champion Of The People"
+TOW_LST.CHAMP_PEEP_DESC:0 "Population happiness is increased by 5% points"
+TOW_LST.DEEP_CON:0 "Deep Connections"
+TOW_LST.DEEP_CON_DESC:0 "Gain 1 extra influence point a month"
+TOW_LST.EXPAN:0 "Expansionist"
+TOW_LST.EXPAN_DESC:0 "-15% outpost build cost, -15% starbase influence cost"
+TOW_LST.EXPLORER:0 "Explorer"
+TOW_LST.EXPLORER_DESC:0 "Cost of science vessels reduced by 25%\n\nAnomaly research speed increased 33%"
+TOW_LST.FER_PREACH:0 "Fertility Preacher"
+TOW_LST.FER_PREACH_DESC:0 "Output of food from planet tiles and buildings increased by 10%"
+TOW_LST.HOMESKY:0 "Home in the sky"
+TOW_LST.HOMESKY_DESC:0 "The cost of starbase modules are reduced by 20%\n\nThe cost of Spaceport upgrades are reduced by 10%"
+TOW_LST.INDUST:0 "Industrialist"
+TOW_LST.INDUST_DESC:0 "Output of minerals from planet tiles and buildings increased by 10%"
+TOW_LST.INVESTOR:0 "Investor"
+TOW_LST.INVESTOR_DESC:0 "Output of energy from planet tiles and buildings increased by 10%"
+TOW_LST.SPACE_MINER:0 "Space Miner"
+TOW_LST.SPACE_MINER_DESC:0 "Cost of mining stations reduced by 25%\n\nCost of constructor vessels reduced by 25%"
+TOW_LST.WARL:0 "Warlike"
+TOW_LST.WARL_DESC:0 "ship damage increased by 5%\n\narmy damage increased by 10%"
+
+###bleh traits###
+TOW_LST.ADAPTABLE:0 "Adaptable"
+TOW_LST.ADAPTABLE_DESC:0 "25% experience gain for ruler."
+TOW_LST.RESILIENT:0 "Resilient"
+TOW_LST.RESILIENT_DESC:0 "+25 years to ruler lifespan."
+TOW_LST.EAGER:0 "Eager"
+TOW_LST.EAGER_DESC:0 "-50% leader upkeep cost for this leader. lol."
+TOW_LST.NEW_BOOT:0 "Newboot"
+TOW_LST.NEW_BOOT_DESC:0 "This is literally eager but you basement dwellers can't help but LARP that you are robot space commanders and shit."
+TOW_LST.FLEXIBLE_PROGRAMMING:0 "Flexible Programming"
+TOW_LST.FLEXIBLE_PROGRAMMING_DESC:0 "But are gay frogs really bad?"
+
+###Bad traits ###
+
+TOW_LST.IUSEPOL:0 " Arrested Development "
+TOW_LST.IUSEPOL_DESC:0 "Mommy gib milk..."
+TOW_LST.HIGHONLSD:0 " Substance Abuser "
+TOW_LST.HIGHONLSD_DESC:0 "Your ruler can't help but go on long benders.\n\nThe rumors have elluded to things like snorting illicit substances off the reproductive organs of genderfluid strangers in night clubs and the most perverse of sexual activities."
+TOW_LST.WEEDMANTRUDEAU:0 " Rigid Programming "
+TOW_LST.WEEDMANTRUDEAU_DESC:0 "If you kill your enemies you lose, duh."
+TOW_LST.FUCKITWEWILLDOITLIVE:0 " Stubborn "
+TOW_LST.FUCKITWEWILLDOITLIVE_DESC:0 "Fuck the manual, fuck your couch; I do whatever the fuck I want."
+
+###CHEATING BAGUETTE###
+TOW_LST.REFORMER:0 " Reformer "
+TOW_LST.REFORMER_DESC:0 "Your ruler is a nosy something, something.\n\n+10% Monthly Unity"
+
+TOW_LST.SHROUD:0 " Increased Lifespan "
+TOW_LST.SHROUD_DESC:0 "Your ruler been effected by the psionic energies of the shroud bukkake spa treatment.\n\nThey have an extra 40 years to reflect upon this wonderful experience..."
+
+TOW_LST.HIVE_MIND:0 " Hive Mind "
+TOW_LST.HIVE_MIND_DESC:0 "Your avatar has become one with the internet hivemind.\n\nJust as Gondola shall forever watch over the green-texters, your memes penetrate the collective consciousness of your people and will guide your empire for all eternity. "
+
+TOW_LST.MACHINE_INTELLIGENCE:0 " Machine Intelligence "
+TOW_LST.MACHINE_INTELLIGENCE_DESC:0 "You have become one with the corporate HR censorship machine.\n\nYou need not think.\n\nYou need not socialize.\n\nYou need only follow the holy text of HR's company conduct manual.\n\nAll situations are covered within its divinely inspired text."
+
+TOW_LST.WORLD_SHAPER:0 " World Shaper "
+TOW_LST.WORLD_SHAPER_DESC:0 "It does something with terraforming."
+
+TOW_LST.RECRUITER:0 " Recruiter "
+TOW_LST.RECRUITER_DESC:0 "Hipsters line up for miles to join your army and are eager to serve you at meager wages.\n+50% army build speed and -20% army build cost."
+
+TOW_LST.MILITARY_PIONEER:0 " Military Pioneer "
+TOW_LST.MILITARY_PIONEER_DESC:0 "Your ruler is a sociopathic genocider that spends all day dreaming up new ways to kills his enemies.\n\n-10% ship upgrade & shipyard build cost."
+
+TOW_LST.LOGISTIC_UNDERSTANDING:0 " Logistics Understanding "
+TOW_LST.LOGISTIC_UNDERSTANDING_DESC:0 "Let them eat cake!\n\n-5% ship upkeep & -10% army upkeep."
+
+TOW_LST.FRONTIER_SPIRIT:0 " Frontier Spirit "
+TOW_LST.FRONTIER_SPIRIT_DESC:0 "Your ruler was borne from an elite Amerifat aristocracy of at least 56% pure hapsburg phenotype.\n\n-35% colony ship build cost and +25% colony development speed."
+
+TOW_LST.FROM_THE_RANKS:0 " From The Ranks "
+TOW_LST.FROM_THE_RANKS_DESC:0 "Your ruler has descended from the family lineage of the first Imperial Star Emperor, Jair Bolsonaro the Second.\n\n +20% Army Morale and +33% Army Experience Gain."
+
+TOW_LST.FORTIFIER:0 " Fortifier "
+TOW_LST.FORTIFIER_DESC:0 "Your ruler is obsessed with building walls and will shutdown all governmental activities if you don't comply with their demands.\n\n-10% starbase upgrade cost and -33% defense platform build cost."
+
+TOW_LST.FLEET_ORGANIZER:0 " Fleet Organizer "
+TOW_LST.FLEET_ORGANIZER_DESC:0 "Your ruler has OCD and is possibly autistic from chemicals in the space vaccines.\n\nBut is that really a bad thing?\n\n+15% Naval Capacity."
+
+TOW_LST.EYE_FOR_TALENT:0 " Eye For Talent "
+TOW_LST.EYE_FOR_TALENT_DESC:0 "Your ruler keeps mumbling about pizza, hotdogs, and pasta with that special walnut sauce.\n\nYou aren't really sure what that has to do with ruling, but whatever. Everyone they recruit has never disobeyed a single order; no matter how extreme.\n\n+1 leader skill levels and +20% leader experience gain."
+
+TOW_LST.DESTROYER_FOCUS:0 " Destroyer Focus "
+TOW_LST.DESTROYER_FOCUS_DESC:0 "Your ruler spends all day hugging a Shimakaze body pillow and has had every statue and painting in the imperial palace replaced with Shimakaze's beautiful form.\n\nYou know that Hibiki is best destroyer but never bring it up because heresy is punishable by death in the empire.\n\n-20% destroyer build cost."
+
+TOW_LST.CRUISER_FOCUS:0 " Cruiser Focus "
+TOW_LST.CRUISER_FOCUS_DESC:0 "Your ruler has decreed that all imperial servants will be Atago clones.\n\nYou don't mind, cause that shit is thicc af.\n\n-20% Cruiser build cost."
+
+TOW_LST.BATTLESHIP_FOCUS:0 " Battleship Focus "
+TOW_LST.BATTLESHIP_FOCUS_DESC:0 "Haruna is the official waifu of your empire.\n\nHaruna's visage comes standard on every battleship. Her beautiful smile inspires your workers to new levels of efficiency.\n\n-20% Battleship build cost."
+
+TOW_LST.CORFO:0 " Corvette Focus "
+TOW_LST.CORFO_DESC:0 "Tsushima is best loli.\n\nIf you think otherwise then you are a bad person. nuff said.\n\n-20% corvette cost."
+
+TOW_LST.CYBORG_BILLIE:0 " Cyborg "
+TOW_LST.CYBORG_BILLIE_DESC:0 "Idk, just incase you need to be an immortal hive-mind, machine-intelligence cyborg.\n\n It does something I guess."
+
+TOW_LST.SYNTHETIC_BILLIE:0 " Synthetic "
+TOW_LST.SYNTHETIC_BILLIE_DESC:0 "For Russian Bot Maximalists ONLY.\n\n+5% Russian Bot resource production."
+
+TOW_LST.PSYCHIC_BILLIE:0 " Psychic "
+TOW_LST.PSYCHIC_BILLIE_DESC:0 "With this powers you are sure to be able to control all the thots...\n\n+10% Governing ethics attraction and +0.5 monthly influence."
+
+TOW_LST.CHOSEN_BILLIE:0 " Chosen One "
+TOW_LST.CHOSEN_BILLIE_DESC:0 "I don't think you can cheat any harder.\n\n+20% Governing ethics attraction and +1 monthly influence."
+
+TOW_LST.ERUDITE_BILLIE:0 " Erudite "
+TOW_LST.ERUDITE_BILLIE_DESC:0 "After years of intense training and studying, you have memorized the plot to all the eroge.\n\n+5% research speed."
+
+TOW_LST.BRAIN_SLUG_BILLIE:0 " Brain Slug Host "
+TOW_LST.BRAIN_SLUG_BILLIE_DESC:0 "You have become weaboo, destroyer of worlds.\n\nOk, I guess I lied, you really can cheat harder. This takes cheating to a new level.\n\n+10% research output and +10% naval capacity."

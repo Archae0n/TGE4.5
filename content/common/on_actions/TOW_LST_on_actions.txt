@@ -1,0 +1,6 @@
+on_game_start = {
+  events = {
+    TOW_leader_start_traits.777
+  }
+
+}

@@ -1,0 +1,283 @@
+namespace = TOW_leader_start_traits
+
+country_event = {
+	id = TOW_leader_start_traits.3
+	hide_window = no
+	title = TOW_LST.EVENT_ONE
+	desc = TOW_LST.EVENT_ONE_DESC
+	picture = GFX_evt_throne_room
+  show_sound = event_administrative_work
+	is_triggered_only = yes
+	immediate = {}
+
+option = {
+  name = TOW_LST.ARCHSEN
+  custom_tooltip = TOW_LST.ARCHSEN_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_architectural_sense } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_architectural_sense
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.CHARI
+  custom_tooltip = TOW_LST.CHARI_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_charismatic } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_charismatic
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.CHAMP_PEEP
+  custom_tooltip = TOW_LST.CHAMP_PEEP_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_champion_of_the_people } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_champion_of_the_people
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.DEEP_CON
+  custom_tooltip = TOW_LST.DEEP_CON_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_deep_connections } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_deep_connections
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.EXPAN
+  custom_tooltip = TOW_LST.EXPAN_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_expansionist } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_expansionist
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.EXPLORER
+  custom_tooltip = TOW_LST.EXPLORER_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_explorer } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_explorer
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.FER_PREACH
+  custom_tooltip = TOW_LST.FER_PREACH_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_fertility_preacher } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_fertility_preacher
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.HOMESKY
+  custom_tooltip = TOW_LST.HOMESKY_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_home_in_the_sky } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_home_in_the_sky
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.INDUST
+  custom_tooltip = TOW_LST.INDUST_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_industrialist } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_industrialist
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.INVESTOR
+  custom_tooltip = TOW_LST.INVESTOR_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_investor } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_investor
+          }
+      }
+  }
+
+  option = {
+  name = TOW_LST.SPACE_MINER
+  custom_tooltip = TOW_LST.SPACE_MINER_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_space_miner } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_space_miner
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.WARL
+  custom_tooltip = TOW_LST.WARL_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = trait_ruler_warlike } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = trait_ruler_warlike
+        }
+    }
+}
+####
+option = {
+  name = "TOW_LST.ADAPTABLE"
+  custom_tooltip = "TOW_LST.ADAPTABLE_DESC"
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = "leader_trait_adaptable" } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = leader_trait_adaptable
+        }
+    }
+}
+
+option = {
+  name = "TOW_LST.RESILIENT"
+  custom_tooltip = "TOW_LST.RESILIENT_DESC"
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = "leader_trait_resilient" } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = leader_trait_resilient
+        }
+    }
+}
+
+option = {
+  name = "TOW_LST.EAGER"
+  custom_tooltip = "TOW_LST.EAGER_DESC"
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = "leader_trait_eager" } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.4}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = leader_trait_eager
+        }
+    }
+}
+
+}

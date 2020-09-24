@@ -1,0 +1,128 @@
+namespace = TOW_leader_start_traits
+
+country_event = {
+	id = TOW_leader_start_traits.5
+	hide_window = no
+	title = TOW_LST.MOMMYGIBMILK
+	desc = TOW_LST.MOMMYGIBMILK_DESC
+	picture = GFX_evt_throne_room
+  show_sound = event_administrative_work
+	is_triggered_only = yes
+	immediate = {}
+
+option = {
+  name = "TOW_LST.NEW_BOOT"
+  custom_tooltip = "TOW_LST.NEW_BOOT_DESC"
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = "leader_trait_newboot" } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.2}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = leader_trait_newboot
+        }
+    }
+}
+
+option = {
+  name = "TOW_LST.FLEXIBLE_PROGRAMMING"
+  custom_tooltip = "TOW_LST.FLEXIBLE_PROGRAMMING_DESC"
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = "leader_trait_flexible_programming" } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.2}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = leader_trait_flexible_programming
+        }
+    }
+}
+
+option = {
+  name = TOW_LST.IUSEPOL
+  custom_tooltip = TOW_LST.IUSEPOL_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = leader_trait_arrested_development } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.2}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = leader_trait_arrested_development
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.HIGHONLSD
+  custom_tooltip = TOW_LST.HIGHONLSD_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = leader_trait_substance_abuser } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.2}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = leader_trait_substance_abuser
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.WEEDMANTRUDEAU
+  custom_tooltip = TOW_LST.WEEDMANTRUDEAU_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = leader_trait_rigid_programming } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.2}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = leader_trait_rigid_programming
+          }
+      }
+  }
+
+option = {
+  name = TOW_LST.FUCKITWEWILLDOITLIVE
+  custom_tooltip = TOW_LST.FUCKITWEWILLDOITLIVE_DESC
+  trigger = {
+    leader = {
+      leader_class = ruler
+      AND = { NOT = { has_trait = leader_trait_stubborn } }
+    }
+  }
+  hidden_effect = {
+  country_event = { id = TOW_leader_start_traits.2}
+  every_owned_leader = {
+      limit ={ leader_class = ruler }
+      add_trait = leader_trait_stubborn
+          }
+      }
+  }
+
+	option ={
+		name = TOW_LST.NOPENOPENOPE
+		hidden_effect = {
+				country_event = { id = TOW_leader_start_traits.1}
+		}
+}
+
+}

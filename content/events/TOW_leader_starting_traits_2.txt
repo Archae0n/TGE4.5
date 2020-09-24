@@ -1,0 +1,33 @@
+namespace = TOW_leader_start_traits
+
+country_event = {
+	id = TOW_leader_start_traits.2
+	hide_window = no
+	title = TOW_LST.EVENT_ALPHA
+	desc = TOW_LST.EVENT_ALPHA_DESC
+	picture = GFX_evt_throne_room
+  show_sound = event_administrative_work
+	is_triggered_only = yes
+	immediate = {
+
+	}
+
+	option = {
+		name = TOW_LST.NOPOZPLEASE
+		hidden_effect = {
+		country_event = { id = TOW_leader_start_traits.4}
+	}
+}
+	option = {
+		name = TOW_LST.EXTENDMEFAMPAI
+		hidden_effect = {
+				country_event = { id = TOW_leader_start_traits.6}
+		}
+	}
+	option = {
+		name = TOW_LST.CUCKMYSHITUP
+		hidden_effect = {
+			country_event = { id = TOW_leader_start_traits.8}
+		}
+	}
+}

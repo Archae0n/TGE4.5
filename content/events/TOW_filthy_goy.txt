@@ -1,0 +1,31 @@
+namespace = TOW_leader_start_traits
+
+country_event = {
+  id = TOW_leader_start_traits.666
+  hide_window = no
+  title = TOW_LST.SAVEMEMOONMAN_TITLE
+  desc = TOW_LST.SAVEMEMOONMAN_DESC
+  picture = GFX_evt_cybernetics
+  show_sound = event_laboratory_sound
+  is_triggered_only = yes
+
+	option = {
+		name = TOW_LST.NOPOZPLEASE
+		hidden_effect = {
+		country_event = { id = TOW_leader_start_traits.420}
+	}
+}
+	option = {
+		name = TOW_LST.EXTENDMEFAMPAI
+		hidden_effect = {
+				country_event = { id = TOW_leader_start_traits.421}
+		}
+	}
+	option = {
+		name = TOW_LST.CUCKMYSHITUP
+		hidden_effect = {
+			country_event = { id = TOW_leader_start_traits.422}
+		}
+	}
+
+}

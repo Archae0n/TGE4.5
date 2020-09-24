@@ -2544,3 +2544,181 @@ leader_enhancement = {
 		}
 	}
 }
+
+enslavement_ratio_policy = {
+
+	potential = {
+		always = yes
+	}
+
+	option = {
+		name = "ratio_no_enslavement"
+		
+
+		policy_flags = {
+			no_enslavement
+		}
+		
+		valid = {
+			always = yes
+		}		
+		
+		modifier = {			
+			country_pop_enslaved_mult = 0.00
+			}
+
+	}
+	
+	option = {
+		name = "ratio_enslavement_1"
+		
+
+		policy_flags = {
+			enslavement_1
+		}
+		
+		valid = {
+			allows_slavery = yes
+			NOR = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_pluralist"
+			}
+		}		
+		
+		modifier = {			
+			country_pop_enslaved_mult = 0.10
+			}
+
+	}
+
+	option = {
+		name = "ratio_enslavement_2"
+		
+
+		policy_flags = {
+			enslavement_2
+		}
+		
+		valid = {
+			or = {
+				has_ethic = "ethic_elitist"
+				has_ethic = "ethic_fanatic_elitist"
+				has_ethic = "ethic_fanatic_authoritarian"
+			}
+			allows_slavery = yes
+		}			
+		
+		modifier = {			
+			country_pop_enslaved_mult = 0.20
+			}
+
+	}
+
+	option = {
+		name = "ratio_enslavement_3"
+		
+
+		policy_flags = {
+			enslavement_3
+		}
+		
+		valid = {
+			or = {
+				has_ethic = "ethic_elitist"
+				has_ethic = "ethic_fanatic_elitist"
+				has_ethic = "ethic_fanatic_authoritarian"
+			}
+			allows_slavery = yes
+		}		
+		
+		modifier = {			
+			country_pop_enslaved_mult = 0.30
+			}
+
+	}
+	
+	option = {
+		name = "ratio_enslavement_4"
+		
+
+		policy_flags = {
+			enslavement_4
+		}
+		
+		valid = {
+			or = {
+				has_ethic = "ethic_elitist"
+				has_ethic = "ethic_fanatic_elitist"
+				has_ethic = "ethic_fanatic_authoritarian"
+			}
+			allows_slavery = yes
+		}		
+		
+		modifier = {			
+			country_pop_enslaved_mult = 0.40
+			}
+
+	}
+	
+	option = {
+		name = "ratio_enslavement_5"
+		
+
+		policy_flags = {
+			enslavement_5
+		}
+		
+		valid = {
+			or = {
+				has_ethic = "ethic_elitist"
+				has_ethic = "ethic_fanatic_elitist"
+				has_ethic = "ethic_fanatic_authoritarian"
+			}
+			allows_slavery = yes
+		}		
+		
+		modifier = {			
+			country_pop_enslaved_mult = 0.50
+			}
+
+	}
+	
+	option = {
+		name = "ratio_enslavement_6"
+		
+
+		policy_flags = {
+			enslavement_6
+		}
+		
+		valid = {
+			has_valid_civic = civic_reeducated_labor
+			allows_slavery = yes
+		}		
+		
+		modifier = {			
+			country_pop_enslaved_mult = 0.60
+			}
+
+	}
+	
+	option = {
+		name = "ratio_enslavement_7"
+		
+
+		policy_flags = {
+			enslavement_7
+		}
+		
+		valid = {
+			has_valid_civic = civic_reeducated_labor
+			allows_slavery = yes
+		}		
+		
+		modifier = {			
+			country_pop_enslaved_mult = 0.70
+			}
+
+	}	
+	
+	}
