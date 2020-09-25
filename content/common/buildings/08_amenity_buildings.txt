@@ -72,13 +72,13 @@ building_holo_theatres = {
 		category = planet_buildings
 		cost = {
 			trigger = {
-				owner = { NOT = { has_tradition = trp_prosperity_recreation_a }}
+				owner = { NOT = { has_swapped_tradition = trp_prosperity_recreation_a_machine }}
 			}
 			minerals = @b1_minerals
 		}
 		cost = {
 			trigger = {
-				owner = { has_tradition = trp_prosperity_recreation_a }
+				owner = { has_swappedtradition = trp_prosperity_recreation_a_machine }
 			}
 			minerals = 300
 		}
