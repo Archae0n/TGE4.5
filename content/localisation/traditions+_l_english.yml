@@ -890,7 +890,7 @@
  trp_commerce_security_b_drone_delayed:0 "§ESecurity Path§!\nOur starbases are the beating heart of a system of lookouts that safeguarding vessels, keeping nearby systems safe."
  ###Accumulation Path
  trp_commerce_accumulation_a:0 "Moneylending Schemes"
- trp_commerce_accumulation_a_desc:0 "§YTrust Growth§! per §H5k§! and §H10k§! and §H15k§! and §H20k§! £energy£ §YEnergy Credits§! increased by §G+10%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_commerce_accumulation_a_desc:0 "§YTrust Growth§! per §H5k§! and §H10k§! and §H15k§! and §H20k§! £energy£ §YEnergy Credits§! increased by §G+10%§!.\nUnlocks Special Loan Edicts that allow us to take sizable private sector loans with monthly repayments, with interest of course.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
  trp_commerce_accumulation_a_delayed:0 "§EAccumulation Path§!\nWe are known for our growing stockpiles and others treat us differently because of it. How curious.\n\n§RMutually Exclusive§! with §EExchange Path§!"
  trp_commerce_accumulation_b:0 "Interest Wealth"
  trp_commerce_accumulation_b_desc:0 "£job_clerk£ §YClerks§! now produce §G+1§! £energy£ §YEnergy Credits§!."

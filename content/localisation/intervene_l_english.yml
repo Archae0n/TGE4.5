@@ -42,3 +42,16 @@
  trade_gate_destroy: "Disassemble Wormhole Generator"
  trade_gate_destroy_DESC:0 "Disassembles this wormhole generator and removes the costly upkeep of maintaining the wormhole link."
  trade_gate_destroy_MEGASTRUCTURE_DETAILS:0 "Disables this wormhole generator permanently, saving us upkeep."
+ 
+  edict_loan_edict_1:0 "Approach Private Sector for a Small Loan"
+  edict_loan_edict_1_desc:0 "Our private sector has always been known for its deep pockets. Lets approach private investors for a relatively small loan.\nWe must ensure we can pay it back however, as private investors will get their due no matter how we like it."
+  edict_loan_edict_2:0 "Approach Private Sector for a Sizable Loan"
+  edict_loan_edict_2_desc:0 "Our private sector has always been known for its deep pockets. Lets approach private investors for a sizable loan.\nWe must ensure we can pay it back however, as private investors will get their due no matter how we like it."
+  edict_loan_edict_3:0 "Approach Private Sector for a Massive Loan"
+  edict_loan_edict_3_desc:0 "Our private sector has always been known for its deep pockets. Lets approach private investors for a massive loan.\nWe must ensure we can pay it back however, as private investors will get their due no matter how we like it.\n\n§RA loan of this capacity might make some citizens wary at our ability to manage our economy.§!"
+  
+  private_loan:0 "Private Sector Loan"
+  private_loan_desc:0 "The Private Sector ALWAYS collects its dues"
+  
+  big_private_loan:0 "Excessive Private Sector Loan"
+  big_private_loan_desc:0 "The Private Sector ALWAYS collects its dues, especially when the public eye is watching"

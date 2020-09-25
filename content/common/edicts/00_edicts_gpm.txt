@@ -91,3 +91,99 @@ gpm_edict_planet_sensor_range  = {
 		weight = @EdictLowPrio
 	}	
 }
+
+loan_edict_1 = {
+	length = 1
+	icon = "GFX_edict_type_time"
+	
+	resources = {
+		category = campaigns
+		cost = {
+			influence = 75
+		}
+	}
+
+	potential = {
+		has_tradition = trp_commerce_accumulation_a
+		NOR = {
+			has_modifier = private_loan
+			has_modifier = big_private_loan
+		}	
+	}
+
+	effect = {
+		add_resource = { energy = 1500 }
+		add_modifier = {
+			modifier = "private_loan"
+			days = 360
+		}		
+	}		
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+loan_edict_2 = {
+	length = 1
+	icon = "GFX_edict_type_time"
+	
+	resources = {
+		category = campaigns
+		cost = {
+			influence = 150
+		}
+	}
+
+	potential = {
+		has_tradition = trp_commerce_accumulation_a
+		NOR = {
+			has_modifier = private_loan
+			has_modifier = big_private_loan
+		}			
+	}
+
+	effect = {
+		add_resource = { energy = 15000 }
+		add_modifier = {
+			modifier = "private_loan"
+			days = 3600
+		}
+	}		
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+loan_edict_3 = {
+	length = 1
+	icon = "GFX_edict_type_time"
+	
+	resources = {
+		category = campaigns
+		cost = {
+			influence = 300
+		}
+	}
+
+	potential = {
+		has_tradition = trp_commerce_accumulation_a
+		NOR = {
+			has_modifier = private_loan
+			has_modifier = big_private_loan
+		}			
+	}
+	
+	effect = {
+		add_resource = { energy = 30000 }
+		add_modifier = {
+			modifier = "big_private_loan"
+			days = 7200
+		}
+	}		
+	
+	ai_weight = {
+		weight = 0
+	}	
+}

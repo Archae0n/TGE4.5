@@ -26,7 +26,7 @@ country_event = { ##Ascension Perk System
 		trigger = {
 			AND = {
 				has_country_flag = trp_ascension_perk_ready
-				num_ascension_perks < 7
+				num_ascension_perks < 39
 			}
 		}
 		give_technology = { tech = repeatable_tech_trp_ap_1 message = no }
@@ -289,7 +289,6 @@ country_event = { ##Tradition Finisher Check
 		if = { ##Production
 			limit = {
 				AND = {
-					NOT = { has_tradition = trp_production_finish }
 					has_tradition = trp_production_excavation_c
 					has_tradition = trp_production_assembly_c
 					has_tradition = trp_production_refinement_c
@@ -305,7 +304,6 @@ country_event = { ##Tradition Finisher Check
 		if = { ##Commerce
 			limit = {
 				AND = {
-					NOT = { has_tradition = trp_commerce_finish }
 					has_tradition = trp_commerce_trade_c
 					has_tradition = trp_commerce_security_c
 					has_tradition = trp_commerce_capability_c
