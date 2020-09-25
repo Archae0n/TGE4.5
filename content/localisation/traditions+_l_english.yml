@@ -70,7 +70,7 @@
  tradition_production_path_excavation_label:0 "§HExcavation§!"
  tradition_production_path_manufacturing_label:0 "§HManufacturing§!"
  tradition_production_path_mass_production_label:0 "§HFabrication§!"
- tradition_production_path_assembly_label:0 "§HSupervision§!"
+ tradition_production_path_assembly_label:0 "§HAssembly§!"
  tradition_production_path_refinement_label:0 "§HRefinement§!"
  tradition_production_path_agriculture_label:0 "§HAgriculture§!"
  tradition_discovery_path_exploration_label:0 "§HExploration§!"
@@ -92,7 +92,7 @@
  tradition_ascension_path_harmony_label:0 "§HHarmony§!"
  tradition_ascension_path_sovereignty_label:0 "§HSovereignty§!"
  tradition_heritage_path_purity_label:0 "§HPurity§!"
- tradition_prosperity_path_renaissance_label:0 "§HResurgence§!"
+ tradition_prosperity_path_renaissance_label:0 "§HRenaissance§!"
  tradition_prosperity_path_recreation_label:0 "§HRecreation§!"
  tradition_prosperity_path_alteration_label:0 "§HMetropolis§!"
  tradition_ascension_path_revision_label:0 "§HRevision§!"
@@ -119,7 +119,7 @@
  path_excavation_label_ttp:0 "§HExcavation Path§!"
  path_manufacturing_label_ttp:0 "§HManufacturing Path§!\n§RMutually Exclusive§! with §EFabrication Path§!"
  path_mass_production_label_ttp:0 "§HFabrication Path§!\n§RMutually Exclusive§! with §EManufacturing Path§!"
- path_assembly_label_ttp:0 "§HSupervision Path§!"
+ path_assembly_label_ttp:0 "§Hassembly Path§!"
  path_refinement_label_ttp:0 "§HRefinement Path§!"
  path_exploration_label_ttp:0 "§HExploration Path§!\n§RMutually Exclusive§! with §ECuriosity Path§!"
  path_curiosity_label_ttp:0 "§HCuriosity Path§!\n§RMutually Exclusive§! with §EExploration Path§!"
@@ -141,6 +141,7 @@
  path_alteration_label_ttp:0 "§HMetropolis Path§!"
  path_renaissance_label_ttp:0 "§HResurgence Path§!"
  path_agriculture_label_ttp:0 "§HAgriculture Path§!"
+ path_lithoculture_label_ttp:0 "§HLithoculture Path§!"
  path_revision_label_ttp:0 "§HRevision Path§!" 
  path_synchronicity_label_ttp:0 "§HSynchronicity Path§!"
  path_clairvoyance_label_ttp:0 "§HClairvoyance Path§!"
@@ -164,6 +165,10 @@
  job_trp_banker:0 "Banker"
  job_trp_banker_plural:0 "Banker"
  job_trp_banker_desc:0 "Armed with a suit and suitcase."
+ #
+ job_trp_crypto_banker:0 "Depot Drone"
+ job_trp_banker_plural:0 "Depot Drones"
+ job_trp_banker_desc:0 "a drone dedicated to the maintaining and strengthening of the hive."
  ###Expansion
  ############
  tradition_expansion_plus:0 "Expansion"
@@ -179,21 +184,31 @@
  trp_expansion_colonization_b:0 "Colonization Fever"
  trp_expansion_colonization_b_desc:0 "New colonies start with §Y1§! additional £pops£ Pop. Increased to §Y2§! additional £pops£ Pops when total §YEmpire Population§! exceeds §Y300§! £pops£ Pops."
  trp_expansion_colonization_b_delayed:0 "§EColonization Path§!\nColonization fever seems to have gripped the populace. Their enthusiasm draws additional population to our colonies."
+ #
  trp_expansion_colonization_b_hive:0 "One Mind"
  trp_expansion_colonization_b_hive_desc:0 "New colonies start with §Y1§! additional £pops£ Pop. Increased to §Y2§! additional £pops£ Pops when total §YEmpire Population§! exceeds §Y300§! £pops£ Pops."
  trp_expansion_colonization_b_hive_delayed:0 "§EColonization Path§!\nThe overmind is a chorus of thought that even the cold emptiness of space cannot silence."
+ #
  trp_expansion_colonization_b_machine:0 "Automated Colonization Units"
  trp_expansion_colonization_b_machine_desc:0 "New colonies start with §Y1§! additional £pops£ Pop. Increased to §Y2§! additional £pops£ Pops when total §YEmpire Population§! exceeds §Y300§! £pops£ Pops."
  trp_expansion_colonization_b_machine_delayed:0 "§EColonization Path§!\nThe production of highly specialized first wave colonization units will speed the integration of new worlds into our collective."
+ #
  trp_expansion_colonization_b_increase_desc:0 "New colonies start with §Y1§! additional £pops£ Pop. Increased to §Y2§! additional £pops£ Pops when total §YEmpire Population§! exceeds §Y300§! £pops£ Pops."
  trp_expansion_colonization_b_increase_hive_desc:0 "New colonies start with §Y1§! additional £pops£ Pop. Increased to §Y2§! additional £pops£ Pops when total §YEmpire Population§! exceeds §Y300§! £pops£ Pops."
  trp_expansion_colonization_b_increase_machine_desc:0 "New colonies start with §Y1§! additional £pops£ Pop. Increased to §Y2§! additional £pops£ Pops when total §YEmpire Population§! exceeds §Y300§! £pops£ Pops."
+ #
  trp_expansion_colonization_c:0 "Manifest Destiny"
  trp_expansion_colonization_c_desc:0 "£job_colonist£ §YColonists§! now produce §G+3§! £unity£ Unity."
  trp_expansion_colonization_c_delayed:0 "§EColonization Path§!\nWe are perhaps destined as a species to settle the many worlds of the Galaxy and many unite around this idea."
- trp_expansion_colonization_c_gestalt:0 "Manifest Consciousness"
- trp_expansion_colonization_c_gestalt_desc:0 "£job_colonist£ §YColonists§! now produce §G+10§! £unity£ Unity."
- trp_expansion_colonization_c_gestalt_delayed:0 "§EColonization Path§!\nAs our consciousness spreads from world to world, our drones rejoice in the awakening of our will."
+ #
+ trp_expansion_colonization_c_hive:0 "Manifest Consciousness"
+ trp_expansion_colonization_c_hive_desc:0 "£synapse_drone£ §YSyanpse drones§! now produce §G+0.25§! £unity£ Unity."
+ trp_expansion_colonization_c_hive_delayed:0 "§EColonization Path§!\nAs our consciousness spreads from world to world, our drones rejoice in the awakening of our will."
+ #
+ trp_expansion_colonization_c_machine:0 "Manifest Consciousness"
+ trp_expansion_colonization_c_machine_desc:0 "§EModified By:§! §YMachine Empire§! \n§EPrevious Effects:§!\n£job_colonist£ §YColonists§! now produce §G+3§! £unity£ Unity. \n§ECurrent Effects:§!\n£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! on new §YColonies§! increased by §G+10%§!." 
+ trp_expansion_colonization_c_machine_delayed:0 "§EColonization Path§!\nThe ever expanding bandwidth of our consciousness steadily increase with each new world added to our borders."
+ #
  ###Space Race Path
  trp_expansion_space_race_a:0 "Galactic Ambition"
  trp_expansion_space_race_a_desc:0 "£construction_ship£ §YConstruction Ship Sublight Speed§! increased by §G+20%§! and £construction_ship£ §YConstruction Ship Build Speed§! increased by §G+20%§!."
@@ -287,7 +302,7 @@
  trp_expansion_bureaucracy_b_hive_desc:0 "£job_synapse_drone£ §YSynapse Drones§! now produce §G+2§! £society£ Society Research."
  trp_expansion_bureaucracy_b_hive_delayed:0 "§EBureaucracy Path§!\nSome of our drones have been granted limited autonomy to accomplish their tasks in new ways."
  trp_expansion_bureaucracy_b_machine:0 "Know Thyself"
- trp_expansion_bureaucracy_b_machine_desc:0 "£job_coordinator£ §YCoordinators§! now produce §G+2§! £engineering£ Engineering Research."
+ trp_expansion_bureaucracy_b_machine_desc:0 "£job_coordinator£ §YCoordinators§! now produce §G+1§! £engineering£ Engineering Research."
  trp_expansion_bureaucracy_b_machine_delayed:0 "§EBureaucracy Path§!\nDirectorial errors have revealed themselves in some of our drones, errors that we could use to our advantage."
  trp_expansion_bureaucracy_c:0 "Endless Bureaucracy"
  trp_expansion_bureaucracy_c_desc:0 "§YEmpire Sprawl§! from Colonies reduced by §G50%§!."
@@ -308,10 +323,10 @@
  trp_supremacy_quantity_a_hive_desc:0 "§Y$MOD_STARBASE_SHIPYARD_BUILD_COST_MULT$§! reduced by §G10%§! and §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§! increased by §G+10%§!."
  trp_supremacy_quantity_a_hive_delayed:0 "§EQuantity Path§!\nWe will blot out the universe with our endless swarms and deliver victory for the One.\n\n§RMutually Exclusive§! with §EQuality Path§!"
  trp_supremacy_quantity_b:0 "Overwhelming Numbers"
- trp_supremacy_quantity_b_desc:0 "§Y$mod_ships_upkeep_mult$§! reduced by §G10%§!."
+ trp_supremacy_quantity_b_desc:0 "§Y$mod_ships_upkeep_mult$§! reduced by §G25%§!."
  trp_supremacy_quantity_b_delayed:0 "§EQuantity Path§!\nOnly through sheer numbers will we break those that dare stand against us."
  trp_supremacy_quantity_b_machine:0 "Overwhelm AI"
- trp_supremacy_quantity_b_machine_desc:0 "§Y$mod_ships_upkeep_mult$§! reduced by §G10%§!."
+ trp_supremacy_quantity_b_machine_desc:0 "§Y$mod_ships_upkeep_mult$§! reduced by §G25%§!."
  trp_supremacy_quantity_b_machine_delayed:0 "§EQuantity Path§!\nIt is only our design to be more numerically superior than our designated targets."
  trp_supremacy_quantity_c:0 "Grand Armada"
  trp_supremacy_quantity_c_desc:0 "§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! increased by §G+50§!."
@@ -412,10 +427,7 @@
  trp_supremacy_devastation_a_pacifist:0 "Fallout Shelter"
  trp_supremacy_devastation_a_pacifist_desc:0 "§EModified By:§! §HPacifist§! Ethic\n§EPrevious Effects:§!\nUnlocks §YArmageddon§! Bombardment Stance.\n§ECurrent Effects:§!\n§YOrbital Bombardment Damage Taken§! reduced by §G50%§!."
  trp_supremacy_devastation_a_pacifist_delayed:0 "§EDevastation Path§!\nWe have witnessed firsthand the amount of destruction that galactic warfare is capable of causing. It is time we prepared our society for this."
- trp_supremacy_devastation_a_fanatic_pacifist:0 "Fallout Shelter"
- trp_supremacy_devastation_a_fanatic_pacifist_desc:0 "§EModified By:§! §HFanatic Pacifist§! Ethic\n§EPrevious Effects:§!\nUnlocks §YArmageddon§! Bombardment Stance.\n§ECurrent Effects:§!\n§YOrbital Bombardment Damage Taken§! reduced by §G50%§!."
- trp_supremacy_devastation_a_fanatic_pacifist_delayed:0 "§EDevastation Path§!\nWe have witnessed firsthand the amount of destruction that galactic warfare is capable of causing. It is time we prepared our society for this."
- ##
+ #
  trp_supremacy_devastation_a_already_arma:0 "Universal Destruction"
  trp_supremacy_devastation_a_already_arma_desc:0 "§EModified By:§! Already Has §YArmageddon§! Bombardment Unlocked\n§EPrevious Effects:§!\nUnlocks §YArmageddon§! Bombardment Stance.\n§ECurrent Effects:§!\n§YBombardment Damage Dealt§! increased by §G+100%§!."
  trp_supremacy_devastation_a_already_arma_delayed:0 "§EIdeology Path§!\nWhat can drive a blorg to madness? In the pursuit of so-called friendship, how many worlds would truly burn?"
@@ -431,7 +443,7 @@
  trp_diplomacy_finish_effect:0 "§EFinisher Effect:§! Completing all Statecraft Paths will increase £influence£ §YMonthly Influence§! by §G+2§!."
  ####Federation Path
  trp_diplomacy_federation_a:0 "Convincing Nature"
- trp_diplomacy_federation_a_desc:0 "Diplomatic Influence upkeep reduced by §G25§!.\n\n§EPath Requirements:§!\nEmpire is allowed to form §YFederations§!"
+ trp_diplomacy_federation_a_desc:0 "§YTrust Cap§! increased by §G+50§!.\n\n§EPath Requirements:§!\nEmpire is allowed to form §YFederations§!"
  trp_diplomacy_federation_a_delayed:0 "§EFederation Path§!\nWe have always been honorable if not reliable in our dealings with each other. Let us convince those far away that we are still to this day.\n\n§RMutually Exclusive§! with §EGovernment Path§!"
  trp_diplomacy_federation_b:0 "Diplomatic Affinity"
  trp_diplomacy_federation_b_desc:0 "§Y$MOD_COUNTRY_ENVOYS_ADD$§! increased by §G+1§!."
@@ -447,13 +459,11 @@
  trp_diplomacy_ideology_a_gestalt_desc:0 "§Y$MOD_PLANET_CRIME_NO_HAPPINESS_ADD$§! is reduced by §G10§!.\n\n§EPossible Alterations:§!\n§HEgalitarian§! or §HFanatic Egalitarian§! Ethic"
  trp_diplomacy_ideology_a_gestalt_delayed:0 "§EIdeology Path§!\nOur drones know their purpose and serve their purpose well."
  trp_diplomacy_ideology_a_fanatic_egalitarian:0 "Freedom of Speech"
- trp_diplomacy_ideology_a_fanatic_egalitarian_desc:0 "§EModified By:§! §HFanatic Egalitarian§! Ethic\n§EPrevious Effects:§!\n§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! increased by §G+25%§!.\n§ECurrent Effects:§!\n§YEthics Shift Chance§! increased by §G+25%§!."
- trp_diplomacy_ideology_a_fanatic_egalitarian_delayed:0 "§EIdeology Path§!\nWe shall continue to build a society where the individual opinion is the cornerstone of something greater."
  trp_diplomacy_ideology_a_egalitarian:0 "Freedom of Speech"
  trp_diplomacy_ideology_a_egalitarian_desc:0 "§EModified By:§! §HEgalitarian§! Ethic\n§EPrevious Effects:§!\n§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! increased by §G+25%§!.\n§ECurrent Effects:§!\n§YEthics Shift Chance§! increased by §G+25%§!."
  trp_diplomacy_ideology_a_egalitarian_delayed:0 "§EIdeology Path§!\nWe shall continue to build a society where the individual opinion is the cornerstone of something greater."
  trp_diplomacy_ideology_b:0 "Undivided Cause"
- trp_diplomacy_ideology_b_desc:0 "£unity£ §YMonthly Unity§! increased by §G+20%§!."
+ trp_diplomacy_ideology_b_desc:0 "£unity£ §YMonthly Unity§! increased by §G+10%§!."
  trp_diplomacy_ideology_b_delayed:0 "§EIdeology Path§!\nOur purpose has always been clear, the destination never-changing."
  trp_diplomacy_ideology_c:0 "Unanimous Thinking"
  trp_diplomacy_ideology_c_desc:0 "§YEmpire Sprawl§! from £pops£ Pops reduced by §G20%§!."
@@ -501,20 +511,20 @@
  trp_diplomacy_government_c_delayed:0 "§EGovernment Path§!\nWe have at last shaped something truly magnificent. A machine worthy of not only guiding us toward the future, but strong enough to seize it."
  ###Integration Path
  trp_diplomacy_integration_a:0 "Outward Utopia"
- trp_diplomacy_integration_a_desc:0 "Federation Naval Contribution increased by §G+25%§! without affecting naval capacity."
+ trp_diplomacy_integration_a_desc:0 "§YVassalization Offers Acceptance§! increased by §G+10§!."
  trp_diplomacy_integration_a_delayed:0 "§EIntegration Path§!\nOthers shall see us as the shining example of something greater, something deserving of their outmost loyalty."
  trp_diplomacy_integration_b:0 "Salient Hierarchy"
- trp_diplomacy_integration_b_desc:0 "£unity£ §YMonthly Unity§! equal to §Y10%§! of the size of the Federation Fleet."
+ trp_diplomacy_integration_b_desc:0 "§YSubject Power Relations Penalty§! reduced by §G-25%§! and §YSubject Trust Cap§! increased by §G+50§!."
  trp_diplomacy_integration_b_delayed:0 "§EIntegration Path§!\nOur subjects step near the pyramid not to ascend it, but to polish its very stones."
  trp_diplomacy_integration_c:0 "Ruling Synthesis"
- trp_diplomacy_integration_c_desc:0 "Every member transfers §Y10%§! of their §Y$MOD_DIPLO_WEIGHT_MULT$§! to the president."
+ trp_diplomacy_integration_c_desc:0 "§YSubject Influence Integration Cost§! reduced by §G50%§!."
  trp_diplomacy_integration_c_delayed:0 "§EIntegration Path§!\nWe have grown more capable at absorbing those that serve us, and our subjects more willing. Truly a grand amalgam of identities."
  ###Administration Path
  trp_diplomacy_administration_a:0 "Civil Experience"
  trp_diplomacy_administration_a_desc:0 "§YStatecraft Research Speed§! increased by §G+25%§!."
  trp_diplomacy_administration_a_delayed:0 "§EAdministration Path§!\nWe gained the neccesary knowledge to maybe shape something new, something that would take us into the tomorrow."
  trp_diplomacy_administration_a_machine:0 "Organic Imitation"
- trp_diplomacy_administration_a_machine_desc:0 §YStatecraft Research Speed§! increased by §G+25%§!."
+ trp_diplomacy_administration_a_machine_desc:0 "§YStatecraft Research Speed§! increased by §G+25%§!."
  trp_diplomacy_administration_a_machine_delayed:0 "§EAdministration Path§!\nIf we are to advance in our study of politics and the matters of state, then perhaps we need to find and mimic the most political being out there."
  trp_diplomacy_administration_b:0 "Ardent Magistrates"
  trp_diplomacy_administration_b_desc:0 "§YEdict Cost§! reduced by §G20%§!."
@@ -532,10 +542,10 @@
  trp_discovery_adopt:0 "Discovery Traditions"
  trp_discovery_adopt_desc:0 "\n§EDescription:§!\n$tradition_discovery_plus_desc$\n\n$trp_discovery_adopt_effect$\n\n$trp_discovery_finish_effect$"
  trp_discovery_adopt_effect:0 "§EEffects:§!\nGain an §HAscension Perk§! by pairing one §YPath§! with another §YPath§!. Gain the §EFinisher Effect§! by completing §H5§! of the §YPaths§! below.\n\n§EPaths:§!\n§HExploration§!\n§HCuriosity§!\n§HAcademy§!\n§HPhysics§!\n§HSociety§!\n§HEngineering§!"
- trp_discovery_finish_effect:0 "§EFinisher Effect:§! Completing all Discovery Paths will increase §YResearch Speed§! by §G+20%§!."
+ trp_discovery_finish_effect:0 "§EFinisher Effect:§! Completing all Discovery Paths will increase §YResearch Speed§! by §G+25%§!."
  ###Exploration Path
  trp_discovery_exploration_a:0 "To Boldly Go"
- trp_discovery_exploration_a_desc:0 "§YScience Ship Build Cost§! reduced by §G20%§! and §YScience Ship Build Speed§! increased by §G+50%§!."
+ trp_discovery_exploration_a_desc:0 "§YScience Ship Sublight Speed§! increased by §G20%§! and §§YSScien Ship§! cost decreased by §G20%§!."
  trp_discovery_exploration_a_delayed:0 "§EExploration Path§!\nAs we once mapped the surface of our homeworld, we must now brave the stars above us.\n\n§RMutually Exclusive§! with §ECuriosity Path§!"
  trp_discovery_exploration_b:0 "Quest for the New World"
  trp_discovery_exploration_b_desc:0 "§HUnlocks Edict:§! Map the Stars\n§YScience Ship Disengagement Chance§! increased by §G+100%§!."
@@ -551,8 +561,16 @@
  trp_discovery_curiosity_b_desc:0 "§HUnlocks Edict:§! Research Subsidies\n§YResearch Alternatives§! increased by §G+1§!."
  trp_discovery_curiosity_b_delayed:0 "§ECuriosity Path§!\nOur laboratories are the very meaning of the term. You want to see how? Please sign here first. Oh, and here."
  trp_discovery_curiosity_c:0 "Inland Empire"
- trp_discovery_curiosity_c_desc:0 "£job_researcher£§YResearcher Upkeep§! reduced by §G15%§!."
+ trp_discovery_curiosity_c_desc:0 "£job_researcher£§YResearcher Upkeep§! reduced by §G30%§!."
  trp_discovery_curiosity_c_delayed:0 "§ECuriosity Path§!\nSome of our scientists volunteer to work for the work is the reward itself. Just don't ask them any personal questions."
+ #
+ trp_discovery_curiosity_c_machine:0 "Inland Empire"
+ trp_discovery_curiosity_c_machine_desc:0 "£job_calculator£§YCalculator Upkeep§! reduced by §G30%§!."
+ trp_discovery_curiosity_c_machine_delayed:0 "§ECuriosity Path§!\nSome of our scientists volunteer to work for the work is the reward itself. Just don't ask them any personal questions."
+ #
+ trp_discovery_curiosity_c_hive:0 "Inland Empire"
+ trp_discovery_curiosity_c_hive_desc:0 "£job_brain_drone£§YBrain Drone Upkeep§! reduced by §G30%§!."
+ trp_discovery_curiosity_c_hive_delayed:0 "§ECuriosity Path§!\nSome of our scientists volunteer to work for the work is the reward itself. Just don't ask them any personal questions."
  ##Academy Path
  trp_discovery_academy_a:0 "Educated Society"
  trp_discovery_academy_a_desc:0 "§YLeader Level Cap§! increased by §G+1§! and §YResearch Institute Build Cost§! reduced by §G25%§!."
@@ -570,6 +588,23 @@
  trp_discovery_engineering_b:0 "Factitious Life"
  trp_discovery_engineering_b_desc:0 "§YPlanet Habitability§! increased by §G+5%§! and £job_roboticist£ §YRoboticists§! now produce §G+4§! £engineering£ Engineering Research."
  trp_discovery_engineering_b_delayed:0 "§EEngineering Path§!\nWith engineering one can achieve a great many things. Chief among them, the creation of mechanical life and ways to support the organic."
+ #
+ trp_discovery_engineering_b_machine:0 "Efficent Assembly"
+ trp_discovery_engineering_b_machine_desc:0 "§EModified By:§! §HMachine Authority§!\n§EPrevious Effects:§!\nPlanet Habitability increased by §G+5%§! and £job_roboticist£ §YRoboticists§! now produce §G+4§! £engineering£ Engineering Research.\n§ECurrent Effects:§!\nRobotic pops are now assembled §G5%§! faster and £job_replicator£ §YReplicators§! now produce §G+2§! £engineering£ Engineering Research."
+ trp_discovery_engineering_b_machine_delayed:0 "§EEngineering Path§!\nWith engineering one can achieve a great many things. Chief among them, the proliferation of mechanical life."
+ #
+ trp_discovery_engineering_b_hive:0 "Efficent Construction"
+ trp_discovery_engineering_b_hive_desc:0 "§EModified By:§! §HHive Mind Authority§!\n§EPrevious Effects:§!\nPlanet Habitability increased by §G+5%§! and £job_roboticist£ §YRoboticists§! now produce §G+4§! £engineering£ Engineering Research.\n§ECurrent Effects:§!\nBuilding speed and §YPlanet Habitability§! increased by §G10%§!"
+ trp_discovery_engineering_b_hive_delayed:0 "§EEngineering Path§!\nOur inovations have led ourselves to surperior and faster hive contruction "
+ #
+ trp_discovery_engineering_b_lithoid:0 "Efficent Assembly"
+ trp_discovery_engineering_b_lithoid_desc:0 "§EModified By:§! §HLithoid trait§!\n§EPrevious Effects:§!\nPlanet Habitability increased by §G+5%§! and £job_roboticist£ §YRoboticists§! now produce §G+4§! £engineering£ Engineering Research.\n§ECurrent Effects:§!\nRobotic pops are now assembled §G10%§! faster and £job_roboticist£ §YRoboticists§! now produce §G+4§! £engineering£ Engineering Research."
+ trp_discovery_engineering_b_lithoid_delayed:0 "§EEngineering Path§!\nWith engineering one can achieve a great many things. Chief among them, the creation of mechanical life."
+ #
+ trp_discovery_engineering_b_litho_hive:0 "Efficent Production"
+ trp_discovery_engineering_b_litho_hive_desc:0 "§EModified By:§! §Hlithoid trait and Hive Mind Authority§!\n§EPrevious Effects:§!\nPlanet Habitability increased by §G+5%§! and £job_roboticist£ §YRoboticists§! now produce §G+4§! £engineering£ Engineering Research.\n§ECurrent Effects:§!\nLithoid $MOD_POP_GROWTH_SPEED$ increased by §G+05%§! and §YBuilding Speed§! increased by §G10%§!"
+ trp_discovery_engineering_b_litho_hive_delayed:0 "§EEngineering Path§!\nOur inovations have led ourselves to surperior and faster means of hive and drone contstruction"
+ #
  trp_discovery_engineering_c:0 "Creator Society"
  trp_discovery_engineering_c_desc:0 "§HUnlocks Choice:§! Boost §YResearch Speed§! of one £engineering£ §YEngineering§! subcategory by §G+100%§!."
  trp_discovery_engineering_c_materials_desc:0 "§YMaterials Research Speed§! increased by §G+100%§!."
@@ -581,19 +616,27 @@
  trp_discovery_engineering_c_delayed:0 "§EEngineering Path§!\nWe have always been a society of inventors, designers and architects."
  ##Society Path
  trp_discovery_society_a:0 "Learning Centers"
- trp_discovery_society_a_desc:0 "£job_researcher£§YResearchers§! now produce §G+0.5§! £unity£ Unity."
+ trp_discovery_society_a_desc:0 "£society£ §Ysociety Research§! from £job_researcher§YResearchers§! increased by §G+10%§!."
  trp_discovery_society_a_delayed:0 "§ESociety Path§!\nWe have long since established centers for teaching, where consolidated knowledge is paramount."
  #
- trp_discovery_society_a_machine:0 "Sensor Link"
- trp_discovery_society_a_machine_desc:0 "£job_researcher£§YCalculators§! now produce §G+0.5§! £unity£ Unity."
- trp_discovery_society_a_machine_delayed:0 "§ESociety Path§!\nWhere one develops something, we all develop something."
+ trp_discovery_society_a_machine:0 "Cordinated biological study"
+ trp_discovery_society_a_machine_desc:0 "£society£ §Ysociety Research§! from £job_calculator£§YCalculators§! increased by §G+10%§!."
+ trp_discovery_society_a_machine_delayed:0 "§ESociety Path§!\nWe have long since studied biological lifeforms, now we have consolidated our knowledge."
  #
- trp_discovery_society_a_hive:0 "Brainlink"
- trp_discovery_society_a_hive_desc:0 "£job_researcher£§YBrain Drones§! now produce §G+0.5§! £unity£ Unity."
- trp_discovery_society_a_hive_delayed:0 "§ESociety Path§!\nWhere one develops something, we all develop something."
+ trp_discovery_society_a_hive:0 "Hive Centers"
+ trp_discovery_society_a_hive_desc:0 "£society£ §Ysociety Research§! from £job_brain_drone£§YBrain Drones§! increased by §G+10%§!."
+ trp_discovery_society_a_hive_delayed:0 "§ESociety Path§!\nWe have granted our brain drones more autonomy, allowing them to more accurately simulate the actions of the singluar minds."
+ #
+ trp_discovery_society_b_machine:0 "Sensor Link"
+ trp_discovery_society_b_machine_desc:0 "£job_calculator£§YCalculators§! now produce §G+0.5§! £unity£ Unity."
+ trp_discovery_society_b_machine_delayed:0 "§ESociety Path§!\nWhere one develops something, we all develop something."
+ #
+ trp_discovery_society_b_hive:0 "Brainlink"
+ trp_discovery_society_b_hive_desc:0 "£job_brain_drone£§YBrain Drones§! now produce §G+0.5§! £unity£ Unity."
+ trp_discovery_society_b_hive_delayed:0 "§ESociety Path§!\nWhere one develops something, we all develop something."
  #
  trp_discovery_society_b:0 "Together Understanding"
- trp_discovery_society_b_desc:0 "§YResearch Speed§! from Research Agreements increased by §G+100%§!."
+ trp_discovery_society_b_desc:0 "£job_researcher£§YResearcher§! now produce §G+0.5§! £unity£ Unity."
  trp_discovery_society_b_delayed:0 "§ESociety Path§!\nWhat better way to learn than the advancements of others?"
  trp_discovery_society_c:0 "Custodian Society"
  trp_discovery_society_c_desc:0 "§HUnlocks Choice:§! Boost §YResearch Speed§! of one £society£ §YSociety§! subcategory by §G+100%§!."
@@ -646,27 +689,66 @@
  tradition_production_plus_desc:0 "Our society is a ravening beast and we will only persist if we feed it resources enough."
  trp_production_adopt:0 "Production Traditions"
  trp_production_adopt_desc:0 "\n§EDescription:§!\n$tradition_production_plus_desc$\n\n$trp_production_adopt_effect$\n\n$trp_production_finish_effect$"
- trp_production_adopt_effect:0 "§EEffects:§!\nGain an §HAscension Perk§! by pairing one §YPath§! with another §YPath§!. Gain the §EFinisher Effect§! by completing §H5§! of the §YPaths§! below.\n\n§EPaths:§!\n§HExcavation§!\n§HManufacturing§!\n§HFabrication§!\n§HSupervision§!\n§HRefinement§!\n§HAgriculture§!"
+ trp_production_adopt_effect:0 "§EEffects:§!\nGain an §HAscension Perk§! by pairing one §YPath§! with another §YPath§!. Gain the §EFinisher Effect§! by completing §H5§! of the §YPaths§! below.\n\n§EPaths:§!\n§HExcavation§!\n§HManufacturing§!\n§HFabrication§!\n§Hassembly§!\n§HRefinement§!\n§HAgriculture§!"
  trp_production_finish_effect:0 "§EFinisher Effect:§! Completing all Production Paths will increase §YRefund§! per §YDemolished District§! and §YBuilding§! by §G+50%§!."
  ###Excavation Path
  trp_production_excavation_a:0 "Mining Society"
- trp_production_excavation_a_desc:0 "£district£§YMining Districts§! have their §YBuild Speed§! increased by §G25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_production_excavation_a_desc:0 "£district£§YMining Districts§! have their §YBuild Speed§! increased by §G25%§!.\n§EPath Requirements:§!\n2 §HAscension Perks§!"
  trp_production_excavation_a_delayed:0 "§EExcavation Path§!\nWe have always prioritised the breaking of rocks and ore, uncovering the minerals that hide within."
+ #
+ trp_production_excavation_a_lithoid:0 "Litho-Cultivation"
+ trp_production_excavation_a_lithoid_desc:0 "§EModified By:§! §HLithoid trait§!\n§E£district£§!§YMining Districts§! have their §YBuild Speed§! increased by §G25%§!.\n§ECurrent Effects:§!\n§!§!Lithoid $MOD_POP_GROWTH_SPEED$ increased by §G+15%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_production_excavation_a_lithoid_delayed:0 "§EExcavation Path§!\nWe have always prioritised the harvesting and cultivation of monoliths, uncovering the lithoid that hide within."
+ #
  trp_production_excavation_b:0 "Exemplar Methods"
  trp_production_excavation_b_desc:0 "§YMining Station Output§! increased by §G+10%§!."
  trp_production_excavation_b_delayed:0 "§EExcavation Path§!\nEureka! We have developed new exciting methods of prospecting, letting us extract like no other." 
  trp_production_excavation_c:0 "Fanatical Prospectors"
  trp_production_excavation_c_desc:0 "£minerals£ §YMinerals§! from £job_miner£ §YMiners§! increased by §G+1§! and £rare_crystals£ §YRare Crystals§! from £job_crystal_miner£ §YCrystal Miners§! increased by §G+1§!."
  trp_production_excavation_c_delayed:0 "§EExcavation Path§!\nWe suffer the ideology of tunnels and drills."
+ #
+ trp_production_excavation_c_gestalt:0 "Mining Directive"
+ trp_production_excavation_c_gestalt_desc:0 "£minerals£ §YMinerals§! from £job_mining_drone£ §YMining Drone§! increased by §G+1§! and £rare_crystals£ §YRare Crystals§! from £job_crystal_mining_drone£ §YCrystal Mining Drone§! increased by §G+1§!."
+ trp_production_excavation_c_gestalt_delayed:0 "§EExcavation Path§!\nI'm a drone and I'm drilling a hole."
  ###Manufacturing Path
  trp_production_manufacturing_a:0 "Fulfilled Quotas"
- trp_production_manufacturing_a_desc:0 "£consumer_goods£ §YPop Consumer Goods Upkeep§! reduced by §G10%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_production_manufacturing_a_desc:0 "£consumer_goods£ §YPop Consumer Goods Upkeep§! reduced by §G10%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!, must not be a §YHive§! or standard §YMachine§! empire"
  trp_production_manufacturing_a_delayed:0 "§EManufacturing Path§!\nOur production lines work even when the demand is close to zero, extinguishing any amount of demand that does crop up.\n\n§RMutually Exclusive§! with §EFabrication Path§!"
+ #
+ trp_production_manufacturing_a_servitor:0 "Fulfilled Quotas"
+ trp_production_manufacturing_a_servitor_desc:0 "£consumer_goods£ §YPop Consumer Goods Upkeep§! reduced by §G10%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!, must not be a §YHive§! or standard §YMachine§! empire"
+ trp_production_manufacturing_a_servitor_delayed:0 "§EManufacturing Path§!\nOur production lines work even when the demand is close to zero, extinguishing any amount of demand that does crop up.\n\n§RMutually Exclusive§! with §EFabrication Path§!"
+ #
+ trp_production_manufacturing_a_drone:0 "Fulfilled Quotas"
+ trp_production_manufacturing_a_drone_desc:0 "§YPop Upkeep§! reduced by §G10%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!, must not be a §YHive§! or standard §YMachine§! empire"
+ trp_production_manufacturing_a_drone_delayed:0 "§EManufacturing Path§!\nOur lines work even when the demand is close to zero, extinguishing any amount of demand that does crop up.\n\n§RMutually Exclusive§! with §EFabrication Path§!"
+ #
  trp_production_manufacturing_b:0 "One-Hundred-Ten-Percent"
  trp_production_manufacturing_b_desc:0 "§YSpecialist Pop Resource Output§! increased by §G+10%§!."
  trp_production_manufacturing_b_delayed:0 "§EManufacturing Path§!\nWe do not shy away from pumping the sky full of pollution if it means we are rich in stockpiles beyond lowly imagination." 
+ #
+ trp_production_manufacturing_b_drone:0 "One-Hundred-Ten-Percent"
+ trp_production_manufacturing_b_drone_desc:0 "§YComplex Drone Production§! increased by §G10%§!."
+ trp_production_manufacturing_b_drone_delayed:0 "§EManufacturing Path§!\nWe have discoverd cheaper means of producing various commodities." 
+ #
+ trp_production_manufacturing_c:0 "Consumerist Incentives"
+ trp_production_manufacturing_c_desc:0 "£job_artisan£ §YArtisans§! now produce §G+2§! £stability£ §YStability§!."
+ trp_production_manufacturing_c_delayed:0 "§EManufacturing Path§!\nby furter intgrating and merging the minds of our biological and mechnical citizenry we create an artifical work ethic and sense on accomplisment of a days work in both biological and mechanical citizens."
+ #
+ trp_production_manufacturing_c_hive:0 "Consumerist Hive Mind"
+ trp_production_manufacturing_c_hive_desc:0 "£job_synapse_drone£ §YSynapse Drones§! now produce §G+2§! £stability£ §YStability§!."
+ trp_production_manufacturing_c_hive_delayed:0 "§EManufacturing Path§!\nby furter intgrating and merging the minds of our biological citizenry we create an artifical work ethic and sense on accomplisment of a days work in both biological and mechanical citizens."
+ #
+ trp_production_manufacturing_c_machine:0 "Consumerist Machines"
+ trp_production_manufacturing_c_machine_desc:0 "£job_replicator£ §YReplicators§! now produce §G+1§! £stability£ §YStability§!."
+ trp_production_manufacturing_c_machine_delayed:0 "§EManufacturing Path§!\nby furter intgrating and merging the minds of our mechnical citizenry we create an artifical work ethic and sense on accomplisment of a days work in both biological and mechanical citizens."
+ #
+ trp_production_manufacturing_c_servitor:0 "Mass production"
+ trp_production_manufacturing_c_servitor_desc:0 "£job_artisan£ §YArtisan Drones§! now produce §G15%§! more consumer goods."
+ trp_production_manufacturing_c_servitor_delayed:0 "§EManufacturing Path§!\nby lowering the quality of comodities while increasing production efficiency we greatly increase our comodity prodution rate."
+ #
  trp_production_manufacturing_c:0 "Rampant Consumerism"
- trp_production_manufacturing_c_desc:0 "£job_artisan£ §YArtisans§! now produce §G+0.5§! £stability£ §YStability§!."
+ trp_production_manufacturing_c_desc:0 "£job_artisan£ §YArtisans§! now produce §G+2§! £stability£ §YStability§!."
  trp_production_manufacturing_c_delayed:0 "§EManufacturing Path§!\nWhat better drug is there than the realization that something is endless? Endless at the expense of things we do not mention naturally."
  ###Fabrication Path
  trp_production_fabrication_a:0 "Industrial Developments"
@@ -676,28 +758,59 @@
  trp_production_fabrication_b_desc:0 "£job_foundry£ §YMetallurgist Upkeep§! reduced by §G15%§!."
  trp_production_fabrication_b_delayed:0 "§EFabrication Path§!\nVolunteers like to flood our factories, casting metal with a fiery passion, knowing it will only further our newfound future." 
  trp_production_fabrication_c:0 "Volunteer Spirit"
- trp_production_fabrication_c_desc:0 "£alloys£ §YAlloys§! from £job_foundry£ §YMetallurgists§! increased by §G+0.5§!."
+ trp_production_fabrication_c_desc:0 "£alloys£ §YAlloys§! from £job_foundry£ §YMetallurgists§! increased by §G+1§!."
  trp_production_fabrication_c_delayed:0 "§EFabrication Path§!\nThe willingness to contribute spread like a wildfire, leading to many scavenging and pulling apart anything that could give us an edge in metals."
- ###Assembly Path
+ #
+ trp_production_fabrication_b_drone:0 "Efficent Metallurgy"
+ trp_production_fabrication_b_drone_desc:0 "£job_foundry£ §YFabricator Upkeep§! reduced by §G15%§!."
+ trp_production_fabrication_b_drone_delayed:0 "§EFabrication Path§!\nOur production lines have increased in efficencey." 
+ trp_production_fabrication_c_drone:0 "Bouniful metalurgy"
+ trp_production_fabrication_c_drone_desc:0 "£alloys£ §YAlloys§! from £job_foundry£ §YFabricators§! increased by §G+1§!."
+ trp_production_fabrication_c_drone_delayed:0 "§EFabrication Path§!\nOur means of production have once again increased."
+ #
+ ###assembly Path
  trp_production_assembly_a:0 "Illegal Unemployment"
  trp_production_assembly_a_desc:0 "§YPop Demotion Time§! reduced by §G50%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
- trp_production_assembly_a_delayed:0 "§ESupervision Path§!\nThe longer we let unemployment be, the more unproductive we are as a society. The solution is clearly to ban unemployment."
+ trp_production_assembly_a_delayed:0 "§Eassembly Path§!\nThe longer we let unemployment be, the more unproductive we are as a society. The solution is clearly to ban unemployment."
+ #
+ trp_production_assembly_a_drone:0 "Thought Illegalized"
+ trp_production_assembly_a_drone_desc:0 "§G+5%§! stability.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_production_assembly_a_drone_delayed:0 "§Eassembly Path§!\nThe longer we suffer from traces of Induviduality the more unproductive we are as a whole. The solution is clearly to ban thought."
+ #
  trp_production_assembly_b:0 "Home is Work"
  trp_production_assembly_b_desc:0 "§HUnlocks Edict:§! $edict_extended_shifts$\nAvailable £housing£ §YHousing§! increased by §G+15%§!."
- trp_production_assembly_b_delayed:0 "§ESupervision Path§!\nWhy should our workers ever need to go home? Home will be where work is, and work where home is." 
+ trp_production_assembly_b_delayed:0 "§Eassembly Path§!\nWhy should our workers ever need to go home? Home will be where work is, and work where home is." 
  trp_production_assembly_c:0 "Worker Nobility"
- trp_production_assembly_c_desc:0 "§YWorker Pop Resource Output§! increased by §G+10%§!."
- trp_production_assembly_c_delayed:0 "§ESupervision Path§!\nSomeone needs to oversee the masses of shovels and cheap drills and it shouldn't always have to be us."
+ trp_production_assembly_c_desc:0 "§YWorker and Slave Pop Resource Output§! increased by §G+10%§!."
+ trp_production_assembly_c_delayed:0 "§Eassembly Path§!\nSomeone needs to oversee the masses of shovels and cheap drills and it shouldn't always have to be us."
+ #
+ trp_production_assembly_c_drone:0 "Menial Efficency"
+ trp_production_assembly_c_drone_desc:0 "§YMenial Drone Resource Output§! increased by §G+10%§!."
+ trp_production_assembly_c_drone_delayed:0 "§Eassembly Path§!\nAutomated menial drones."
  ###Refinement Path
  trp_production_refinement_a:0 "Artifical Lifestyle"
  trp_production_refinement_a_desc:0 "§YRefinery Buildings§! have their §YBuild Cost§! reduced by §G15%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
  trp_production_refinement_a_delayed:0 "§ERefinement Path§!\nWe have always been reliant on capital made by our own hands and there is little reason for that to change now."
+ #
+ trp_production_refinement_a_gestalt:0 "Artificial Substitutes"
+ trp_production_refinement_a_gestalt_desc:0 "§YRefinery Buildings§! have their §YBuild Cost§! reduced by §G15%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_production_refinement_a_gestalt_delayed:0 "§ERefinement Path§!\nThe pursuit to do not depend on natural resources and to make our own  is what drive us ever forward."
+ #
  trp_production_refinement_b:0 "Versed Creation"
  trp_production_refinement_b_desc:0 "£job_chemist£§YChemist Upkeep§! reduced by §G10%§!.\n£job_translucer£§YTranslucer Upkeep§! reduced by §G10%§!.\n£job_gas_refiner£§YGas Refiner Upkeep§! reduced by §G10%§!."
  trp_production_refinement_b_delayed:0 "§ERefinement Path§!\nOur artificers are nothing but true masters of their craft, reaching heights that others do for higher the cost." 
+ #
+ trp_production_refinement_b_gestalt:0 "Endless Calibration"
+ trp_production_refinement_b_gestalt_desc:0 "£job_chemist£§YChem-Drone Upkeep§! reduced by §G10%§!.\n£job_translucer£§YLensing Drone Upkeep§! reduced by §G10%§!.\n£job_gas_refiner£§YRefinery Drone Upkeep§! reduced by §G10%§!."
+ trp_production_refinement_b_gestalt_delayed:0 "§ERefinement Path§!\nThe ever going fine-tuning of creation processes show its results in saved resources, that can be spend by the Whole in other projects." 
+ #
  trp_production_refinement_c:0 "Synthetic Luxuries"
  trp_production_refinement_c_desc:0 "£job_chemist£§YChemists§! now produce §G+3§! £stability£ §YStability§!. £job_translucer£§YTranslucers§! now produce §G+10§! £energy£§YEnergy§!. £job_gas_refiner£§YGas Refiners§! now produce §G+5§! £amenities£§YAmenities§!."
  trp_production_refinement_c_delayed:0 "§ERefinement Path§!\nDependence on various goods have made our population appreciate these goods even more, in differing ways."
+ #
+ trp_production_refinement_c_gestalt:0 "Of Many Hands"
+ trp_production_refinement_c_gestalt_desc:0 "£job_chemist£§YChem-Drone§! now produce §G+3§! £stability£ §YStability§!. \n£job_translucer£§YLensing Drone§! now produce §G+10§! £energy£§YEnergy§!. \n£job_gas_refiner£§YRefinery Drone§! now produce §G+5§! £amenities£§YAmenities§!."
+ trp_production_refinement_c_gestalt_delayed:0 "§ERefinement Path§!\nThe Сonsciousness is well know for its skill in multitasking, it's only right that we gain multiply benefits from creation process."
  ###Agriculture Path
  trp_production_agriculture_a:0 "Farming Society"
  trp_production_agriculture_a_desc:0 "£district£§YAgriculture Districts§! have their §YBuild Speed§! increased by §G+25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
@@ -707,7 +820,17 @@
  trp_production_agriculture_b_delayed:0 "§EAgriculture Path§!\nGranaries cover our countryside, ideally filled to the brim, making sure there is always foodstuff to be shared." 
  trp_production_agriculture_c:0 "Food Festivals"
  trp_production_agriculture_c_desc:0 "£food£ §YFood§! from £job_farmer£ §YFarmers§! increased by §G+1§!."
- trp_production_agriculture_c_delayed:0 "§EAgriculture Path§!\nOur culture celebrates the nutritional plenitude, motivating our farmers to work even harder than they usually do."
+ trp_production_agriculture_c_delayed:0"§EAgriculture Path§!\nOur culture celebrates the nutritional plenitude, motivating our farmers to work even harder than they usually do."
+ #
+ trp_production_agriculture_a_lithoid:0 "Litho-farming Society"
+ trp_production_agriculture_a_lithoid_desc:0 "£district£§YMining Districts§! have their §YBuild Speed§! increased by §G+25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_production_agriculture_a_lithoid_delayed:0 "§ELithoculture Path§!\nA large part of our society is a society of strip mines and hard-working laborers."
+ trp_production_agriculture_b_lithoid:0 "Grand Stockpile"
+ trp_production_agriculture_b_lithoid_desc:0 "£minerals£ §YPop Mineral Consumption§! reduced by §G10%§!."
+ trp_production_agriculture_b_lithoid_delayed:0 "§Elithoculture Path§!\nGranaries cover our countryside, ideally filled to the brim, making sure there is always lithostuff to be shared." 
+ trp_production_agriculture_c_lithoid:0 "Litho Festivals"
+ trp_production_agriculture_c_lithoid_desc:0 "£minerals£ §YMinerals§! from £job_miner£ §YMiners§! increased by §G+1§!."
+ trp_production_agriculture_c_lithoid_delayed:0 "§Elithoculture Path§!\nOur culture celebrates the lithotritional plenitude, motivating our miners to work even harder than they usually do."
  ###################Commerce
  tradition_commerce_plus:0 "Commerce"
  tradition_commerce_plus_desc:0 "There is no better indicator of the success or failure of a star nation than the strength of its economy."
@@ -719,42 +842,35 @@
  trp_commerce_exchange_a:0 "Known Traders"
  trp_commerce_exchange_a_desc:0 "§YTrade Attractiveness§! increased by §G+50%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
  trp_commerce_exchange_a_delayed:0 "§EExchange Path§!\nOur merchants are known across the stars and their reputation that of trustworthy. Moreso than others.\n\n§RMutually Exclusive§! with §EAccumulation Path§!"
+ #
+ trp_commerce_exchange_a_gestalt:0 "Basic Crypto-Economics"
+ trp_commerce_exchange_a_gestalt_desc:0 "§YTrade Attractiveness§! increased by §G+50%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_commerce_exchange_a_gestalt_delayed:0 "§EExchange Path§!\nWe have successfully simulated the hiveless insistuion known as ecenomy, forming our own hive 'crypto-ecenomy'.\n\n§RMutually Exclusive§! with §EAccumulation Path§!"
+ #
  trp_commerce_exchange_b:0 "Insider Trading"
  trp_commerce_exchange_b_desc:0 "§YMarket Fee§! reduced by §G10%§!.\n\n§EPossible Alterations:§!\n§HAuthoritarian§! or §HFanatic Authoritarian§! Ethic"
  trp_commerce_exchange_b_delayed:0 "§EExchange Path§!\nKnowing the right people in the right places can make a world of difference. Influential contacts let us buy from resource markets at favorable rates." 
  trp_commerce_exchange_b_authoritarian:0 "Slave Trade"
- trp_commerce_exchange_b_authoritarian_desc:0 "§EModified By:§! §HAuthoritarian§! Ethic\n§EPrevious Effects:§!\n§YMarket Fee§! reduced by §G10%§!.\n§ECurrent Effects:§!\n§YSlave Market Cost§! reduced by §G20%§!."
+ trp_commerce_exchange_b_authoritarian_desc:0 "§EModified By:§! §HAuthoritarian§! Ethic\n§EPrevious Effects:§!\n§YMarket Fee§! reduced by §G10%§!.\n§ECurrent Effects:§!\n§YMarket Fee§! reduced by §G5%§! and §YSlave Market Cost§! reduced by §G10%§!."
  trp_commerce_exchange_b_authoritarian_desc:0 "§YMarket Fee§! reduced by §G10%§!."
  trp_commerce_exchange_b_authoritarian_delayed:0 "§EExchange Path§!\nThe domination over others and the barter of individuals is just a natural part of society." 
- trp_commerce_exchange_b_fanatic_authoritarian:0 "Slave Trade"
- trp_commerce_exchange_b_fanatic_authoritarian_desc:0 "§EModified By:§! §HFanatic Authoritarian§! Ethic\n§EPrevious Effects:§!\n§YMarket Fee§! reduced by §G10%§!.\n§ECurrent Effects:§!\n§YSlave Market Cost§! reduced by §G20%§!."
- trp_commerce_exchange_b_fanatic_authoritarian_desc:0 "§YMarket Fee§! reduced by §G10%§!."
- trp_commerce_exchange_b_fanatic_authoritarian_delayed:0 "§EExchange Path§!\nOur domination over others and the barter of individuals is just a natural part of society." 
  trp_commerce_exchange_c:0 "Merchant Lords"
- trp_commerce_exchange_c_desc:0 "£job_merchant£ §YMerchant Jobs§! per §Y33§! £pop£ Pops increased by §G+1§!. §YMerchants§! produce §G+5§! £amenities£§YAmenities§! and §G+8§! £trade_value£ §YTrade Value§!."
+ trp_commerce_exchange_c_desc:0 "£job_merchant£ §YMerchant Jobs§! per §Y50§! £pop£ Pops increased by §G+1§!. §YMerchants§! produce §G+5§! £amenities£§YAmenities§! and §G+8§! £trade_value£ §YTrade Value§!."
  trp_commerce_exchange_c_delayed:0 "§EExchange Path§!\nCertain individuals have risen to power, their collective wealth more than that of smaller star nations."
- trp_commerce_exchange_c_hive:0 "Collective Wealth"
- trp_commerce_exchange_c__hive_desc:0 "£job_merchant£ §YTechnician Drone Jobs§! per §Y33§!
- trp_commerce_exchange_c_hive_delayed:0 "§EExchange Path§!\nOur collective wealth is more than that of the entire star cluster."
+ #
+ trp_commerce_exchange_c_drone:0 "Crypto Merchants"
+ trp_commerce_exchange_c_drone_desc:0 "£job_merchant£ §YMerchant Drones§! per §Y50§! £pop£ Pops increased by §G+1§!. §YMerchants§! produce §G+5§! £amenities£§YAmenities§! and §G+8§! £trade_value£ §YTrade Value§!."
+ trp_commerce_exchange_c_drone_delayed:0 "§EExchange Path§!\nCertain drones have risen to power, their collective crypto-wealth more than that of smaller star nations."
  ###Trade Path
  trp_commerce_trade_a:0 "Trade Districts"
- trp_commerce_trade_a_desc:0 "§YCommercial Zones§! have their §YBuild Cost§! reduced by §G25%§! §YCommerce Megaplexes§! no longer require rare resource upkeep.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_commerce_trade_a_desc:0 "§YCommercial Zones§! have their §YBuild Cost§! reduced by §G25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
  trp_commerce_trade_a_delayed:0 "§ETrade Path§!\nWhole areas of our society is devoted to business, the making of wealth. Office buildings rise far above the clouds, touching the skies."
-  trp_commerce_trade_a_hive:0 "Trade Districts"
- trp_commerce_trade_a_hive_desc:0 "Energy production increased by 5%"
- trp_commerce_trade_a_hive_delayed:0 "§ETrade Path§!\nWhole areas of our society is devoted to business with single-minds, benefitting the collective as a whole"
  trp_commerce_trade_b:0 "Open Markets"
  trp_commerce_trade_b_desc:0 "£trade_value£ §YTrade Value§! increased by §G+20%§!."
  trp_commerce_trade_b_delayed:0 "§ETrade Path§!\nFor trade to truly flourish within our borders, governmental meddling in internal markets must be kept to a minimum." 
-  trp_commerce_trade_b_hive:0 "Open Markets"
- trp_commerce_trade_b_hive_desc:0 "§YEnergy production§! increased by §G+10%§!."
- trp_commerce_trade_b_hive_delayed:0 "§ETrade Path§!\nFor trade to truly flourish within our borders, governmental meddling in internal markets must be kept to a minimum." 
  trp_commerce_trade_c:0 "Exchange of Goods"
- trp_commerce_trade_c_desc:0 "£job_clerk£ §YClerks§! now produce §G+0.25§! £consumer_goods£ §YConsumer Goods§!."
+ trp_commerce_trade_c_desc:0 "£job_clerk£ §YClerks§! now produce §G+0.5§! £consumer_goods£ §YConsumer Goods§!."
  trp_commerce_trade_c_delayed:0 "§ETrade Path§!\nOur society is a constant barter of services and goods independent of any kind of interfering power, a land of free traders."
-  trp_commerce_trade_c_hive:0 "Exchange of Goods"
- trp_commerce_trade_c_hive_desc:0 "Pop Food Upkeep reduced by 10%"
- trp_commerce_trade_c_hive_delayed:0 "Trade_c_hive_delayed_desc"
  ###Security Path
  trp_commerce_security_a:0 "Anti-Piracy Ports"
  trp_commerce_security_a_desc:0 "§YStarbase Capacity§! increased by §G+2§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
@@ -765,6 +881,13 @@
  trp_commerce_security_c:0 "Expanded Patrols"
  trp_commerce_security_c_desc:0 "§YStarbase Protection Range§! from §YHangar Bay§! increased by §G+2§!."
  trp_commerce_security_c_delayed:0 "§ESecurity Path§!\nOur starbases are the beating heart of a system of lookouts and safeguarding vessels, keeping nearby systems safe."
+ #
+ trp_commerce_security_c_drone:0 "Secure Stations"
+ trp_commerce_security_c_drone_desc:0 "£trade_protection£ §YHome territyory fire rate§! has increased by §G+15%§!, §YStarbase build speed§! increased by §G+15%§!, and §YShip build speed§! increased by §G+33%§! when in a defensive war."
+ trp_commerce_security_c_drone_delayed:0 "§ESecurity Path§!\nWe have begun toto improve out stations." 
+ trp_commerce_security_b_drone:0 "Expanded Patrols"
+ trp_commerce_security_b_drone_desc:0 "§YStarbase Damage and Hull§! from increased by §G+15."
+ trp_commerce_security_b_drone_delayed:0 "§ESecurity Path§!\nOur starbases are the beating heart of a system of lookouts that safeguarding vessels, keeping nearby systems safe."
  ###Accumulation Path
  trp_commerce_accumulation_a:0 "Moneylending Schemes"
  trp_commerce_accumulation_a_desc:0 "§YTrust Growth§! per §H5k§! and §H10k§! and §H15k§! and §H20k§! £energy£ §YEnergy Credits§! increased by §G+10%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
@@ -772,9 +895,18 @@
  trp_commerce_accumulation_b:0 "Interest Wealth"
  trp_commerce_accumulation_b_desc:0 "£job_clerk£ §YClerks§! now produce §G+1§! £energy£ §YEnergy Credits§!."
  trp_commerce_accumulation_b_delayed:0 "§EAccumulation Path§!\nWe simply provide the loans and our customers pay the interest fees. A basic process, although effectively designed." 
+ #
+ trp_commerce_accumulation_b_drone:0 "Efficent Investments"
+ trp_commerce_accumulation_b_drone_desc:0 "£job_maintenance_drone£ §YMaintenance Drones§! now produce §G+1§! £energy£ §YEnergy Credits§!."
+ trp_commerce_accumulation_b_drone_delayed:0 "§EAccumulation Path§!\nOur maintence drones now produce extra energy." 
+ #
  trp_commerce_accumulation_c:0 "Big Bankers"
- trp_commerce_accumulation_c_desc:0 "£job_trp_banker£ §YBanker Jobs§! per §Y50§! £pop£ Pops increased by §G+1§!. §YBankers§! produce §G+5§! £stability£ §YStability§! and §G+5000§! £repair£Resource Storage Capacity."
+ trp_commerce_accumulation_c_desc:0 "£job_trp_banker£ §YBanker Jobs§! per §Y50§! £pop£ Pops increased by §G+1§!. §YBankers§! produce §G+5§! £stability£ §YStability§!, §G+5§! §YAmenities§!, and §G+5000§! £repair£Resource Storage Capacity."
  trp_commerce_accumulation_c_delayed:0 "§EAccumulation Path§!\nCertain individuals have risen to power, armed with loans and credit they pull the strings of agencies."
+ #
+ trp_commerce_accumulation_c_drone:0 "Crypto Bankers"
+ trp_commerce_accumulation_c_drone_desc:0 "£job_trp_banker£ §YDepot Drones§! per §Y50§! £pop£ Pops increased by §G+1§!. §YBankers§! produce §G+5§! £stability£ §YStability§!, §G+30§! §YAdministrative Capacity§!, and §G+5000§! £repair£Resource Storage Capacity."
+ trp_commerce_accumulation_c_drone_delayed:0 "§EAccumulation Path§!\nCertain drones have risen to power, and have become an integral part of the crypto-economy."
  ###Capability Path
  trp_commerce_capability_a:0 "Bright Society"
  trp_commerce_capability_a_desc:0 "£district£§YGenerator Districts§! have their §YBuild Speed§! increased by §G25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
@@ -796,7 +928,17 @@
  trp_commerce_enterprises_c_desc:0 "§HUnlocks Choice:§! £job_soldier£ §YSoldiers§! now produce §G+8§! £trade_value£ §YTrade Value§! or £job_entertainer£ §YEntertainers§! and £job_culture_worker£ §YCulture Workers§! now produce §G+4§! £trade_value£ §YTrade Value§!."
  trp_commerce_enterprises_c_delayed:0 "§EEnterprises Path§!\nEverywhere there are individuals trying to make their fortune through others and it is something our culture happily supports."
  trp_commerce_enterprises_c_mercenaries_desc:0 "£job_soldier£ §YSoldiers§! now produce §G+8§! £trade_value£ §YTrade Value§!."
- trp_commerce_enterprises_c_entertainment_desc:0 "§YEntertainers§! and £job_culture_worker£ §YCulture Workers§! now produce §G+4§! £trade_value£ §YTrade Value§!."
+ trp_commerce_enterprises_c_entertainment_desc:0 "£job_entertainer£ §YEntertainers§! and £job_culture_worker£ §YCulture Workers§! now produce §G+4§! £trade_value£ §YTrade Value§!."
+ #
+ trp_commerce_enterprises_a_drone:0 "Self Employed Drone"
+ trp_commerce_enterprises_a_drone_desc:0 "Available £job_maintenance_drone£ §YMaintenance Drone Jobs§! increased by §G+4§!."
+ trp_commerce_enterprises_a_drone_delayed:0 "§EEnterprises Path§!\nBy introducing self employrment algorithems into our drones."
+ trp_commerce_enterprises_b_drone:0 "Colonization Automization"
+ trp_commerce_enterprises_b_drone_desc:0 "§YColonizier ship Sublight Speed§! increased by §G20%§! and §YSColonizer§! cost decreased by §G+50%§!."
+ trp_commerce_enterprises_b_drone_delayed:0 "§EEnterprises Path§!\nOur society is a chain of various drones, providing each other with much needed jobs and services." 
+ trp_commerce_enterprises_c_drone_:0 "Withdrawn Society"
+ trp_commerce_enterprises_c_drone_desc:0 "§HUnlocks Choice:§! £job_patrol_drone£ §YHunter Seeker drones§! now produce §G+10§! £energy£ §YEnergy§! or £job_entertainer£ §YEntertainers§! and £job_culture_worker£ §YCulture Workers§! now produce §G+4§! £trade_value£ §YTrade Value§!."
+ trp_commerce_enterprises_c_drone_delayed:0 "§EEnterprises Path§!\nWith our new harvesting procedues our hunter seeker drones give us a return on our envestment"
  ###################Prosperity
  tradition_prosperity_plus:0 "Prosperity"
  tradition_prosperity_plus_desc:0 "Few things can match the strength of a content populace working towards a common goal."
@@ -811,9 +953,22 @@
  trp_prosperity_aesthetics_a_spiritualist:0 "Religious Community"
  trp_prosperity_aesthetics_a_spiritualist_desc:0 "§EModified By:§! §HSpiritualist§! Ethic\n§EPrevious Effects:§!\n§YAutochthon Monuments§! have their §YBuild Speed§! increased by §G+50%§!.\n§ECurrent Effects:§!\n§YTemples§! have their §YBuild Speed§! increased by §G+50%§!."
  trp_prosperity_aesthetics_a_spiritualist_delayed:0 "§EAesthetics Path§!\nOur society knows there is a greater purpose and they cherish this fact with devout artistry, giving cause for further religious sites."
- trp_prosperity_aesthetics_a_fanatic_spiritualist:0 "Religious Community"
- trp_prosperity_aesthetics_a_fanatic_spiritualist_desc:0 "§EModified By:§! §HFanatic Spiritualist§! Ethic\n§EPrevious Effects:§!\n§YAutochthon Monuments§! have their §YBuild Speed§! increased by §G+50%§!.\n§ECurrent Effects:§!\n§YTemples§! have their §YBuild Speed§! increased by §G+50%§!."
- trp_prosperity_aesthetics_a_fanatic_spiritualist_delayed:0 "§EAesthetics Path§!\nOur society knows there is a greater purpose and they cherish this fact with devout artistry, giving cause for further religious sites."
+ #
+ trp_prosperity_aesthetics_a_machine:0 "Simulated Construction"
+ trp_prosperity_aesthetics_a_machine_desc:0 "§EModified By:§! §HMachine Authority§!\n§EPrevious Effects:§!\n§YAutochthon Monuments§! have their §YBuild Speed§! increased by §G+50%§!.\n§ECurrent Effects:§!\n§YSimulation Sites§! have their §YBuild Speed§! increased by §G+50%§!."
+ trp_prosperity_aesthetics_a_machine_delayed:0 "§EAesthetics Path§!\nBy simulating the possible simulated outcomes of our simulations we can construct better simulations."
+ #
+ trp_prosperity_aesthetics_a_hive:0 "Community Of One"
+ trp_prosperity_aesthetics_a_hive_desc:0 "§EModified By:§! §HHive Authority§!\n§EPrevious Effects:§!\n§YAutochthon Monuments§! have their §YBuild Speed§! increased by §G+50%§!.\n§ECurrent Effects:§!\n§YSynapse Nodes§! have their §YBuild Speed§! increased by §G+50%§!."
+ trp_prosperity_aesthetics_a_hive_delayed:0 "§EAesthetics Path§!\nOur self knows there is a greater purpose and we cherish this fact with devout artistry, giving cause for synaptic node."
+ #
+ trp_prosperity_aesthetics_b_machine:0 "Simulated Minds"
+ trp_prosperity_aesthetics_b_machine_desc:0 "£job_evaluator£ §YEvaluator Jobs§! per §Y50§! £pop£ Pops increased by §G+1§!."
+ trp_prosperity_aesthetics_b_machine_delayed:0 "§ERecreation Path§!\nin our simulations entire civilizations rise and fall over a corse of mere minutes." 
+ #
+ trp_prosperity_aesthetics_b_hive:0 "Conjouned Minds"
+ trp_prosperity_aesthetics_b_hive_desc:0 "£job_synapse_drone£ §YSynapse Drone Jobs§! per §Y50§! £pop£ Pops increased by §G+1§!."
+ trp_prosperity_aesthetics_b_hive_delayed:0 "§ERecreation Path§!\nin our simulations entire civilizations rise and fall over a corse of mere minutes." 
  #
  trp_prosperity_aesthetics_a_corporate:0 "Corporate Culture"
  trp_prosperity_aesthetics_a_corporate_desc:0 "§EModified By:§! §HCorporate§! Authority\n§EPrevious Effects:§!\n§YAutochthon Monuments§! have their §YBuild Speed§! increased by §G+50%§!.\n§ECurrent Effects:§!\n§YCorporate Culture Sites§! have their §YBuild Speed§! increased by §G+50%§!."
@@ -825,13 +980,31 @@
  trp_prosperity_aesthetics_c:0 "City of De-Lights"
  trp_prosperity_aesthetics_c_desc:0 "£job_culture_worker£ §YCulture Workers§! now produce §G+8§! £amenities£ §YAmenities§!."
  trp_prosperity_aesthetics_c_delayed:0 "§EAesthetics Path§!\nThey come from all across the universe, here to delight in our alluring lights of endless creation."
- ###Aesthetics Path
+ #
+ trp_prosperity_aesthetics_c_machine:0 "Entertainment Simulation"
+ trp_prosperity_aesthetics_c_machine_desc:0 "£job_evaluator£ §YEvaluators§! now produce §G+8§! £amenities£ §YAmenities§!."
+ trp_prosperity_aesthetics_c_machine_delayed:0 "§EAesthetics Path§!\nWe can now simulation enjoyment,creating another artifical work goal for our menial drones."
+ #
+ trp_prosperity_aesthetics_c_hive:0 "Restorative Nodes"
+ trp_prosperity_aesthetics_c_hive_desc:0 "£job_synapse_drone£ §YSynapse drones§! now produce §G+8§! £amenities£ §YAmenities§!."
+ trp_prosperity_aesthetics_c_hive_delayed:0 "§EAesthetics Path§!\nThey come from all across the universe, here to delight in our alluring lights of endless creation."
+
+ ###Isolation Path
  trp_prosperity_tranquillity_a:0 "Respected Peace"
  trp_prosperity_tranquillity_a_desc:0 "£crime£ §YCrime Reduction§! from £job_enforcer£ §YEnforcers§! increased by §G+20%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!\nEmpire is not §YFanatic Xenophile§!"
  trp_prosperity_tranquillity_a_delayed:0 "§EIsolation Path§!\nWe grant them the peace of mind, and they respect the peace of mind.\n\n§RMutually Exclusive§! with §ECooperation Path§!"
  trp_prosperity_tranquillity_b:0 "Faded Tranquillity"
  trp_prosperity_tranquillity_b_desc:0 "£happiness£ §YPop Happiness§! increased by §G+10%§!."
  trp_prosperity_tranquillity_b_delayed:0 "§EIsolation Path§!\nOur society is a place of calm and serenity. Stress is a thing of the past." 
+ #
+ trp_prosperity_tranquillity_b_drone:0 "Tranquillity as one"
+ trp_prosperity_tranquillity_b_drone_desc:0 "£amenities£ usage and £crime£ deviancy decreased by §G5%§!."
+ trp_prosperity_tranquillity_b_drone_delayed:0 "§EIsolation Path§!\nOur society is a place of oneness." 
+ #
+ trp_prosperity_tranquillity_b_servitor:0 "Tranquillity As Many"
+ trp_prosperity_tranquillity_b_servitor_desc:0 "Bio-tronphy £happiness£happiness increased by §G10%§!,£amenities£ usage ,and £crime£ deviancy decreased by §G5%§!."
+ trp_prosperity_tranquillity_b_servitor_delayed:0 "§EIsolation Path§!\nOur society is a place of oneness." 
+ #
  trp_prosperity_tranquillity_c:0 "Enduring Silence"
  trp_prosperity_tranquillity_c_desc:0 "§YBorder Friction§! reduced by §G50%§!."
  trp_prosperity_tranquillity_c_delayed:0 "§EIsolation Path§!\nThe universe is a silent place, but we somehow make it even more silent."
@@ -853,9 +1026,10 @@
  trp_prosperity_renaissance_a_spiritualist:0 "Divine Reformation"
  trp_prosperity_renaissance_a_spiritualist_desc:0 "§EModified By:§! §HSpiritualist§! Ethic\n§EPrevious Effects:§!\n£unity£ Unity from £job_culture_worker£ §YCulture Workers§! increased by §G+10%§!.\n§ECurrent Effects:§!\n£unity£ Unity from £job_priest£ §YPriests§! increased by §G+10%§!."
  trp_prosperity_renaissance_a_spiritualist_delayed:0 "§EResurgence Path§!\nWe previously thought the heavens to be something unreachable, but now we sail the stars. Perhaps change is necessary."
- trp_prosperity_renaissance_a_fanatic_spiritualist:0 "Divine Reformation"
- trp_prosperity_renaissance_a_fanatic_spiritualist_desc:0 "§EModified By:§! §HFanatic Spiritualist§! Ethic\n§EPrevious Effects:§!\n£unity£ Unity from £job_culture_worker£ §YCulture Workers§! increased by §G+10%§!.\n§ECurrent Effects:§!\n£unity£ Unity from £job_priest£ §YPriests§! increased by §G+10%§!."
- trp_prosperity_renaissance_a_fanatic_spiritualist_delayed:0 "§EResurgence Path§!\nWe previously thought the heavens to be something unreachable, but now we sail the stars. Perhaps change is necessary."
+ #
+ trp_prosperity_renaissance_a_drone:0 "Revival of thought"
+ trp_prosperity_renaissance_a_drone_desc:0 "£unity£ Unity from §YCulture Drones§! increased by §G+10%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!\n\n§EPossible Alterations:§!\n§Hhivemind§!"
+ trp_prosperity_renaissance_a_drone_delayed:0 "§EResurgence Path§!\nAs we redefined our future by inventing space travel, we must now redefine who we are."
  #
  trp_prosperity_renaissance_a_corporate:0 "Office Politics"
  trp_prosperity_renaissance_a_corporate_desc:0 "§EModified By:§! §HCorporate§! Authority\n§EPrevious Effects:§!\n£unity£ Unity from £job_culture_worker£ §YCulture Workers§! increased by §G+10%§!.\n§ECurrent Effects:§!\n£unity£ Unity from £job_manager£ §YManagers§! increased by §G+10%§!."
@@ -864,10 +1038,31 @@
  trp_prosperity_renaissance_b:0 "Vitruvian Blorg"
  trp_prosperity_renaissance_b_desc:0 "£job_artisan£ §YArtisans§! now produce §G+1§! £unity£ Unity."
  trp_prosperity_renaissance_b_delayed:0 "§EResurgence Path§!\nThe divine gift does not come from a higher power, but from our own minds." 
+ #
+ trp_prosperity_renaissance_b_drone:0 "Vitruvian blorg-Drone"
+ trp_prosperity_renaissance_b_drone_desc:0 "£job_fabricator£ §YFabricators§! now produce §G+1§! £unity£ Unity."
+ trp_prosperity_renaissance_b_drone_delayed:0 "§EResurgence Path§!\nThe divine gift does not come from a higher power, but from our own minds." 
+ #
+ trp_prosperity_renaissance_b_servitor:0 "Vitruvian Blorg"
+ trp_prosperity_renaissance_b_servitor_desc:0 "£job_artisan£ §YArtisans§! now produce §G+1§! £unity£ Unity."
+ trp_prosperity_renaissance_b_servitor_delayed:0 "§EResurgence Path§!\nThe divine gift does not come from a higher power, but from our own minds." 
+ #
  trp_prosperity_renaissance_c:0 "Technoartisans"
  trp_prosperity_renaissance_c_desc:0 "£job_culture_worker£ §YCulture Workers§! now produce §G+1§! £alloys£ §YAlloys§!."
  trp_prosperity_renaissance_c_delayed:0 "§EResurgence Path§!\nFueled by creativity and the passion for something new, they have begun to carve and forge parts for starships. Parts only so miraculous in their design."
- ###Resurgence Path
+ #
+ trp_prosperity_renaissance_c_machine:0 "Mechno-artisans"
+ trp_prosperity_renaissance_c_machine_desc:0 "£job_evaluator£ §YEvaluators§! now produce §G+1§! £alloys£ §YAlloys§!."
+ trp_prosperity_renaissance_c_machine_delayed:0 "§EResurgence Path§!\nUsing new digital to material synthesis methods we can now create alloys from nothing"
+ #
+ trp_prosperity_renaissance_c_hive:0 "Bio-artisans"
+ trp_prosperity_renaissance_c_hive_desc:0 "£job_synapse_drone£ §YSynapse Drones§! now produce §G+1§! £alloys£ §YAlloys§!."
+ trp_prosperity_renaissance_c_hive_delayed:0 "§EResurgence Path§!\nUsing new brain to material synthesis methods we can now create alloys from nothing"
+ #
+ trp_prosperity_renaissance_c_servitor:0 "Happines = Alloys"
+ trp_prosperity_renaissance_c_servitor_desc:0 "£job_culture_worker£ §YCulture Workers§! now produce §G+0.02§! £alloys£ §YAlloys§!."
+ trp_prosperity_renaissance_c_servitor_delayed:0 "§EResurgence Path§!\nUsing new zero-point-happiness material synthesis methods we can now create alloys from nothing"
+ #
  trp_prosperity_alteration_a:0 "Vibrant Heart"
  trp_prosperity_alteration_a_desc:0 "£district£§YCity Districts§! have their §YBuild Speed§! increased by §G+25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
  trp_prosperity_alteration_a_delayed:0 "§EMetropolis Path§!\nIt is a city of dreams, and I'm a big dreamer."
@@ -881,15 +1076,37 @@
  trp_prosperity_recreation_a:0 "Frolic Appetite"
  trp_prosperity_recreation_a_desc:0 "§YHolo-Theatres§! have their §YBuild Cost§! reduced by §G25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
  trp_prosperity_recreation_a_delayed:0 "§ERecreation Path§!\nThe desire grows stronger, the demand an unsated mind."
+ #
+ trp_prosperity_recreation_a_machine:0 "Frolic Appetite"
+ trp_prosperity_recreation_a_machine_desc:0 "§YSimulation Sites§! have their §YBuild Cost§! reduced by §G25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_prosperity_recreation_a_machine_delayed:0 "§ERecreation Path§!\nThe desire grows stronger, the demand an unsated mind."
+ #
+ trp_prosperity_recreation_a_servitor:0 "Frolic Appetite"
+ trp_prosperity_recreation_a_servitor_desc:0 "§YOrganic Santcuary§! have their §YBuild Cost§! reduced by §G25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_prosperity_recreation_a_servitor_delayed:0 "§ERecreation Path§!\nThe desire grows stronger, the demand an unsated mind."
+ #
+ trp_prosperity_recreation_a_hive:0 "Frolic Appetite"
+ trp_prosperity_recreation_a_hive_desc:0 "§Ysynaptic nodes§! have their §YBuild Cost§! reduced by §G25%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_prosperity_recreation_a_hive_delayed:0 "§ERecreation Path§!\nThe desire grows stronger, the demand an unsated mind."
+ #
  trp_prosperity_recreation_b:0 "Disco Elysium"
  trp_prosperity_recreation_b_desc:0 "£amenities£§YAmenities§! from £job_entertainer£ §YEntertainers§! increased by §G+50%§!.\n\n§EPossible Alterations:§!\n§HWarrior Culture§! Civic"
  trp_prosperity_recreation_b_delayed:0 "§ERecreation Path§!\nOur society is a society of endless entertainment, wielded by dazzlingly intense figures." 
- ###
+ #
  trp_prosperity_recreation_b_duelist:0 "Blood Enthusiasm"
  trp_prosperity_recreation_b_duelist_desc:0 "§EModified By:§! §HWarrior Culture§! Civic\n§EPrevious Effects:§!\n£amenities£§YAmenities§! from £job_entertainer£ §YEntertainers§! increased by §G+50%§!.\n§ECurrent Effects:§!\n§YNaval Capacity§! from £job_duelist£ §YDuelists§! by §G+100%§!."
  trp_prosperity_recreation_b_duelist_delayed:0 "§ERecreation Path§!\nIt is in the nature of our society to fight and bleed, something that is made apparent by the fervent cheering."
+ #
+ trp_prosperity_recreation_b_drone:0 "Efficent mainence algorithm"
+ trp_prosperity_recreation_b_drone_desc:0 "§EModified By:§! §HNon-standard§! Authority\n§EPrevious Effects:§!\n£amenities£§YAmenities§! from £job_entertainer£ §YEntertainers§! increased by §G+50%§!.\n§ECurrent Effects:§!\n§YAmenities§! from £amenities£ §Ymaintenance drones§! by §G+50%§!."
+ trp_prosperity_recreation_b_drone_delayed:0 "§ERecreation Path§!\nIt is in the nature of our society to fight and bleed, something that is made apparent by the fervent cheering."
  ###
- trp_prosperity_recreation_c:0 "Swinging Repose"
- trp_prosperity_recreation_c_desc:0 "§YPop Growth§! from £job_healthcare£ §YMedical Workers§! increased by §G+5%§!"
- trp_prosperity_recreation_c_delayed:0 "§ERecreation Path§!\nEntertainment is not only to serve as diversion for the brain, but also as diversion for the body."
+ trp_prosperity_recreation_c_machine:0 "Omega Replicator"
+ trp_prosperity_recreation_c_machine_desc:0 "§YPop Growth§! from £job_replicator£ §Yeplicators§! increased by §G+0.20%§!"
+ trp_prosperity_recreation_c_machine_delayed:0 "§ERecreation Path§!\nThe new omega repilicator assembels new machines much faster."
+ #
+ trp_prosperity_recreation_c_hive:0 "Faster Breeding"
+ trp_prosperity_recreation_c_hive_desc:0 "§YPop Growth§! increased by §G+15%§!"
+ trp_prosperity_recreation_c_hive_delayed:0 "§ERecreation Path§!\nThe hive mind is not only to serve as controller for the brain, but also as diversion for the body."
+ #
  ##End
