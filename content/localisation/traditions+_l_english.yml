@@ -1101,6 +1101,10 @@
  trp_prosperity_recreation_b_drone_desc:0 "§EModified By:§! §HNon-standard§! Authority\n§EPrevious Effects:§!\n£amenities£§YAmenities§! from £job_entertainer£ §YEntertainers§! increased by §G+50%§!.\n§ECurrent Effects:§!\n§YAmenities§! from £amenities£ §Ymaintenance drones§! by §G+50%§!."
  trp_prosperity_recreation_b_drone_delayed:0 "§ERecreation Path§!\nIt is in the nature of our society to fight and bleed, something that is made apparent by the fervent cheering."
  ###
+ trp_prosperity_recreation_c:0 "Swinging Repose"
+ trp_prosperity_recreation_c_desc:0 "§YPop Growth§! from £job_healthcare£ §YMedical Workers§! increased by §G+5%§!"
+ trp_prosperity_recreation_c_delayed:0 "§ERecreation Path§!\nEntertainment is not only to serve as diversion for the brain, but also as diversion for the body."
+ #
  trp_prosperity_recreation_c_machine:0 "Omega Replicator"
  trp_prosperity_recreation_c_machine_desc:0 "§YPop Growth§! from £job_replicator£ §Yeplicators§! increased by §G+0.20%§!"
  trp_prosperity_recreation_c_machine_delayed:0 "§ERecreation Path§!\nThe new omega repilicator assembels new machines much faster."
