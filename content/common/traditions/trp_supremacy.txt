@@ -37,7 +37,7 @@ trp_supremacy_quantity_a = { ###Quantity Path
 }
 trp_supremacy_quantity_b = {
 	modifier = {
-		ships_upkeep_mult = -0.10
+		ships_upkeep_mult = -0.25
 	}
 	possible = {
 		has_tradition = trp_supremacy_quantity_a
@@ -51,7 +51,7 @@ trp_supremacy_quantity_b = {
 			is_machine_empire = yes
 		}
 		modifier = {
-			ships_upkeep_mult = -0.10
+			ships_upkeep_mult = -0.25
 		}
 		weight = {
 			factor = 1
@@ -118,10 +118,7 @@ trp_supremacy_quality_a = { ###Quality Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			OR = {
-				is_machine_empire = yes
-				is_hive_empire = yes
-			}
+				has_ethic = ethic_gestalt_consciousness 
 		}
 		modifier = {
 			ship_starting_experience_add = 100
@@ -372,10 +369,7 @@ trp_supremacy_deterrence_a = { ###Deterrence Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			OR = {
-				is_machine_empire = yes
-				is_hive_empire = yes
-			}
+			has_ethic = ethic_gestalt_consciousness 
 		}
 		modifier = {
 			ship_military_station_small_cost_mult = -0.10
@@ -795,10 +789,7 @@ trp_supremacy_admirality_b = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			OR = {
-				is_machine_empire = yes
-				is_hive_empire = yes
-			}
+			has_ethic = ethic_gestalt_consciousness 
 		}
 		modifier = {
 			admiral_skill_levels = 2
@@ -825,10 +816,7 @@ trp_supremacy_admirality_c = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			OR = {
-				is_machine_empire = yes
-				is_hive_empire = yes
-			}
+			has_ethic = ethic_gestalt_consciousness 
 		}
 		modifier = {
 			country_command_limit_add = 40
@@ -1062,10 +1050,7 @@ trp_supremacy_warfare_b = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			OR = {
-				is_machine_empire = yes
-				is_hive_empire = yes
-			}
+			has_ethic = ethic_gestalt_consciousness 
 		}
 		modifier = {
 			##soldier amenitites unlock
@@ -1091,10 +1076,7 @@ trp_supremacy_warfare_c = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			OR = {
-				is_machine_empire = yes
-				is_hive_empire = yes
-			}
+			has_ethic = ethic_gestalt_consciousness 
 		}
 		modifier = {
 			country_war_exhaustion_mult = -0.2
@@ -1317,27 +1299,15 @@ trp_supremacy_devastation_c = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
+			OR = {
 			has_ethic = ethic_pacifist
+			has_ethic = ethic_fanatic_pacifist
+			}
 		}
 		modifier = {
 			planet_orbital_bombardment_damage = -0.5
 		}
 
-		weight = {
-			factor = 1
-		}
-	}
-	tradition_swap = {
-		name = trp_supremacy_devastation_a_fanatic_pacifist
-		inherit_effects = no
-		inherit_icon = yes
-		inherit_name = no
-		trigger = {
-			has_ethic = ethic_fanatic_pacifist
-		}
-		modifier = {
-			planet_orbital_bombardment_damage = -0.5
-		}
 		weight = {
 			factor = 1
 		}

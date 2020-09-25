@@ -5,20 +5,23 @@ trp_diplomacy_adopt = { ##Statecraft
 }
 trp_diplomacy_finish = {
 	modifier = {
-		country_base_influence_produces_add = 1
+		country_base_influence_produces_add = 2
 	}
 }
 ###Federation Path
 trp_diplomacy_federation_a = {
 	modifier = {
-		diplomacy_upkeep_mult = -0.25
+		country_trust_cap_add = 50 
 	}
 	possible = {
-		NOT = { has_tradition = trp_diplomacy_government_a }
-		NOT = { has_civic = civic_fanatic_purifiers }
-		NOT = { has_civic = civic_hive_devouring_swarm }
-		NOT = { has_civic = civic_machine_terminator }
-		NOT = { has_civic = civic_inwards_perfection }
+		NOR = { 
+			has_tradition = trp_diplomacy_government_a 
+			has_civic = civic_hive_terravore 
+			has_civic = civic_fanatic_purifiers 
+			has_civic = civic_hive_devouring_swarm 
+			has_civic = civic_machine_terminator 
+			has_civic = civic_inwards_perfection
+		}
 	}
 	ai_weight = {
 		factor = 10
@@ -235,22 +238,10 @@ trp_diplomacy_ideology_a = { ###Ideology Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
+			OR = {
 			has_ethic = ethic_fanatic_egalitarian
-		}
-		modifier = {
-			pop_ethics_shift_speed_mult = 0.25
-		}
-		weight = {
-			factor = 1
-		}
-	}
-	tradition_swap = {
-		name = trp_diplomacy_ideology_a_egalitarian
-		inherit_effects = no
-		inherit_icon = yes
-		inherit_name = no
-		trigger = {
 			has_ethic = ethic_egalitarian
+			}
 		}
 		modifier = {
 			pop_ethics_shift_speed_mult = 0.25
@@ -265,10 +256,7 @@ trp_diplomacy_ideology_a = { ###Ideology Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			OR = {
-				is_machine_empire = yes
-				is_hive_empire = yes
-			}
+			has_ethic = ethic_gestalt_consciousness 
 		}
 		modifier = {
 			planet_crime_no_happiness_add = -10
@@ -440,7 +428,7 @@ trp_diplomacy_ideology_a = { ###Ideology Path
 }
 trp_diplomacy_ideology_b = {
 	modifier = {
-		country_unity_produces_mult = 0.20
+		country_unity_produces_mult = 0.10
 	}
 	possible = {
 		has_tradition = trp_diplomacy_ideology_a
@@ -768,8 +756,10 @@ trp_diplomacy_government_a = { ###Government Path
 		governor_skill_levels = 2
 	}
 	possible = {
-		NOT = { has_tradition = trp_diplomacy_federation_a }
-		NOT = { has_tradition = trp_diplomacy_federation_c } ##for origin
+		NOR = { 
+			has_tradition = trp_diplomacy_federation_a 
+			has_tradition = trp_diplomacy_federation_c 
+		} ##for origin
 	}
 	ai_weight = {
 		factor = 10
@@ -958,7 +948,7 @@ trp_diplomacy_government_c = {
 ###Integration Path
 trp_diplomacy_integration_a = { ###Integration Path
 	modifier = {
-		country_federation_fleet_contribution_discount = 0.25
+		country_subject_acceptance_add = 10
 	}
 	ai_weight = {
 		factor = 10
@@ -1127,7 +1117,8 @@ trp_diplomacy_integration_a = { ###Integration Path
 }
 trp_diplomacy_integration_b = {
 	modifier = {
-		federation_leader_fleet_scale_mult = 0.1
+		country_subject_trust_cap_add = 50
+		country_subject_power_penalty_mult = -0.25
 	}
 	possible = {
 		has_tradition = trp_diplomacy_integration_a
@@ -1138,7 +1129,7 @@ trp_diplomacy_integration_b = {
 }
 trp_diplomacy_integration_c = {
 	modifier = {
-		federation_leader_diplo_weight_from_members_mult = 0.1
+		subject_integration_influence_cost_mult = -0.5
 	}
 	possible = {
 		has_tradition = trp_diplomacy_integration_b

@@ -15,8 +15,23 @@ trp_commerce_exchange_a = { ##Exchange Path
 		country_trade_attractiveness = 0.5
 	}
 	possible = {
-		num_ascension_perks > 1
+		num_ascension_perks > 1		
 		NOT = { has_tradition = trp_commerce_accumulation_a }
+	}
+	tradition_swap = {
+		name = trp_commerce_exchange_a_gestalt
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			station_gatherers_produces_mult = 0.20
+		}
+		weight = {
+			factor = 1
+		}
 	}
 	ai_weight = {
 		factor = 10
@@ -186,16 +201,47 @@ trp_commerce_exchange_b = {
 	possible = {
 		has_tradition = trp_commerce_exchange_a
 	}
-	ai_weight = {
-		factor = 1000
+	tradition_swap = {
+		name = trp_commerce_exchange_b_authoritarian
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			OR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+		modifier = {
+			country_trade_fee = -0.05
+			slave_market_cost_mult = -0.2
+		}
+		weight = {
+			factor = 1
+		}
 	}
 }
 trp_commerce_exchange_c = {
 	modifier = {
-		job_merchant_per_pop = 0.03
+		job_merchant_per_pop = 0.02
 	}
 	possible = {
 		has_tradition = trp_commerce_exchange_b
+	}
+	tradition_swap = {
+		name = trp_commerce_exchange_c_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness  
+		}
+		modifier = {
+			job_trp_crypto_merchant_per_pop = 0.02
+		}
+		weight = {
+			factor = 1
+		}
 	}
 	on_enabled = {
 		country_event = {
@@ -203,21 +249,6 @@ trp_commerce_exchange_c = {
 		}
 		country_event = {
 			id = trp_setup_event.8
-		}
-	}
-tradition_swap = {
-		name = trp_commerce_exchange_c_hive
-		inherit_effects = no
-		inherit_icon = yes
-		inherit_name = no
-		trigger = {
-			has_ethic = ethic_gestalt_consciousness
-		}
-		modifier = {
-			job_technician_drone_per_pop = 0.03
-		}
-		weight = {
-			factor = 1
 		}
 	}
 	ai_weight = {
@@ -231,21 +262,7 @@ trp_commerce_trade_a = { ##Trade Path
 	}
 	possible = {
 		num_ascension_perks > 1
-	}
-	tradition_swap = {
-		name = trp_commerce_trade_a_hive
-		inherit_effects = no
-		inherit_icon = yes
-		inherit_name = no
-		trigger = {
-			has_ethic = ethic_gestalt_consciousness
-		}
-		modifier = {
-			country_energy_produces_mult = 0.05
-		}
-		weight = {
-			factor = 1
-		}
+		NOT = { has_ethic = ethic_gestalt_consciousness  }
 	}
 	ai_weight = {
 		factor = 10
@@ -415,21 +432,6 @@ trp_commerce_trade_b = {
 	possible = {
 		has_tradition = trp_commerce_trade_a
 	}
-		tradition_swap = {
-		name = trp_commerce_trade_b_hive
-		inherit_effects = no
-		inherit_icon = yes
-		inherit_name = no
-		trigger = {
-			has_ethic = ethic_gestalt_consciousness
-		}
-		modifier = {
-			country_energy_produces_mult = 0.10
-		}
-		weight = {
-			factor = 1
-		}
-	}
 	ai_weight = {
 		factor = 1000
 	}
@@ -447,21 +449,6 @@ trp_commerce_trade_c = {
 		}
 		country_event = {
 			id = trp_setup_event.8
-		}
-	}
-		tradition_swap = {
-		name = trp_commerce_trade_c_hive
-		inherit_effects = no
-		inherit_icon = yes
-		inherit_name = no
-		trigger = {
-			has_ethic = ethic_gestalt_consciousness
-		}
-		modifier = {
-			planet_pops_food_upkeep_mult = -0.10
-		}
-		weight = {
-			factor = 1
 		}
 	}
 	ai_weight = {
@@ -636,6 +623,22 @@ trp_commerce_security_b = {
 	possible = {
 		has_tradition = trp_commerce_security_a
 	}
+		tradition_swap = {
+		name = trp_commerce_security_b_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness  
+		}
+		modifier = {
+			shipclass_starbase_damage_mult = 0.25
+			shipclass_starbase_hull_mult = 0.25
+		}
+		weight = {
+			factor = 1
+		}
+	}
 	ai_weight = {
 		factor = 1000
 	}
@@ -646,6 +649,23 @@ trp_commerce_security_c = {
 	}
 	possible = {
 		has_tradition = trp_commerce_security_b
+	}
+	tradition_swap = {
+		name = trp_commerce_security_c_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness  
+		}
+		modifier = {
+			starbase_upgrade_cost_mult = -0.33
+			starbase_defensive_war_ship_build_speed_mult = 0.33
+			ship_home_territory_fire_rate_mult = 0.15
+		}
+		weight = {
+			factor = 1
+		}
 	}
 	on_enabled = {
 		country_event = {
@@ -666,7 +686,14 @@ trp_commerce_accumulation_a = { ##Accumulation Path
 	}
 	possible = {
 		num_ascension_perks > 1
-		NOT = { has_tradition = trp_commerce_exchange_a }
+		NOR = { 
+			has_tradition = trp_commerce_exchange_a
+			has_civic = civic_hive_terravore 
+			has_civic = civic_fanatic_purifiers 
+			has_civic = civic_hive_devouring_swarm 
+			has_civic = civic_machine_terminator 
+			has_civic = civic_inwards_perfection
+		}
 	}
 	on_enabled = {
 		if = {
@@ -726,6 +753,21 @@ trp_commerce_accumulation_b = {
 	possible = {
 		has_tradition = trp_commerce_accumulation_a
 	}
+	tradition_swap = {
+		name = trp_commerce_accumulation_b_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			##maint drone energy unlock implemented
+		}
+		weight = {
+			factor = 1
+		}
+	}
 }
 trp_commerce_accumulation_c = {
 	modifier = {
@@ -733,6 +775,21 @@ trp_commerce_accumulation_c = {
 	}
 	possible = {
 		has_tradition = trp_commerce_accumulation_b
+	}
+	tradition_swap = {
+		name = trp_commerce_accumulation_c_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness  
+		}
+		modifier = {
+			job_trp_crypto_banker_per_pop = 0.02
+		}
+		weight = {
+			factor = 1
+		}
 	}
 	on_enabled = {
 		country_event = {
@@ -748,8 +805,8 @@ trp_commerce_capability_a = { ##Capability Path
 	modifier = {
 		planet_district_generator_build_speed_mult = 0.25
 		planet_district_generator_uncapped_build_speed_mult = 0.25
-		planet_district_hab_energy_speed_mult = 0.25
-		planet_district_rw_generator_speed_mult = 0.25
+		planet_district_hab_energy_build_speed_mult = 0.25
+		planet_district_rw_generator_build_speed_mult = 0.25
 	}
 	possible = {
 		num_ascension_perks > 1
@@ -926,7 +983,6 @@ trp_commerce_capability_b = {
 trp_commerce_capability_c = {
 	modifier = {
 		##technician energy increase
-		mod_technician_energy_produces_add = 1.0
 	}
 	possible = {
 		has_tradition = trp_commerce_capability_b
@@ -951,6 +1007,18 @@ trp_commerce_enterprises_a = { ##Enterprises Path
 	possible = {
 		num_ascension_perks > 1
 	}
+	tradition_swap = {
+		name = trp_commerce_enterpises_a_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			job_maintenance_drone_add = 4
+			}
+		}
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -1111,6 +1179,22 @@ trp_commerce_enterprises_b = {
 	possible = {
 		has_tradition = trp_commerce_enterprises_a
 	}
+	tradition_swap = {
+		name = trp_commerce_enterpises_b_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			ship_colonizer_cost_mult = -0.5
+			ship_colonizer_sublight_speed_mult = 0.2
+		}
+		weight = {
+			factor = 1
+		}
+	}
 	ai_weight = {
 		factor = 1000
 	}
@@ -1121,6 +1205,21 @@ trp_commerce_enterprises_c = {
 	}
 	possible = {
 		has_tradition = trp_commerce_enterprises_b
+	}
+	tradition_swap = {
+		name = trp_commerce_enterpises_c_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			###patrol drone modifier
+		}
+		weight = {
+			factor = 1
+		}
 	}
 	on_enabled = {
 		country_event = {

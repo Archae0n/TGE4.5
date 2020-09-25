@@ -1,4 +1,4 @@
-tradition_expansion_plus = {
+tradition_expansion_plus = { #expansion
 	adoption_bonus = "trp_expansion_adopt"
 	finish_bonus = "trp_expansion_finish"
 	traditions = {

@@ -1,4 +1,4 @@
-tradition_discovery_plus = {
+tradition_discovery_plus = { ###Discovery
 	adoption_bonus = "trp_discovery_adopt"
 	finish_bonus = "trp_discovery_finish"
 	traditions = {

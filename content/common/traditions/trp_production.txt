@@ -18,6 +18,21 @@ trp_production_excavation_a = { ##Excavation Path
 	possible = {
 		num_ascension_perks > 1
 	}
+	tradition_swap = {
+		name = trp_production_excavation_a_lithoid
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_lithoid_empire = yes
+		}
+		modifier = {
+		 lith_pop_growth_speed = 0.15
+		}
+		ai_weight = {
+			factor = 1000
+	}
+}	
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -187,35 +202,76 @@ trp_production_excavation_b = {
 	}
 }
 trp_production_excavation_c = {
-	modifier = {
-		mod_miner_minerals_produces_add = 1
-		mod_crystal_miner_rare_crystals_produces_add = 1
-		##crystal miner unlock
-	}
-	possible = {
-		has_tradition = trp_production_excavation_b
-	}
-	on_enabled = {
-		country_event = {
-			id = trp_setup_event.2
-		}
-		country_event = {
-			id = trp_setup_event.8
-		}
-	}
-	ai_weight = {
-		factor = 1000
-	}
+    modifier = {
+        planet_miners_minerals_produces_add = 1
+        ##crystal miner unlock
+    }
+    possible = {
+        has_tradition = trp_production_excavation_b
+    }
+    on_enabled = {
+        country_event = {
+            id = trp_setup_event.2
+        }
+        country_event = {
+            id = trp_setup_event.8
+        }
+    }
+    tradition_swap = {
+        name = trp_production_excavation_c_gestalt ##Gestalt
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = no
+        trigger = {
+            is_gestalt = yes 
+        }
+        modifier = {
+            planet_miners_minerals_produces_add = 1
+            ##crystal miner unlock
+        }
+        possible = {
+            has_tradition = trp_production_excavation_b
+        }
+        on_enabled = {
+            country_event = {
+                id = trp_setup_event.2
+            }
+            country_event = {
+                id = trp_setup_event.8
+            }
+        }
+        weight = {
+            factor = 1
+        }
+    }
+    ai_weight = {
+        factor = 1000
+    }
 }
 ###Manufacturing Path
 trp_production_manufacturing_a = { ##Manufacturing Path
 	modifier = {
 		planet_pops_consumer_goods_upkeep_mult = -0.10
 	}
+	tradition_swap = {
+		name = trp_production_manufacturing_a_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			planet_pops_energy_upkeep_mult_mult = -0.10
+			planet_pops_food_upkeep_mult_mult = -0.10
+		}
+	}
 	possible = {
 		num_ascension_perks > 1
-		NOT = { has_tradition = trp_production_fabrication_a }
-	}
+		NOT = { 
+			has_tradition = trp_production_fabrication_a 
+		}
+	}	
 }
 trp_production_manufacturing_b = {
 	modifier = {
@@ -224,6 +280,18 @@ trp_production_manufacturing_b = {
 	possible = {
 		has_tradition = trp_production_manufacturing_a
 	}
+tradition_swap = {
+		name = trp_production_manufacturing_b_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			planet_jobs_complex_drone_produces_mult = 0.10
+		}
+	}
 }
 trp_production_manufacturing_c = {
 	modifier = {
@@ -231,6 +299,42 @@ trp_production_manufacturing_c = {
 	}
 	possible = {
 		has_tradition = trp_production_manufacturing_b
+	}
+	tradition_swap = {
+		name = trp_production_manufacturing_c_serv
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				has_valid_civic = civic_machine_servitor
+		}
+		modifier = {
+			planet_pop_artisan_drone_produces_mult = 0.20
+		}
+	}
+	tradition_swap = {
+		name = trp_production_manufacturing_c_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				is_machine_empire = yes
+		}
+		modifier = {
+			##replicator stability unlock implemented
+		}
+	}
+	tradition_swap = {
+		name = trp_production_manufacturing_c_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+		modifier = {
+			##synapse stability unlock implemented
+		}
 	}
 	on_enabled = {
 		country_event = {
@@ -245,7 +349,10 @@ trp_production_fabrication_a = { ##Fabrication Path
 	}
 	possible = {
 		num_ascension_perks > 1
-		NOT = { has_tradition = trp_production_manufacturing_a }
+		NOR = { 
+		has_tradition = trp_production_manufacturing_a 
+		has_valid_civic = civic_machine_servitor 
+		}
 	}
 	ai_weight = {
 		factor = 10
@@ -410,10 +517,22 @@ trp_production_fabrication_a = { ##Fabrication Path
 }
 trp_production_fabrication_b = {
 	modifier = {
-		mod_foundry_minerals_upkeep_mult = -0.15
+		planet_metallurgists_upkeep_mult = -0.15
 	}
 	possible = {
 		has_tradition = trp_production_fabrication_a
+	}
+	tradition_swap = {
+		name = trp_production_fabrication_b_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			planet_fabricator_upkeep_mult = -0.15
+		}
 	}
 	ai_weight = {
 		factor = 1000
@@ -422,10 +541,22 @@ trp_production_fabrication_b = {
 trp_production_fabrication_c = {
 	modifier = {
 		##foundry alloy increase
-		mod_foundry_alloys_produces_add = 0.5
 	}
 	possible = {
 		has_tradition = trp_production_fabrication_b
+	}
+	tradition_swap = {
+		name = trp_production_fabrication_c_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+			NOT = { has_valid_civic = civic_machine_servitor }
+		}
+		modifier = {
+			###fabricator alloy increase
+		}
 	}
 	on_enabled = {
 		country_event = {
@@ -439,14 +570,29 @@ trp_production_fabrication_c = {
 		factor = 1000
 	}
 }
-###Assembly Path
-trp_production_assembly_a = { ##Assembly Path
+###assembly Path
+trp_production_assembly_a = { ##assembly Path
 	modifier = {
 		pop_demotion_time_mult = -0.5
 	}
 	possible = {
 		num_ascension_perks > 1
 	}
+	tradition_swap = {
+		name = trp_production_assembly_a_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+	}
+		modifier = {
+			planet_stability_add = 5
+		}
+		ai_weight = {
+			factor = 1000
+	}
+}
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -624,6 +770,18 @@ trp_production_assembly_c = {
 	possible = {
 		has_tradition = trp_production_assembly_b
 	}
+	tradition_swap = {
+		name = trp_production_assembly_c_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			planet_jobs_menial_drone_produces_mult = 0.10
+		}
+	}
 	on_enabled = {
 		country_event = {
 			id = trp_setup_event.2
@@ -638,13 +796,31 @@ trp_production_assembly_c = {
 }
 ###Refinement Path
 trp_production_refinement_a = { ##Refinement Path
-	modifier = {
-		#building cost implemented
-	}
-	possible = {
-		num_ascension_perks > 1
-	}
-	ai_weight = {
+    modifier = {
+        #building cost implemented
+    }
+    possible = {
+        num_ascension_perks > 1
+    }
+    tradition_swap = {
+        name = trp_production_refinement_a_gestalt ##Gestalt
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = no
+        trigger = {
+            is_gestalt = yes 
+        }
+        modifier = {
+            #building cost implemented for gestalt
+        }
+        possible = {
+            num_ascension_perks > 1
+        }
+        weight = {
+            factor = 1
+        }
+    }
+    ai_weight = {
 		factor = 10
 		modifier = {
 			factor = 0
@@ -798,36 +974,83 @@ trp_production_refinement_a = { ##Refinement Path
 	}
 }
 trp_production_refinement_b = {
-	modifier = {
-		planet_chemists_upkeep_mult = -0.10
-		planet_translucer_minerals_upkeep_mult = -0.10
-		planet_refiner_upkeep_mult = -0.10
-	}
-	possible = {
-		has_tradition = trp_production_refinement_a
-	}
-	ai_weight = {
-		factor = 1000
-	}
+    modifier = {
+        planet_chemists_upkeep_mult = -0.10
+        planet_translucer_upkeep_mult = -0.10
+        planet_gas_refiner_upkeep_mult = -0.10
+    }
+    possible = {
+        has_tradition = trp_production_refinement_a
+    }
+    tradition_swap = {
+        name = trp_production_refinement_b_gestalt ##Gestalt
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = no
+        trigger = {
+            is_gestalt = yes 
+        }
+        modifier = {
+            planet_chemist_drone_upkeep_mult = -0.10
+            planet_translucer_drone_upkeep_mult = -0.10
+            planet_gas_refiner_drone_upkeep_mult = -0.10
+        }
+        possible = {
+            has_tradition = trp_production_refinement_a
+        }
+        weight = {
+            factor = 1
+        }
+    }
+
+    ai_weight = {
+        factor = 1000
+    }
 }
 trp_production_refinement_c = {
-	modifier = {
-		###resource unlock
-	}
-	possible = {
-		has_tradition = trp_production_refinement_b
-	}
-	on_enabled = {
-		country_event = {
-			id = trp_setup_event.2
-		}
-		country_event = {
-			id = trp_setup_event.8
-		}
-	}
-	ai_weight = {
-		factor = 1000
-	}
+    modifier = {
+        ###resource unlock
+    }
+    possible = {
+        has_tradition = trp_production_refinement_b
+    }
+    on_enabled = {
+        country_event = {
+            id = trp_setup_event.2
+        }
+        country_event = {
+            id = trp_setup_event.8
+        }
+    }
+    tradition_swap = {
+        name = trp_production_refinement_c_gestalt ##Gestalt
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = no
+        trigger = {
+            is_gestalt = yes 
+        }
+        modifier = {
+            ###gestalt resource unlock
+        }
+        possible = {
+            has_tradition = trp_production_refinement_a
+        }
+        on_enabled = {
+            country_event = {
+                id = trp_setup_event.2
+            }
+            country_event = {
+                id = trp_setup_event.8
+            }
+        }
+        weight = {
+            factor = 1
+        }
+    }
+    ai_weight = {
+        factor = 1000
+    }
 }
 ###Agriculture Path
 trp_production_agriculture_a = { ##Agriculture Path
@@ -838,13 +1061,27 @@ trp_production_agriculture_a = { ##Agriculture Path
 	possible = {
 		num_ascension_perks > 1
 	}
+	tradition_swap = { 
+		name = trp_production_agriculture_a_lithoid
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_lithoid_empire = yes
+		}
+		modifier = { 
+		planet_district_mining_build_speed_mult = 0.25
+		planet_district_hab_mining_build_speed_mult = 0.25
+		planet_district_mining_uncapped_build_speed_mult = 0.25
+		}
+	}
 	ai_weight = {
 		factor = 10
 		modifier = {
 			factor = 4
 			has_deficit = food
 		}
-		modifier = {
+	modifier = {
 			factor = 0
 			OR = {
 				AND = {
@@ -997,22 +1234,30 @@ trp_production_agriculture_a = { ##Agriculture Path
 }
 trp_production_agriculture_b = {
 	modifier = {
-		planet_pops_organics_food_upkeep_mult = -0.10
+		planet_pops_food_upkeep_mult = -0.10
 	}
 	possible = {
 		has_tradition = trp_production_agriculture_a
 	}
-	ai_weight = {
-		factor = 1000
+	tradition_swap = {
+		name = trp_production_agriculture_b_lithoid
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_lithoid_empire = yes
+		}
+	modifier = { 
+		planet_pops_minerals_upkeep_mult = -0.1
+	}
+	weight = {
+			factor = 1
+		}
 	}
 }
 trp_production_agriculture_c = {
 	modifier = {
 		##farmers food increase
-		mod_farmer_food_produces_add = 1.0
-	}
-	possible = {
-		has_tradition = trp_production_agriculture_b
 	}
 	on_enabled = {
 		country_event = {
@@ -1022,7 +1267,22 @@ trp_production_agriculture_c = {
 			id = trp_setup_event.8
 		}
 	}
-	ai_weight = {
-		factor = 1000
+		possible = {
+			has_tradition = trp_production_agriculture_b
+		}
+	tradition_swap = {
+		name = trp_production_agriculture_c_lithoid
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_lithoid_empire = yes
+		}
+		modifier = { 
+			##miners mineral increase
+		}
+			weight = {
+				factor = 1
+		}
 	}
 }

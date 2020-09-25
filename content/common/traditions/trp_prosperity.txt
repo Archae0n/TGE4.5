@@ -23,7 +23,10 @@ trp_prosperity_aesthetics_a = { ##Aesthetics Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
+			OR = {
 			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist
+			}
 		}
 		modifier = {
 			planet_building_temple_build_speed_mult = 0.5
@@ -38,10 +41,12 @@ trp_prosperity_aesthetics_a = { ##Aesthetics Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			NOT = { has_ethic = ethic_spiritualist }
-			NOT = { has_ethic = ethic_fanatic_spiritualist }
 			has_authority = auth_corporate
-		}
+			NOR = { 
+				has_ethic = ethic_spiritualist 
+				has_ethic = ethic_fanatic_spiritualist 
+				}
+			}
 		modifier = {
 			planet_building_corporate_monument_build_speed_mult = 0.5
 		}
@@ -50,30 +55,32 @@ trp_prosperity_aesthetics_a = { ##Aesthetics Path
 		}
 	}
 	tradition_swap = {
-		name = trp_prosperity_aesthetics_a_spiritualist
+		name = trp_prosperity_aesthetics_a_machine
 		inherit_effects = no
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			has_ethic = ethic_spiritualist
-		}
+				is_machine_empire = yes
+			}
 		modifier = {
-			planet_building_temple_build_speed_mult = 0.5
+			planet_building_simulation_1_build_speed_mult = 0.5
 		}
 		weight = {
 			factor = 1
 		}
 	}
 	tradition_swap = {
-		name = trp_prosperity_aesthetics_a_fanatic_spiritualist
+		name = trp_prosperity_aesthetics_a_hive
 		inherit_effects = no
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			has_ethic = ethic_fanatic_spiritualist
-		}
+			OR = {
+				is_hive_empire = yes
+				}
+			}
 		modifier = {
-			planet_building_temple_build_speed_mult = 0.5
+			planet_building_hive_node_build_speed_mult = 0.5
 		}
 		weight = {
 			factor = 1
@@ -247,6 +254,45 @@ trp_prosperity_aesthetics_b = {
 	possible = {
 		has_tradition = trp_prosperity_aesthetics_a
 	}
+		tradition_swap = {
+		name = trp_prosperity_aesthetics_b_spiritualist
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			OR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+		modifier = {
+			job_priests_per_pop = 0.04
+		}
+	}
+		tradition_swap = {
+		name = trp_prosperity_aesthetics_b_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+			}
+		modifier = {
+			job_evaluator_per_pop = 0.04
+		}
+	}
+		tradition_swap = {
+		name = trp_prosperity_aesthetics_b_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+			}
+		modifier = {
+			job_synapse_drone_per_pop = 0.04
+		}
+	}
 	ai_weight = {
 		factor = 1000
 	}
@@ -257,6 +303,30 @@ trp_prosperity_aesthetics_c = {
 	}
 	possible = {
 		has_tradition = trp_prosperity_aesthetics_b
+	}
+	tradition_swap = {
+		name = trp_prosperity_aesthetics_c_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+			}
+		modifier = {
+			###synapse unlock
+		}
+	}
+	tradition_swap = {
+		name = trp_prosperity_aesthetics_c_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+			}
+		modifier = {
+			###evaluator unlock
+		}
 	}
 	ai_weight = {
 		factor = 1000
@@ -270,15 +340,17 @@ trp_prosperity_aesthetics_c = {
 		}
 	}
 }
-###Isolation Path
+###Isolation Path 
 trp_prosperity_tranquillity_a = { ##Isolation Path
 	modifier = {
 		#enforcer crime unlock implemented
 	}
 	possible = {
 		num_ascension_perks > 1
-		NOT = { has_tradition = trp_prosperity_control_a }
-		NOT = { has_ethic = ethic_fanatic_xenophile }
+		NOR = {
+			has_tradition = trp_prosperity_control_a 
+			has_ethic = ethic_fanatic_xenophile 
+		}
 	}
 }
 trp_prosperity_tranquillity_b = {
@@ -287,6 +359,36 @@ trp_prosperity_tranquillity_b = {
 	}
 	possible = {
 		has_tradition = trp_prosperity_tranquillity_a
+	}
+	tradition_swap = {
+		name = trp_prosperity_tranquillity_b_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness 
+			NOT = {
+				has_valid_civic = civic_machine_servitor
+			}
+		}
+		modifier = {
+			pop_amenities_usage_no_happiness_mult = -0.05
+			planet_crime_no_happiness_mult = -0.5
+		}
+	}
+tradition_swap = {
+		name = trp_prosperity_tranquillity_b_servitor
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				has_valid_civic = civic_machine_servitor
+			}
+		modifier = {
+			pop_happiness_mult = 0.10
+			pop_amenities_usage_no_happiness_mult = -0.05
+			planet_crime_no_happiness_mult = -0.5
+		}
 	}
 }
 trp_prosperity_tranquillity_c = {
@@ -306,15 +408,19 @@ trp_prosperity_tranquillity_c = {
 trp_prosperity_control_a = { ##Cooperation Path
 	modifier = {
 		envoy_improve_relations_mult = 0.25
+		not = { has_ethic = ethic_gestalt_consciousness }
 	}
 	possible = {
 		num_ascension_perks > 1
-		NOT = { has_tradition = trp_prosperity_tranquillity_a }
-		NOT = { has_ethic = ethic_fanatic_xenophobe }
-		NOT = { has_civic = civic_fanatic_purifiers }
-		NOT = { has_civic = civic_hive_devouring_swarm }
-		NOT = { has_civic = civic_machine_terminator }
-		NOT = { has_civic = civic_inwards_perfection }
+		NOR = { 
+			has_tradition = trp_prosperity_tranquillity_a 
+			has_civic = civic_terravore
+			has_ethic = ethic_fanatic_xenophobe 
+			has_civic = civic_fanatic_purifiers 
+			has_civic = civic_hive_devouring_swarm 
+			has_civic = civic_machine_terminator 
+			has_civic = civic_inwards_perfection 
+		}
 	}
 	ai_weight = {
 		factor = 10
@@ -517,9 +623,11 @@ trp_prosperity_renaissance_a = { ##Renaissance Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			NOT = { has_ethic = ethic_spiritualist }
-			NOT = { has_ethic = ethic_fanatic_spiritualist }
 			has_authority = auth_corporate
+			NOR = { 
+				has_ethic = ethic_spiritualist 
+				has_ethic = ethic_fanatic_spiritualist 
+			}
 		}
 		modifier = {
 			planet_manager_unity_produces_mult = 0.10
@@ -534,8 +642,11 @@ trp_prosperity_renaissance_a = { ##Renaissance Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			has_ethic = ethic_spiritualist
+			OR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
 		}
+	}
 		modifier = {
 			planet_priest_unity_produces_mult = 0.10
 		}
@@ -544,18 +655,19 @@ trp_prosperity_renaissance_a = { ##Renaissance Path
 		}
 	}
 	tradition_swap = {
-		name = trp_prosperity_renaissance_a_fanatic_spiritualist
+		name = trp_prosperity_renaissance_a_drone
 		inherit_effects = no
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			has_ethic = ethic_fanatic_spiritualist
+			NOT = { valid_civic = civic_machine_servitor }
+			OR = {
+				has_ethic = ethic_gestalt_consciousness 
 		}
+	}
 		modifier = {
-			planet_priest_unity_produces_mult = 0.10
-		}
-		weight = {
-			factor = 1
+			planet_evaluator_unity_produces_mult = 0.10
+			planet_synapse_unity_produces_mult = 0.10
 		}
 	}
 	ai_weight = {
@@ -734,6 +846,31 @@ trp_prosperity_renaissance_b = {
 	possible = {
 		has_tradition = trp_prosperity_renaissance_a
 	}
+	tradition_swap = {
+		name = trp_prosperity_renaissance_b_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				has_ethic = ethic_gestalt_consciousness 
+			NOT = { valid_civic = civic_machine_servitor }
+	}
+		modifier = {
+			#metalurgy drone unity implemented
+		}
+	}
+	tradition_swap = {
+		name = trp_prosperity_renaissance_b_servitor
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			valid_civic = civic_machine_servitor 
+	}
+		modifier = {
+			#artisan drone unity implemented
+		}
+	}
 	ai_weight = {
 		factor = 1000
 	}
@@ -744,6 +881,43 @@ trp_prosperity_renaissance_c = {
 	}
 	possible = {
 		has_tradition = trp_prosperity_renaissance_b
+	}
+	tradition_swap = {
+		name = trp_prosperity_renaissance_c_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				is_machine_empire = yes
+			NOT = { valid_civic = civic_machine_servitor }
+			}
+		modifier = {
+			#eval alloys
+		}
+	}
+	tradition_swap = {
+		name = trp_prosperity_renaissance_c_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				is_hive_empire = yes
+			}
+		modifier = {
+			#synapse_drone alloys
+		}
+	}
+	tradition_swap = {
+		name = trp_prosperity_renaissance_c_servitor
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				valid_civic = civic_machine_servitor 
+			}
+		modifier = {
+			#tronphy alloys
+		}
 	}
 	ai_weight = {
 		factor = 1000
@@ -764,6 +938,8 @@ trp_prosperity_alteration_a = { ##Metropolis Path
 		planet_district_hab_housing_build_speed_mult = 0.25
 		planet_district_arcology_housing_build_speed_mult = 0.25
 		planet_district_rw_city_build_speed_mult = 0.25
+		planet_district_nexus_build_speed_mult = 0.25
+		planet_district_hive_build_speed_mult = 0.25
 	}
 	possible = {
 		num_ascension_perks > 1
@@ -963,6 +1139,43 @@ trp_prosperity_recreation_a = { ##Recreation Path
 	possible = {
 		num_ascension_perks > 1
 	}
+	tradition_swap = {
+		name = trp_prosperity_recreation_a_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				is_machine_empire = yes
+			NOT = { valid_civic = civic_machine_servitor }
+			}
+		modifier = {
+			#build reduction
+		}
+	}
+	tradition_swap = {
+		name = trp_prosperity_recreation_a_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				is_hive_empire = yes
+			}
+		modifier = {
+			#synapse build reduction
+		}
+	}
+	tradition_swap = {
+		name = trp_prosperity_recreation_a_servitor
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				valid_civic = civic_machine_servitor
+			}
+		modifier = {
+			#build reduction sancutary
+		}
+	}
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -1138,8 +1351,17 @@ trp_prosperity_recreation_b = {
 		modifier = {
 			##naval capacity increase implemented
 		}
-		weight = {
-			factor = 1
+	}
+	tradition_swap = {
+		name = trp_prosperity_recreation_b_drone
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				has_ethic = ethic_gestalt_consciousness 
+		}
+		modifier = {
+			###amenities
 		}
 	}
 	ai_weight = {
@@ -1150,10 +1372,41 @@ trp_prosperity_recreation_c = {
 	modifier = {
 		#pop growth from medicals implemented
 		#job_hunter_gatherer_add = 1
+		pop_growth_speed_mult = 0.25
 	}
 	possible = {
 		has_tradition = trp_prosperity_recreation_b
 	}
+	tradition_swap = {
+		name = trp_prosperity_recreation_c_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+		modifier = {
+			pop_growth_speed_mult = 0.15
+		weight = {
+			factor = 1
+		}
+	}
+}
+	tradition_swap = {
+		name = trp_prosperity_recreation_c_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+		modifier = {
+			###assembler
+		weight = {
+			factor = 1
+		}
+	}
+}
 	ai_weight = {
 		factor = 1000
 	}
