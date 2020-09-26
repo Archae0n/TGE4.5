@@ -1,0 +1,59 @@
+namespace = synth
+
+# Ruler Change
+country_event = {
+	id = synth.150
+	title = synth.150.name
+	desc = synth.150.desc
+	picture = GFX_evt_throne_room
+	show_sound = event_default
+	trackable = no
+	
+	is_triggered_only = yes
+
+	immediate = {
+		save_event_target_as = new_robotic_species
+	}
+
+	option = {
+		name = "synth.150.a"
+		trigger = { NOT = { has_authority = auth_imperial } }
+		random_owned_leader = {
+			limit = { leader_class = ruler}
+			change_species = event_target:new_robotic_species
+			hidden_effect = {
+				change_leader_portrait = species
+
+				if = {
+					limit = { has_trait = leader_trait_ruler_cyborg }
+					add_trait = leader_trait_ruler_synthetic
+					add_ruler_trait = leader_trait_ruler_synthetic
+					remove_trait = leader_trait_ruler_cyborg
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "synth.150.b"
+		trigger = { has_authority = auth_imperial }
+		random_owned_leader = {
+			limit = { leader_class = ruler}
+			change_species = event_target:new_robotic_species
+			hidden_effect = {
+				change_leader_portrait = species
+
+				if = {
+					limit = { has_trait = leader_trait_ruler_cyborg }
+					add_trait = leader_trait_ruler_synthetic
+					add_ruler_trait = leader_trait_ruler_synthetic
+					remove_trait = leader_trait_ruler_cyborg
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "synth.150.c"
+	}
+}
