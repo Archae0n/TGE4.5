@@ -2548,7 +2548,7 @@ leader_enhancement = {
 enslavement_ratio_policy = {
 
 	potential = {
-		always = yes
+		NOT = { has_ethic = ethic_gestalt_consciousness }
 	}
 
 	option = {
@@ -2565,8 +2565,20 @@ enslavement_ratio_policy = {
 		
 		modifier = {			
 			country_pop_enslaved_mult = 0.00
-			}
+		}
 
+		AI_weight = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_ai_personality_behaviour = slaver
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_elitist
+					has_ethic = ethic_fanatic_elitist
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -2579,6 +2591,7 @@ enslavement_ratio_policy = {
 		
 		valid = {
 			allows_slavery = yes
+			NOT = { has_ethic = ethic_gestalt_consciousness }
 			NOR = {
 				has_ethic = "ethic_fanatic_egalitarian"
 				has_ethic = "ethic_fanatic_pluralist"
@@ -2587,8 +2600,20 @@ enslavement_ratio_policy = {
 		
 		modifier = {			
 			country_pop_enslaved_mult = 0.10
-			}
+		}
 
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 5
+				OR = {
+					has_ai_personality_behaviour = slaver
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_elitist
+					has_ethic = ethic_fanatic_elitist
+				}
+			}
+		}
 	}
 
 	option = {
@@ -2608,10 +2633,22 @@ enslavement_ratio_policy = {
 			allows_slavery = yes
 		}			
 		
-		modifier = {			
+		modifier = {		
 			country_pop_enslaved_mult = 0.20
-			}
+		}
 
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 5
+				OR = {
+					has_ai_personality_behaviour = slaver
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_elitist
+					has_ethic = ethic_fanatic_elitist
+				}
+			}
+		}
 	}
 
 	option = {
@@ -2633,8 +2670,20 @@ enslavement_ratio_policy = {
 		
 		modifier = {			
 			country_pop_enslaved_mult = 0.30
-			}
+		}
 
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 5
+				OR = {
+					has_ai_personality_behaviour = slaver
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_elitist
+					has_ethic = ethic_fanatic_elitist
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -2656,8 +2705,20 @@ enslavement_ratio_policy = {
 		
 		modifier = {			
 			country_pop_enslaved_mult = 0.40
-			}
+		}
 
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 5
+				OR = {
+					has_ai_personality_behaviour = slaver
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_elitist
+					has_ethic = ethic_fanatic_elitist
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -2679,8 +2740,20 @@ enslavement_ratio_policy = {
 		
 		modifier = {			
 			country_pop_enslaved_mult = 0.50
-			}
+		}
 
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 5
+				OR = {
+					has_ai_personality_behaviour = slaver
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_elitist
+					has_ethic = ethic_fanatic_elitist
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -2698,8 +2771,20 @@ enslavement_ratio_policy = {
 		
 		modifier = {			
 			country_pop_enslaved_mult = 0.60
-			}
+		}
 
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 5
+				OR = {
+					has_ai_personality_behaviour = slaver
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_elitist
+					has_ethic = ethic_fanatic_elitist
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -2717,8 +2802,19 @@ enslavement_ratio_policy = {
 		
 		modifier = {			
 			country_pop_enslaved_mult = 0.70
-			}
+		}
 
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 5
+				OR = {
+					has_ai_personality_behaviour = slaver
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_elitist
+					has_ethic = ethic_fanatic_elitist
+				}
+			}
+		}
 	}	
-	
-	}
+}
