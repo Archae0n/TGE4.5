@@ -13,8 +13,26 @@ planet_event = {
 
 		add_building = building_robot_assembly_plant
 	
-		remove_district = district_farming
-		remove_district = district_farming
+		if = {
+			limit = { is_lithoid_empire }
+			remove_district = district_mining
+			remove_district = district_mining
+
+			remove_deposit = d_rich_mountain
+
+			remove_deposit = d_hibernating_lithoids
+			remove_deposit = d_hibernating_lithoids
+			remove_deposit = d_hibernating_lithoids
+			remove_deposit = d_hibernating_lithoids
+
+			owner = { add_resource = { minerals = -200 } }
+		}
+		else = {
+			remove_district = district_farming
+			remove_district = district_farming
+
+			owner = { add_resource = { food = -200 } }
+		}
 
 		add_district = district_generator
 		add_district = district_generator
@@ -38,6 +56,7 @@ planet_event = {
 			}
 #make robot race
             		create_species = {
+				is_mod = yes
                 		name = this
                	 		namelist = this
                 		plural = this
