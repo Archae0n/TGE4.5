@@ -71,6 +71,7 @@ colonist = {
 		produces = {
 			trigger = {
 				is_lithoid = no
+				is_mechanical_empire = no
 			}
 			food = 1
 		}
