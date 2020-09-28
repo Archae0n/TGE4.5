@@ -71,13 +71,14 @@ colonist = {
 		produces = {
 			trigger = {
 				is_lithoid = no
-				is_mechanical_empire = no
+				NOT = { has_trait = trait_mechanical }
 			}
 			food = 1
 		}
 		produces = {
 			trigger = {
 				is_lithoid = yes
+				NOT = { has_trait = trait_mechanical }
 			}
 			minerals = 1
 		}
