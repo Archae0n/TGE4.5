@@ -1710,7 +1710,7 @@ roboticist = {
 
 
 		upkeep = {
-			minerals = 6
+			alloys = 2
 		}
 	}
 
