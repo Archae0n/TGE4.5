@@ -545,7 +545,7 @@
  trp_discovery_finish_effect:0 "§EFinisher Effect:§! Completing all Discovery Paths will increase §YResearch Speed§! by §G+25%§!."
  ###Exploration Path
  trp_discovery_exploration_a:0 "To Boldly Go"
- trp_discovery_exploration_a_desc:0 "§YScience Ship Sublight Speed§! increased by §G20%§! and §§YSScien Ship§! cost decreased by §G20%§!."
+ trp_discovery_exploration_a_desc:0 "§YScience Ship Sublight Speed§! increased by §G20%§! and §YSSciene Ship§! cost decreased by §G20%§!."
  trp_discovery_exploration_a_delayed:0 "§EExploration Path§!\nAs we once mapped the surface of our homeworld, we must now brave the stars above us.\n\n§RMutually Exclusive§! with §ECuriosity Path§!"
  trp_discovery_exploration_b:0 "Quest for the New World"
  trp_discovery_exploration_b_desc:0 "§HUnlocks Edict:§! Map the Stars\n§YScience Ship Disengagement Chance§! increased by §G+100%§!."
