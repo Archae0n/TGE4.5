@@ -11,7 +11,7 @@ trp_diplomacy_finish = {
 ###Federation Path
 trp_diplomacy_federation_a = {
 	modifier = {
-		country_trust_cap_add = 50 
+		diplomacy_influence_upkeep_mult = -0.25
 	}
 	possible = {
 		NOR = { 
@@ -428,7 +428,7 @@ trp_diplomacy_ideology_a = { ###Ideology Path
 }
 trp_diplomacy_ideology_b = {
 	modifier = {
-		country_unity_produces_mult = 0.10
+		country_unity_produces_mult = 0.20
 	}
 	possible = {
 		has_tradition = trp_diplomacy_ideology_a
@@ -439,7 +439,7 @@ trp_diplomacy_ideology_b = {
 }
 trp_diplomacy_ideology_c = {
 	modifier = {
-		empire_size_pops_mult = -0.20
+		empire_size_pops_mult = -0.25
 	}
 	possible = {
 		has_tradition = trp_diplomacy_ideology_b
@@ -677,7 +677,7 @@ trp_diplomacy_association_a = { ###Association Path
 }
 trp_diplomacy_association_b = {
 	modifier = {
-		country_trust_growth = 0.2
+		diplomacy_influence_upkeep_mult = -0.25
 	}
 	possible = {
 		has_tradition = trp_diplomacy_association_a
@@ -733,7 +733,7 @@ trp_diplomacy_association_b = {
 }
 trp_diplomacy_association_c = {
 	modifier = {
-		diplomacy_upkeep_mult = -0.5
+		envoys_add = 1
 	}
 	possible = {
 		has_tradition = trp_diplomacy_association_b

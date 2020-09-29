@@ -26,7 +26,14 @@ clerk = {
 
 	resources = { ###Traditions+
 		category = planet_clerk
-		
+		produces = {
+			trigger = {
+				owner = {
+					has_tradition = { trp_commerce_trade_c }
+				}
+			}
+			consumer_goods = 0.25
+		}		
 	}
 
 	triggered_planet_modifier = {
