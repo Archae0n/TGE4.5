@@ -78,7 +78,6 @@ colonist = {
 		produces = {
 			trigger = {
 				is_lithoid = yes
-				NOT = { has_trait = trait_mechanical }
 			}
 			minerals = 1
 		}
@@ -468,13 +467,6 @@ foundry = {
 				owner = { is_green = yes }
 			}
 			minerals = -1
-		}
-				produces = {
-		   	trigger = {
-				exists = owner
-				owner = { has_tradition = { trp_production_fabrication_c } }
-			}
-			alloys = 0.5
 		}
 	}
 
