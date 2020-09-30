@@ -2262,8 +2262,7 @@ civic_cyber_dictatorship = {
 #Industrial Mechanization
 civic_industrial_economy = {
 	potential = {
-		always = no
-		#ethics = { NOT = {  value = ethic_gestalt_consciousness } }
+		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
 	}
 
 	possible = {

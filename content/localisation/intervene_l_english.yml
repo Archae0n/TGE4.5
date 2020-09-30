@@ -55,26 +55,3 @@
   
   big_private_loan:0 "Excessive Private Sector Loan"
   big_private_loan_desc:0 "The Private Sector ALWAYS collects its dues, especially when the public eye is watching"
-  
-  policy_enslavement_ratio_policy:0 "Pop Enslavement Ratio"
-  policy_enslavement_ratio_policy_desc:0 "Determines how much of your citizen species population is enslaved. \nDoes not apply to slave species (as they are 100% enslaved anyways). \n\nLower levels of enslavement require Elitism or Authoritarianism, higher levels require either Slaver Guilds, Caste System or Slaving Despots (the civics that initially had pop enslavement ratios)"
-  ratio_no_enslavement:0 "No Enslavement"
-  ratio_enslavement_1:0 "10% Enslavement Ratio"
-  ratio_enslavement_2:0 "20% Enslavement Ratio"
-  ratio_enslavement_3:0 "30% Enslavement Ratio"  
-  ratio_enslavement_4:0 "40% Enslavement Ratio"
-  ratio_enslavement_5:0 "50% Enslavement Ratio"
-  ratio_enslavement_6:0 "60% Enslavement Ratio"
-  ratio_enslavement_7:0 "70% Enslavement Ratio"  
-  
-  ratio_no_enslavement_desc:0 "No Enslavement"
-  ratio_enslavement_1_desc:0 "10% Enslavement Ratio"
-  ratio_enslavement_2_desc:0 "20% Enslavement Ratio"
-  ratio_enslavement_3_desc:0 "30% Enslavement Ratio"  
-  ratio_enslavement_4_desc:0 "40% Enslavement Ratio"
-  ratio_enslavement_5_desc:0 "50% Enslavement Ratio"
-  ratio_enslavement_6_desc:0 "60% Enslavement Ratio"
-  ratio_enslavement_7_desc:0 "70% Enslavement Ratio"    
-  
-  
-  
