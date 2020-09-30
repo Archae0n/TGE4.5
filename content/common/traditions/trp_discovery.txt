@@ -230,7 +230,7 @@ trp_discovery_curiosity_b = {
 }
 trp_discovery_curiosity_c = {
 	modifier = {
-		planet_researchers_upkeep_mult = -0.30
+		planet_researchers_upkeep_mult = -0.20
 	}
 	possible = {
 		has_tradition = trp_discovery_curiosity_b
@@ -244,7 +244,7 @@ trp_discovery_curiosity_c = {
 			is_machine_empire = yes 
 	}
 		modifier = {
-		planet_calculator_upkeep_mult = -0.30
+		planet_calculator_upkeep_mult = -0.15
 		}
 	}
 	tradition_swap = {
@@ -256,7 +256,7 @@ trp_discovery_curiosity_c = {
 			is_hive_empire = yes
 	}
 		modifier = {
-		planet_brain_drone_upkeep_mult = -0.30
+		planet_brain_drone_upkeep_mult = -0.15
 		}
 	}
 	on_enabled = {
@@ -440,7 +440,7 @@ trp_discovery_academy_a = { ###Academy Path
 }
 trp_discovery_academy_b = {
 	modifier = {
-		station_researchers_produces_mult = 0.20
+		station_researchers_produces_mult = 0.40
 	}
 	possible = {
 		has_tradition = trp_discovery_academy_a

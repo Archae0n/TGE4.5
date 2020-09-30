@@ -12,7 +12,7 @@ trp_commerce_finish = {
 ###Exchange Path
 trp_commerce_exchange_a = { ##Exchange Path
 	modifier = {
-		country_trade_attractiveness = 0.5
+		trade_value_mult = 0.1
 	}
 	possible = {
 		num_ascension_perks > 1		
@@ -214,7 +214,7 @@ trp_commerce_exchange_b = {
 		}
 		modifier = {
 			country_trade_fee = -0.05
-			slave_market_cost_mult = -0.2
+			slave_market_cost_mult = -0.25
 		}
 		weight = {
 			factor = 1
@@ -660,8 +660,8 @@ trp_commerce_security_c = {
 		}
 		modifier = {
 			starbase_upgrade_cost_mult = -0.33
-			starbase_defensive_war_ship_build_speed_mult = 0.33
-			ship_home_territory_fire_rate_mult = 0.15
+			starbase_defensive_war_ship_build_speed_mult = 0.15
+			ship_home_territory_fire_rate_mult = 0.05
 		}
 		weight = {
 			factor = 1

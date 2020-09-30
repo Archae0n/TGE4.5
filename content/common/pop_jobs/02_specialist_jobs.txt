@@ -469,6 +469,13 @@ foundry = {
 			}
 			minerals = -1
 		}
+				produces = {
+		   	trigger = {
+				exists = owner
+				owner = { has_tradition = { trp_production_fabrication_c } }
+			}
+			alloys = 0.5
+		}
 	}
 
 	weight = {
