@@ -246,6 +246,7 @@ origin_shattered_ring = {
 	starting_colony = pc_ringworld_habitable
 	initializers = { shattered_ring_start }
 	max_once_global = yes
+	habitability_preference = pc_habitat
 
 	playable = {
 		host_has_dlc = Federations
