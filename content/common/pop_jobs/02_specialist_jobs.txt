@@ -1373,7 +1373,7 @@ bureaucrat = {
 	}
 
 	country_modifier = {
-		country_admin_cap_add = 5
+		country_admin_cap_add = 10
 	}
 
 	triggered_country_modifier = {
