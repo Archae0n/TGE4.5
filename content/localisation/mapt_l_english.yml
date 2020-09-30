@@ -13,3 +13,6 @@ mapt_start.2:0 "Increase Ascension Perks"
 mapt_start.2.desc:0 "This event allows you to increase the max ascnesion perks you can take to 18 if you chose that option before. If you chose 40 this doesn't do anything.\nThis wont immediatly unlock more slots they will need to be researched in the society tree."
 
 mapt_start.2.a:0 "40 Ascension Perks"
+
+edict_diplo_override:0 "Set Diplomatic Weight to 0"
+edict_diplo_override_desc:0 "Set your diplomatic weight to 0. Used for manual council member voting. Does not take up an edict slot. Also used by the AI in multiplayer games."

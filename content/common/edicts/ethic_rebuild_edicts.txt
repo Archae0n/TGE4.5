@@ -146,7 +146,47 @@ nutritional_plenitude = {
 	}
 }
 
+diplo_override = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 0
 
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = diplo_override }			
+			}
+			influence = 0
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = diplo_override
+				is_ai = no
+			}
+			influence = 0
+		}
+		cost = { #Deactivation Cost but for AI
+			trigger = {
+				has_edict = diplo_override
+				is_ai = yes
+			}
+			influence = 10000
+		}		
+	}
+
+	modifier = {
+		diplo_weight_mult = -2
+	}
+
+	potential = {
+		is_multiplayer = yes
+	}
+
+	ai_weight = {
+		weight = 10000
+	}
+}
 
 
 

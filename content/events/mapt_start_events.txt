@@ -22,10 +22,10 @@ event = {
 	option = {
 		name = mapt_start.1.a
 	}
-	option = {
-		name = mapt_start.1.b
-		set_global_flag = mapt_less_aps
-	}
+	#option = {
+	#	name = mapt_start.1.b
+	#	set_global_flag = mapt_less_aps
+	#}
 }
 
 event = {
@@ -42,9 +42,12 @@ event = {
 	trigger = {
 		is_ai = no
 	}
-	
+
 	option = {
-		name = mapt_start.2.a
-		remove_global_flag = mapt_less_aps
-	}
+		name = mapt_start.1.a
+	}	
+	#option = {
+	#	name = mapt_start.2.a
+	#	remove_global_flag = mapt_less_aps
+	#}
 }

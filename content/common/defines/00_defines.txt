@@ -782,19 +782,19 @@
 		INSULT_COOLDOWN_DAYS				= 30 	# How often can you send insults?
 		AUTO_DECLINE_DIPLOMACY_DAYS			= 180	# Number of days after which diplomatic action will automatically be declined
 
-		FEDERATION_PERK_EXPERATION_MONTHS	= 3		#Month for picked perk to expire if level lost
-		FEDERATION_BASE_ETHICS				= 3		# count of unique ethics not penalized for federation cohesion
+		FEDERATION_PERK_EXPERATION_MONTHS	= 12	#Month for picked perk to expire if level lost
+		FEDERATION_BASE_ETHICS				= 5		# count of unique ethics not penalized for federation cohesion
 		FEDERATION_ENVOY_BASE_EFFECT		= 1.0	# envoys base effect on cohesion
 		FEDERATION_MEMBERS_PENALTY			= -0.25	# penalty for each federation member
 		FEDERATION_NO_MEMBERS_PENALTY		= -100.0	# penalty if the federation has no members
 		FEDERATION_ETHICS_PENALTY			= -0.15	# Federation cohesion penalty for extra unique ethics
 		FEDERATION_OPPOSING_ETHICS_PENALTY	= -0.5	# Federation cohesion for opposing ethics
-		FEDERATION_BASE_COHESION			= 5.0 	# base federation cohesion
+		FEDERATION_BASE_COHESION			= 10.0 	# base federation cohesion
 		FEDERATION_COHESION_RANGE			= 100	# max cohesion range
-		FEDERATION_COHESION_TO_XP			= 0.1	# cohesion to xp conversion
+		FEDERATION_COHESION_TO_XP			= 1.0	# cohesion to xp conversion
 		FEDERATION_MAX_FLEET_SIZE			= 0
-		FEDERATION_JOIN_COHESION_PENALTY	= -100	# Cohesion loss every time a new member is added to the federation (after the first two)
-		FEDERATION_LEAVE_COHESION_PENALTY	= -100  # Cohesion loss every time a member leaves the federation
+		FEDERATION_JOIN_COHESION_PENALTY	= -25	# Cohesion loss every time a new member is added to the federation (after the first two)
+		FEDERATION_LEAVE_COHESION_PENALTY	= -25  # Cohesion loss every time a member leaves the federation
 		FEDERATION_SWITCH_COHESION_PENALTY	= -50	# Cohesion loss when you switch federation type
 
 		ENVOY_IMPROVE_RELATION_BASE			= 1.0	# Monthly effect on opinion when an envoy is improving relations
