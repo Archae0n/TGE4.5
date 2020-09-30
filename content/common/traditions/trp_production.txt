@@ -192,7 +192,7 @@ trp_production_excavation_a = { ##Excavation Path
 }
 trp_production_excavation_b = {
 	modifier = {
-		station_gatherers_produces_mult = 0.20
+		station_gatherers_produces_mult = 0.10
 	}
 	possible = {
 		has_tradition = trp_production_excavation_a

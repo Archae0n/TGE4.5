@@ -443,7 +443,7 @@
  trp_diplomacy_finish_effect:0 "§EFinisher Effect:§! Completing all Statecraft Paths will increase £influence£ §YMonthly Influence§! by §G+2§!."
  ####Federation Path
  trp_diplomacy_federation_a:0 "Convincing Nature"
- trp_diplomacy_federation_a_desc:0 "Diplomatic Upkeep reduced by 25%!.\n\n§EPath Requirements:§!\nEmpire is allowed to form §YFederations§!"
+ trp_diplomacy_federation_a_desc:0 "§YTrust Cap§! increased by §G+50§!.\n\n§EPath Requirements:§!\nEmpire is allowed to form §YFederations§!"
  trp_diplomacy_federation_a_delayed:0 "§EFederation Path§!\nWe have always been honorable if not reliable in our dealings with each other. Let us convince those far away that we are still to this day.\n\n§RMutually Exclusive§! with §EGovernment Path§!"
  trp_diplomacy_federation_b:0 "Diplomatic Affinity"
  trp_diplomacy_federation_b_desc:0 "§Y$MOD_COUNTRY_ENVOYS_ADD$§! increased by §G+1§!."
@@ -463,17 +463,17 @@
  trp_diplomacy_ideology_a_egalitarian_desc:0 "§EModified By:§! §HEgalitarian§! Ethic\n§EPrevious Effects:§!\n§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! increased by §G+25%§!.\n§ECurrent Effects:§!\n§YEthics Shift Chance§! increased by §G+25%§!."
  trp_diplomacy_ideology_a_egalitarian_delayed:0 "§EIdeology Path§!\nWe shall continue to build a society where the individual opinion is the cornerstone of something greater."
  trp_diplomacy_ideology_b:0 "Undivided Cause"
- trp_diplomacy_ideology_b_desc:0 "£unity£ §YMonthly Unity§! increased by §G+20%§!."
+ trp_diplomacy_ideology_b_desc:0 "£unity£ §YMonthly Unity§! increased by §G+10%§!."
  trp_diplomacy_ideology_b_delayed:0 "§EIdeology Path§!\nOur purpose has always been clear, the destination never-changing."
  trp_diplomacy_ideology_c:0 "Unanimous Thinking"
- trp_diplomacy_ideology_c_desc:0 "§YEmpire Sprawl§! from £pops£ Pops reduced by §G25%§!."
+ trp_diplomacy_ideology_c_desc:0 "§YEmpire Sprawl§! from £pops£ Pops reduced by §G20%§!."
  trp_diplomacy_ideology_c_delayed:0 "§EIdeology Path§!\nMembers of our society knows what it means to be a part and they do not shy away from making those sacrifices."
  ####Association Path
  trp_diplomacy_association_a:0 "Galactic Endeavor"
  trp_diplomacy_association_a_desc:0 "§YDiplomatic Weight§! increased by §G+10%§!.\n\n§EPossible Alterations:§!\n§HDetermined Exterminator§! Civic\n§HFanatic Purifier§! Civic\n§HDevouring Purifier§! Civic"
  trp_diplomacy_association_a_delayed:0 "§EAssociation Path§!\nAs we once brought ourselves together, we must now bring everything else in known creation together, in some way or another."
  trp_diplomacy_association_b:0 "Conciliatory Spirit"
- trp_diplomacy_association_b_desc:0 "§HUnlocks Edict:§! Diplomatic Grants\nDiplomatic Upkeep reduced by 25%.\n\n§EPossible Alterations:§!\n§HDetermined Exterminator§! Civic\n§HFanatic Purifier§! Civic\n§HDevouring Purifier§! Civic"
+ trp_diplomacy_association_b_desc:0 "§HUnlocks Edict:§! Diplomatic Grants\n§YTrust Growth§! increased by §G+20%§!.\n\n§EPossible Alterations:§!\n§HDetermined Exterminator§! Civic\n§HFanatic Purifier§! Civic\n§HDevouring Purifier§! Civic"
  trp_diplomacy_association_b_delayed:0 "§EAssociation Path§!\nWhilst others face each other, we take our stand in the middle, letting only the most diplomatic of terms to pass through."
  #
  trp_diplomacy_association_b_purifier:0 "Target Practice"
@@ -497,7 +497,7 @@
  trp_diplomacy_association_a_devourer_delayed:0 "§EAssociation Path§!\nOf course we will unite the Galaxy. In one way or another. What do you mean? Everyone is dead? Oops."
  #
  trp_diplomacy_association_c:0 "Diplomatic Assumption"
- trp_diplomacy_association_c_desc:0 "Gain 1 envoy."
+ trp_diplomacy_association_c_desc:0 "§YDiplomatic Influence Cost§! reduced by §G50%§!."
  trp_diplomacy_association_c_delayed:0 "§EAssociation Path§!\nOthers do not have to ask for our opinion nor predict our actions. What we strive for has long since been established."
  ###Government Path
  trp_diplomacy_government_a:0 "Competent Rule"
@@ -561,15 +561,15 @@
  trp_discovery_curiosity_b_desc:0 "§HUnlocks Edict:§! Research Subsidies\n§YResearch Alternatives§! increased by §G+1§!."
  trp_discovery_curiosity_b_delayed:0 "§ECuriosity Path§!\nOur laboratories are the very meaning of the term. You want to see how? Please sign here first. Oh, and here."
  trp_discovery_curiosity_c:0 "Inland Empire"
- trp_discovery_curiosity_c_desc:0 "£job_researcher£§YResearcher Upkeep§! reduced by §G20%§!."
+ trp_discovery_curiosity_c_desc:0 "£job_researcher£§YResearcher Upkeep§! reduced by §G30%§!."
  trp_discovery_curiosity_c_delayed:0 "§ECuriosity Path§!\nSome of our scientists volunteer to work for the work is the reward itself. Just don't ask them any personal questions."
  #
  trp_discovery_curiosity_c_machine:0 "Inland Empire"
- trp_discovery_curiosity_c_machine_desc:0 "£job_calculator£§YCalculator Upkeep§! reduced by §G15%§!."
+ trp_discovery_curiosity_c_machine_desc:0 "£job_calculator£§YCalculator Upkeep§! reduced by §G30%§!."
  trp_discovery_curiosity_c_machine_delayed:0 "§ECuriosity Path§!\nSome of our scientists volunteer to work for the work is the reward itself. Just don't ask them any personal questions."
  #
  trp_discovery_curiosity_c_hive:0 "Inland Empire"
- trp_discovery_curiosity_c_hive_desc:0 "£job_brain_drone£§YBrain Drone Upkeep§! reduced by §G15%§!."
+ trp_discovery_curiosity_c_hive_desc:0 "£job_brain_drone£§YBrain Drone Upkeep§! reduced by §G30%§!."
  trp_discovery_curiosity_c_hive_delayed:0 "§ECuriosity Path§!\nSome of our scientists volunteer to work for the work is the reward itself. Just don't ask them any personal questions."
  ##Academy Path
  trp_discovery_academy_a:0 "Educated Society"
@@ -758,14 +758,14 @@
  trp_production_fabrication_b_desc:0 "£job_foundry£ §YMetallurgist Upkeep§! reduced by §G15%§!."
  trp_production_fabrication_b_delayed:0 "§EFabrication Path§!\nVolunteers like to flood our factories, casting metal with a fiery passion, knowing it will only further our newfound future." 
  trp_production_fabrication_c:0 "Volunteer Spirit"
- trp_production_fabrication_c_desc:0 "£alloys£ §YAlloys§! from £job_foundry£ §YMetallurgists§! increased by §G+0.5§!."
+ trp_production_fabrication_c_desc:0 "£alloys£ §YAlloys§! from £job_foundry£ §YMetallurgists§! increased by §G+1§!."
  trp_production_fabrication_c_delayed:0 "§EFabrication Path§!\nThe willingness to contribute spread like a wildfire, leading to many scavenging and pulling apart anything that could give us an edge in metals."
  #
  trp_production_fabrication_b_drone:0 "Efficent Metallurgy"
  trp_production_fabrication_b_drone_desc:0 "£job_foundry£ §YFabricator Upkeep§! reduced by §G15%§!."
  trp_production_fabrication_b_drone_delayed:0 "§EFabrication Path§!\nOur production lines have increased in efficencey." 
  trp_production_fabrication_c_drone:0 "Bouniful metalurgy"
- trp_production_fabrication_c_drone_desc:0 "£alloys£ §YAlloys§! from £job_foundry£ §YFabricators§! increased by §G+0.25§!."
+ trp_production_fabrication_c_drone_desc:0 "£alloys£ §YAlloys§! from £job_foundry£ §YFabricators§! increased by §G+1§!."
  trp_production_fabrication_c_drone_delayed:0 "§EFabrication Path§!\nOur means of production have once again increased."
  #
  ###assembly Path
@@ -840,7 +840,7 @@
  trp_commerce_finish_effect:0 "§EFinisher Effect:§! Completing all Commerce Paths will increase £energy£ §YMonthly Energy Gain§! by §G+20%§!."
  ###Exchange Path
  trp_commerce_exchange_a:0 "Known Traders"
- trp_commerce_exchange_a_desc:0 "§YTrade Value§! increased by §G+10%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
+ trp_commerce_exchange_a_desc:0 "§YTrade Attractiveness§! increased by §G+50%§!.\n\n§EPath Requirements:§!\n2 §HAscension Perks§!"
  trp_commerce_exchange_a_delayed:0 "§EExchange Path§!\nOur merchants are known across the stars and their reputation that of trustworthy. Moreso than others.\n\n§RMutually Exclusive§! with §EAccumulation Path§!"
  #
  trp_commerce_exchange_a_gestalt:0 "Basic Crypto-Economics"
@@ -869,7 +869,7 @@
  trp_commerce_trade_b_desc:0 "£trade_value£ §YTrade Value§! increased by §G+20%§!."
  trp_commerce_trade_b_delayed:0 "§ETrade Path§!\nFor trade to truly flourish within our borders, governmental meddling in internal markets must be kept to a minimum." 
  trp_commerce_trade_c:0 "Exchange of Goods"
- trp_commerce_trade_c_desc:0 "£job_clerk£ §YClerks§! now produce §G+0.25§! £consumer_goods£ §YConsumer Goods§!."
+ trp_commerce_trade_c_desc:0 "£job_clerk£ §YClerks§! now produce §G+0.5§! £consumer_goods£ §YConsumer Goods§!."
  trp_commerce_trade_c_delayed:0 "§ETrade Path§!\nOur society is a constant barter of services and goods independent of any kind of interfering power, a land of free traders."
  ###Security Path
  trp_commerce_security_a:0 "Anti-Piracy Ports"
