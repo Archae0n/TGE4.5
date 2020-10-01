@@ -130,27 +130,6 @@ replicator = {
 			planet_stability_add = 1
 		}
 	}
-	
-	resources = { ###Traditions+
-		category = planet_replicator
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_swapped_tradition = trp_discovery_engineering_b_machine }
-			}
-			engineering_research = 2
-		}
-	}
-	
-	triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = { has_swapped_tradition = trp_expansion_colonization_c_machine }
-        }
-        modifier = {
-            planet_pop_assembly_mult = 0.10
-        }
-    }
 
 	weight = {
 		weight = @spawner_drone_job_weight
@@ -222,16 +201,6 @@ coordinator = {
 		}
 	}
 	
-	resources = { ###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_swapped_tradition = trp_expansion_bureaucracy_b_machine }
-			}
-			engineering_research = 1 
-		}
-	}
-
 	resources = {
 		category = planet_bureaucrats
 		upkeep = {
@@ -282,20 +251,10 @@ evaluator = {
 			owner = { has_swapped_tradition = trp_prosperity_aesthetics_c_machine }
 		}
 		modifier = {
-			planet_amenities_add = 8
+			planet_amenities_no_happiness_add = 8
 		}
 	}
 	
-	resources = { ###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_swapped_tradition = trp_prosperity_renaissance_c_machine }
-			}
-			alloys = 1
-		}
-	}
-
 	weight = {
 		weight = @synapse_drone_job_weight
 		modifier = {
@@ -332,19 +291,9 @@ synapse_drone = {
 	}
 
 	country_modifier = {
-		country_admin_cap_add = 5
+		country_admin_cap_add = 10
 	}
 	
-	resources = { ###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_swapped_tradition = trp_expansion_bureaucracy_b_hive }
-			}
-			society_research = 2
-		}
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			planet = { has_modifier = planet_artifact_relays_hivemind }
@@ -361,7 +310,7 @@ synapse_drone = {
 			owner = { has_swapped_tradition = trp_prosperity_aesthetics_c_hive }
 		}
 		modifier = {
-			planet_amenities_add = 8
+			planet_amenities_no_happiness_add = 8
 		}
 	}
 
@@ -375,26 +324,6 @@ synapse_drone = {
 		}
 	}
 	
-	resources = { ###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_swapped_tradition = trp_prosperity_renaissance_c_hive }
-			}
-			alloys = 1
-		}
-	}
-	
-	resources = { ###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_swapped_tradition = trp_expansion_colonization_c_hive }
-			}
-			unity = 0.25
-		}
-	}
-	
 	triggered_planet_modifier = { ##Traditions+
 		potential = {
 			exists = owner
@@ -403,7 +332,7 @@ synapse_drone = {
 		modifier = {
 			planet_stability_add = 2
 		}
-	
+	}
 
 	resources = {
 		category = planet_synapse_drones
@@ -433,7 +362,6 @@ synapse_drone = {
 			OR = {
 				has_trait = trait_traditional
 				has_trait = trait_robot_propaganda_machines
-				}
 			}
 		}
 	}
@@ -476,16 +404,6 @@ brain_drone = {
 		}
 	}
 	
-	resources = { ###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_swapped_tradition = trp_discovery_society_b_hive }
-			}
-			unity = 0.5
-		}
-	}
-
 	weight = {
 		weight = @complex_drone_job_weight
 		modifier = {
@@ -571,16 +489,6 @@ calculator = {
 		}
 	}
 	
-	resources = { ###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_swapped_tradition = trp_discovery_society_b_machine }
-			}
-			unity = 0.5
-		}
-	}
-
 	weight = {
 		weight = @complex_drone_job_weight
 		modifier = {
@@ -660,16 +568,6 @@ artisan_drone = {
 		}
 	}
 	
-	resources = {
-		produces = { ###Traditions+
-			trigger = { 
-				exists = owner
-				owner = { has_swapped_tradition = trp_prosperity_renaissance_b_servitor }
-			}
-			unity = 1
-		}
-	}
-
 	weight = {
 		weight = 5000
 		modifier = {
@@ -711,14 +609,6 @@ fabricator = {
 		produces = {
 			alloys = 4
 		}
-		category = planet_metallurgists
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_swapped_tradition = trp_production_fabrication_c_drone }
-			}
-			alloys = 1
-		}
 		upkeep = {
 			minerals = 8
 		}
@@ -733,16 +623,6 @@ fabricator = {
 		}
 	}
 	
-	resources = {
-		produces = { ###Traditions+
-			trigger = { 
-				exists = owner
-				owner = { has_swapped_tradition = trp_prosperity_renaissance_b_drone }
-			}
-			unity = 1
-		}
-	}
-
 	weight = {
 		weight = @complex_drone_job_weight
 		modifier = {
@@ -955,7 +835,7 @@ gas_refiner_drone = {
 			owner = { has_tradition = trp_production_refinement_c }
 		}
 		modifier = {
-			planet_amenities_add = 5
+			planet_amenities_no_happiness_add = 5
 		}
 	}
 
@@ -1022,7 +902,7 @@ patrol_drone = {
 			owner = { has_swapped_tradition = trp_commerce_enterpises_c_drone }
 		}
 		modifier = {
-			planet_amenities_add = 5
+			planet_amenities_no_happiness_add = 5
 		}
 	}
 	
@@ -1108,13 +988,6 @@ crystal_mining_drone = {
 		category = planet_miners
 		produces = {
 			rare_crystals = 2
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_production_excavation_c}
-			}
-			rare_crystals = 1
 		}
 		upkeep = {
 			energy = 1
@@ -1254,14 +1127,7 @@ mining_drone = {
 		produces = {
 			minerals = 4
 		}			
-		produces = { ###Traditions+
-			trigger = { 
-				exists = owner
-				owner = { has_tradition = trp_production_excavation_c }
-			}
-			minerals = 1
-		}
-				upkeep = {
+		upkeep = {
 			trigger = {
 				exists = owner
 				owner = {
@@ -1514,7 +1380,7 @@ maintenance_drone = {
 			owner = { has_swapped_tradition = trp_prosperity_recreation_b_drone }
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_no_happiness_add = 2
 		}
 	}
 	
