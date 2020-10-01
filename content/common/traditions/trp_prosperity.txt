@@ -250,6 +250,8 @@ trp_prosperity_aesthetics_a = { ##Aesthetics Path
 trp_prosperity_aesthetics_b = {
 	modifier = {
 		job_culture_worker_per_pop = 0.04
+		rsrchcap_culture_worker_unity_produces_add = 1
+		rsrchcap_culture_worker_society_research_produces_add = 1
 	}
 	possible = {
 		has_tradition = trp_prosperity_aesthetics_a
@@ -266,7 +268,9 @@ trp_prosperity_aesthetics_b = {
 			}
 		}
 		modifier = {
-			job_priests_per_pop = 0.04
+			job_priest_per_pop = 0.04
+			mod_priest_unity_produces_add = 1
+			mod_priest_society_research_produces_add = 1
 		}
 	}
 		tradition_swap = {
@@ -612,7 +616,7 @@ trp_prosperity_control_c = {
 ###Renaissance Path
 trp_prosperity_renaissance_a = { ##Renaissance Path
 	modifier = {
-		planet_culture_worker_unity_produces_mult = 0.10
+		planet_culture_workers_unity_produces_mult = 0.10
 	}
 	possible = {
 		num_ascension_perks > 1
@@ -630,7 +634,7 @@ trp_prosperity_renaissance_a = { ##Renaissance Path
 			}
 		}
 		modifier = {
-			planet_manager_unity_produces_mult = 0.10
+			planet_managers_unity_produces_mult = 0.10
 		}
 		weight = {
 			factor = 1
@@ -648,7 +652,7 @@ trp_prosperity_renaissance_a = { ##Renaissance Path
 		}
 	}
 		modifier = {
-			planet_priest_unity_produces_mult = 0.10
+			mod_priest_unity_produces_mult = 0.10
 		}
 		weight = {
 			factor = 1
@@ -660,14 +664,14 @@ trp_prosperity_renaissance_a = { ##Renaissance Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			NOT = { valid_civic = civic_machine_servitor }
+			NOT = { has_valid_civic = civic_machine_servitor }
 			OR = {
 				has_ethic = ethic_gestalt_consciousness 
 		}
 	}
 		modifier = {
-			planet_evaluator_unity_produces_mult = 0.10
-			planet_synapse_unity_produces_mult = 0.10
+			planet_evaluators_unity_produces_mult = 0.10
+			planet_synapse_drones_unity_produces_mult = 0.10
 		}
 	}
 	ai_weight = {
@@ -841,7 +845,7 @@ trp_prosperity_renaissance_a = { ##Renaissance Path
 }
 trp_prosperity_renaissance_b = {
 	modifier = {
-		#artisan unity implemented
+		mod_artisan_unity_produces_add = 1
 	}
 	possible = {
 		has_tradition = trp_prosperity_renaissance_a
@@ -853,10 +857,10 @@ trp_prosperity_renaissance_b = {
 		inherit_name = no
 		trigger = {
 				has_ethic = ethic_gestalt_consciousness 
-			NOT = { valid_civic = civic_machine_servitor }
-	}
+			NOT = { has_valid_civic = civic_machine_servitor }
+		}
 		modifier = {
-			#metalurgy drone unity implemented
+			mod_foundry_unity_produces_add = 1
 		}
 	}
 	tradition_swap = {
@@ -865,10 +869,10 @@ trp_prosperity_renaissance_b = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			valid_civic = civic_machine_servitor 
+			has_valid_civic = civic_machine_servitor 
 	}
 		modifier = {
-			#artisan drone unity implemented
+			mod_artisan_unity_produces_add = 1
 		}
 	}
 	ai_weight = {
@@ -877,7 +881,8 @@ trp_prosperity_renaissance_b = {
 }
 trp_prosperity_renaissance_c = {
 	modifier = {
-		#culture worker alloys implemented
+		planet_culture_workers_alloys_produces_add = 1
+		mod_priest_alloys_produces_add = 1
 	}
 	possible = {
 		has_tradition = trp_prosperity_renaissance_b
@@ -888,11 +893,11 @@ trp_prosperity_renaissance_c = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-				is_machine_empire = yes
-			NOT = { valid_civic = civic_machine_servitor }
-			}
+			is_machine_empire = yes
+			NOT = { has_valid_civic = civic_machine_servitor }
+		}
 		modifier = {
-			#eval alloys
+			planet_evaluators_alloys_produces_add = 1
 		}
 	}
 	tradition_swap = {
@@ -904,7 +909,7 @@ trp_prosperity_renaissance_c = {
 				is_hive_empire = yes
 			}
 		modifier = {
-			#synapse_drone alloys
+			planet_synapse_drones_alloys_produces_add = 1
 		}
 	}
 	tradition_swap = {
@@ -913,10 +918,10 @@ trp_prosperity_renaissance_c = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-				valid_civic = civic_machine_servitor 
-			}
+			has_valid_civic = civic_machine_servitor 
+		}
 		modifier = {
-			#tronphy alloys
+			planet_bio_trophies_alloys_produces_add = 1
 		}
 	}
 	ai_weight = {
@@ -1146,7 +1151,7 @@ trp_prosperity_recreation_a = { ##Recreation Path
 		inherit_name = no
 		trigger = {
 				is_machine_empire = yes
-			NOT = { valid_civic = civic_machine_servitor }
+			NOT = { has_valid_civic = civic_machine_servitor }
 			}
 		modifier = {
 			#build reduction
@@ -1170,7 +1175,7 @@ trp_prosperity_recreation_a = { ##Recreation Path
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-				valid_civic = civic_machine_servitor
+				has_valid_civic = civic_machine_servitor
 			}
 		modifier = {
 			#build reduction sancutary
@@ -1372,7 +1377,7 @@ trp_prosperity_recreation_c = {
 	modifier = {
 		#pop growth from medicals implemented
 		#job_hunter_gatherer_add = 1
-		pop_growth_speed_mult = 0.25
+		#pop_growth_speed_mult = 0.25
 	}
 	possible = {
 		has_tradition = trp_prosperity_recreation_b
