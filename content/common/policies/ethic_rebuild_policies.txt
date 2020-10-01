@@ -1280,7 +1280,7 @@ education = {
 		modifier = {
 
 
-		planet_jobs_specialist_produces_mult = 0.075
+		planet_jobs_specialist_produces_mult = 0.05
 		planet_crime_add = 10
 		pop_ethic_capitalism_attraction_mult = 0.05
 		pop_ethic_elitist_attraction_mult = 0.1
@@ -1326,7 +1326,7 @@ education = {
 
         pop_government_ethic_attraction = 0.1
         country_unity_produces_mult = 0.1
-		planet_jobs_specialist_produces_mult = 0.05
+		planet_jobs_worker_produces_mult = 0.05
         planet_crime_add = -10
 		country_energy_produces_mult = -0.04
 		pop_ethic_socialism_attraction_mult = 0.05
