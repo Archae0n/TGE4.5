@@ -334,17 +334,6 @@ action_form_commercial_pact = {
 			NOT = { has_valid_civic = civic_inwards_perfection }
 		}
 		custom_tooltip = {
-			fail_text = "requires_actor_not_gestalt_consciousness"
-			OR = {
-          			is_gestalt = no
-           			has_valid_civic = civic_mutualistic_behavior
-       			}
-		}
-		custom_tooltip = {
-			fail_text = "requires_recipient_not_gestalt_consciousness"
-			from = { is_gestalt = no }
-		}
-		custom_tooltip = {
 			fail_text = "requires_actor_not_criminal_heritage"
 			is_criminal_syndicate = no
 		}
