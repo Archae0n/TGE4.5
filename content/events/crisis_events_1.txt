@@ -89,16 +89,16 @@ country_event = {
 	id = crisis.12
 	hide_window = yes
 	fire_only_once = yes
-
+	
 	mean_time_to_happen = {
 		months = 600
 	}
-
+	
 	trigger = {
 		is_country_type = default
 		has_global_flag = prethoryn_subspace_echoes
 	}
-
+	
 	immediate = {
 		remove_global_flag = prethoryn_subspace_echoes
 		set_global_flag = prethoryn_approaching_rim
@@ -107,7 +107,7 @@ country_event = {
 				OR = {
 					# No owner or neighbors
 					NOR = {
-						is_star_class = sc_dn					
+						is_star_class = sc_dn
 						any_neighbor_system = {
 							exists = space_owner
 						}
@@ -128,7 +128,7 @@ country_event = {
 				NOT = {
 					any_neighbor_system = {
 						exists = space_owner
-						space_owner = {
+						space_owner = {	
 							OR = {
 								is_country_type = fallen_empire
 								is_country_type = awakened_fallen_empire
@@ -139,6 +139,167 @@ country_event = {
 			}
 			set_star_flag = swarm_invasion_target_1
 		}
+
+		#Now do this another 5 times to spread them out
+		random_rim_system = {
+			limit = {
+				OR = {
+					# No owner or neighbors
+					NOR = {
+						is_star_class = sc_dn
+						has_star_flag = swarm_invasion_target_1						
+						any_neighbor_system = {
+							exists = space_owner
+						}
+						exists = space_owner
+					}
+					# Owned but not by fallen empire
+					AND = {
+						exists = space_owner
+						space_owner = {
+							NOR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+				# No neighboring fallen empires
+				NOT = {
+					any_neighbor_system = {
+						exists = space_owner
+						space_owner = {	
+							OR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+			}
+			set_star_flag = swarm_invasion_target_2
+		}
+		random_rim_system = {
+			limit = {
+				OR = {
+					# No owner or neighbors
+					NOR = {
+						is_star_class = sc_dn					
+						has_star_flag = swarm_invasion_target_1	
+						has_star_flag = swarm_invasion_target_2						
+						any_neighbor_system = {
+							exists = space_owner
+						}
+						exists = space_owner
+					}
+					# Owned but not by fallen empire
+					AND = {
+						exists = space_owner
+						space_owner = {
+							NOR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+				# No neighboring fallen empires
+				NOT = {
+					any_neighbor_system = {
+						exists = space_owner
+						space_owner = {	
+							OR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+			}
+			set_star_flag = swarm_invasion_target_3
+		}
+		random_rim_system = {
+			limit = {
+				OR = {
+					# No owner or neighbors
+					NOR = {
+						is_star_class = sc_dn					
+						has_star_flag = swarm_invasion_target_1	
+						has_star_flag = swarm_invasion_target_2
+						has_star_flag = swarm_invasion_target_3						
+						any_neighbor_system = {
+							exists = space_owner
+						}
+						exists = space_owner
+					}
+					# Owned but not by fallen empire
+					AND = {
+						exists = space_owner
+						space_owner = {
+							NOR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+				# No neighboring fallen empires
+				NOT = {
+					any_neighbor_system = {
+						exists = space_owner
+						space_owner = {	
+							OR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+			}
+			set_star_flag = swarm_invasion_target_4
+		}
+		random_rim_system = {
+			limit = {
+				OR = {
+					# No owner or neighbors
+					NOR = {
+						is_star_class = sc_dn
+						has_star_flag = swarm_invasion_target_1	
+						has_star_flag = swarm_invasion_target_2
+						has_star_flag = swarm_invasion_target_3	
+						has_star_flag = swarm_invasion_target_4						
+						any_neighbor_system = {
+							exists = space_owner
+						}
+						exists = space_owner
+					}
+					# Owned but not by fallen empire
+					AND = {
+						exists = space_owner
+						space_owner = {
+							NOR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+				# No neighboring fallen empires
+				NOT = {
+					any_neighbor_system = {
+						exists = space_owner
+						space_owner = {	
+							OR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+			}
+			set_star_flag = swarm_invasion_target_5
+		}
+	
 		observer_event = { id = observer.28 }
 		every_country = {
 			limit = { is_country_type = default }
@@ -154,67 +315,95 @@ country_event = {
 	desc = "crisis.13.desc"
 	picture = GFX_evt_physics_research
 	show_sound = event_alien_nature
-
+	
 	is_triggered_only = yes
-
+	
 	immediate = {
 		random_rim_system = {
 			limit = { has_star_flag = swarm_invasion_target_1 }
 			save_event_target_as = prethoryn_invasion_system
-			closest_system = {
-				limit = {
-					NOR = {
-						has_star_flag = swarm_invasion_warning
-						has_star_flag = swarm_invasion_target_1
-					}
-				}
-				set_star_flag = swarm_invasion_warning
-				save_event_target_as = swarm_invasion_warning_1
-			}
-			closest_system = {
-				limit = {
-					NOR = {
-						has_star_flag = swarm_invasion_warning
-						has_star_flag = swarm_invasion_target_1
-					}
-				}
-				set_star_flag = swarm_invasion_warning
-				save_event_target_as = swarm_invasion_warning_2
-			}
-			closest_system = {
-				limit = {
-					NOR = {
-						has_star_flag = swarm_invasion_warning
-						has_star_flag = swarm_invasion_target_1
-					}
-				}
-				set_star_flag = swarm_invasion_warning
-				save_event_target_as = swarm_invasion_warning_3
-			}
-			closest_system = {
-				limit = {
-					NOR = {
-						has_star_flag = swarm_invasion_warning
-						has_star_flag = swarm_invasion_target_1
-					}
-				}
-				set_star_flag = swarm_invasion_warning
-				save_event_target_as = swarm_invasion_warning_4
-			}
-			closest_system = {
-				limit = {
-					NOR = {
-						has_star_flag = swarm_invasion_warning
-						has_star_flag = swarm_invasion_target_1
-					}
-				}
-				set_star_flag = swarm_invasion_warning
-				save_event_target_as = swarm_invasion_warning_5
-			}
+			save_event_target_as = swarm_invasion_target_1
+			set_star_flag = swarm_invasion_warning
 		}
-
+		random_rim_system = {
+			limit = { has_star_flag = swarm_invasion_target_2 }
+			save_event_target_as = prethoryn_invasion_target_2
+			save_event_target_as = swarm_invasion_target_2
+			set_star_flag = swarm_invasion_warning
+		}
+		random_rim_system = {
+			limit = { has_star_flag = swarm_invasion_target_3 }
+			save_event_target_as = prethoryn_invasion_target_3
+			save_event_target_as = swarm_invasion_target_3
+			set_star_flag = swarm_invasion_warning
+		}
+		random_rim_system = {
+			limit = { has_star_flag = swarm_invasion_target_4 }
+			save_event_target_as = prethoryn_invasion_target_4
+			save_event_target_as = swarm_invasion_target_4
+			set_star_flag = swarm_invasion_warning
+		}
+		random_rim_system = {
+			limit = { has_star_flag = swarm_invasion_target_5 }
+			save_event_target_as = prethoryn_invasion_target_5
+			save_event_target_as = swarm_invasion_target_5
+			set_star_flag = swarm_invasion_warning
+		}
+		
+		#	closest_system = {
+		#		limit = {
+		#			NOR = { 
+		#				has_star_flag = swarm_invasion_warning 
+		#				has_star_flag = swarm_invasion_target_1
+		#		}
+		#		}
+		#		set_star_flag = swarm_invasion_warning
+		#		save_event_target_as = swarm_invasion_warning_1
+		#	}
+		#	closest_system = {
+		#		limit = {
+		#			NOR = { 
+		#				has_star_flag = swarm_invasion_warning 
+		#				has_star_flag = swarm_invasion_target_1
+		#			}
+		#		}
+		#		set_star_flag = swarm_invasion_warning
+		#		save_event_target_as = swarm_invasion_warning_2
+		#	}
+		#	closest_system = {
+		#		limit = {
+		#			NOR = { 
+		#				has_star_flag = swarm_invasion_warning 
+		#				has_star_flag = swarm_invasion_target_1
+		#			}
+		#		}
+		#		set_star_flag = swarm_invasion_warning
+		#		save_event_target_as = swarm_invasion_warning_3
+		#	}
+		#	closest_system = {
+		#		limit = {
+		#			NOR = { 
+		#				has_star_flag = swarm_invasion_warning 
+		#				has_star_flag = swarm_invasion_target_1
+		#			}
+		#		}
+		#		set_star_flag = swarm_invasion_warning
+		#		save_event_target_as = swarm_invasion_warning_4
+		#	}
+		#	closest_system = {
+		#		limit = {
+		#			NOR = { 
+		#				has_star_flag = swarm_invasion_warning 
+		#				has_star_flag = swarm_invasion_target_1
+		#			}
+		#		}
+		#		set_star_flag = swarm_invasion_warning
+		#		save_event_target_as = swarm_invasion_warning_5
+		#	}
+		#}
+		
 	}
-
+	
 	option = {
 		name = crisis.13.a
 		create_point_of_interest = {
@@ -230,31 +419,31 @@ country_event = {
 				id = coming_storm_poi.2
 				event_chain = "coming_storm_chain"
 				category = coming_storm
-				location = event_target:swarm_invasion_warning_1
+				location = event_target:swarm_invasion_target_1
 			}
 			create_point_of_interest = {
 				id = coming_storm_poi.3
 				event_chain = "coming_storm_chain"
 				category = coming_storm
-				location = event_target:swarm_invasion_warning_2
+				location = event_target:swarm_invasion_target_2
 			}
 			create_point_of_interest = {
 				id = coming_storm_poi.4
 				event_chain = "coming_storm_chain"
 				category = coming_storm
-				location = event_target:swarm_invasion_warning_3
+				location = event_target:swarm_invasion_target_3
 			}
 			create_point_of_interest = {
 				id = coming_storm_poi.5
 				event_chain = "coming_storm_chain"
 				category = coming_storm
-				location = event_target:swarm_invasion_warning_4
+				location = event_target:swarm_invasion_target_4
 			}
 			create_point_of_interest = {
 				id = coming_storm_poi.6
 				event_chain = "coming_storm_chain"
 				category = coming_storm
-				location = event_target:swarm_invasion_warning_5
+				location = event_target:swarm_invasion_target_5
 			}
 		}
 	}
@@ -265,15 +454,15 @@ country_event = {
 	id = crisis.14
 	hide_window = yes
 	fire_only_once = yes
-
+	
 	mean_time_to_happen = {
 		months = 120
 	}
-
+	
 	trigger = {
 		has_global_flag = prethoryn_approaching_rim
 	}
-
+	
 	immediate = {
 		remove_global_flag = prethoryn_approaching_rim
 		set_global_flag = prethoryn_transmission
@@ -291,9 +480,9 @@ country_event = {
 	desc = "crisis.15.desc"
 	picture = GFX_evt_physics_research
 	show_sound = event_alien_nature
-
+	
 	is_triggered_only = yes
-
+	
 	option = {
 		name = crisis.15.a
 		hidden_effect = {
@@ -326,28 +515,28 @@ country_event = {
 			owner_species = { has_trait = trait_hive_mind }
 		}
 	}
-
+	
 	diplomatic = yes
-
+	
 	picture_event_data = {
 		portrait = swarm1
 		room = "swarm_room"
 	}
-
+	
 	is_triggered_only = yes
 
 	option = {
 		name = crisis.16.a
 		trigger = {
 			owner_species = { NOT = { has_trait = trait_hive_mind } }
-		}
-	}
+		}		
+	}	
 
 	option = {
 		name = crisis.16.b
 		trigger = {
 			owner_species = { has_trait = trait_hive_mind }
-		}
+		}		
 	}
 }
 
@@ -356,20 +545,20 @@ country_event = {
 	id = crisis.17
 	hide_window = yes
 	fire_only_once = yes
-
+	
 	mean_time_to_happen = {
 		months = 30
 	}
-
+	
 	trigger = {
 		has_global_flag = prethoryn_transmission
 	}
-
+	
 	immediate = {
 		set_crisis_sound = swarm_crisis_ambient_stage_1
 		set_crisis_stage_1 = yes
-		awaken_guardians_of_the_galaxy = yes
-
+		awaken_guardians_of_the_galaxy = yes		
+	
 		remove_global_flag = prethoryn_approaching_rim
 		set_global_flag = prethoryn_arrival
 		observer_event = { id = observer.29 }
@@ -443,24 +632,10 @@ country_event = {
 						size = starbase_swarm
 						owner = event_target:prethoryn_vgrd
 					}
-					star = {
-						create_ambient_object = {
-							type = "swarm_1"
-							location = this
-						}
-						last_created_ambient_object = {
-							set_ambient_object_flag = swarm_system_effect
-							set_location = {
-								target = prev
-								distance = 0
-								angle = random
-							}
-						}
-					}
 				}
 				every_country = {
-					limit = {
-						OR = {
+					limit = { 
+						OR = { 
 							is_country_type = default
 							is_country_type = fallen_empire
 							is_country_type = awakened_fallen_empire
@@ -479,7 +654,7 @@ country_event = {
 					}
 				}
 				event_target:prethoryn = {
-
+					
 					### FIRST SYSTEM
 
 					swarm_vanguard = yes
@@ -501,22 +676,15 @@ country_event = {
 								distance = 10
 								angle = random
 							}
+							set_fleet_stance = evasive
 						}
 					}
 				}
 			}
-
+			
 			### SECOND SYSTEM
 			random_system = {
-				limit = {
-					Not = {is_star_class = sc_dn}
-					distance = {
-						source = PREV
-						max_distance <= 60
-						min_distance >= 5
-					}
-				}
-				set_star_flag = swarm_invasion_target_2
+				limit = { has_star_flag = swarm_invasion_target_2 }
 				random_system_planet = {
 					event_target:prethoryn = {
 
@@ -539,27 +707,16 @@ country_event = {
 									distance = 10
 									angle = random
 								}
+								set_fleet_stance = evasive
 							}
 						}
 					}
 				}
 			}
-
+			
 			### THIRD SYSTEM
 			random_system = {
-				limit = {
-					distance = {
-						source = PREV
-						max_distance <= 60
-						min_distance >= 5
-					}
-					NOR = {
-						is_star_class = sc_dn
-						has_star_flag = swarm_invasion_target_1
-						has_star_flag = swarm_invasion_target_2
-					}
-				}
-				set_star_flag = swarm_invasion_target_3
+				limit = { has_star_flag = swarm_invasion_target_3 }
 				random_system_planet = {
 					event_target:prethoryn = {
 
@@ -582,34 +739,23 @@ country_event = {
 									distance = 10
 									angle = random
 								}
+								set_fleet_stance = evasive
 							}
 						}
 					}
 				}
 			}
-
+			
 			### FOURTH SYSTEM
 			random_system = {
-				limit = {
-					distance = {
-						source = PREV
-						max_distance <= 60
-						min_distance >= 5
-					}
-					NOR = {
-						has_star_flag = swarm_invasion_target_1
-						has_star_flag = swarm_invasion_target_2
-						has_star_flag = swarm_invasion_target_3
-					}
-				}
-				set_star_flag = swarm_invasion_target_4
+				limit = { has_star_flag = swarm_invasion_target_4 }
 				random_system_planet = {
 					event_target:prethoryn = {
 
 						swarm_vanguard = yes
 						swarm_vanguard = yes
 						swarm_vanguard = yes
-
+						
 						# Constructor
 						create_fleet = {
 							name = "NAME_Prethoryn_Constructor"
@@ -625,11 +771,43 @@ country_event = {
 									distance = 10
 									angle = random
 								}
+								set_fleet_stance = evasive
 							}
 						}
 					}
 				}
 			}
+			### FIFTH SYSTEM
+			random_system = {
+				limit = { has_star_flag = swarm_invasion_target_5 }
+				random_system_planet = {
+					event_target:prethoryn = {
+
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+						
+						# Constructor
+						create_fleet = {
+							name = "NAME_Prethoryn_Constructor"
+							effect = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "NAME_Swarm_Constructor"
+									graphical_culture = "swarm_01"
+								}
+								set_location = {
+									target = PREVPREV
+									distance = 10
+									angle = random
+								}
+								set_fleet_stance = evasive
+							}
+						}
+					}
+				}
+			}			
 		}
 		random_country = {
 			limit = { is_country_type = global_event }
