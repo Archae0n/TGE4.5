@@ -4,7 +4,7 @@ building_holo_theatres = {
 	category = amenity
 
 	potential = {
-		NOT = {	has_modifier = slave_colony	}
+		NOT = {	has_modifier = slave_colony }
 		owner = { is_regular_empire = yes }
 	}
 
@@ -72,13 +72,13 @@ building_holo_theatres = {
 		category = planet_buildings
 		cost = {
 			trigger = {
-				owner = { NOT = { has_swapped_tradition = trp_prosperity_recreation_a_machine }}
+				owner = { NOT = { has_swapped_tradition = trp_prosperity_recreation_a }}
 			}
 			minerals = @b1_minerals
 		}
 		cost = {
 			trigger = {
-				owner = { has_swappedtradition = trp_prosperity_recreation_a_machine }
+				owner = { has_swappedtradition = trp_prosperity_recreation_a }
 			}
 			minerals = 300
 		}
