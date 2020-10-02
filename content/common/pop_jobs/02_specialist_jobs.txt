@@ -159,15 +159,6 @@ researcher = {
 			unity = 1
 		}
 
-		###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_discovery_society_a }
-			}
-			unity = 0.3
-		}
-
 		upkeep = {
 			consumer_goods = 2
 		}
@@ -838,14 +829,6 @@ artisan = {
 			consumer_goods = 6
 		}
 
-		produces = { ##Traditions+
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_prosperity_renaissance_b }
-			}
-			unity = 1
-		}		
-
 		upkeep = {
 			minerals = 6
 		}
@@ -1191,14 +1174,6 @@ culture_worker = {
 		produces = {
 			unity = 3
 			society_research = 3
-		}
-
-		produces = { ###Traditions+
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_prosperity_renaissance_c }
-			}
-			alloys = 0.5
 		}
 
 		upkeep = {
@@ -1702,9 +1677,12 @@ roboticist = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_tradition = trp_discovery_engineering_b }
+				owner = {
+					has_tradition = trp_discovery_engineering_b
+					has_modifier = imperfect_synth
+				}
 			}
-			engineering_research = 4
+			engineering_research = -2
 		}
 
 

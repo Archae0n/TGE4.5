@@ -288,6 +288,7 @@ trp_expansion_colonization_c = {
 		}
 		modifier = {
 			##unity replicator unlock implemented
+			#planet_pop_assemblers_unity_produces_add = 0.25
 		}
 		weight = {
 			factor = 1
@@ -303,7 +304,7 @@ trp_expansion_colonization_c = {
 			is_hive_empire = yes
 		}
 		modifier = {
-			##unity synapse unlock implemented
+			planet_synapse_drones_unity_produces_add = 0.25
 		}
 		weight = {
 			factor = 1
@@ -1348,7 +1349,7 @@ trp_expansion_bureaucracy_a = { ###Bureaucracy Path
 }
 trp_expansion_bureaucracy_b = {
 	modifier = {
-		##society research unlock
+		mod_paperworks_society_research_produces_add = 2
 	}
 	possible = {
 		has_tradition = trp_expansion_bureaucracy_a
@@ -1362,7 +1363,7 @@ trp_expansion_bureaucracy_b = {
 			is_hive_empire = yes
 		}
 		modifier = {
-			##society research unlock implemented
+			planet_synapse_drones_society_research_produces_add = 2
 		}
 		weight = {
 			factor = 1
@@ -1377,7 +1378,7 @@ trp_expansion_bureaucracy_b = {
 			is_machine_empire = yes
 		}
 		modifier = {
-			##engineering research unlock implemented
+			mod_coordinator_engineering_research_produces_add = 1
 		}
 		weight = {
 			factor = 1

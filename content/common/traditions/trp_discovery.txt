@@ -244,7 +244,7 @@ trp_discovery_curiosity_c = {
 			is_machine_empire = yes 
 	}
 		modifier = {
-		planet_calculator_upkeep_mult = -0.15
+			planet_researchers_upkeep_mult = -0.15
 		}
 	}
 	tradition_swap = {
@@ -256,7 +256,7 @@ trp_discovery_curiosity_c = {
 			is_hive_empire = yes
 	}
 		modifier = {
-		planet_brain_drone_upkeep_mult = -0.15
+			planet_researchers_upkeep_mult = -0.15
 		}
 	}
 	on_enabled = {
@@ -642,7 +642,7 @@ trp_discovery_engineering_a = { ###Engineering Path
 trp_discovery_engineering_b = {
 	modifier = {
 		pop_environment_tolerance = 0.05
-		###roboticist unlock implemented
+		planet_pop_assemblers_engineering_research_produces_add = 4
 	}
 	possible = {
 		has_tradition = trp_discovery_engineering_a
@@ -657,7 +657,7 @@ trp_discovery_engineering_b = {
 		}
 		modifier = {
 			planet_pop_assembly_mult = 0.05
-			###replicator unlock implemented
+			planet_pop_assemblers_engineering_research_produces_add = 2
 		}
 		ai_weight = {
 			factor = 1000
@@ -676,7 +676,7 @@ trp_discovery_engineering_b = {
 	}
 		modifier = {
 			planet_pop_assembly_mult = 0.10
-			###roboticist unlock implemented
+			planet_pop_assemblers_engineering_research_produces_add = 4
 		}
 		ai_weight = {
 			factor = 1000
@@ -811,7 +811,7 @@ trp_discovery_society_a = { ###Society Path
 			is_machine_empire = yes
 		}
 		modifier = {
-			 planet_calculators_society_research_produces_mult = 0.10
+			 planet_researchers_society_research_produces_mult = 0.10
 		}
 		weight = {
 			factor = 1
@@ -826,7 +826,7 @@ trp_discovery_society_a = { ###Society Path
 			is_hive_empire = yes
 		}
 		modifier = {
-			planet_brain_drone_society_research_produces_mult = 0.10
+			planet_researchers_society_research_produces_mult = 0.10
 		}
 		weight = {
 			factor = 1
@@ -995,7 +995,7 @@ trp_discovery_society_a = { ###Society Path
 }
 trp_discovery_society_b = {
 	modifier = {
-		##researcher unity
+		rsrchcap_researcher_unity_produces_add = 0.5
 	}
 	possible = {
 		has_tradition = trp_discovery_society_a
@@ -1009,7 +1009,7 @@ trp_discovery_society_b = {
 			is_hive_empire = yes
 		}
 		modifier = {
-			##brain drone unity
+			rsrchcap_researcher_unity_produces_add = 0.5
 		}
 		weight = {
 			factor = 1
@@ -1024,7 +1024,7 @@ trp_discovery_society_b = {
 			is_machine_empire = yes
 		}
 		modifier = {
-			##calculator unity
+			rsrchcap_researcher_unity_produces_add = 0.5
 		}
 		weight = {
 			factor = 1
@@ -1104,7 +1104,7 @@ trp_discovery_society_c = {
 ###Physics Path
 trp_discovery_physics_a = { ###Physics Path
 	modifier = {
-		planet_researcher_physics_research_produces_mult = 0.10
+		planet_researchers_physics_research_produces_mult = 0.10
 	}
 	tradition_swap = {
 		name = trp_discovery_physics_a_machine
@@ -1115,7 +1115,7 @@ trp_discovery_physics_a = { ###Physics Path
 			is_machine_empire = yes
 		}
 		modifier = {
-			planet_calculator_physics_research_produces_mult = 0.10
+			planet_researchers_physics_research_produces_mult = 0.10
 		}
 		weight = {
 			factor = 1
@@ -1130,7 +1130,7 @@ trp_discovery_physics_a = { ###Physics Path
 			is_hive_empire = yes
 		}
 		modifier = {
-			planet_brain_drone_physics_research_produces_mult = 0.10
+			planet_researchers_physics_research_produces_mult = 0.10
 		}
 		weight = {
 			factor = 1
@@ -1300,7 +1300,7 @@ trp_discovery_physics_a = { ###Physics Path
 trp_discovery_physics_b = {
 	modifier = {
 		job_researcher_add = 1
-		##portal unlock
+		rsrchcap_dimensional_portal_researcher_unity_produces_add = 10
 	}
 	possible = {
 		has_tradition = trp_discovery_physics_a
@@ -1315,6 +1315,7 @@ trp_discovery_physics_b = {
 		}
 		modifier = {
 			job_calculator_add = 1
+			rsrchcap_dimensional_portal_researcher_unity_produces_add = 10
 		}
 		weight = {
 			factor = 1
@@ -1330,6 +1331,7 @@ trp_discovery_physics_b = {
 		}
 		modifier = {
 			job_brain_drone_add = 1
+			rsrchcap_dimensional_portal_researcher_unity_produces_add = 10
 		}
 		weight = {
 			factor = 1

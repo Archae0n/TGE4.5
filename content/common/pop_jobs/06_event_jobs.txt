@@ -355,16 +355,6 @@ dimensional_portal_researcher = {
 		}
 	}
 	
-	resources = { ###Traditions+
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_tradition = trp_discovery_physics_b }
-			}
-			unity = 10
-		}
-	}
-
 	resources = {
 		category = planet_researchers
 		produces = {

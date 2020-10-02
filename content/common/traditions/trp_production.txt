@@ -203,8 +203,8 @@ trp_production_excavation_b = {
 }
 trp_production_excavation_c = {
     modifier = {
-        planet_miners_minerals_produces_add = 1
-        ##crystal miner unlock
+        mod_miner_minerals_produces_add = 1
+        mod_crystal_miner_rare_crystals_produces_add = 1
     }
     possible = {
         has_tradition = trp_production_excavation_b
@@ -226,8 +226,8 @@ trp_production_excavation_c = {
             is_gestalt = yes 
         }
         modifier = {
-            planet_miners_minerals_produces_add = 1
-            ##crystal miner unlock
+        	mod_miner_minerals_produces_add = 1
+       		mod_crystal_miner_rare_crystals_produces_add = 1
         }
         possible = {
             has_tradition = trp_production_excavation_b
@@ -531,7 +531,7 @@ trp_production_fabrication_b = {
 				has_ethic = ethic_gestalt_consciousness 
 		}
 		modifier = {
-			planet_fabricator_upkeep_mult = -0.15
+			planet_metallurgists_upkeep_mult = -0.15
 		}
 	}
 	ai_weight = {
@@ -540,7 +540,7 @@ trp_production_fabrication_b = {
 }
 trp_production_fabrication_c = {
 	modifier = {
-		##foundry alloy increase
+		mod_foundry_alloys_produces_add = 0.5
 	}
 	possible = {
 		has_tradition = trp_production_fabrication_b
@@ -555,7 +555,7 @@ trp_production_fabrication_c = {
 			NOT = { has_valid_civic = civic_machine_servitor }
 		}
 		modifier = {
-			###fabricator alloy increase
+			mod_foundry_alloys_produces_add = 0.5
 		}
 	}
 	on_enabled = {
@@ -776,7 +776,7 @@ trp_production_assembly_c = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-				has_ethic = ethic_gestalt_consciousness 
+			has_ethic = ethic_gestalt_consciousness 
 		}
 		modifier = {
 			planet_jobs_menial_drone_produces_mult = 0.10
@@ -1257,7 +1257,7 @@ trp_production_agriculture_b = {
 }
 trp_production_agriculture_c = {
 	modifier = {
-		##farmers food increase
+		mod_farmer_food_produces_add = 1
 	}
 	on_enabled = {
 		country_event = {
@@ -1279,7 +1279,7 @@ trp_production_agriculture_c = {
 			is_lithoid_empire = yes
 		}
 		modifier = { 
-			##miners mineral increase
+			mod_miner_minerals_produces_add = 1
 		}
 			weight = {
 				factor = 1

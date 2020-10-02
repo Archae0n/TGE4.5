@@ -406,7 +406,6 @@ ws_special_init_6 = {
 			size = { min = 6 max = 8 }
 			init_effect = {
 				prevent_anomaly = yes
-				generate_late_primitives_on_planet = yes
 			}		 	
 		}
 	}
@@ -418,115 +417,6 @@ ws_special_init_6 = {
 		class = "pc_barren_cold"
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 10 max = 15 }
-	}
-
-	init_effect = {
-		spawn_megastructure = { 
-			type = "think_tank_ruined" 
-			location = event_target:nexus_planet
-
-			init_effect = {
-				create_ambient_object = {
-					type = "large_debris_object"
-					location = this
-				}
-				last_created_ambient_object = { 
-					set_location = {
-						target = "prev"
-						distance = 20
-						angle = 20
-					}
-				}
-				create_ambient_object = {
-					type = "large_debris_object"
-					location = this
-				}
-				last_created_ambient_object = { 
-					set_location = {
-						target = prev
-						distance = 20
-						angle = 150
-					}
-				}
-				create_ambient_object = {
-					type = "medium_debris_01_object"
-					location = this
-				}
-				last_created_ambient_object = { 
-					set_location = {
-						target = prev
-						distance = 35
-						angle = 90
-					}
-				}
-				create_ambient_object = {
-					type = "medium_debris_02_object"
-					location = this
-				}
-				last_created_ambient_object = { 
-					set_location = {
-						target = prev
-						distance = 3
-						angle = 270
-					}
-				}
-			}
-		}
-	}
-	
-	init_effect = {		
-		generate_home_system_resources = yes
-		spawn_megastructure = { 
-			type = "interstellar_assembly_ruined" 
-			location = star
-
-			init_effect = {
-				create_ambient_object = {
-					type = "large_debris_object"
-					location = this
-				}
-				last_created_ambient_object = { 
-					set_location = {
-						target = prev
-						distance = 20
-						angle = 20
-					}
-				}
-				create_ambient_object = {
-					type = "large_debris_object"
-					location = this
-				}
-				last_created_ambient_object = { 
-					set_location = {
-						target = prev
-						distance = 20
-						angle = 150
-					}
-				}
-				create_ambient_object = {
-					type = "medium_debris_01_object"
-					location = this
-				}
-				last_created_ambient_object = { 
-					set_location = {
-						target = prev
-						distance = 35
-						angle = 90
-					}
-				}
-				create_ambient_object = {
-					type = "medium_debris_02_object"
-					location = this
-				}
-				last_created_ambient_object = { 
-					set_location = {
-						target = prev
-						distance = 3
-						angle = 270
-					}
-				}
-			}
-		}
 	}
 }
 
