@@ -548,8 +548,8 @@ civic_distributism = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-				planet_metallurgists_produces_mult = 0.1
-				planet_artisans_produces_mult = 0.1
+				planet_metallurgists_produces_mult = 0.05
+				planet_artisans_produces_mult = 0.05
 				planet_farmers_produces_mult = 0.1
 				job_farmer_per_pop = 0.03
 				job_foundry_per_pop = 0.03
@@ -1344,8 +1344,8 @@ civic_beacon_of_liberty = {
 	modifier = {
 
 		trade_value_mult = 0.15
-      	country_starbase_influence_cost_mult = -0.25
-        tech_cost_empire_size_mult = -0.5
+      	country_starbase_influence_cost_mult = -0.05
+        tech_cost_empire_size_mult = -0.10
 		pop_growth_from_immigration = 0.15
 	    country_base_influence_produces_add = -0.5
 
@@ -1391,7 +1391,7 @@ civic_corporate_dominion = {
 	random_weight = { base = 5 }
 	modifier = {
 
-				country_starbase_capacity_add = 5
+				country_starbase_capacity_add = 3
                 country_resource_max_add = 10000
                 job_merchant_per_pop = 0.04
 				army_morale = -0.2
@@ -1842,7 +1842,7 @@ civic_ruthless_industrialism = {
 	random_weight = { base = 5 }
 	modifier = {
 
-                  planet_jobs_alloys_produces_mult = 0.1
+                  planet_jobs_alloys_produces_mult = 0.05
 		  planet_jobs_consumer_goods_produces_mult = 0.1
                   planet_max_districts_add = 1
 		  planet_clear_blocker_time_mult = -0.5

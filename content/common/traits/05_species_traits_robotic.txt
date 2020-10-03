@@ -223,8 +223,6 @@ trait_robot_factotums = {
 
 	modifier = {
 		leader_skill_levels = -2
-		planet_jobs_ruler_produces_mult = -0.50
-		planet_jobs_specialist_produces_mult = -0.20
 	}
 }
 

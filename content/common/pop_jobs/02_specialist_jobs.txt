@@ -33,7 +33,7 @@ colonist = {
 			trigger = {
 				owner = { has_valid_civic = civic_star_settlers   }
 			}
-			unity = 5
+			unity = 3
 		}
 
 		###Traditions+
