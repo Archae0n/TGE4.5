@@ -125,7 +125,7 @@
  trait_radioresistant:0 "Radioresistant"
  trait_radioresistant_desc:0 "§LThis species is highly resilient to ionizing radiation. Can generate §GSurvivalist§! leaders. §!\n" 
  trait_time_lords:0 "Time Lords"
- trait_time_lords_desc:0 "§LThese consummate planners measure time with the precision of an atomic clock, but are somewhat lacking in flexibility. Can generate §GMultitasker§!, §GRelativistic Travel§! and §GBlitz§! leaders.§!\n" 
+ trait_time_lords_desc:0 "§LThese consummate planners measure time with the precision of an atomic clock, but are somewhat lacking in flexibility. Can generate §GMultitasker§!, §GRelativistic Travel§! and §GBlitz§! leaders.§!\n. Leaders are Immortal." 
  trait_endemic:0 "Endemic"
  trait_endemic_desc:0 "§LMembers of this species are unable to thrive outside of a very specific environment, due to their unique biochemistry. §!\n"
  trait_unbound:0 "Unbound"
