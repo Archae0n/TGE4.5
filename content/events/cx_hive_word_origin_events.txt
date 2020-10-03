@@ -48,10 +48,10 @@ planet_event = {
 		#clear_deposits = yes
 		add_modifier = {
 			modifier = cx_hive_stage_1
-			days = 360
+			days = 3600
 		}
 		## call a planetary event to make it grow of change stage
-		planet_event = { id = cx_hive_world.2 days = 361 } # Silent entity change
+		planet_event = { id = cx_hive_world.2 days = 3601 } # Silent entity change
 	}
 }
 planet_event = {
@@ -68,10 +68,10 @@ planet_event = {
 		}
 		add_modifier = {
 			modifier = cx_hive_stage_2
-			days = 720
+			days = 7200
 		}
 		## call a planetary event to make it grow of change stage
-		planet_event = { id = cx_hive_world.3 days = 721 } # Silent entity change
+		planet_event = { id = cx_hive_world.3 days = 7201 } # Silent entity change
 	}
 }
 planet_event = {
