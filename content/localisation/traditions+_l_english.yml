@@ -314,7 +314,7 @@
  trp_supremacy_adopt:0 "Supremacy Traditions"
  trp_supremacy_adopt_desc:0 "\n§EDescription:§!\n$tradition_supremacy_plus_desc$\n\n$trp_supremacy_adopt_effect$\n\n$trp_supremacy_finish_effect$" 
  trp_supremacy_adopt_effect:0 "§EEffects:§!\nGain an §HAscension Perk§! by pairing one §YPath§! with another §YPath§!. Gain the §EFinisher Effect§! by completing §H5§! of the §YPaths§! below.\n\n§EPaths:§!\n§HQuantity§!\n§HQuality§!\n§HDeterrence§!\n§HAdmiralty§!\n§HWarfare§!\n§HDevastation§!"
- trp_supremacy_finish_effect:0 "§EFinisher Effect:§! Completing all Supremacy Paths will unlock the §YWar Doctrines§! Policies."
+ trp_supremacy_finish_effect:0 "§EFinisher Effect:§! §YFleet Command Limit§! increased by §G+40§!."
  ####Quantity Path
  trp_supremacy_quantity_a:0 "Mass Production"
  trp_supremacy_quantity_a_desc:0 "§Y$MOD_STARBASE_SHIPYARD_BUILD_COST_MULT$§! reduced by §G10%§! and §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§! increased by §G+10%§!."
@@ -386,7 +386,7 @@
  trp_supremacy_admirality_b_gestalt_desc:0 "§YAdmiral Level Cap§! increased by §G+2§! and §YAdmiral Experience Gain§! increased by §G+25%§!."
  trp_supremacy_admirality_b_gestalt_delayed:0 "§EAdmirality Path§!\nCertain drones will be made especially efficient at the leading of fleets, their purpose to defend and wage war."
  trp_supremacy_admirality_c:0 "Admirable Command"
- trp_supremacy_admirality_c_desc:0 "§YFleet Command Limit§! increased by §G+40§!."
+ trp_supremacy_admirality_c_desc:0 "Unlock §YWar Doctrines§!"
  trp_supremacy_admirality_c_delayed:0 "§EAdmirality Path§!\nNowhere amongst the billions of dead and alive stars alike can one find admirals as capable as ours. They command respect and the willingness to lead."
  trp_supremacy_admirality_c_gestalt:0 "Congruent Command"
  trp_supremacy_admirality_c_gestalt_desc:0 "§YFleet Command Limit§! increased by §G+40§!."

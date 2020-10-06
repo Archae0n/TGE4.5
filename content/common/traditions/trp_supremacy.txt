@@ -6,7 +6,7 @@ trp_supremacy_adopt = {
 }
 trp_supremacy_finish = {
 	modifier = {
-		##war doctrines unlock
+		country_command_limit_add = 40
 	}
 }
 ###Quantity Path
@@ -805,25 +805,10 @@ trp_supremacy_admirality_b = {
 }
 trp_supremacy_admirality_c = {
 	modifier = {
-		country_command_limit_add = 40
+		##wardoctrinesunlock
 	}
 	possible = {
 		has_tradition = trp_supremacy_admirality_b
-	}
-	tradition_swap = {
-		name = trp_supremacy_admirality_c_gestalt
-		inherit_effects = yes
-		inherit_icon = yes
-		inherit_name = no
-		trigger = {
-			has_ethic = ethic_gestalt_consciousness 
-		}
-		modifier = {
-			country_command_limit_add = 40
-		}
-		weight = {
-			factor = 1
-		}
 	}
 	ai_weight = {
 		factor = 1000
