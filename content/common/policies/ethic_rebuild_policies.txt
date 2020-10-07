@@ -2823,10 +2823,7 @@ enslavement_ratio_policy = {
 
 war_doctrine = {
 	potential = {
-		OR = {
-			is_country_type = default
-			is_country_type = void_farer
-		}
+		is_country_type = default
 		has_tradition = trp_supremacy_admirality_c
 	}
 
