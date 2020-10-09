@@ -209,62 +209,62 @@ custom_tooltip = organic_structures_tooltip
 		colonies_larva_cost_add = 30
 		#colonies_food_upkeep_add = 5
 		
-		ship_constructor_alloys_cost_mult = -1.00
+		ship_constructor_alloys_cost_mult = -0.8
 		ship_constructor_food_cost_add = 300
 		ship_constructor_larva_cost_add = 5
-		ship_constructor_alloys_upkeep_mult = -1.0
+		ship_constructor_alloys_upkeep_mult = -0.8
 		ship_constructor_energy_upkeep_mult = -1.0
 		ship_constructor_food_upkeep_add = 1
 		
 		
-		ship_science_alloys_cost_mult = -1.0
+		ship_science_alloys_cost_mult = -0.8
 		ship_science_food_cost_add = 300
 		ship_science_larva_cost_add = 2		
 		ship_science_alloys_upkeep_mult = -1.0 #iirc they dont have alloy upkeep so we remove the energy one instead
 		ship_science_energy_upkeep_mult = -1.0
 		ship_science_food_upkeep_add = 1
 
-		ship_corvette_alloys_upkeep_mult = -0.80
+		ship_corvette_alloys_upkeep_mult = -0.60
 		ship_corvette_food_upkeep_add = 2
-		ship_corvette_alloys_cost_mult = -0.60
-		ship_corvette_food_cost_add = 200
+		ship_corvette_alloys_cost_mult = -0.40
+		ship_corvette_food_cost_add = 150
 		ship_corvette_larva_cost_add = 5
 		
-		ship_destroyer_alloys_upkeep_mult = -0.80
+		ship_destroyer_alloys_upkeep_mult = -0.60
 		ship_destroyer_food_upkeep_add = 4
-		ship_destroyer_alloys_cost_mult = -0.60
-		ship_destroyer_food_cost_add = 350
+		ship_destroyer_alloys_cost_mult = -0.40
+		ship_destroyer_food_cost_add = 250
 		ship_destroyer_larva_cost_add = 10
 		
-		ship_cruiser_alloys_upkeep_mult = -0.80
+		ship_cruiser_alloys_upkeep_mult = -0.60
 		ship_cruiser_food_upkeep_add = 8
-		ship_cruiser_alloys_cost_mult = -0.60
-		ship_cruiser_food_cost_add = 650
+		ship_cruiser_alloys_cost_mult = -0.40
+		ship_cruiser_food_cost_add = 400
 		ship_cruiser_larva_cost_add = 30
 		
-		ship_battleship_alloys_upkeep_mult = -0.80
+		ship_battleship_alloys_upkeep_mult = -0.60
 		ship_battleship_food_upkeep_add = 16
-		ship_battleship_alloys_cost_mult = -0.60
-		ship_battleship_food_cost_add = 1800
+		ship_battleship_alloys_cost_mult = -0.40
+		ship_battleship_food_cost_add = 1200
 		ship_battleship_larva_cost_add = 60
 		
-		ship_titan_alloys_upkeep_mult = -0.80
+		ship_titan_alloys_upkeep_mult = -0.60
 		ship_titan_food_upkeep_add = 32
-		ship_titan_alloys_cost_mult = -0.60
-		ship_titan_food_cost_add = 4000
+		ship_titan_alloys_cost_mult = -0.40
+		ship_titan_food_cost_add = 3000
 		ship_titan_larva_cost_add = 150
 		
-		ship_colossus_alloys_upkeep_mult = -0.80
+		ship_colossus_alloys_upkeep_mult = -0.60
 		ship_colossus_food_upkeep_add = 50
-		ship_colossus_alloys_cost_mult = -0.60
-		ship_colossus_food_cost_add = 20000
+		ship_colossus_alloys_cost_mult = -0.40
+		ship_colossus_food_cost_add = 14000
 		ship_colossus_larva_cost_add = 500
 		
 		
-		ship_juggernaut_alloys_upkeep_mult = -0.80
+		ship_juggernaut_alloys_upkeep_mult = -0.60
 		ship_juggernaut_food_upkeep_add = 60
-		ship_juggernaut_alloys_cost_mult = -0.60
-		ship_juggernaut_food_cost_add = 25000
+		ship_juggernaut_alloys_cost_mult = -0.40
+		ship_juggernaut_food_cost_add = 18000
 		ship_juggernaut_larva_cost_add = 650
 
 		starbase_ion_cannon_alloys_cost_mult = -0.60
