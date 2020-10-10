@@ -983,9 +983,9 @@
 		NAVAL_CAPACITY_POP_MULT									= 0		# Mult value of Naval Capacity for each Pop
 
 		STARBASE_CAPACITY_MAX									= 999	# Max value of Starbase Capacity
-		STARBASE_CAPACITY_BASE 									= 3		# Base value of Starbase Capacity
-		STARBASE_CAPACITY_SYSTEM_MULT							= 0.10	# Mult value of Starbase Capacity for each owned system
-		STARBASE_CAPACITY_POP_MULT								= 0.00	# Mult value of Starbase Capacity for each Pop
+		STARBASE_CAPACITY_BASE 									= 6		# Base value of Starbase Capacity
+		STARBASE_CAPACITY_SYSTEM_MULT							= 0.20	# Mult value of Starbase Capacity for each owned system
+		STARBASE_CAPACITY_POP_MULT								= 0.01	# Mult value of Starbase Capacity for each Pop
 
 		STARBASE_BASE_LEVEL				= "starbase_level_outpost"		# The base starbase level
 		UPGRADED_STARBASE_BASE_LEVEL	= "starbase_level_starport"		# The first starbase level you upgrade to
