@@ -1,0 +1,12 @@
+can_be_part_of_galactic_community = {
+	is_country_type = default
+	NOR = {
+		AND = {
+			is_ai = yes
+			is_multiplayer = yes
+		}
+		has_civic = civic_fanatic_purifiers
+		has_civic = civic_hive_devouring_swarm
+		has_civic = civic_machine_terminator
+	}
+}
