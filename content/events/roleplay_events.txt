@@ -1,0 +1,22 @@
+namespace = roleplay
+
+# remove ais from gc
+event = {
+	id = roleplay.1
+	hide_window = yes
+		
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { is_multiplayer = yes }
+			every_playable_country = {
+				limit = {
+					is_galactic_community_member = yes
+					is_ai = yes
+				}
+				remove_from_galactic_community = yes
+			}
+		}
+	}
+}
