@@ -1034,7 +1034,7 @@
 		VETO_COOLDOWN = 1800							# time before a country can enact another veto
 		EMERGENCY_MEASURES_COOLDOWN = 7200				# time before a country can propose another emergency measure
 		DEFAULT_VETO_COST_MULT = 3						# proposed resolution cost is multiplied by this to determine the cost of vetoing that resolution
-		JOIN_COMMUNITY_INFLUENCE_COST = 100				# cost to join the community manually after its formation
+		JOIN_COMMUNITY_INFLUENCE_COST = 0				# cost to join the community manually after its formation
 		LEAVE_COMMUNITY_MIN_INFLUENCE_COST = 100		# minimum cost to leave the galactic community
 		LEAVE_COMMUNITY_MAX_INFLUENCE_COST = 500		# maximum cost to leave the galactic community
 		LEAVE_COMMUNITY_INFLUENCE_COST_FACTOR = 0.5		# factor determining actual cost of leaving the community, this is multiplied with empire sprawl
