@@ -175,21 +175,22 @@ action_demand_vassalization = {
 	}
 
 	proposable = {
-		if = {
-			limit = {
-				hidden_trigger = { from = { is_country_type = awakened_fallen_empire } }
-			}
-			hidden_trigger = { always = yes }
-		}
-		else_if = {
-			limit = { 
-				has_valid_civic = civic_feudal_realm
-			}
-			relative_power = { who = from value >= equivalent }
-		}
-		else = {
-			relative_power = { who = from value >= superior }
-		}
+		#if = {
+		#	limit = {
+		#		hidden_trigger = { from = { is_country_type = awakened_fallen_empire } }
+		#	}
+		#	hidden_trigger = { always = yes }
+		#}
+		#else_if = {
+		#	limit = { 
+		#		has_valid_civic = civic_feudal_realm
+		#	}
+		#	relative_power = { who = from value >= equivalent }
+		#}
+		#else = {
+		#	relative_power = { who = from value >= superior }
+		#}
+		always = yes
 		custom_tooltip = grants_subjugation_cb
 	}
 
@@ -279,15 +280,16 @@ action_demand_tributary = {
 	}
 
 	proposable = {
-		if = {
-			limit = { 
-				has_valid_civic = civic_feudal_realm
-			}
-			relative_power = { who = from value >= equivalent }
-		}
-		else = {
-			relative_power = { who = from value >= superior }
-		}
+		#if = {
+		#	limit = { 
+		#		has_valid_civic = civic_feudal_realm
+		#	}
+		#	relative_power = { who = from value >= equivalent }
+		#}
+		#else = {
+		#	relative_power = { who = from value >= superior }
+		#}
+		always = yes
 		custom_tooltip = grants_subjugation_cb
 	}
 
