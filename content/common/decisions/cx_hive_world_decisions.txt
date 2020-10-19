@@ -21,6 +21,7 @@ decision_grow_hive_world = {
 			has_modifier = cx_hive_stage_1
 			has_modifier = cx_hive_stage_2
 			is_planet_class = pc_hive
+			habitable_structure = yes
 		}
 		
 	}
