@@ -1388,10 +1388,10 @@ techno_priest = {
 	}
 
 	resources = {
-		category = planet_pop_assemblers
+		category = planet_researchers
 		produces = {
 			unity = 3
-			engineering_research = 2
+			engineering_research = 4
 		}
 		produces = {
 			trigger = {
