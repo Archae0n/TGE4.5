@@ -379,7 +379,7 @@ gpm_r_fallout_emergency_replicator = {
 		}
 		country_base_minerals_produces_add = 60
 		country_base_food_produces_add = 60
-		country_base_alloys_produces_add = 30
+		country_base_alloys_produces_add = 10
 	}
 	triggered_country_modifier = {
 		potential = {
@@ -405,7 +405,6 @@ gpm_r_fallout_emergency_replicator = {
 			limit = { is_gestalt = no }
 			add_resource = { minerals = 3000 }
 			add_resource = { food = 3000 }
-			add_resource = { alloys = 1500 }
 			add_resource = { consumer_goods = 1500 }
 		}
 
@@ -867,7 +866,7 @@ gpm_r_earthquake_engine = {
 		category = relics
 		# Activation cost
 		cost = {
-			energy = 10000
+			influence = 100
 		}
 	}
 	
@@ -885,7 +884,7 @@ gpm_r_earthquake_engine = {
 	score = 1000
 
 	active_effect = {
-		add_resource = { minerals = 20000 }
+		add_resource = { minerals = 10000 }
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
