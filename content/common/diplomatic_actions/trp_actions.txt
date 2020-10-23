@@ -12,6 +12,7 @@ action_invite_to_federation = {
 	should_show_auto_accept_message_recipient = yes
 	should_open_auto_accept_message_recipient = yes
 	should_notify_auto_recipient_on_vote_fail = yes
+	requires_recipient_independence = no	
 
 	potential = {
 		hidden_trigger = {
