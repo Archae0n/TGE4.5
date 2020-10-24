@@ -1,4 +1,4 @@
-@cooldown = 3600
+@cooldown = 720
 
 allow_subjects_to_join_no = {
 	potential = {

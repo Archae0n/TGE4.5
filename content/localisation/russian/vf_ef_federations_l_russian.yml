@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_russian:
  IS_YOU:1 "This is you"
 
 # Empire Federation
@@ -110,7 +110,7 @@
  
  requires_feudal_1:0 "§RRequires you to have the §Y$civic_feudal_realm$§! civic.§!"
  
- federation_acceptance_empire_federation:0 "Subject"
+ federation_acceptance_empire_federation:0 "$vf_ef_federation$"
  federation_acceptance_empire:0 "Our subjects will do as we command"
  federation_acceptance_empire_other:0 "They have no desire to give up their autonomy"
  

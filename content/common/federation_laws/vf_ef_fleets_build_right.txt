@@ -1,11 +1,7 @@
-@cooldown = 3600
+@cooldown = 720
 
 federation_build_fleets_everyone = {
-	potential = {
-		NOT = {
-			has_federation_type = vf_ef_federation
-		}
-	}
+	potential = { always = yes }
 	allow = {
 		custom_tooltip = {
 			NOT = {
@@ -38,9 +34,7 @@ federation_build_fleets_everyone = {
 }
 
 federation_build_fleets_everyone_empire = {
-	potential = {
-		has_federation_type = vf_ef_federation
-	}
+	potential = { has_federation_type = vf_ef_federation }
 	allow = {
 		custom_tooltip = {
 			NOT = {
@@ -75,9 +69,9 @@ federation_build_fleets_everyone_empire = {
 federation_build_fleets_only_leader = {
 	potential = {
 		host_has_dlc = Federations		
-		NOT = {
+		NOR = {
 			has_federation_law = fleet_contribution_none
-			has_federation_type = vf_ef_federation
+			has_federation_law = fleet_contribution_none_empire
 		}
 	}
 	allow = {
@@ -125,22 +119,19 @@ federation_build_fleets_only_leader_empire = {
 		host_has_dlc = Federations
 		has_federation_type = vf_ef_federation
 		NOT = {
-			has_federation_law = fleet_contribution_none
+			has_federation_law = fleet_contribution_none_empire
 		}
 	}
 	allow = {
 		custom_tooltip = {
 			NOT = {
 				AND = {
-					NOT = { has_federation_law = federation_build_fleets_only_leader }
+					NOT = { has_federation_law = federation_build_fleets_only_leader_empire }
 					has_modifier = federation_law_category_build_fleets_cooldown
 					has_any_federation_law_in_category = law_category_build_fleets_empire
 				}
 			}
 		}
-	}
-	required_centralization = {
-		base = 1
 	}
 	on_enact = {
 		set_only_leader_builds_fleets = yes

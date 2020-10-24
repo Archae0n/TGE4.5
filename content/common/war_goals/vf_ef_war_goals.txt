@@ -10,7 +10,7 @@ wg_empire = {
 		demand_surrender
 	}
 
-	surrender_acceptance = -200
+	surrender_acceptance = -50
 
 	potential = {
 		has_total_war_cb = no
