@@ -24,3 +24,4 @@
  MEDIUM_LARGE_T2_STATION_SECTION:0 "Medium Station Section"
  HEAVY_LARGE_T2_STATION_SECTION:0 "Heavy Station Section"
  HANGAR_LARGE_T2_STATION_SECTION:0 "Hanger Station Section"
+ decision_reevaulate_market_effect:0 "We will re-evaulate our Market Viability with the galactic community. It is only worth taking this decision if your planet significantly increases in trade value, otherwise the influence will be wasted."
