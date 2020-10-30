@@ -11,9 +11,7 @@ authoritarian_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -37,9 +35,7 @@ libertarian_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -63,9 +59,7 @@ materialist_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -89,9 +83,7 @@ spiritualist_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -115,9 +107,7 @@ militarist_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -141,9 +131,7 @@ pacifist_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -167,9 +155,7 @@ xenophile_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -193,9 +179,7 @@ xenophobe_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -219,9 +203,7 @@ industrialist_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_industrial
-				has_ethic = ethic_fanatic_industrial
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -245,9 +227,7 @@ ecologist_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_green
-				has_ethic = ethic_fanatic_green
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -272,9 +252,7 @@ collectivist_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_socialism
-				has_ethic = ethic_fanatic_socialism
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -298,9 +276,7 @@ individualist_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_capitalism
-				has_ethic = ethic_fanatic_capitalism
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -324,9 +300,7 @@ elitist_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_elitist
-				has_ethic = ethic_fanatic_elitist
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -350,9 +324,7 @@ egalitarian_propaganda = {
 	
 	potential = {
 		owner = {
-			NOR = {
-				has_ethic = ethic_pluralist
-				has_ethic = ethic_fanatic_pluralist
+			NOT = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
@@ -371,7 +343,7 @@ xenophile_suppression = {
 	resources = { cost = { influence = 5 } }
 	
 	modifier = {
-		pop_ethic_xenophile_attraction_mult = -0.8
+		pop_ethic_xenophile_attraction_mult = -1.0
 	}
 	
 	potential = {
