@@ -1019,9 +1019,9 @@
 
 		MEGASTRUCTURE_BUILD_CAP_BASE		= 1.0
 
-		BASE_ENVOYS_REGULAR_EMPIRE			= 1			# The starting number of envoys for regular empires
+		BASE_ENVOYS_REGULAR_EMPIRE			= 2			# The starting number of envoys for regular empires
 
-		RESOLUTION_VOTE_TIMER = 1440					# number of days a resolution will be on the senate floor before being passed/failed
+		RESOLUTION_VOTE_TIMER = 180					# number of days a resolution will be on the senate floor before being passed/failed
 		SENATE_RECESS_TIMER = 720						# number of days until the next proposed resolution will be put on the floor after the current vote
 		COUNCIL_DIPLOMACY_WEIGHT_MODIFIER = 1.5			# how much a countries diplomatic weight will be increased when voting if on the council
 		CHANGE_VOTE_COOLDOWN = 120						# number of days after voting in a resolution before you can change your vote
