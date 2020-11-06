@@ -44,6 +44,18 @@ district_hab_housing = {
 		}
 		text = job_maintenance_drone_effect_desc
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			OR = {
+				owner = { has_valid_civic = civic_shared_burdens }
+				owner = { has_valid_civic = civic_welfare_state }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}	
 
 	ai_weight = {
 		weight = 0
@@ -123,6 +135,21 @@ district_hab_energy = {
 			job_technician_add = 3
 		}
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+				has_valid_civic = civic_shared_burdens
+			}
+		}
+		modifier = {
+			job_technician_add = 1
+			planet_housing_add = 1
+		}
+	}	
 
 	triggered_planet_modifier = {
 		potential = {
@@ -238,6 +265,20 @@ district_hab_science = {
 			job_researcher_add = 3
 		}
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+				has_valid_civic = civic_shared_burdens
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}		
 
 	triggered_planet_modifier = {
 		potential = {
@@ -346,6 +387,21 @@ district_hab_commercial = {
 			job_clerk_add = 5
 		}
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+				has_valid_civic = civic_shared_burdens
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+			planet_housing_add = 1
+		}
+	}	
 
 	triggered_planet_modifier = {
 		potential = {
@@ -412,6 +468,21 @@ district_hab_mining = {
 			energy = @hab_maintenance
 		}
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+				has_valid_civic = civic_shared_burdens
+			}
+		}
+		modifier = {
+			job_miner_add = 1
+			planet_housing_add = 1
+		}
+	}	
 
 	triggered_planet_modifier = {
 		potential = {
@@ -568,6 +639,20 @@ district_hab_cultural = {
 			job_culture_worker_add = 1
 		}
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+				has_valid_civic = civic_shared_burdens
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}	
 
 	triggered_planet_modifier = {
 		potential = {

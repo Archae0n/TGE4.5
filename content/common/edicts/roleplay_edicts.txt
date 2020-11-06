@@ -48,8 +48,9 @@ diplo_override = {
 	}
 
 	potential = {
-		#is_multiplayer = yes
-		always = no
+		is_multiplayer = yes
+		is_ai = no
+		#always = no
 	}
 
 	ai_weight = {

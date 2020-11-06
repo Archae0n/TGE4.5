@@ -538,7 +538,7 @@ criminal = {
 	}
 
 	weight = {
-		weight = @criminal_job_weight
+		weight = 99999
 	}
 }
 

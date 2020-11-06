@@ -183,8 +183,8 @@ ap_esap_bio_bonus = {
 		}
 	}
 	modifier = {
-		pop_growth_speed = 0.20
-		planet_pops_food_upkeep_mult = -0.20
+		pop_growth_speed = 0.30
+		planet_pops_food_upkeep_mult = -0.30
 	}
 	potential = {
 		host_has_dlc = "Utopia"
@@ -358,7 +358,7 @@ ap_esap_cyber_bonus = {
 	}
 
 	modifier = {
-		country_unity_produces_mult = 0.25
+		country_unity_produces_mult = 0.50
 		pop_government_ethic_attraction = 0.50
 	}
 
@@ -565,7 +565,7 @@ ap_esap_psi_bonus = {
 	}
 
 	modifier = {
-		army_morale_damage_mult = 0.33
+		army_morale_damage_mult = 0.5
 	}
 
 	possible = {
@@ -1513,7 +1513,7 @@ ap_esap_ct2_expansion_diplomacy = {
 	}
 
 	modifier = {
-		empire_size_penalty_mult = -0.20
+		empire_size_penalty_mult = -0.25
 	}
 	
 	potential = {
@@ -1544,7 +1544,7 @@ ap_esap_ct2_diplomacy_finance = {
 	}
 
 	modifier = {
-		job_merchant_per_pop = 0.04
+		job_merchant_per_pop = 0.05
 	}
 	
 	potential = {
@@ -1604,9 +1604,9 @@ ap_esap_ct2_infrastructure_war = {
 	}
 
 	modifier = {
-		country_starbase_capacity_mult = 0.20
-		shipclass_starbase_hull_mult = 0.20
-		starbase_defense_platform_capacity_add = 10
+		country_starbase_capacity_mult = 0.25
+		shipclass_starbase_hull_mult = 0.25
+		starbase_defense_platform_capacity_add = 20
 	}
 	
 	potential = {
@@ -1640,13 +1640,13 @@ ap_esap_ct3_not_war = {
 	}
 
 	modifier = {
-		pop_growth_speed = 0.10
-		country_starbase_influence_cost_mult = -0.10
-		all_technology_research_speed = 0.15	
-		planet_jobs_produces_mult = 0.10
-		ships_upkeep_mult = 0.25
-		armies_upkeep_mult = 0.25
-		country_naval_cap_mult = -0.25
+		pop_growth_speed = 0.25
+		country_starbase_influence_cost_mult = -0.25
+		all_technology_research_speed = 0.25	
+		planet_jobs_produces_mult = 0.25
+		ships_upkeep_mult = 0.5
+		armies_upkeep_mult = 0.5
+		country_naval_cap_mult = -0.5
 	}
 	
 	potential = {
@@ -1804,10 +1804,10 @@ ap_esap_ct3_not_infrastructure = {
 	modifier = {
 		ships_upkeep_mult = -0.10
 		ship_speed_mult = 0.20
-		ship_fire_rate_mult = 0.05
+		ship_fire_rate_mult = 0.10
 		country_claim_influence_cost_mult = -0.10
 		country_war_exhaustion_mult = -0.25
-		planet_jobs_upkeep_mult = 0.20
+		planet_jobs_upkeep_mult = 0.25
 	}
 	
 	potential = {
@@ -2137,7 +2137,7 @@ ap_esap_authoritarian_1 = {
 	}
 
 	modifier = {
-		pop_cat_ruler_political_power = 2.0
+		pop_cat_ruler_political_power = 3.0
 	}
 	
 	potential = {
@@ -2161,7 +2161,7 @@ ap_esap_egalitarian_1 = {
 		hidden_effect = {
 			every_owned_planet = {
 				if = {
-					limit = { happiness_planet < 70 }
+					limit = { happiness_planet < 60 }
 					add_modifier = {
 						modifier = "mod_esap_egalitarian_1"
 						days = -1
@@ -2242,9 +2242,10 @@ ap_esap_xenophile_1 = {
 	}
 
 	modifier = {
-		envoy_improve_relations_mult = 0.50
-		country_trust_growth = 0.25
-		country_trust_cap_add = 50
+		max_rivalries = -10		
+		envoys_add = 5
+		diplo_weight_mult = 0.5
+		country_claim_influence_cost_mult = 1.0
 	}
 
 	possible = {
@@ -2322,8 +2323,9 @@ ap_esap_pacifist_1 = {
 	}
 
 	modifier = {
-		diplo_weight_mult = 0.33
+		diplo_weight_mult = 0.25
 		country_base_influence_produces_add = 1
+		country_megastructure_build_cap_add = 2
 	}
 
 	possible = {
@@ -2419,14 +2421,15 @@ ap_esap_authoritarian_2 = {
 
 	modifier = {
 		description = ap_esap_authoritarian_2_modifier_desc
-		planet_jobs_worker_minerals_produces_mult = 0.10
-		planet_jobs_worker_food_produces_mult = 0.10
-		planet_jobs_specialist_alloys_produces_mult = 0.10
-		planet_jobs_specialist_consumer_goods_produces_mult = 0.10 
-		planet_jobs_specialist_society_research_produces_mult = 0.10
-		planet_jobs_specialist_engineering_research_produces_mult = 0.10
-		planet_jobs_specialist_physics_research_produces_mult = 0.10
-		planet_jobs_ruler_unity_produces_mult = 0.10
+		planet_jobs_worker_minerals_produces_mult = 0.2
+		planet_jobs_worker_food_produces_mult = 0.2
+		planet_jobs_specialist_alloys_produces_mult = 0.2
+		planet_jobs_specialist_consumer_goods_produces_mult = 0.2
+		planet_jobs_specialist_society_research_produces_mult = 0.2
+		planet_jobs_specialist_engineering_research_produces_mult = 0.2
+		planet_jobs_specialist_physics_research_produces_mult = 0.2
+		planet_jobs_ruler_unity_produces_mult = 0.2
+		country_base_influence_produces_add = -2
 	}
 	
 	potential = {
@@ -2494,7 +2497,7 @@ ap_esap_xenophobe_2 = {
 	}
 
 	modifier = {
-		terraforming_cost_mult = -0.15
+		terraforming_cost_mult = -0.50
 		terraform_speed_mult = 1.00
 	}
 
@@ -2531,6 +2534,7 @@ ap_esap_xenophile_2 = {
 
 	modifier = { 
 		federation_naval_cap_contribution_mult = 2.50
+		country_naval_cap_add = 50
 	}
 	
 	potential = {
@@ -2862,7 +2866,7 @@ ap_universal_transactions = {
 	}
 	
 	modifier = {
-		planet_branch_offices_cost_mult = -0.25
+		planet_branch_offices_cost_mult = -0.5
 	}
 	
 	on_enabled = {
@@ -2946,7 +2950,7 @@ ap_master_builders = {
 		}			
 	}
 	modifier = {
-		megastructure_build_speed_mult = 0.5
+		megastructure_build_speed_mult = 1.0
 		country_megastructure_build_cap_add = 1
 	}
 		
@@ -2994,10 +2998,10 @@ ap_galactic_wonders_utopia = {
 			fail_text = "requires_mega_engineering"
 			has_technology = tech_mega_engineering
 		}
-		custom_tooltip = {
-			fail_text = "requires_built_or_repaired_megastructure"
-			has_country_flag = has_built_or_repaired_megastructure
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_built_or_repaired_megastructure"
+		#	has_country_flag = has_built_or_repaired_megastructure
+		#}
 	}				
 	
 	potential = {
@@ -3093,10 +3097,10 @@ ap_galactic_wonders_utopia_and_megacorp = {
 			fail_text = "requires_mega_engineering"
 			has_technology = tech_mega_engineering
 		}
-		custom_tooltip = {
-			fail_text = "requires_built_or_repaired_megastructure"
-			has_country_flag = has_built_or_repaired_megastructure
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_built_or_repaired_megastructure"
+		#	has_country_flag = has_built_or_repaired_megastructure
+		#}
 		
 	}				
 	
@@ -3127,9 +3131,9 @@ ap_galactic_wonders_utopia_and_megacorp = {
 
 ap_one_vision = {
 	modifier = {
-		country_unity_produces_mult = 0.10
-		pop_amenities_usage_mult = -0.10
-		pop_government_ethic_attraction = 0.50
+		country_unity_produces_mult = 0.25
+		pop_amenities_usage_mult = -0.25
+		pop_government_ethic_attraction = 2.0
 	}
 
 	potential = {
@@ -3161,8 +3165,8 @@ ap_one_vision = {
 }
 ap_esap_one_purpose = {
 	modifier = {
-		country_unity_produces_mult = 0.20
-		pop_amenities_usage_mult = -0.20
+		country_unity_produces_mult = 0.25
+		pop_amenities_usage_mult = -0.25
 	}
 	
 	possible = {
@@ -3193,7 +3197,7 @@ ap_world_shaper = {
 	}
 
 	modifier = {
-		terraforming_cost_mult = -0.25
+		terraforming_cost_mult = -0.50
 	}
 
 	on_enabled = {
@@ -3253,8 +3257,8 @@ ap_galactic_force_projection = {
 		}
 	}
 	modifier = {
-		country_naval_cap_add = 80
-		country_command_limit_add = 20
+		country_naval_cap_add = 100
+		country_command_limit_add = 40
 	}
 
 	potential = {
@@ -3293,12 +3297,12 @@ ap_defender_of_the_galaxy = {
 	}
 	modifier = {
 		description = ap_defender_of_the_galaxy_modifier_desc
-		damage_vs_country_type_swarm_mult = 0.5
-		damage_vs_country_type_extradimensional_mult = 0.5
-		damage_vs_country_type_extradimensional_2_mult = 0.5
-		damage_vs_country_type_extradimensional_3_mult = 0.5
-		damage_vs_country_type_ai_empire_mult = 0.5
-		damage_vs_country_type_gray_goo_mult = 0.5
+		damage_vs_country_type_swarm_mult = 1.0
+		damage_vs_country_type_extradimensional_mult = 1.0
+		damage_vs_country_type_extradimensional_2_mult = 1.0
+		damage_vs_country_type_extradimensional_3_mult = 1.0
+		damage_vs_country_type_ai_empire_mult = 1.0
+		damage_vs_country_type_gray_goo_mult = 1.0
 	}
 
 	on_enabled = {
@@ -3328,6 +3332,7 @@ ap_shared_destiny = {
 	modifier = {
 		subject_integration_influence_cost_mult = -0.5
 		country_subject_trust_cap_add = 100
+		subject_tribute_mult = 0.50
 	}
 
 	potential = {
@@ -3358,8 +3363,8 @@ ap_shared_destiny = {
 
 ap_interstellar_dominion = {
 	modifier = {
-		country_starbase_influence_cost_mult = -0.20
-		country_claim_influence_cost_mult = -0.20
+		country_starbase_influence_cost_mult = -0.25
+		country_claim_influence_cost_mult = -0.25
 	}
 
 	potential = {
@@ -3383,10 +3388,11 @@ ap_interstellar_dominion = {
 
 ap_galactic_contender = {
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_ascension_perks_3"
+		#	num_ascension_perks > 2
+		#}
+		always = no
 	}
 	modifier = {
 		damage_vs_country_type_fallen_empire_mult = 0.33
@@ -3438,7 +3444,7 @@ ap_grasp_the_void = {
 	}
 
 	modifier = {
-		country_starbase_capacity_add = 5
+		country_starbase_capacity_add = 10
 	}
 
 	potential = {
@@ -3535,7 +3541,7 @@ ap_xeno_compatibility = {
 	}
 
 	modifier = {
-		planet_immigration_pull_mult = 0.33
+		planet_immigration_pull_mult = 0.50
 	}
 
 	possible = {

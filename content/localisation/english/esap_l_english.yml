@@ -8,7 +8,7 @@
  ap_esap_bio_bonus_desc:0 "Our future generations are to important to leave their creation to natural processes. Our advances in bio technology allows us to grow new individuals, greatly streamlining the procreation process."
  
 ### Cybernetic Ascension ###
- ap_esap_cyber_bonus:0 "A Thought in the Circuit"
+ ap_esap_cyber_bonus:0 "A Ghost in the Shell"
  ap_esap_cyber_bonus_desc:0 "Advanced brain-computer interfaces has allowed us to connect our minds directly to the great network. Communication throughout or empire is now effortless and instantaneous. Indeed, some individuals have become so interconnected with the great network that they have started to lose their touch with the real world."
  #ap_esap_cyber_bonus_tooltip:0 ""
  
@@ -236,7 +236,7 @@ ap_esap_ct3_not_diplomacy:0 "A Machine of War"
  
  #Disabled until Federations DLC.
  ap_esap_xenophile_1:0 "Friendmaker"
- ap_esap_xenophile_1_desc:0 "Do we not destroy our eemies when we make them our friends?’"
+ ap_esap_xenophile_1_desc:0 "Why destroy our enemies when we make them our friends?"
  ap_esap_xenophile_1_tooltip:0 ""
 
  ap_esap_militarist_1:0 "Behemoths of War"

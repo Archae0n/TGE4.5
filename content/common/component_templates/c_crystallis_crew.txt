@@ -121,9 +121,9 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_fire_rate_mult = 0.15
-		ship_orbital_bombardment_mult = 0.15
-		ship_disengage_chance_reduction = 0.30
+		ship_fire_rate_mult = 0.05
+		ship_home_territory_fire_rate_mult = 0.10
+		ship_disengage_chance_reduction = 0.25
 	}
 	
 	prerequisites = { "tech_c_purifier_crew_1" }
