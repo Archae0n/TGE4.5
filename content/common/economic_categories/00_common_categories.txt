@@ -1678,6 +1678,7 @@ planet_researchers = {
 				has_job = researcher
 				has_job = brain_drone
 				has_job = calculator
+				has_job = techno_priest
 			}
 		}
 	}

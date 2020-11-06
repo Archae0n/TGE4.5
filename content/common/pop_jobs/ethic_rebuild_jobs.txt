@@ -1391,7 +1391,7 @@ techno_priest = {
 		category = planet_researchers
 		produces = {
 			unity = 3
-			engineering_research = 4
+			engineering_research = 2
 		}
 		produces = {
 			trigger = {
