@@ -51,11 +51,12 @@ district_hab_housing = {
 			OR = {
 				owner = { has_valid_civic = civic_shared_burdens }
 				owner = { has_valid_civic = civic_welfare_state }
+			}
+			modifier = {
+				planet_housing_add = 1
+			}
 		}
-		modifier = {
-			planet_housing_add = 1
-		}
-	}	
+	}
 
 	ai_weight = {
 		weight = 0
