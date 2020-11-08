@@ -1678,7 +1678,6 @@ planet_researchers = {
 				has_job = researcher
 				has_job = brain_drone
 				has_job = calculator
-				has_job = techno_priest
 			}
 		}
 	}
@@ -1850,6 +1849,16 @@ planet_priests = {
 				has_job = high_priest
 				has_job = priest
 			}
+		}
+	}
+	
+	triggered_produces_modifier = {
+		key = rsrchcap_techno_priest
+		modifier_types = {
+			add
+		}
+		trigger = {
+			has_job = techno_priest
 		}
 	}
 

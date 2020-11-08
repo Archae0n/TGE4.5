@@ -230,6 +230,7 @@
 	mod_rsrchcap_purge_physics_research_produces_add:0 "£physics£ $physics_research$ from £job_purge£ $job_purge_plural$"
 	mod_rsrchcap_purge_society_research_produces_add:0 "£society£ $society_research$ from £job_purge£ $job_purge_plural$"
 	mod_rsrchcap_purge_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_purge£ $job_purge_plural$"
+    mod_rsrchcap_techno_priest_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from $job_techno_priest_plural$"
 
 	rsrchcap_purge:0 "$job_purge$"
 	rsrchcap_head_researcher:0 "$job_head_researcher$"
@@ -243,6 +244,7 @@
 	rsrchcap_science_nexus_2:0 "$think_tank_2$"
 	rsrchcap_science_nexus_3:0 "$think_tank_3$"
 	rsrchcap_science_nexus_4:0 "$think_tank_4$"
+    rsrchcap_techno_priest: 0 "$job_techno_priest$"
 
 	rsrchcap_tech_cost_test:0 "Tech Cost Test"
 	rsrchcap_tech_cost_test_desc:0 "Tests tech cost"
