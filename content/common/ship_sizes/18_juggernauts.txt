@@ -10,7 +10,7 @@ juggernaut = {
 		starbase_shipyard_capacity_add = 2
 	}
 
-	base_buildtime = @juggernaut_build_time
+	base_buildtime = 1800
 	resources = {
 		category = ships
 		upkeep = {
