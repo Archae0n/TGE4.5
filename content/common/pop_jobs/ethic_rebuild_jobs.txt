@@ -1388,7 +1388,7 @@ techno_priest = {
 	}
 
 	resources = {
-		category = planet_researchers
+		category = planet_priests
 		produces = {
 			unity = 3
 			engineering_research = 2
