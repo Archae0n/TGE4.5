@@ -1,3 +1,144 @@
+#############
+#	COST	#
+#############
+
+@cost_S6 = 17
+@cost_M6 = 34
+@cost_L6 = 51
+
+@cost_S7 = 19
+@cost_M7 = 38
+@cost_L7 = 57
+
+@cost_S8 = 21
+@cost_M8 = 42
+@cost_L8 = 63
+
+@cost_S9 = 23
+@cost_M9 = 46
+@cost_L9 = 69
+
+@cost_S10 = 25
+@cost_M10 = 50
+@cost_L10 = 75
+
+@cost_S11 = 30
+@cost_M11 = 60
+@cost_L11 = 90
+
+#############
+#	POWER	#
+#############
+
+@power_S6 = -40
+@power_M6 = -95
+@power_L6 = -240
+             
+@power_S7 = -45
+@power_M7 = -105
+@power_L7 = -270
+             
+@power_S8 = -50
+@power_M8 = -115
+@power_L8 = -305
+             
+@power_S9 = -55
+@power_M9 = -125
+@power_L9 = -340
+             
+@power_S10 = -60
+@power_M10 = -135
+@power_L10 = -380
+
+@power_S11 = -75
+@power_M11 = -150
+@power_L11 = -500
+
+#############
+#	SHIELD	#
+#############
+
+@shield_S6 = 210
+@shield_M6 = 528
+@shield_L6 = 1314
+
+@shield_S7 = 258
+@shield_M7 = 654
+@shield_L7 = 1614
+
+@shield_S8 = 312
+@shield_M8 = 798
+@shield_L8 = 1950
+
+@shield_S9 = 372
+@shield_M9 = 960
+@shield_L9 = 2322
+
+@shield_S10 = 438
+@shield_M10 = 1140
+@shield_L10 = 2730
+
+@shield_S11 = 500
+@shield_M11 = 1250
+@shield_L11 = 3000
+
+#############
+#	REGEN	#
+#############
+
+@regen_S6 = 1.4
+@regen_M6 = 3.5
+@regen_L6 = 8.7
+
+@regen_S7 = 1.7
+@regen_M7 = 4.3
+@regen_L7 = 10.7
+
+@regen_S8 = 2.1
+@regen_M8 = 5.3
+@regen_L8 = 13.0
+
+@regen_S9 = 2.5
+@regen_M9 = 6.4
+@regen_L9 = 15.4
+
+@regen_S10 = 2.9
+@regen_M10 = 7.6
+@regen_L10 = 18.2
+
+@regen_S10 = 3.4
+@regen_M10 = 8.8
+@regen_L10 = 20.0
+
+@regen_S11 = 4.0
+@regen_M11 = 8.0
+@regen_L11 = 24.0
+
+
+
+@exotic_gas_s6 = 0.400
+@exotic_gas_m6 = 0.800
+@exotic_gas_l6 = 1.600
+
+@exotic_gas_s7 = 0.500
+@exotic_gas_m7 = 1.000
+@exotic_gas_l7 = 2.000
+
+@exotic_gas_s8 = 0.600
+@exotic_gas_m8 = 1.200
+@exotic_gas_l8 = 2.400
+
+@exotic_gas_s9 = 0.700
+@exotic_gas_m9 = 1.400
+@exotic_gas_l9 = 2.800
+
+@exotic_gas_s10 = 0.800
+@exotic_gas_m10 = 1.600
+@exotic_gas_l10 = 20.00
+
+@exotic_gas_s11 = 5.00
+@exotic_gas_m11 = 10.00
+@exotic_gas_l11 = 20.00
 
 # Hyper Shields
 utility_component_template = {
@@ -210,4 +351,111 @@ utility_component_template = {
 		}
 	}
 	upgrades_to = "C_LARGE_SHIELD_11"
+}
+
+####################
+# Engimatic Shields
+####################
+
+# Enigmatic Deflectors
+utility_component_template = {
+	key = "SMALL_DARK_MATTER_DEFLECTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_shield"
+	icon_frame = 1
+	power = @power_S11
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_S11
+			sr_dark_matter = 5.0
+		}
+		upkeep = {
+			energy = @shield_s_t6_upkeep_energy
+			alloys = @shield_s_t6_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S11
+		ship_shield_regen_add_static = @regen_S11 #Regeneration per day
+	}
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "DARK_MATTER_DEFLECTOR"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_DARK_MATTER_DEFLECTOR"
+	size = medium
+	icon = "GFX_ship_part_dark_matter_shield"
+	icon_frame = 1
+	power = @power_L11
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost_M11
+			sr_dark_matter = 10
+		}
+		upkeep = {
+			energy = @shield_m_t6_upkeep_energy
+			alloys = @shield_m_t6_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M11
+		ship_shield_regen_add_static = @regen_M11 #Regeneration per day
+	}
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "DARK_MATTER_DEFLECTOR"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_DARK_MATTER_DEFLECTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_shield"
+	icon_frame = 1
+	power = @power_L11
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost_L11
+			sr_dark_matter = 20
+		}
+		upkeep = {
+			energy = @shield_l_t6_upkeep_energy
+			alloys = @shield_l_t6_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L11
+		ship_shield_regen_add_static = @regen_L11 #Regeneration per day
+	}
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "DARK_MATTER_DEFLECTOR"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
 }

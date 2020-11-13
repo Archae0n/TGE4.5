@@ -273,6 +273,70 @@ utility_component_template = {
 ###############
 
 utility_component_template = {
+	key = "SHIP_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	power = @power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+			sr_dark_matter = 20
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 40
+	}
+
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHIP_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	power = @destroyer_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost4
+			sr_dark_matter = 40
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 32
+	}
+
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
 	key = "CRUISER_SHIP_THRUSTER_5"
 	size = small
 	icon = "GFX_ship_part_thruster_5"
@@ -282,12 +346,12 @@ utility_component_template = {
 		category = ship_components
 		cost = {
 			alloys = @cruiser_cost4
-			sr_dark_matter = 4
+			sr_dark_matter = 80
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
-		ship_evasion_add = 12
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 24
 	}
 
 	prerequisites = { "tech_dark_matter_propulsion" }
@@ -313,12 +377,12 @@ utility_component_template = {
 		category = ship_components
 		cost = {
 			alloys = @battleship_cost4
-			sr_dark_matter = 8
+			sr_dark_matter = 160
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
-		ship_evasion_add = 8
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 16
 	}
 
 	prerequisites = { "tech_dark_matter_propulsion" }
@@ -329,6 +393,72 @@ utility_component_template = {
 		weight = 5
 		modifier = {
 			factor = 0.0
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHIP_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	power = @titan_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost4
+			sr_dark_matter = 320
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 8
+	}
+
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { titan }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "COLOSSUS_SHIP_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	power = @colossus_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @colossus_cost5
+			sr_dark_matter = 640
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 4
+	}
+
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { colossus juggernaut }
+	
+	ai_weight = {
+		weight = 5
+
+		modifier = {
+			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = sr_dark_matter value <= 0 }
 		}
 	}

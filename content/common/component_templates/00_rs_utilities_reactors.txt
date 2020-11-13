@@ -329,16 +329,80 @@ utility_component_template = {
 ##########################
 
 utility_component_template = {
+	key = "CORVETTE_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @corvette_cost_6
+			sr_dark_matter = 20
+		}
+		upkeep = {
+			energy = 0.37
+			alloys = 0.037
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 1000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost_6
+			sr_dark_matter = 40
+		}
+		upkeep = {
+			energy = 0.74
+			alloys = 0.074
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { destroyer }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
 	key = "CRUISER_DARK_MATTER_REACTOR"
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @cruiser_power_6
+	power = 2000
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = @cruiser_cost_6
-			sr_dark_matter = 4
+			sr_dark_matter = 80
 		}
 		upkeep = {
 			energy = 1.48
@@ -364,12 +428,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @battleship_power_6
+	power = 4000
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = @battleship_cost_6
-			sr_dark_matter = 8
+			sr_dark_matter = 160
 		}
 		upkeep = {
 			energy = 2.98
@@ -386,5 +450,145 @@ utility_component_template = {
 			factor = 0.0
 			has_monthly_income = { resource = sr_dark_matter value <= 0 }
 		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 750
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost_6
+			sr_dark_matter = 320
+		}
+		upkeep = {
+			energy = 5.93
+			alloys = 0.593
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { titan }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 4000
+	resources = {
+		category = ship_components
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { colossus }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_DARK_MATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 5000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @platform_cost_6
+			sr_dark_matter = 4
+		}
+		upkeep = {
+			energy = 0.74
+			alloys = 0.074
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 2000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_6
+			sr_dark_matter = 8
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_DARK_MATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 50000
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+	}
+
+	ai_weight = {
+		weight = 6
 	}
 }
