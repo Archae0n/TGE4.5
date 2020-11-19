@@ -174,15 +174,6 @@ living_standard_utopian = {
 			}
 		}
 
-		custom_tooltip = {
-			fail_text = civic_tooltip_not_pluralist
-			from = {
-				OR = {
-					has_ethic = ethic_pluralist
-					has_ethic = ethic_fanatic_pluralist
-				}									
-			}
-		}
 
 		NOR = {
 			custom_tooltip = {

@@ -756,8 +756,8 @@
 		POP_FACTION_MIN_POTENTIAL_MEMBERS			= 5 # If a faction has less potential members than this, do not form
 		POP_FACTION_CREATION_COOLDOWN				= 180 # Wait this many days after creating a faction to create another one (not applied to hidden factions)
 
-		POLICY_YEARS						= 10 	# Years a set policy can not be changed for
-		SPECIES_POLICY_YEARS				= 10
+		POLICY_YEARS						= 1 	# Years a set policy can not be changed for
+		SPECIES_POLICY_YEARS				= 0
 
 		FEDERATION_LEADER_POWER_THRESHOLD	= 1.25	# Must have this much more power than current Federation leader to become new leader
 		FEDERATION_MIN_MEMBERS_TO_KICK		= 3	# Can't kick alliance members unless you have at least this many members

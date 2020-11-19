@@ -400,7 +400,7 @@ diplomatic_stance = {
 			NOT = { has_modifier = humiliated }
 
 			OR = {
-				has_tradition = tr_supremacy_finish
+				has_tradition = trp_supremacy_admirality_c
 				NOT = { is_country_type = default }
 			}
 			is_subject = no
